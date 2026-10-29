@@ -1,0 +1,14 @@
+{
+  "version": "0.19-RC1",
+  "parent": "0.18-CNINDEX-R1",
+  "changes": {
+    "core_market_entries": 33,
+    "new_core_market_entries": 1,
+    "new_global_genres": 0,
+    "base_weights_edited": 0,
+    "regional_independent_genres_created": 0
+  },
+  "historical_conflict": "V0.18 archive generic campus-folk rejection is superseded: historically recognizable market alias, not independent genre ID/weight.",
+  "global_base_sha256": "afbdfdd0e0ff710a639808731b0d06b40fe244827049163d512751589c83bbf6",
+  "research_limitation": "No live market-usage sampling, full listening, or source-by-source provenance verification."
+}

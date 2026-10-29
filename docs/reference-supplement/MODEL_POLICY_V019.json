@@ -1,0 +1,60 @@
+{
+  "model_id": "new-music-criticism",
+  "version": "V0.19-RC1",
+  "status": "implementation_candidate_not_empirically_validated",
+  "target": "entire_album_or_EP",
+  "dimension_order": ["lyrics", "composition", "performance", "sound", "vision", "context"],
+  "star_levels": [0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5],
+  "dynamic_weight_sum": 70,
+  "vision_weight": 15,
+  "context_weight": 15,
+  "genre_baseline": "genre-weights-v0.17-frozen.csv",
+  "genre_rows": 558,
+  "china_market_index_rows": 33,
+  "china_market_distinct_global_genre_ids": 32,
+  "genre_index_entries_are_not_independent_genres": true,
+  "new_global_genres_this_version": 0,
+  "old_score_migration": "never_auto_overwrite",
+  "genre_selection": {
+    "unit": "one_primary_second_level_genre_per_release",
+    "fallback": "existing_family_general_if_justified",
+    "cross_family": "blend_track_genre_weights_once_at_release_level",
+    "auxiliary_genre_count_max": 2,
+    "language_is_genre": false,
+    "northwest_region_is_genre": false,
+    "market_frequency_verified": false
+  },
+  "cultural_review": {
+    "qualitative_required_for_all_releases": true,
+    "numeric_default": [0,0,0,0,0,0],
+    "numeric_l1_max": 4,
+    "currently_approved_numeric_profiles": 0,
+    "numeric_changes_publishable_without_approved_profile": false
+  },
+  "source_correction": {
+    "presets_file": "source-correction-policy-v0.16.json",
+    "standard_l1_max": 12,
+    "exceptional_l1_max": 16,
+    "source_plus_culture_l1_budget": 16,
+    "no_automatic_cover_penalty": true,
+    "nonzero_requires_song_by_song_lyrics_and_composition_ledger": true,
+    "no_double_count_with_existing_genre_profiles": true
+  },
+  "na_policy": {
+    "lyrics_na_only_if_release_has_no_evaluable_language_text": true,
+    "performance_na_is_exceptional_and_requires_editorial_approval": true,
+    "unassessed_does_not_mean_na": true,
+    "normalization_order": "cultural_correction_then_NA_renormalize_dynamic_then_source_shift"
+  },
+  "score_formula": "sum(star_i * percentage_i) / 50",
+  "display_rounding": "two_decimals_half_up",
+  "high_grade_gate": "each_4.5_or_5_requires_track_evidence_dimension_reason_and_why_not_lower",
+  "publication": {
+    "audio_checked": true,
+    "release_identity_verified": true,
+    "song_credits_verified": true,
+    "qualitative_culture_review": true,
+    "reviewer_recorded": true,
+    "human_approval_still_required": true
+  }
+}

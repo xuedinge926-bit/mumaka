@@ -1,0 +1,10 @@
+﻿case,index_entry_id,effective_genre_id,review_state,rationale
+台湾校园民歌，原声民谣且有历史创作传统证据,cn-index:campus-folk,genre:contemporary-folk,active_alias,校园民歌历史与听感都成立
+一首流行歌讲毕业，电子流行编配,cn-index:electropop,genre:electropop,active,题材不决定风格
+陕西话普通流行摇滚,cn-index:pop-rock,genre:pop-rock,active,陕西话仅记录语言标签
+陕北民歌唱腔与吉他民谣持续融合,cn-index:contemporary-folk,genre:contemporary-folk,candidate_review,西北民谣当前仍借通用民谣权重，地域传统留审查记录
+陕北唱腔与摇滚节奏组持续融合,cn-index:folk-rock,genre:folk-rock,candidate_review,西北民歌摇滚暂按民谣摇滚，必要时审查复合风格
+仅方言嘻哈没有西北民歌音乐结构,cn-index:hip-hop-general,genre:hip-hop-general,active,不能归西北民歌摇滚
+苏阳式民歌摇滚，尚未完整复听,cn-index:folk-rock,genre:folk-rock,manual_pending,音乐人身份不足以锁定具体专辑体裁
+中国风主题歌词但无可听传统音乐结构,cn-index:pop-general,genre:pop-general,active,视觉／歌词题材不构成中国风音乐
+多首歌曲确实是中国传统声腔与流行音乐材料深度结合,cn-index:chinese-style-pop,genre:chinese-style-pop,conditional,要求原版音频证据和独立审定

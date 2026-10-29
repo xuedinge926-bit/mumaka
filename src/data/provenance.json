@@ -1,0 +1,43 @@
+{
+  "modelVersion": "V0.19-RC1",
+  "weightVersion": "V0.17（V0.19审计工作簿转录）",
+  "referenceVerified": true,
+  "sourceFiles": {
+    "model-source/CODEX_START_PROMPT_NMC_WEBAPP_V019.md": "e231a5a6df0f94b098fc406540eec78b7697ef62c0fdfe806f9add9c3df1cbf3",
+    "model-source/CODEX_PROMPT.md": "a020f49ede08e55858f46d02b833f0e24270fb2874afd5c399ef39ecbcc58c27",
+    "model-source/NMC_V0.19_CN_CODEX_AUDIT.xlsx": "535d7df20d5567d1d3667c744e586ad18f71de9946798915dd771df42125080a",
+    "model-source/FRAMEWORK_AUDIT.md": "97f26b09116ccd9ceed058928986c80b39b44abc4e9696a681af2773354c67f6",
+    "reference-supplement/REVIEW_RECORD_EXAMPLE.json": "435dec8160a46ec4a6e176f1e81274e8997d9c85b3ff49156ec00a7cd8e60cca",
+    "reference-supplement/MODEL_POLICY_V019.json": "483e6c86fdb1631fcdbfacb03a282d2bf3595e0403afe5922f5442c43c45359b",
+    "reference-supplement/nmc_reference_v019.py": "73c7e51e57698ec26e470f21c3bd01d09620b1171f279dc540897fb7aa9ebc91",
+    "reference-supplement/README_CODEX_SUPPLEMENT.md": "2663edfab43436218745203f098c1be20105d768bc8bce85b7c7a6d666b73e3d",
+    "reference-supplement/CODEX_WEBAPP_BUILD_PROMPT.md": "e231a5a6df0f94b098fc406540eec78b7697ef62c0fdfe806f9add9c3df1cbf3",
+    "reference-supplement/source-correction-policy-v0.16.json": "c5f63cc2b65f7b05592425a62c40f319575421512c7c0cd66272aab8b8c3ca70",
+    "reference-supplement/CODEX_IMPLEMENTATION_SPEC.md": "f5176f577869043f29e32c509536bd04f030bd3e919d9c5491e1b228de767a35",
+    "reference-supplement/model_engine_v016_frozen.py": "ef24c42e755016d4c083ddc5a7656b8a2b3d81c2f5d7d08aa5e123f3839f8826",
+    "reference-supplement/CODEX_START_HERE.md": "88be9b7b7feed33686533eaa7de6d87206df32dc76261c172532cf0b85e3ef92",
+    "reference-supplement/tests/test_v019.py": "78b9f52a1ed944dcee3dc3ebf4ab596fd0f548c4cc3086a097150cb902416f98",
+    "reference-supplement/data/REGIONAL_FOLK_DECISION_REGISTER.csv": "5bebc6a0d1623b7d8bd752282881a69a972da92601d9b8a263653e24e3e73842",
+    "reference-supplement/data/HANDBOOK_V0.18_INDEX_BASELINE.md": "3e51093e07a421a90b523c88bc5f16e936d6eac1bbf92f1ac5817a9854e5bd2f",
+    "reference-supplement/data/GOLDEN_CALC_FIXTURES.json": "09d7a2bd450f6d7d92539b38cfa34a4b9342e13ddaca60215edecb6433629586",
+    "reference-supplement/data/CHINA_MARKET_INDEX_33.csv": "4baeab0d33c7f29cd29eae225dc648c44463892346ccbe3c8223f0e7392f3d1d",
+    "reference-supplement/data/genre-weights-v0.17-frozen.csv": "afbdfdd0e0ff710a639808731b0d06b40fe244827049163d512751589c83bbf6",
+    "reference-supplement/data/HANDBOOK_V0.16_BASELINE.md": "a7b5196dca5b84e1169a1151398bee9fd29dee4eaae6ef4bfbc6be06fe3b0790",
+    "reference-supplement/data/VERSION_MANIFEST.json": "761d6c65d76df3d7e5a78df46fc6b84d823cdf173f2b5d60c3c12a65b966d074",
+    "reference-supplement/data/CHINA_MARKET_CORE_32_V018_ARCHIVE.csv": "a748230cb9dd6efdcb8edc21037d5b910a2fbaf008e6261017c99f94af8b0ee9",
+    "reference-supplement/data/CLASSIFICATION_REGRESSION_CASES.csv": "958751383a6e47b7e6f610d86ae4d588ef3bc3bda59ab09a6f4924e673ecc076"
+  },
+  "missing": [],
+  "genreCount": 558,
+  "indexCount": 33,
+  "referenceStatus": "python18_and_golden9_and_11160_configuration_parity_passed",
+  "baseDataSha256": "afbdfdd0e0ff710a639808731b0d06b40fe244827049163d512751589c83bbf6",
+  "policySha256": "483e6c86fdb1631fcdbfacb03a282d2bf3595e0403afe5922f5442c43c45359b",
+  "validation": {
+    "originalPythonTests": 18,
+    "suppliedGoldenFixtures": 9,
+    "differentialConfigurations": 11160,
+    "legalConfigurations": 4382,
+    "rejectedConfigurations": 6778
+  }
+}

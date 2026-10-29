@@ -1,0 +1,25 @@
+{
+  "release_id": "example-release-not-real",
+  "edition_id": "example-version-not-real",
+  "index_entry_id": "cn-index:folk-rock",
+  "genre_structural_evidence": "仅作为字段示范：音频中的民谣叙事、吉他合奏和摇滚节奏组应由人工举证，本示例没有真实唱片音频",
+  "album_audio_checked": false,
+  "release_identity_verified": false,
+  "song_credits_verified": false,
+  "reviewer_id": null,
+  "culture_qualitative_review": "示例文案：需审查方言唱腔、传统旋律和具体文化表达，默认不调百分比",
+  "culture_delta": [0,0,0,0,0,0],
+  "source_preset": "none",
+  "source_audit_status": "unverified",
+  "source_ledger": [],
+  "na_dims": [],
+  "stars": {"lyrics": 4, "composition": 4, "performance": 4, "sound": 4, "vision": 4, "context": 4},
+  "dimension_evidence": {
+    "lyrics": {"rationale": "字段示例；非正式评语"},
+    "composition": {"rationale": "字段示例；非正式评语"},
+    "performance": {"rationale": "字段示例；非正式评语"},
+    "sound": {"rationale": "字段示例；非正式评语"},
+    "vision": {"rationale": "字段示例；非正式评语"},
+    "context": {"rationale": "字段示例；非正式评语"}
+  }
+}

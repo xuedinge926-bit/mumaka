@@ -1,0 +1,91 @@
+{
+  "model": "新乐评主义",
+  "version": "0.16-source-provenance-candidate",
+  "status": "internal_validation_not_empirically_calibrated",
+  "score_target": "whole_release_artistic_value",
+  "weight_order": [
+    "lyrics",
+    "composition",
+    "performance",
+    "sound",
+    "vision",
+    "context"
+  ],
+  "base_rule": {
+    "dynamic_weight_total": 70,
+    "fixed_vision": 15,
+    "fixed_context": 15,
+    "genre_source": "534 genre V0.12 base profiles"
+  },
+  "presets": {
+    "none": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "mixed_light": [
+      -1,
+      -1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "mixed_material": [
+      -2,
+      -2,
+      2,
+      2,
+      0,
+      0
+    ],
+    "existing_dominant_standard": [
+      -3,
+      -3,
+      4,
+      2,
+      0,
+      0
+    ],
+    "existing_dominant_exceptional": [
+      -4,
+      -4,
+      5,
+      3,
+      0,
+      0
+    ]
+  },
+  "limits": {
+    "source_absolute_sum_max": 16,
+    "source_standard_absolute_sum_max": 12,
+    "cultural_absolute_sum_max": 4,
+    "combined_gross_absolute_sum_max": 16,
+    "dynamic_dimension_min_percent_before_lyrics_na": 5,
+    "fixed_dimension_adjustment_forbidden": true,
+    "zero_sum_each_adjustment": true
+  },
+  "source_modes": {
+    "new_for_release": "no source adjustment irrespective of who writes the newly commissioned words/music",
+    "mixed": "requires music-level source audit; choose mild preset only with documented substantial inherited material",
+    "existing_work_cover": "standard preset is candidate subject to actual adaptation and genre double-count screening",
+    "traditional": "genre embedded tradition must be screened; often use no or reduced source adjustment",
+    "self_re_recording": "authorship remains original artist but current release reuses earlier composition; use audited adjustment",
+    "unknown": "no approved adjustment; score draft only until source status verified"
+  },
+  "no_double_count": [
+    "Do not subtract stars merely because source is not newly authored when a weight shift was applied",
+    "If style profile already rewards interpretation of existing repertoire, reduce or omit provenance shift",
+    "Selection of culturally historic materials is not itself strong Context evidence",
+    "Changes are decided before star ratings, never reverse-engineer desired ranking",
+    "Cultural adjustment cannot reuse the same rationale as source adjustment"
+  ],
+  "lyrics_na_rule": "Preserve V0.13 culture ordering: apply approved culture vector to the original genre weights, then exclude lyrics and renormalize the remaining dynamic three to 70. Finally apply a separately approved zero-sum source vector among composition/performance/sound only. Never transfer a missing lyrics weight twice.",
+  "genre_blend_rule": "if genuine cross-family juxtaposition, calculate one album-wide vector from track genre vectors, then apply source adjustment at release level; do not average track stars",
+  "publication": "source ledger and four-dimension evidence required; experimental source percentages must not be described as empirically verified",
+  "cultural_amendment": "remains separately evidence gated, 4 p.p. absolute change; combined gross max 16 p.p.",
+  "precision": "Fraction exact arithmetic; half-up to two decimals only for display"
+}

@@ -1,0 +1,6 @@
+﻿review_id,term,fallback_global_genre_id,candidate_type,decision,audible_requirements,not_sufficient,evidence_to_activate
+cn-review:northwest-folk,西北民谣,genre:contemporary-folk,region_tradition_candidate,待审，不启用独立权重,方言、旋律中的信天游或花儿语汇，吟唱／拖腔等连续有效参与音乐组织；须逐曲核实,仅西北方言、吉他民谣或歌手来自西北不充分,样本横跨不同音乐人与地域，归类者之间的判定一致性，公开持续类型命名与音频证据
+cn-review:northwest-folk-rock,西北民歌摇滚／西北摇滚,genre:folk-rock,region_tradition_candidate,待审，不启用独立权重,西北民歌声腔、旋律／节奏组织与摇滚合奏构成持续融合，非纯借用或插段,仅使用方言、电吉他或采用西北文化题材不充分,与民谣摇滚、另类摇滚、世界音乐融合对照；至少若干不同作者的可听样本及独立用语证据
+cn-review:northwest-wind,西北风（历史风格）,genre:pop-general,historical_era_label,历史标签；不设通用百分比,明确其特定历史流行音乐运动和唱腔借用，而非一切西北音乐,年代、题材、地域名称不充分,研究原始唱片与历史类型文献后可考虑专属入口，现阶段仍应按实际音乐风格
+cn-review:dialect-folk,方言民谣,genre:contemporary-folk,language_tag_only,仅语言标签,优先使用当代民谣等实际听感风格，记录方言和具体文化理解,出现方言不产生独立六维权重,仅定性适配；如音乐材料显著地域化，则进入相应风格候选审查
+cn-review:dialect-rock,方言摇滚,genre:rock-general,language_tag_only,仅语言标签,优先使用独立／另类／民谣／布鲁斯等具体摇滚类型,出现方言不产生独立六维权重,仅定性适配；不得根据方言自动修改语境或词曲权重

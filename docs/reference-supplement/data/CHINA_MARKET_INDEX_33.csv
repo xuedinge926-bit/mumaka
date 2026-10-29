@@ -1,0 +1,34 @@
+﻿entry_id,display_name,group,global_genre_id,entry_type,usage_state,criteria,not_sufficient,usage_research,weight_rule,market_note
+cn-index:pop-general,流行（一般）,流行,genre:pop-general,base_style,active,歌曲型编制、旋律段落与常规流行制作统领全碟,仅因使用国语／粤语／闽南语不另选,not_verified,inherit_global,通用兜底，只在无更准确的主导风格时使用
+cn-index:indie-pop,独立流行,流行,genre:indie-pop,base_style,active,有可辨识的独立流行歌曲美学、编配与克制声音设计,独立发行、个人制作不充分,not_verified,inherit_global,独立指音乐语言，不是合同关系
+cn-index:alternative-pop,另类流行,流行,genre:alternative-pop,base_style,conditional,非常规歌曲结构、节奏或音色在整张占据中心,有专辑概念、实验一首歌不充分,not_verified,inherit_global,V0.17新增的全球通用类型，权重仍待校准
+cn-index:art-pop,艺术流行,流行,genre:art-pop,base_style,active,跨艺术编制或形式实验在音乐组织中稳定显现,艺术家有观念／专辑设计精美不充分,not_verified,inherit_global,愿景星高不等于艺术流行
+cn-index:synth-pop,合成器流行,流行,genre:synth-pop,base_style,active,合成器音序、键盘声部与电子节拍构成歌曲主体,仅有合成器铺底不充分,not_verified,inherit_global,主导音色和结构比年代标签重要
+cn-index:electropop,电子流行,流行,genre:electropop,base_style,active,数字节拍及电子音色设计主导流行歌曲架构,软件制作／MIDI使用本身不充分,not_verified,inherit_global,需证明电子制作是核心音乐语言
+cn-index:dream-pop,梦幻流行,流行,genre:dream-pop,base_style,active,漫射纹理、持续音色与柔化声部构成稳定美学,抒情慢歌或大量混响不充分,not_verified,inherit_global,音色组织需要独立判据
+cn-index:dance-pop,舞曲流行,流行,genre:dance-pop,base_style,active,重复舞曲节拍及副歌结构持续作为中心,一首适合跳舞的流行歌不充分,not_verified,inherit_global,舞曲的组织属性是关键
+cn-index:city-pop,城市流行 City Pop,流行,genre:city-pop,base_style,active,有辨识度的放克/迪斯科/R&B式律动、和声与都市化制作风格,名字含城市或复古视觉不充分,not_verified,inherit_global,以音响与编配识别而不是都市题材
+cn-index:chinese-style-pop,中国风流行（古风同权重）,流行,genre:chinese-style-pop,base_style,conditional,传统器乐/唱腔/音阶语汇与流行旋律编曲发生实质整合,古典意象、五声音阶一处或古装MV不充分,not_verified,inherit_global,中国市场已有稳定用语；与古风合并但音乐边界待样本标定
+cn-index:pop-rock,流行摇滚,摇滚,genre:pop-rock,base_style,active,摇滚乐队编制与流行旋律结构共同主导,旋律流行加一段电吉他不充分,not_verified,inherit_global,稳定乐队互动是重要证据
+cn-index:indie-rock,独立摇滚,摇滚,genre:indie-rock,base_style,active,吉他/节奏组编排与独立摇滚演奏美学贯穿全碟,未签约／地下演出不充分,not_verified,inherit_global,不凭厂牌归类
+cn-index:alternative-rock,另类摇滚,摇滚,genre:alternative-rock,base_style,active,不同于常规主流摇滚的吉他、结构与力度组织,艺术家自称另类不充分,not_verified,inherit_global,同类在中国独立音乐中常用
+cn-index:folk-rock,民谣摇滚,摇滚,genre:folk-rock,base_style,active,叙事型歌曲与摇滚乐队节奏/配器稳定整合,仅木吉他加鼓不充分,not_verified,inherit_global,两种音乐语汇需共同实际成立
+cn-index:blues-rock,布鲁斯摇滚,摇滚,genre:blues-rock,base_style,active,蓝调乐句、和声、律动与电声演奏构成主导,一两处蓝调音阶或吉他solo不充分,not_verified,inherit_global,不因歌手声线沙哑判为蓝调摇滚
+cn-index:post-rock,后摇滚,摇滚,genre:post-rock,base_style,active,器乐发展、音量层次和延展结构主导,没有人声本身不充分,not_verified,inherit_global,可用作风格主入口，器乐作词N/A另判
+cn-index:shoegaze,盯鞋摇滚 Shoegaze,摇滚,genre:shoegaze,base_style,active,墙状吉他音色、失真纹理与声部融合稳定主导,大量混响单独不充分,not_verified,inherit_global,音色密度及吉他组织可辨认
+cn-index:psychedelic-rock,迷幻摇滚,摇滚,genre:psychedelic-rock,base_style,active,迷幻音色/结构变化及循环、空间性持续存在,怪诞歌词、海报或声称致幻不充分,not_verified,inherit_global,关注声音与音乐结构
+cn-index:punk-rock,朋克摇滚,摇滚,genre:punk-rock,base_style,active,朋克式速度、和声简化与乐队冲击力贯穿,歌词抗议/服装造型不充分,not_verified,inherit_global,朋克歌曲结构与演奏主导
+cn-index:post-punk,后朋克,摇滚,genre:post-punk,base_style,active,冷峻节奏、贝斯/吉他编排与形式实验构成稳定声音,暗色美术风格或冷淡演唱不充分,not_verified,inherit_global,与朋克摇滚区分音乐编排
+cn-index:contemporary-folk,当代民谣,民谣,genre:contemporary-folk,base_style,active,歌曲叙事、声乐与原声器乐编排构成核心,弹木吉他的流行抒情不充分,not_verified,inherit_global,不把题材诚恳或穷制作当作风格
+cn-index:indie-folk,独立民谣,民谣,genre:indie-folk,base_style,active,当代民谣之上具有稳定个人化编制/独立民谣美学,独立发行本身不充分,not_verified,inherit_global,需实听判定独立民谣的音响特征
+cn-index:folk-pop,民谣流行,民谣,genre:folk-pop,base_style,active,民谣式声乐/原声吉他与流行歌曲段落相结合,纯民谣中有抓耳旋律不充分,not_verified,inherit_global,混合风格具有真实市场用法
+cn-index:contemporary-r-b,当代R&B,R&B／灵魂乐,genre:contemporary-r-b,base_style,active,切分律动、和声声部、声乐处理等持续主导,中文演唱或用R&B采样一首不充分,not_verified,inherit_global,中文R&B直接复用全球风格
+cn-index:alternative-r-b,另类R&B,R&B／灵魂乐,genre:alternative-r-b,base_style,active,R&B核心律动与异常音色/歌曲结构持续交织,艺术家定位“先锋”但作品仍常规不充分,not_verified,inherit_global,音乐结构优先
+cn-index:hip-hop-general,嘻哈／说唱（一般）,说唱,genre:hip-hop-general,base_style,active,押韵念唱、节拍制作和说唱曲式为主,流行歌曲出现一段rap不充分,not_verified,inherit_global,说唱兜底只在无更准确亚风格时使用
+cn-index:trap,陷阱说唱 Trap,说唱,genre:trap,base_style,active,典型踩镲细分、808低频、陷阱节拍与流畅念唱组织,只有808低频不充分,not_verified,inherit_global,以节拍语法判定
+cn-index:boom-bap,Boom Bap说唱,说唱,genre:boom-bap,base_style,active,采样/鼓组重拍、Boom Bap律动组织明显,歌词意识强或复古封面不充分,not_verified,inherit_global,按节拍与制作语言判定
+cn-index:house,浩室 House,电子,genre:house,base_style,active,四拍底鼓和浩室循环、低频/节拍发展构成核心,流行歌曲套四拍底鼓不充分,not_verified,inherit_global,歌曲是舞曲化还是浩室主导须区分
+cn-index:techno,Techno,电子,genre:techno,base_style,active,机械节拍、循环发展及音色演化主导,无歌词且有鼓机不充分,not_verified,inherit_global,适用于专业场景；应用频度须实测
+cn-index:funk-general,放克 Funk,跨风格,genre:funk-general,base_style,active,切分贝斯、节奏吉他/铜管及紧密律动主导,只有funk贝斯一首歌不充分,not_verified,inherit_global,复用全球现有权重，不发明“中国放克”
+cn-index:heavy-metal,重金属 Heavy Metal,跨风格,genre:heavy-metal,base_style,active,高增益吉他riff、强力度鼓与金属合奏主导,只因主唱吼叫不充分,not_verified,inherit_global,成熟音乐类别，不按中国摇滚身份赋权
+cn-index:campus-folk,校园民谣／校园民歌,民谣,genre:contemporary-folk,recognized_historical_alias,active_alias,具有可听的原声民谣歌曲语言，并可举证与台湾校园民歌或大陆校园民谣创作传统的关系,歌词写校园青春、艺术家是学生、发行场景在大学，均不充分,not_verified,inherit_global_no_new_profile,不按历史地位加分；中国历史传统入口，不自动启用文化数值修正
