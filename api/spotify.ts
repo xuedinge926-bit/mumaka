@@ -1,49 +1,56 @@
-export default async function handler(req: any, res: any) {
-  try {
-    const allowedOrigin = process.env.SPOTIFY_ALLOWED_ORIGINS;
-    const origin = req.headers.origin;
+export const config = {
+  runtime: 'edge',
+};
 
-    if (origin !== allowedOrigin) {
-      return res.status(403).json({ error: "Origin not allowed" });
-    }
-    res.setHeader("Access-Control-Allow-Origin", origin);
-    res.setHeader("Access-Control-Allow-Methods", "GET,OPTIONS");
-    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-
-    if (req.method === "OPTIONS") return res.status(200).end();
-    if (req.method !== "GET") return res.status(405).json({ error: "Method not allowed" });
-
-    const clientId = process.env.SPOTIFY_CLIENT_ID;
-    const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-    if (!clientId || !clientSecret) {
-      return res.status(500).json({ error: "Missing Spotify credentials" });
-    }
-
-    const { path } = req.query;
-    if (!path || typeof path !== "string") {
-      return res.status(400).json({ error: "Missing path parameter" });
-    }
-
-    const tokenRes = await fetch("https://accounts.spotify.com/api/token", {
-      method: "POST",
+export default async function handler(req: Request) {
+  if (req.method === 'OPTIONS') {
+    return new Response(null, {
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: `Basic ${Buffer.from(`${clientId}:${clientSecret}`).toString("base64")}`
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET,OPTIONS',
+        'Access-Control-Allow-Headers': '*',
       },
-      body: "grant_type=client_credentials"
     });
-    const tokenData = await tokenRes.json();
-    if (!tokenRes.ok) {
-      return res.status(500).json(tokenData);
-    }
-
-    const apiRes = await fetch(`https://api.spotify.com/v1/${path}`, {
-      headers: { Authorization: `Bearer ${tokenData.access_token}` }
-    });
-    const apiData = await apiRes.json();
-    return res.status(apiRes.status).json(apiData);
-  } catch (err) {
-    console.error(err);
-    return res.status(500).json({ error: "Internal server error", detail: String(err) });
   }
+
+  if (req.method !== 'GET') {
+    return Response.json({ error: 'Method not allowed' }, { status: 405 });
+  }
+
+  const url = new URL(req.url);
+  const path = url.searchParams.get('path');
+  if (!path) {
+    return Response.json({ error: 'Missing path param' }, { status: 400 });
+  }
+
+  const clientId = process.env.SPOTIFY_CLIENT_ID;
+  const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
+  if (!clientId || !clientSecret) {
+    return Response.json({ error: 'Missing Spotify credentials' }, { status: 500 });
+  }
+
+  const tokenRes = await fetch('https://accounts.spotify.com/api/token', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Authorization': `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
+    },
+    body: 'grant_type=client_credentials',
+  });
+  const tokenJson = await tokenRes.json();
+  if (!tokenRes.ok) {
+    return Response.json(tokenJson, { status: 500 });
+  }
+  const accessToken = tokenJson.access_token;
+
+  const spotifyRes = await fetch(`https://api.spotify.com/v1/${path}`, {
+    headers: { Authorization: `Bearer ${accessToken}` },
+  });
+  const spotifyData = await spotifyRes.json();
+
+  return Response.json(spotifyData, {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
+  });
 }
