@@ -18,7 +18,7 @@ export interface AlbumUX {
 }
 /** Optional, additive provenance. Old records and frozen snapshots require no migration. */
 export interface AlbumImportSource {
- provider:'apple-music'|'bandcamp'; url:string; metadataUrl:string; fetchedAt:string; adapter:string;
+ provider:'netease'|'qq-music'|'apple-music'|'bandcamp'; url:string; originalUrl?:string; metadataUrl:string; fetchedAt:string; adapter:string;
  releaseDate:string; releaseType:'album'|'ep'|'single'|null; referenceGenres:string[];
 }
 export type RecordStatus = 'draft'|'research_candidate'|'publish_eligible'|'published';

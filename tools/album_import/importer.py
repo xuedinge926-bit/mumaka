@@ -8,13 +8,15 @@ from urllib.parse import urlencode, urlsplit
 
 from .network import PublicFetcher
 from .sources import ImportFailure, identify, parse_apple, parse_bandcamp
+from .domestic import parse_domestic
 
 
 def embed_cover(fetcher, url):
     if not url:
         return ""
     # Album sources are not general image proxies.
-    if not (urlsplit(url).hostname or "").endswith((".bcbits.com", ".mzstatic.com")):
+    host=urlsplit(url).hostname or ''
+    if not (host.endswith((".bcbits.com", ".mzstatic.com", ".music.126.net")) or host in {'y.gtimg.cn','y.qq.com'}):
         raise ImportFailure("来源封面不在支持的图片域名中。")
     fetcher.allow_page(url)
     body, kind = fetcher.read(url, limit=5 * 1024 * 1024, accept="image/png,image/jpeg,image/webp,image/gif")
@@ -26,8 +28,15 @@ def embed_cover(fetcher, url):
 
 def import_album(url, fetcher=None):
     provider, canonical, params = identify(url)
+    original_url=canonical
     fetcher = fetcher or PublicFetcher()
-    if provider == "apple-music":
+    if provider in {'netease','qq-music'}:
+        metadata_url,raw,kind=fetcher.read_public_album_page(canonical,provider)
+        resolved,canonical,params=identify(metadata_url)
+        if resolved!=provider or params.get('short'):raise ImportFailure('未确认到同一来源的专辑详情页，请手动添加。')
+        album,warnings=parse_domestic(raw.decode('utf-8','replace'),provider,params['id'])
+        adapter=provider+'-public-album-v1'
+    elif provider == "apple-music":
         metadata_url = "https://itunes.apple.com/lookup?" + urlencode({"id": params["id"], "entity": "song", "country": params["country"], "limit": 200})
         raw, kind = fetcher.read(metadata_url, accept="application/json")
         try:
@@ -47,6 +56,11 @@ def import_album(url, fetcher=None):
         adapter = "bandcamp-public-structured-v1"
     if len(album["tracks"]) > 1000:
         raise ImportFailure("曲目过多，请分批手动录入。")
+    if album['coverUrl']:
+        try:
+            image_url=urlsplit(album['coverUrl'])
+            if image_url.scheme!='https' or image_url.username or image_url.password:album['coverUrl']=''
+        except ValueError:album['coverUrl']=''
     if album["coverUrl"]:
         try:
             album["coverDataUrl"] = embed_cover(fetcher, album["coverUrl"])
@@ -55,5 +69,5 @@ def import_album(url, fetcher=None):
     else:
         warnings.append("没有取得封面，可在确认页上传图片。")
     return {"format": "mumaka-album-import", "schemaVersion": 1,
-            "source": {"provider": provider, "url": canonical, "metadataUrl": metadata_url, "fetchedAt": datetime.now(timezone.utc).isoformat(), "adapter": adapter},
+            "source": {"provider": provider, "url": canonical, "originalUrl": original_url, "metadataUrl": metadata_url, "fetchedAt": datetime.now(timezone.utc).isoformat(), "adapter": adapter},
             "album": album, "warnings": warnings}

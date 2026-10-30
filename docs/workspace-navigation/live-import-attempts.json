@@ -1,0 +1,14 @@
+[
+  {
+    "provider": "qq-music",
+    "input": "https://c6.y.qq.com/base/fcgi-bin/u?__=2zNumVIuq73g",
+    "exit_code": 1,
+    "message": "无法连接来源，可能受网络或访问限制。可继续手动添加。"
+  },
+  {
+    "provider": "netease",
+    "input": "https://163cn.tv/bjQO3xkl",
+    "exit_code": 1,
+    "message": "无法连接来源，可能受网络或访问限制。可继续手动添加。"
+  }
+]

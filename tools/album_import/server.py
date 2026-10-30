@@ -85,7 +85,7 @@ class Handler(SimpleHTTPRequestHandler):
             return self.send_json(403, {"error": "请使用终端显示的本机地址。"})
         path = urlsplit(self.path).path
         if path == "/api/album-import/status":
-            return self.send_json(200, {"data": {"available": True, "sources": ["apple-music", "bandcamp"]}})
+            return self.send_json(200, {"data": {"available": True, "sources": ["netease", "qq-music", "apple-music", "bandcamp"]}})
         if path.startswith("/api/"):
             return self.send_json(404, {"error": "此可选服务尚未配置，可通过链接或手动添加。"})
         target = (self.server.root / unquote(path).lstrip("/")).resolve()

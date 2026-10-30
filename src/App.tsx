@@ -1,4 +1,10 @@
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type ReactNode,
+} from "react";
 import {
   ArrowDownToLine,
   ArrowLeft,
@@ -11,9 +17,9 @@ import {
   ImagePlus,
   LoaderCircle,
   MoreHorizontal,
+  Menu,
   Plus,
   Search,
-  Settings2,
   Trash2,
   X,
 } from "lucide-react";
@@ -56,7 +62,21 @@ import { GenrePicker } from "./components/GenrePicker";
 import { StarRating } from "./components/StarRating";
 import { AlbumImportPanel } from "./components/AlbumImportPanel";
 import { Workbench, type WorkbenchTab } from "./components/Workbench";
-import { importedAlbum, type AlbumImport } from "./lib/albumImport";
+import { AppNavigation, WorkspaceBreadcrumb } from "./components/AppNavigation";
+import { GenreWorkspace } from "./components/GenreWorkspace";
+import {
+  HOME,
+  parseRoute,
+  routePath,
+  useAppRoute,
+  type AppRoute,
+  type Workspace,
+} from "./lib/navigation";
+import {
+  importedAlbum,
+  IMPORT_PROVIDER_LABELS,
+  type AlbumImport,
+} from "./lib/albumImport";
 import {
   readPreferences,
   writePreferences,
@@ -155,18 +175,40 @@ function Modal({
 export default function App() {
   const [draft, setDraft] = useState<Album>(makeDraft);
   const [albums, setAlbums] = useState<Album[]>([]);
-  const [screen, setScreen] = useState<Screen>("home");
-  const [snapshot, setSnapshot] = useState<Snapshot | null>(null);
+  const router = useAppRoute();
+  const route = router.route;
+  const screen: Screen =
+    route.view === "editor"
+      ? route.stage
+      : route.tab === "home"
+        ? "home"
+        : "workbench";
+  const workbenchTab: WorkbenchTab =
+    route.view === "workspace" && route.tab !== "home" && route.tab !== "genres"
+      ? route.tab
+      : "library";
+  const [snapshot, storeSnapshot] = useState<Snapshot | null>(null);
+  const [navOpen, setNavOpen] = useState(false);
+  const closeNavigation = useCallback(() => setNavOpen(false), []);
+  const menuToggle = useRef<HTMLButtonElement>(null);
+  const [routeLoading, setRouteLoading] = useState(route.view === "editor");
+  const [routeIssue, setRouteIssue] = useState("");
+  const [lastEditor, setLastEditor] = useState<AppRoute | null>(() => {
+    try {
+      const r = parseRoute(localStorage.getItem("mumaka-last-editor") ?? "");
+      return r.view === "editor" && r.kind === "album" ? r : null;
+    } catch {
+      return null;
+    }
+  });
   const [ready, setReady] = useState(false);
-  const [dirty, setDirty] = useState(false);
+  const [dirty, storeDirty] = useState(false);
   const [busy, setBusy] = useState(false);
   const [saving, setSaving] = useState("");
   const [error, setError] = useState("");
   const [toast, setToast] = useState("");
   const [settings, setSettings] = useState(false);
   const [importOpen, setImportOpen] = useState(false);
-  const [workbenchTab, setWorkbenchTab] = useState<WorkbenchTab>("library");
-  const [returnTo, setReturnTo] = useState<"home" | "workbench">("home");
   const [preferences, setPreferences] = useState<Preferences>(readPreferences);
   const [history, setHistory] = useState<Snapshot[]>([]);
   const [query, setQuery] = useState("");
@@ -186,6 +228,11 @@ export default function App() {
   const [bulkGenre, setBulkGenre] = useState("");
   const [viewRatio, setViewRatio] = useState<AlbumUX["cardRatio"]>();
   const [viewTheme, setViewTheme] = useState<AlbumUX["cardTheme"]>();
+  const dirtyRef = useRef(dirty);
+  const snapshotRef = useRef(snapshot);
+  const routeGeneration = useRef(0);
+  const latestRoute = useRef(router.key);
+  latestRoute.current = router.key;
   const latestDraft = useRef(draft);
   latestDraft.current = draft;
   const saveQueue = useRef<Promise<void>>(Promise.resolve());
@@ -204,6 +251,122 @@ export default function App() {
     (d) => record.ratings[d].value !== null,
   ).length;
   const currentGenre = genres.find((g) => g.id === record.genreId);
+  function setSnapshot(value: Snapshot | null) {
+    snapshotRef.current = value;
+    storeSnapshot(value);
+  }
+  function setDirty(value: boolean) {
+    dirtyRef.current = value;
+    storeDirty(value);
+  }
+  function setScreen(next: Screen) {
+    if (next === "home") {
+      router.navigate(HOME);
+      return;
+    }
+    if (next === "workbench") {
+      router.navigate({ view: "workspace", tab: "library" });
+      return;
+    }
+    const frozen = snapshotRef.current;
+    router.navigate({
+      view: "editor",
+      kind: frozen ? "snapshot" : "album",
+      id: frozen?.id ?? latestDraft.current.id,
+      stage: next,
+    });
+  }
+  function navigateWorkspace(tab: Workspace) {
+    router.navigate({ view: "workspace", tab });
+  }
+
+  useEffect(() => {
+    setSettings(false);
+    setImportOpen(false);
+    setMoreRating(null);
+    setNaDimension(null);
+  }, [router.key]);
+  useEffect(() => {
+    const generation = ++routeGeneration.current;
+    let canceled = false;
+    setRouteIssue("");
+    if (!ready) return;
+    const remember = () => {
+      if (route.view === "editor" && route.kind === "album") {
+        setLastEditor(route);
+        try {
+          localStorage.setItem("mumaka-last-editor", routePath(route));
+        } catch {
+          /* optional navigation preference */
+        }
+      }
+    };
+    const matches =
+      route.view === "editor" &&
+      (route.kind === "snapshot"
+        ? snapshotRef.current?.id === route.id
+        : latestDraft.current.id === route.id && !snapshotRef.current);
+    if (matches) {
+      remember();
+      setRouteLoading(false);
+      return;
+    }
+    if (route.view === "editor") setRouteLoading(true);
+    else setRouteLoading(false);
+    (async () => {
+      try {
+        // Back/Forward can arrive before the debounce. Finish writes before
+        // replacing the active editor so another record cannot receive them.
+        if (dirtyRef.current && !snapshotRef.current) await persist();
+        const items = await listAlbums();
+        const versions = await listSnapshots();
+        if (canceled || generation !== routeGeneration.current) return;
+        setAlbums(items);
+        setHistory(versions);
+        if (route.view === "workspace") return;
+        let album: Album | undefined;
+        let frozen: Snapshot | null = null;
+        if (route.kind === "snapshot") {
+          frozen = versions.find((s) => s.id === route.id) ?? null;
+          album = frozen?.album;
+        } else {
+          album = items.find((a) => a.id === route.id);
+          if (album?.status === "published") {
+            frozen =
+              versions.find(
+                (s) =>
+                  s.kind === "published" &&
+                  s.albumId === album!.id &&
+                  s.album.revision === album!.revision &&
+                  s.album.updatedAt === album!.updatedAt,
+              ) ?? null;
+            if (!frozen)
+              throw new Error(
+                "这条历史记录缺少匹配快照，请使用完整备份恢复；不会按新规则重算。",
+              );
+            album = frozen.album;
+          }
+        }
+        if (!album)
+          throw new Error(
+            "未找到这条本地记录，可能已被删除，或来自其他浏览器。可返回作品库继续操作。",
+          );
+        replaceDraft(album);
+        setSnapshot(frozen);
+        setDirty(false);
+        setSaving("已保存");
+        resetView();
+        remember();
+      } catch (error) {
+        if (!canceled) setRouteIssue(errorText(error));
+      } finally {
+        if (!canceled) setRouteLoading(false);
+      }
+    })();
+    return () => {
+      canceled = true;
+    };
+  }, [router.key, ready]);
 
   useEffect(() => {
     let canceled = false;
@@ -360,7 +523,8 @@ export default function App() {
     return normalized;
   }
   async function persist() {
-    if (readonly) return;
+    if (snapshotRef.current || latestDraft.current.status === "published")
+      return;
     let captured = latestDraft.current;
     for (;;) {
       const saved = await queuedSave(captured);
@@ -392,25 +556,36 @@ export default function App() {
     setViewRatio(undefined);
     setViewTheme(undefined);
   }
-  async function goHome() {
-    await action(async () => {
-      if (dirty) await persist();
-      setScreen("home");
-      setReturnTo("home");
-      setSnapshot(null);
-      resetView();
-    });
+  function goHome() {
+    router.navigate(HOME);
   }
-  async function manual() {
+  async function startNew(genreId = "") {
     await action(async () => {
-      if (dirty) await persist();
-      replaceDraft(makeDraft());
+      if (dirtyRef.current) await persist();
+      const next = makeDraft();
+      next.genreId = genreId;
+      await saveAlbum(next);
+      replaceDraft(next);
+      setAlbums(await listAlbums());
       setSnapshot(null);
       setDirty(false);
-      setSaving("");
+      setSaving("已保存");
       resetView();
       setScreen("confirm");
     });
+  }
+  async function manual() {
+    await startNew();
+  }
+  async function quickScore() {
+    if (
+      lastEditor?.view === "editor" &&
+      lastEditor.kind === "album" &&
+      lastEditor.stage !== "card" &&
+      albums.some((a) => a.id === lastEditor.id)
+    )
+      router.navigate(lastEditor);
+    else await manual();
   }
   async function openAlbum(
     album: Album,
@@ -487,6 +662,7 @@ export default function App() {
     });
   }
   async function selectSpotify(item: SpotifyAlbumSummary) {
+    const originRoute = latestRoute.current;
     await action(async () => {
       if (dirty) await persist();
       const details = await getAlbum(item.id);
@@ -524,6 +700,7 @@ export default function App() {
           imageError = "封面暂时无法载入导出文件，可上传本地封面。";
         }
       }
+      if (latestRoute.current !== originRoute) return;
       await saveAlbum(next);
       replaceDraft(next);
       setAlbums(await listAlbums());
@@ -704,16 +881,23 @@ export default function App() {
       else setViewTheme(value as AlbumUX["cardTheme"]);
     } else updateUX({ [key]: value });
   }
-  async function openWorkbench() {
+  function openWorkbench() {
+    setNavOpen(true);
+  }
+  async function applyLibraryGenre(id: string) {
+    if (snapshotRef.current || latestDraft.current.status === "published")
+      return;
     await action(async () => {
-      if (dirty) await persist();
-      setAlbums(await listAlbums());
-      setHistory(await listSnapshots());
-      setSettings(false);
-      setSnapshot(null);
-      setReturnTo("workbench");
-      resetView();
-      setScreen("workbench");
+      const next = {
+        ...latestDraft.current,
+        genreId: id,
+        chinaEntryId: "",
+        updatedAt: new Date().toISOString(),
+      };
+      replaceDraft(next);
+      setDirty(true);
+      await persist();
+      setScreen("confirm");
     });
   }
   function changePreferences(value: Preferences) {
@@ -828,1212 +1012,1286 @@ export default function App() {
   const shortError = !source.confirmed ? source.message : calculation.errors[0];
 
   return (
-    <div className="nmc-app">
-      <header className="site-header">
-        <button
-          className="wordmark"
-          onClick={goHome}
-          aria-label="MUMAKA / 木马卡，返回首页"
-        >
-          <strong>
-            MUMAKA <span>/ 木马卡</span>
-          </strong>
-          <small>新乐评主义 / New Music Criticism</small>
-        </button>
-        <div className="header-right">
-          {screen !== "home" && screen !== "workbench" && saving && (
-            <span className="save-note">
-              {saving === "正在保存" ? (
-                <LoaderCircle size={12} className="spinning" />
-              ) : (
-                <Check size={12} />
-              )}
-              <span>{saving}</span>
-            </span>
-          )}
-          <button
-            className="icon-button settings-trigger"
-            aria-label="设置"
-            onClick={openSettings}
-          >
-            <Settings2 size={19} />
-          </button>
-        </div>
-      </header>
-      {error && (
-        <div className="error-message" role="alert">
-          <span>{error}</span>
-          <button aria-label="关闭提示" onClick={() => setError("")}>
-            <X size={15} />
-          </button>
-        </div>
-      )}
-      {screen === "home" ? (
-        <main className="home-page">
-          <div className="album-search">
-            <Search size={25} strokeWidth={1.5} />
-            <input
-              autoFocus
-              aria-label="搜索专辑或音乐人"
-              placeholder="搜索专辑或音乐人"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-            {query && (
-              <button
-                className="icon-button"
-                aria-label="清空搜索"
-                onClick={() => setQuery("")}
-              >
-                <X size={18} />
-              </button>
-            )}
-            {searchBusy && <LoaderCircle size={21} className="spinning" />}
-          </div>
-          <div className="home-actions">
-            <button className="button primary" disabled={busy} onClick={manual}>
-              快速评分
-              <ArrowRight size={16} />
+    <div
+      className={`nmc-app app-workspace ${navOpen ? "navigation-open" : ""}`}
+    >
+      <AppNavigation
+        open={navOpen}
+        onClose={closeNavigation}
+        route={route}
+        onNavigate={navigateWorkspace}
+        toggleRef={menuToggle}
+      />
+      <div className="app-content">
+        <header className="site-header">
+          <div className="app-header-brand">
+            <button
+              ref={menuToggle}
+              className="icon-button navigation-toggle"
+              aria-label={navOpen ? "收起导航菜单" : "展开导航菜单"}
+              aria-controls="app-navigation"
+              aria-expanded={navOpen}
+              onClick={() => setNavOpen((open) => !open)}
+            >
+              <Menu size={21} />
             </button>
+            <button
+              className="wordmark"
+              onClick={goHome}
+              aria-label="MUMAKA / 木马卡，返回首页"
+            >
+              <strong>
+                MUMAKA <span>/ 木马卡</span>
+              </strong>
+              <small>新乐评主义 / New Music Criticism</small>
+            </button>
+          </div>
+          <div className="header-right">
+            {screen !== "home" && screen !== "workbench" && saving && (
+              <span className="save-note">
+                {saving === "正在保存" ? (
+                  <LoaderCircle size={12} className="spinning" />
+                ) : (
+                  <Check size={12} />
+                )}
+                <span>{saving}</span>
+              </span>
+            )}
+            <button
+              className="icon-button settings-trigger"
+              aria-label="文件与备份"
+              onClick={openSettings}
+            >
+              <MoreHorizontal size={19} />
+            </button>
+          </div>
+        </header>
+        <WorkspaceBreadcrumb
+          route={route}
+          onHome={goHome}
+          onBack={router.back}
+          canBack={router.canBack}
+        />
+        {lastEditor && route.view === "workspace" && (
+          <div className="resume-editor">
+            <button
+              className="quiet-link"
+              onClick={() => router.navigate(lastEditor)}
+            >
+              继续当前评分
+              <ArrowRight size={14} />
+            </button>
+          </div>
+        )}
+        {error && (
+          <div className="error-message" role="alert">
+            <span>{error}</span>
+            <button aria-label="关闭提示" onClick={() => setError("")}>
+              <X size={15} />
+            </button>
+          </div>
+        )}
+        {routeIssue ? (
+          <main className="workspace-page route-error" role="alert">
+            <h1>暂时无法打开记录</h1>
+            <p>{routeIssue}</p>
             <button
               className="button secondary"
-              disabled={busy}
-              onClick={openWorkbench}
+              onClick={() => navigateWorkspace("library")}
             >
-              专业工作台
+              返回作品库
             </button>
-          </div>
-          <div className="search-helper">
-            <button disabled={busy} onClick={() => setImportOpen(true)}>
-              通过链接添加
+            <button className="quiet-link" onClick={goHome}>
+              返回首页
             </button>
-            <span aria-hidden="true">·</span>
-            <button disabled={busy} onClick={manual}>
-              手动添加专辑
-              <Plus size={12} />
-            </button>
-            {spotifyConnected === false && <small>Spotify 搜索未配置</small>}
-          </div>
-          {query.trim() ? (
-            <section className="search-results" aria-label="专辑搜索结果">
-              {!!localMatches.length && (
-                <div className="local-search-results">
-                  <h2 className="local-results-heading">本机记录</h2>
-                  {localMatches.map((album) => (
-                    <button
-                      key={album.id}
-                      className="recent-album"
-                      disabled={busy}
-                      onClick={() => openAlbum(album)}
-                    >
-                      <div className="recent-cover">
-                        {album.cover ? (
-                          <img src={album.cover} alt="" />
-                        ) : (
-                          <Disc3 size={24} />
-                        )}
-                      </div>
-                      <div>
-                        <strong>{album.title || "未命名专辑"}</strong>
-                        <span>
-                          {album.artist}
-                          {album.year ? ` · ${album.year}` : ""}
-                        </span>
-                      </div>
-                      <ChevronRight size={17} />
-                    </button>
-                  ))}
-                </div>
-              )}
-              {searchError && <p className="quiet-message">{searchError}</p>}
-              {searchResults.map((item) => (
+          </main>
+        ) : routeLoading && route.view === "editor" ? (
+          <main className="workspace-page" role="status">
+            正在读取评分记录…
+          </main>
+        ) : route.view === "workspace" && route.tab === "genres" ? (
+          <GenreWorkspace
+            album={albums.some((a) => a.id === draft.id) ? draft : null}
+            canApply={!snapshot && draft.status !== "published" && !busy}
+            onApply={applyLibraryGenre}
+            onNew={(id) => startNew(id)}
+          />
+        ) : screen === "home" ? (
+          <main className="home-page">
+            <div className="album-search">
+              <Search size={25} strokeWidth={1.5} />
+              <input
+                autoFocus
+                aria-label="搜索专辑或音乐人"
+                placeholder="搜索专辑或音乐人"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+              />
+              {query && (
                 <button
-                  key={item.id}
-                  className="album-result"
-                  disabled={busy}
-                  onClick={() => selectSpotify(item)}
+                  className="icon-button"
+                  aria-label="清空搜索"
+                  onClick={() => setQuery("")}
                 >
-                  <div className="result-cover">
-                    {item.coverUrl ? (
-                      <img src={item.coverUrl} alt="" />
-                    ) : (
-                      <Disc3 size={24} />
-                    )}
-                  </div>
-                  <div className="result-copy">
-                    <strong>{item.title}</strong>
-                    <span>{item.artist}</span>
-                    <small>
-                      {[item.year, item.release || item.releaseType]
-                        .filter(Boolean)
-                        .join(" · ")}
-                    </small>
-                  </div>
-                  <ArrowRight size={18} />
+                  <X size={18} />
                 </button>
-              ))}
-              {!searchBusy &&
-                !searchResults.length &&
-                spotifyConnected &&
-                !searchError && (
-                  <p className="quiet-message">
-                    没有找到这张专辑。<button onClick={manual}>手动添加</button>
-                  </p>
-                )}
-              {!!searchResults.length && (
-                <div className="spotify-credit">搜索结果来自 Spotify</div>
               )}
-            </section>
-          ) : (
-            <section className="recent-section">
-              <div className="section-top">
-                <h1>最近编辑</h1>
-                {albums.length > 0 && (
-                  <button className="quiet-link" onClick={openWorkbench}>
-                    全部作品
-                    <ArrowRight size={13} />
-                  </button>
-                )}
-              </div>
-              {!ready ? (
-                <p className="quiet-message">正在读取…</p>
-              ) : albums.length ? (
-                <div className="recent-list">
-                  {albums.slice(0, 8).map((album) => (
-                    <button
-                      key={album.id}
-                      className="recent-album"
-                      onClick={() => openAlbum(album)}
-                      disabled={busy}
-                    >
-                      <div className="recent-cover">
-                        {album.cover ? (
-                          <img src={album.cover} alt="" />
-                        ) : (
-                          <Disc3 size={24} strokeWidth={1} />
-                        )}
-                      </div>
-                      <div>
-                        <strong>{album.title || "未命名专辑"}</strong>
-                        <span>
-                          {album.artist || "未填写音乐人"}
-                          {album.year ? ` · ${album.year}` : ""}
-                        </span>
-                      </div>
-                      <ChevronRight size={17} />
-                    </button>
-                  ))}
-                </div>
-              ) : (
-                <p className="quiet-message">暂无最近编辑</p>
-              )}
-            </section>
-          )}
-        </main>
-      ) : screen === "workbench" ? (
-        <Workbench
-          albums={albums}
-          snapshots={history}
-          busy={busy}
-          tab={workbenchTab}
-          onTab={setWorkbenchTab}
-          preferences={preferences}
-          onPreferences={changePreferences}
-          onOpen={openAlbum}
-          onSnapshot={openSnapshot}
-          onCopy={copyLibraryAlbum}
-          onDelete={deleteLibraryAlbum}
-          onManual={manual}
-          onImport={() => setImportOpen(true)}
-          onBackup={backup}
-          onRestore={() => backupInput.current?.click()}
-        />
-      ) : (
-        <main className={`flow-page ${screen === "card" ? "card-page" : ""}`}>
-          <div className="flow-top">
-            <button
-              className="back-link"
-              onClick={
-                screen === "confirm"
-                  ? returnTo === "workbench"
-                    ? openWorkbench
-                    : goHome
-                  : () => setScreen(screen === "rating" ? "confirm" : "rating")
-              }
-            >
-              <ArrowLeft size={16} />
-              {screen === "confirm"
-                ? returnTo === "workbench"
-                  ? "返回作品库"
-                  : "返回首页"
-                : "返回修改"}
-            </button>
-            <nav className="step-nav" aria-label="评分步骤">
-              {(["confirm", "rating", "card"] as Screen[]).map((step, i) => (
-                <button
-                  key={step}
-                  disabled={
-                    busy ||
-                    (step === "card" && !calculation.total) ||
-                    (step === "rating" &&
-                      screen === "confirm" &&
-                      baseRequirements)
-                  }
-                  aria-current={screen === step ? "step" : undefined}
-                  onClick={() => {
-                    if (step === "rating" && screen === "confirm") nextRating();
-                    else if (step === "card" && screen === "rating")
-                      generateCard();
-                    else setScreen(step);
-                  }}
-                >
-                  <span>{i + 1}</span>
-                  {["确认专辑", "六维评分", "评分卡"][i]}
-                </button>
-              ))}
-            </nav>
-          </div>
-          {readonly && (
-            <div className="history-note">
-              <span>历史版本 · 内容只读</span>
-              <button onClick={copyRecord}>
-                复制为新评分 <ArrowRight size={13} />
+              {searchBusy && <LoaderCircle size={21} className="spinning" />}
+            </div>
+            <div className="home-actions">
+              <button
+                className="button primary"
+                disabled={busy}
+                onClick={quickScore}
+              >
+                快速评分
+                <ArrowRight size={16} />
+              </button>
+              <button
+                className="button secondary"
+                disabled={busy}
+                onClick={openWorkbench}
+              >
+                专业工作台
               </button>
             </div>
-          )}
-          {screen === "confirm" && (
-            <>
-              <fieldset disabled={readonly || busy} className="clean-fieldset">
-                <section className="album-confirm">
-                  <div className="album-cover-editor">
-                    <button
-                      className={
-                        record.cover || record.spotify?.coverUrl
-                          ? "has-image"
-                          : ""
-                      }
-                      aria-label="上传专辑封面"
-                      onClick={() => coverInput.current?.click()}
-                    >
-                      {record.cover || record.spotify?.coverUrl ? (
-                        <img
-                          src={record.cover || record.spotify?.coverUrl}
-                          alt="专辑封面"
-                        />
-                      ) : (
+            <div className="search-helper">
+              <button disabled={busy} onClick={() => setImportOpen(true)}>
+                通过链接添加
+              </button>
+              <span aria-hidden="true">·</span>
+              <button disabled={busy} onClick={manual}>
+                手动添加专辑
+                <Plus size={12} />
+              </button>
+              {spotifyConnected === false && <small>Spotify 搜索未配置</small>}
+            </div>
+            {query.trim() ? (
+              <section className="search-results" aria-label="专辑搜索结果">
+                {!!localMatches.length && (
+                  <div className="local-search-results">
+                    <h2 className="local-results-heading">本机记录</h2>
+                    {localMatches.map((album) => (
+                      <button
+                        key={album.id}
+                        className="recent-album"
+                        disabled={busy}
+                        onClick={() => openAlbum(album)}
+                      >
+                        <div className="recent-cover">
+                          {album.cover ? (
+                            <img src={album.cover} alt="" />
+                          ) : (
+                            <Disc3 size={24} />
+                          )}
+                        </div>
                         <div>
-                          <Disc3 size={47} strokeWidth={1} />
-                          <span>添加封面</span>
+                          <strong>{album.title || "未命名专辑"}</strong>
+                          <span>
+                            {album.artist}
+                            {album.year ? ` · ${album.year}` : ""}
+                          </span>
+                        </div>
+                        <ChevronRight size={17} />
+                      </button>
+                    ))}
+                  </div>
+                )}
+                {searchError && <p className="quiet-message">{searchError}</p>}
+                {searchResults.map((item) => (
+                  <button
+                    key={item.id}
+                    className="album-result"
+                    disabled={busy}
+                    onClick={() => selectSpotify(item)}
+                  >
+                    <div className="result-cover">
+                      {item.coverUrl ? (
+                        <img src={item.coverUrl} alt="" />
+                      ) : (
+                        <Disc3 size={24} />
+                      )}
+                    </div>
+                    <div className="result-copy">
+                      <strong>{item.title}</strong>
+                      <span>{item.artist}</span>
+                      <small>
+                        {[item.year, item.release || item.releaseType]
+                          .filter(Boolean)
+                          .join(" · ")}
+                      </small>
+                    </div>
+                    <ArrowRight size={18} />
+                  </button>
+                ))}
+                {!searchBusy &&
+                  !searchResults.length &&
+                  spotifyConnected &&
+                  !searchError && (
+                    <p className="quiet-message">
+                      没有找到这张专辑。
+                      <button onClick={manual}>手动添加</button>
+                    </p>
+                  )}
+                {!!searchResults.length && (
+                  <div className="spotify-credit">搜索结果来自 Spotify</div>
+                )}
+              </section>
+            ) : (
+              <section className="recent-section">
+                <div className="section-top">
+                  <h1>最近编辑</h1>
+                  {albums.length > 0 && (
+                    <button
+                      className="quiet-link"
+                      onClick={() => navigateWorkspace("library")}
+                    >
+                      全部作品
+                      <ArrowRight size={13} />
+                    </button>
+                  )}
+                </div>
+                {!ready ? (
+                  <p className="quiet-message">正在读取…</p>
+                ) : albums.length ? (
+                  <div className="recent-list">
+                    {albums.slice(0, 8).map((album) => (
+                      <button
+                        key={album.id}
+                        className="recent-album"
+                        onClick={() => openAlbum(album)}
+                        disabled={busy}
+                      >
+                        <div className="recent-cover">
+                          {album.cover ? (
+                            <img src={album.cover} alt="" />
+                          ) : (
+                            <Disc3 size={24} strokeWidth={1} />
+                          )}
+                        </div>
+                        <div>
+                          <strong>{album.title || "未命名专辑"}</strong>
+                          <span>
+                            {album.artist || "未填写音乐人"}
+                            {album.year ? ` · ${album.year}` : ""}
+                          </span>
+                        </div>
+                        <ChevronRight size={17} />
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="quiet-message">暂无最近编辑</p>
+                )}
+              </section>
+            )}
+          </main>
+        ) : screen === "workbench" ? (
+          <Workbench
+            albums={albums}
+            snapshots={history}
+            busy={busy}
+            tab={workbenchTab}
+            preferences={preferences}
+            onPreferences={changePreferences}
+            onOpen={openAlbum}
+            onSnapshot={openSnapshot}
+            onCopy={copyLibraryAlbum}
+            onDelete={deleteLibraryAlbum}
+            onManual={manual}
+            onImport={() => setImportOpen(true)}
+            onBackup={backup}
+            onRestore={() => backupInput.current?.click()}
+          />
+        ) : (
+          <main className={`flow-page ${screen === "card" ? "card-page" : ""}`}>
+            <div className="flow-top">
+              <button
+                className="back-link"
+                onClick={
+                  screen === "confirm"
+                    ? router.back
+                    : () =>
+                        setScreen(screen === "rating" ? "confirm" : "rating")
+                }
+              >
+                <ArrowLeft size={16} />
+                {screen === "confirm" ? "返回上一步" : "返回修改"}
+              </button>
+              <nav className="step-nav" aria-label="评分步骤">
+                {(["confirm", "rating", "card"] as Screen[]).map((step, i) => (
+                  <button
+                    key={step}
+                    disabled={
+                      busy ||
+                      (step === "card" && !calculation.total) ||
+                      (step === "rating" &&
+                        screen === "confirm" &&
+                        baseRequirements)
+                    }
+                    aria-current={screen === step ? "step" : undefined}
+                    onClick={() => {
+                      if (step === "rating" && screen === "confirm")
+                        nextRating();
+                      else if (step === "card" && screen === "rating")
+                        generateCard();
+                      else setScreen(step);
+                    }}
+                  >
+                    <span>{i + 1}</span>
+                    {["确认专辑", "六维评分", "评分卡"][i]}
+                  </button>
+                ))}
+              </nav>
+            </div>
+            {readonly && (
+              <div className="history-note">
+                <span>历史版本 · 内容只读</span>
+                <button onClick={copyRecord}>
+                  复制为新评分 <ArrowRight size={13} />
+                </button>
+              </div>
+            )}
+            {screen === "confirm" && (
+              <>
+                <fieldset
+                  disabled={readonly || busy}
+                  className="clean-fieldset"
+                >
+                  <section className="album-confirm">
+                    <div className="album-cover-editor">
+                      <button
+                        className={
+                          record.cover || record.spotify?.coverUrl
+                            ? "has-image"
+                            : ""
+                        }
+                        aria-label="上传专辑封面"
+                        onClick={() => coverInput.current?.click()}
+                      >
+                        {record.cover || record.spotify?.coverUrl ? (
+                          <img
+                            src={record.cover || record.spotify?.coverUrl}
+                            alt="专辑封面"
+                          />
+                        ) : (
+                          <div>
+                            <Disc3 size={47} strokeWidth={1} />
+                            <span>添加封面</span>
+                          </div>
+                        )}
+                        <span className="cover-edit-badge">
+                          <ImagePlus size={15} />
+                        </span>
+                      </button>
+                      <input
+                        type="file"
+                        ref={coverInput}
+                        hidden
+                        accept="image/png,image/jpeg,image/webp"
+                        onChange={(e) => uploadCover(e.target.files?.[0])}
+                      />
+                      {coverError && <small>{coverError}</small>}
+                    </div>
+                    <div className="album-confirm-copy">
+                      <input
+                        aria-label="专辑名称"
+                        className="editable-title"
+                        placeholder="专辑名称"
+                        value={record.title}
+                        onChange={(e) => update({ title: e.target.value })}
+                      />
+                      <input
+                        aria-label="音乐人"
+                        className="editable-artist"
+                        placeholder="音乐人 / 乐队"
+                        value={record.artist}
+                        onChange={(e) => update({ artist: e.target.value })}
+                      />
+                      <div className="album-meta-line">
+                        <input
+                          aria-label="发行年份"
+                          placeholder="年份"
+                          inputMode="numeric"
+                          value={record.year}
+                          onChange={(e) => update({ year: e.target.value })}
+                        />
+                        <span>·</span>
+                        <select
+                          aria-label="作品类型"
+                          value={record.kind}
+                          onChange={(e) =>
+                            update({ kind: e.target.value as Album["kind"] })
+                          }
+                        >
+                          <option value="专辑">Album</option>
+                          <option value="EP">EP</option>
+                        </select>
+                      </div>
+                      <input
+                        aria-label="发行版本"
+                        className="editable-release"
+                        placeholder="发行版本（可选）"
+                        value={record.release}
+                        onChange={(e) => update({ release: e.target.value })}
+                      />
+                      {record.importSource && (
+                        <div className="import-source-note">
+                          <a
+                            href={record.importSource.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            来自{" "}
+                            {
+                              IMPORT_PROVIDER_LABELS[
+                                record.importSource.provider
+                              ]
+                            }{" "}
+                            ↗
+                          </a>
+                          {record.importSource.referenceGenres.length > 0 && (
+                            <details>
+                              <summary>参考标签</summary>
+                              <p>
+                                {record.importSource.referenceGenres.join("、")}{" "}
+                                · 请自行选择下方风格
+                              </p>
+                            </details>
+                          )}
                         </div>
                       )}
-                      <span className="cover-edit-badge">
-                        <ImagePlus size={15} />
-                      </span>
-                    </button>
-                    <input
-                      type="file"
-                      ref={coverInput}
-                      hidden
-                      accept="image/png,image/jpeg,image/webp"
-                      onChange={(e) => uploadCover(e.target.files?.[0])}
-                    />
-                    {coverError && <small>{coverError}</small>}
-                  </div>
-                  <div className="album-confirm-copy">
-                    <input
-                      aria-label="专辑名称"
-                      className="editable-title"
-                      placeholder="专辑名称"
-                      value={record.title}
-                      onChange={(e) => update({ title: e.target.value })}
-                    />
-                    <input
-                      aria-label="音乐人"
-                      className="editable-artist"
-                      placeholder="音乐人 / 乐队"
-                      value={record.artist}
-                      onChange={(e) => update({ artist: e.target.value })}
-                    />
-                    <div className="album-meta-line">
-                      <input
-                        aria-label="发行年份"
-                        placeholder="年份"
-                        inputMode="numeric"
-                        value={record.year}
-                        onChange={(e) => update({ year: e.target.value })}
-                      />
-                      <span>·</span>
-                      <select
-                        aria-label="作品类型"
-                        value={record.kind}
-                        onChange={(e) =>
-                          update({ kind: e.target.value as Album["kind"] })
-                        }
-                      >
-                        <option value="专辑">Album</option>
-                        <option value="EP">EP</option>
-                      </select>
-                    </div>
-                    <input
-                      aria-label="发行版本"
-                      className="editable-release"
-                      placeholder="发行版本（可选）"
-                      value={record.release}
-                      onChange={(e) => update({ release: e.target.value })}
-                    />
-                    {record.importSource && (
-                      <div className="import-source-note">
+                      {record.spotify && (
                         <a
-                          href={record.importSource.url}
+                          className="spotify-attribution"
+                          href={record.spotify.url}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          来自{" "}
-                          {record.importSource.provider === "bandcamp"
-                            ? "Bandcamp"
-                            : "Apple Music"}{" "}
-                          ↗
+                          来自 Spotify ↗
                         </a>
-                        {record.importSource.referenceGenres.length > 0 && (
-                          <details>
-                            <summary>参考标签</summary>
-                            <p>
-                              {record.importSource.referenceGenres.join("、")} ·
-                              请自行选择下方风格
-                            </p>
-                          </details>
-                        )}
-                      </div>
-                    )}
-                    {record.spotify && (
-                      <a
-                        className="spotify-attribution"
-                        href={record.spotify.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        来自 Spotify ↗
-                      </a>
-                    )}
-                  </div>
-                </section>
-                <details className="track-details">
-                  <summary>
-                    查看曲目（{record.tracks.length} 首）
-                    <ChevronDown size={15} />
-                  </summary>
-                  <div className="track-edit-list">
-                    {record.tracks.map((track, i) => (
-                      <div className="track-edit-row" key={track.id}>
-                        <span>{String(i + 1).padStart(2, "0")}</span>
-                        <input
-                          aria-label={`曲目 ${i + 1} 名称`}
-                          placeholder="曲目名称"
-                          value={track.title}
-                          onChange={(e) =>
-                            updateTrack(track.id, { title: e.target.value })
-                          }
-                        />
-                        <input
-                          aria-label={`曲目 ${i + 1} 时长`}
-                          className="duration-input"
-                          placeholder="时长"
-                          defaultValue={duration(track.duration)}
-                          key={`${track.id}-duration`}
-                          onBlur={(e) =>
-                            updateTrack(track.id, {
-                              duration: readDuration(e.target.value),
-                            })
-                          }
-                        />
-                        <button
-                          className="icon-button"
-                          aria-label={`删除曲目 ${i + 1}`}
-                          onClick={() =>
-                            update({
-                              tracks: record.tracks.filter(
-                                (t) => t.id !== track.id,
-                              ),
-                            })
-                          }
-                        >
-                          <X size={14} />
-                        </button>
-                      </div>
-                    ))}
-                    <button className="quiet-link" onClick={addTrack}>
-                      <Plus size={14} />
-                      添加曲目
-                    </button>
-                  </div>
-                </details>
-                <section className="confirm-section">
-                  <div className="section-label-row">
-                    <h2>选择风格</h2>
-                    <div
-                      className="market-choice"
-                      role="group"
-                      aria-label="风格推荐地区"
-                    >
-                      <button
-                        aria-pressed={market === "china"}
-                        className={market === "china" ? "selected" : ""}
-                        onClick={() => updateUX({ market: "china" })}
-                      >
-                        中国
-                      </button>
-                      <button
-                        aria-pressed={market === "global"}
-                        className={market === "global" ? "selected" : ""}
-                        onClick={() => updateUX({ market: "global" })}
-                      >
-                        其他地区
-                      </button>
+                      )}
                     </div>
-                  </div>
-                  <div
-                    className="style-mode"
-                    role="group"
-                    aria-label="风格数量"
-                  >
-                    <button
-                      aria-pressed={record.blendMode === "single"}
-                      onClick={() => update({ blendMode: "single" })}
-                    >
-                      <i />
-                      一种主风格
-                    </button>
-                    <button
-                      aria-pressed={record.blendMode !== "single"}
-                      onClick={enableMultipleGenres}
-                    >
-                      <i />
-                      多种风格
-                    </button>
-                  </div>
-                  {record.blendMode === "single" ? (
-                    <GenrePicker
-                      key={record.id}
-                      value={record.genreId}
-                      indexEntryId={record.chinaEntryId}
-                      market={market}
-                      disabled={readonly || busy}
-                      onChange={(id, index = "") =>
-                        update({ genreId: id, chinaEntryId: index })
-                      }
-                    />
-                  ) : (
-                    <div className="multi-genre">
-                      <div className="multi-top">
-                        <span>
-                          {record.tracks.length} 首曲目
-                          {missingTracks > 0
-                            ? ` · ${missingTracks} 首尚未选择`
-                            : ""}
-                        </span>
-                        <div className="multi-actions">
-                          {record.genreId && (
-                            <button
-                              className="quiet-link"
-                              onClick={() =>
-                                update({
-                                  tracks: record.tracks.map((t) =>
-                                    t.genreId
-                                      ? t
-                                      : { ...t, genreId: record.genreId },
-                                  ),
-                                })
-                              }
-                            >
-                              未分配曲目采用主风格
-                            </button>
-                          )}
-                          <button
-                            className="quiet-link"
-                            onClick={() => setBulkOpen(!bulkOpen)}
-                          >
-                            批量指定风格
-                          </button>
-                        </div>
-                      </div>
-                      {bulkOpen && (
-                        <div className="bulk-panel">
-                          <label className="check-label">
-                            <input
-                              type="checkbox"
-                              checked={
-                                record.tracks.length > 0 &&
-                                selectedTracks.length === record.tracks.length
-                              }
-                              onChange={(e) =>
-                                setSelectedTracks(
-                                  e.target.checked
-                                    ? record.tracks.map((t) => t.id)
-                                    : [],
-                                )
-                              }
-                            />
-                            全选曲目
-                          </label>
-                          <GenrePicker
-                            label="批量曲目风格"
-                            compact
-                            key={`${record.id}-bulk`}
-                            value={bulkGenre}
-                            market={market}
-                            onChange={(id) => setBulkGenre(id)}
+                  </section>
+                  <details className="track-details">
+                    <summary>
+                      查看曲目（{record.tracks.length} 首）
+                      <ChevronDown size={15} />
+                    </summary>
+                    <div className="track-edit-list">
+                      {record.tracks.map((track, i) => (
+                        <div className="track-edit-row" key={track.id}>
+                          <span>{String(i + 1).padStart(2, "0")}</span>
+                          <input
+                            aria-label={`曲目 ${i + 1} 名称`}
+                            placeholder="曲目名称"
+                            value={track.title}
+                            onChange={(e) =>
+                              updateTrack(track.id, { title: e.target.value })
+                            }
+                          />
+                          <input
+                            aria-label={`曲目 ${i + 1} 时长`}
+                            className="duration-input"
+                            placeholder="时长"
+                            defaultValue={duration(track.duration)}
+                            key={`${track.id}-duration`}
+                            onBlur={(e) =>
+                              updateTrack(track.id, {
+                                duration: readDuration(e.target.value),
+                              })
+                            }
                           />
                           <button
-                            className="button small"
-                            disabled={!bulkGenre || !selectedTracks.length}
-                            onClick={() => {
+                            className="icon-button"
+                            aria-label={`删除曲目 ${i + 1}`}
+                            onClick={() =>
                               update({
-                                tracks: record.tracks.map((t) =>
-                                  selectedTracks.includes(t.id)
-                                    ? { ...t, genreId: bulkGenre }
-                                    : t,
+                                tracks: record.tracks.filter(
+                                  (t) => t.id !== track.id,
                                 ),
-                              });
-                              setBulkOpen(false);
-                              setSelectedTracks([]);
-                            }}
+                              })
+                            }
                           >
-                            应用到 {selectedTracks.length} 首
+                            <X size={14} />
                           </button>
                         </div>
-                      )}
-                      {!record.tracks.length && (
-                        <button className="quiet-link" onClick={addTrack}>
-                          <Plus size={14} />
-                          先添加曲目
+                      ))}
+                      <button className="quiet-link" onClick={addTrack}>
+                        <Plus size={14} />
+                        添加曲目
+                      </button>
+                    </div>
+                  </details>
+                  <section className="confirm-section">
+                    <div className="section-label-row">
+                      <h2>选择风格</h2>
+                      <div
+                        className="market-choice"
+                        role="group"
+                        aria-label="风格推荐地区"
+                      >
+                        <button
+                          aria-pressed={market === "china"}
+                          className={market === "china" ? "selected" : ""}
+                          onClick={() => updateUX({ market: "china" })}
+                        >
+                          中国
                         </button>
-                      )}
-                      {record.tracks
-                        .slice(0, showAllTracks ? undefined : 6)
-                        .map((track, i) => (
-                          <div className="track-genre-row" key={track.id}>
-                            {bulkOpen && (
+                        <button
+                          aria-pressed={market === "global"}
+                          className={market === "global" ? "selected" : ""}
+                          onClick={() => updateUX({ market: "global" })}
+                        >
+                          其他地区
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      className="style-mode"
+                      role="group"
+                      aria-label="风格数量"
+                    >
+                      <button
+                        aria-pressed={record.blendMode === "single"}
+                        onClick={() => update({ blendMode: "single" })}
+                      >
+                        <i />
+                        一种主风格
+                      </button>
+                      <button
+                        aria-pressed={record.blendMode !== "single"}
+                        onClick={enableMultipleGenres}
+                      >
+                        <i />
+                        多种风格
+                      </button>
+                    </div>
+                    {record.blendMode === "single" ? (
+                      <GenrePicker
+                        key={record.id}
+                        value={record.genreId}
+                        indexEntryId={record.chinaEntryId}
+                        market={market}
+                        disabled={readonly || busy}
+                        onChange={(id, index = "") =>
+                          update({ genreId: id, chinaEntryId: index })
+                        }
+                      />
+                    ) : (
+                      <div className="multi-genre">
+                        <div className="multi-top">
+                          <span>
+                            {record.tracks.length} 首曲目
+                            {missingTracks > 0
+                              ? ` · ${missingTracks} 首尚未选择`
+                              : ""}
+                          </span>
+                          <div className="multi-actions">
+                            {record.genreId && (
+                              <button
+                                className="quiet-link"
+                                onClick={() =>
+                                  update({
+                                    tracks: record.tracks.map((t) =>
+                                      t.genreId
+                                        ? t
+                                        : { ...t, genreId: record.genreId },
+                                    ),
+                                  })
+                                }
+                              >
+                                未分配曲目采用主风格
+                              </button>
+                            )}
+                            <button
+                              className="quiet-link"
+                              onClick={() => setBulkOpen(!bulkOpen)}
+                            >
+                              批量指定风格
+                            </button>
+                          </div>
+                        </div>
+                        {bulkOpen && (
+                          <div className="bulk-panel">
+                            <label className="check-label">
                               <input
                                 type="checkbox"
-                                aria-label={`选择曲目 ${i + 1}`}
-                                checked={selectedTracks.includes(track.id)}
+                                checked={
+                                  record.tracks.length > 0 &&
+                                  selectedTracks.length === record.tracks.length
+                                }
                                 onChange={(e) =>
                                   setSelectedTracks(
                                     e.target.checked
-                                      ? [...selectedTracks, track.id]
-                                      : selectedTracks.filter(
-                                          (id) => id !== track.id,
-                                        ),
+                                      ? record.tracks.map((t) => t.id)
+                                      : [],
                                   )
                                 }
                               />
-                            )}
-                            <span className="track-caption">
-                              <small>{i + 1}</small>
-                              {track.title || `曲目 ${i + 1}`}
-                            </span>
+                              全选曲目
+                            </label>
                             <GenrePicker
-                              label={`曲目 ${i + 1} 风格`}
+                              label="批量曲目风格"
                               compact
-                              value={track.genreId}
+                              key={`${record.id}-bulk`}
+                              value={bulkGenre}
                               market={market}
-                              disabled={readonly || busy}
-                              onChange={(id) =>
-                                updateTrack(track.id, { genreId: id })
+                              onChange={(id) => setBulkGenre(id)}
+                            />
+                            <button
+                              className="button small"
+                              disabled={!bulkGenre || !selectedTracks.length}
+                              onClick={() => {
+                                update({
+                                  tracks: record.tracks.map((t) =>
+                                    selectedTracks.includes(t.id)
+                                      ? { ...t, genreId: bulkGenre }
+                                      : t,
+                                  ),
+                                });
+                                setBulkOpen(false);
+                                setSelectedTracks([]);
+                              }}
+                            >
+                              应用到 {selectedTracks.length} 首
+                            </button>
+                          </div>
+                        )}
+                        {!record.tracks.length && (
+                          <button className="quiet-link" onClick={addTrack}>
+                            <Plus size={14} />
+                            先添加曲目
+                          </button>
+                        )}
+                        {record.tracks
+                          .slice(0, showAllTracks ? undefined : 6)
+                          .map((track, i) => (
+                            <div className="track-genre-row" key={track.id}>
+                              {bulkOpen && (
+                                <input
+                                  type="checkbox"
+                                  aria-label={`选择曲目 ${i + 1}`}
+                                  checked={selectedTracks.includes(track.id)}
+                                  onChange={(e) =>
+                                    setSelectedTracks(
+                                      e.target.checked
+                                        ? [...selectedTracks, track.id]
+                                        : selectedTracks.filter(
+                                            (id) => id !== track.id,
+                                          ),
+                                    )
+                                  }
+                                />
+                              )}
+                              <span className="track-caption">
+                                <small>{i + 1}</small>
+                                {track.title || `曲目 ${i + 1}`}
+                              </span>
+                              <GenrePicker
+                                label={`曲目 ${i + 1} 风格`}
+                                compact
+                                value={track.genreId}
+                                market={market}
+                                disabled={readonly || busy}
+                                onChange={(id) =>
+                                  updateTrack(track.id, { genreId: id })
+                                }
+                              />
+                            </div>
+                          ))}
+                        {record.tracks.length > 6 && (
+                          <button
+                            className="quiet-link show-tracks"
+                            onClick={() => setShowAllTracks(!showAllTracks)}
+                          >
+                            {showAllTracks
+                              ? "收起曲目"
+                              : `展开全部 ${record.tracks.length} 首`}
+                            <ChevronDown size={13} />
+                          </button>
+                        )}
+                        <details className="more-options">
+                          <summary>
+                            更多选项
+                            <ChevronDown size={13} />
+                          </summary>
+                          <label className="check-label">
+                            <input
+                              type="checkbox"
+                              checked={record.blendMode === "duration"}
+                              onChange={(e) =>
+                                update({
+                                  blendMode: e.target.checked
+                                    ? "duration"
+                                    : "equal",
+                                })
                               }
                             />
-                          </div>
-                        ))}
-                      {record.tracks.length > 6 && (
-                        <button
-                          className="quiet-link show-tracks"
-                          onClick={() => setShowAllTracks(!showAllTracks)}
-                        >
-                          {showAllTracks
-                            ? "收起曲目"
-                            : `展开全部 ${record.tracks.length} 首`}
-                          <ChevronDown size={13} />
-                        </button>
-                      )}
-                      <details className="more-options">
-                        <summary>
-                          更多选项
-                          <ChevronDown size={13} />
-                        </summary>
-                        <label className="check-label">
-                          <input
-                            type="checkbox"
-                            checked={record.blendMode === "duration"}
-                            onChange={(e) =>
-                              update({
-                                blendMode: e.target.checked
-                                  ? "duration"
-                                  : "equal",
-                              })
-                            }
-                          />
-                          使用已核实的曲目时长（默认每首等份）
-                        </label>
-                      </details>
-                      {sameFamily && (
-                        <p className="subtle-hint">
-                          这些曲目属于同一风格家族，通常可先用一种主风格。
-                        </p>
-                      )}
-                    </div>
-                  )}
-                </section>
-                <section className="confirm-section source-section">
-                  <h2>这张专辑的歌曲主要是？</h2>
-                  {!record.ux?.sourceKind && (
-                    <p className="subtle-hint">
-                      保留此前的来源选择；如需更改，请在此重新确认。
-                    </p>
-                  )}
-                  <select
-                    aria-label="歌曲主要来源"
-                    value={record.ux?.sourceKind || ""}
-                    onChange={(e) =>
-                      updateUX({
-                        sourceKind: e.target.value as AlbumUX["sourceKind"],
-                        sourcePresetConfirmed: undefined,
-                        sourceDoubleCount: undefined,
-                      })
-                    }
-                  >
-                    <option value="" disabled>
-                      选择歌曲来源
-                    </option>
-                    {Object.entries(SOURCE_LABELS).map(([value, label]) => (
-                      <option key={value} value={value}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                  {record.ux?.sourceKind &&
-                    ["cover", "mixed", "rerecord"].includes(
-                      record.ux.sourceKind,
-                    ) && (
-                      <div className="source-followup">
-                        <label>
-                          这次评价应怎样侧重？
-                          <select
-                            aria-label="来源侧重方式"
-                            value={record.ux.sourcePresetConfirmed || ""}
-                            onChange={(e) =>
-                              updateUX({
-                                sourcePresetConfirmed: e.target.value,
-                              })
-                            }
-                          >
-                            <option value="" disabled>
-                              请确认一种处理方式
-                            </option>
-                            {PRIVATE_SOURCE_PRESET_OPTIONS.map((option) => (
-                              <option key={option.value} value={option.value}>
-                                {option.label}
-                              </option>
-                            ))}
-                          </select>
-                        </label>
-                        <label>
-                          所选风格是否已经侧重旧歌的演绎？
-                          <select
-                            aria-label="来源是否重复计算"
-                            value={record.ux.sourceDoubleCount || "unknown"}
-                            onChange={(e) =>
-                              updateUX({
-                                sourceDoubleCount: e.target
-                                  .value as AlbumUX["sourceDoubleCount"],
-                              })
-                            }
-                          >
-                            <option value="unknown">尚未确认</option>
-                            <option value="clear">
-                              没有，可以使用本次选择
-                            </option>
-                            <option value="included">
-                              已经考虑，沿用风格原有侧重
-                            </option>
-                          </select>
-                        </label>
-                        {record.ux.sourceKind === "mixed" && (
-                          <details className="mixed-sources">
-                            <summary>
-                              逐曲确认新旧来源（可选）
-                              <ChevronDown size={13} />
-                            </summary>
-                            {record.tracks.map((track, i) => (
-                              <label key={track.id}>
-                                <span>{track.title || `曲目 ${i + 1}`}</span>
-                                <select
-                                  aria-label={`曲目 ${i + 1} 来源`}
-                                  value={track.provenanceKind || "unknown"}
-                                  onChange={(e) =>
-                                    updateTrack(track.id, {
-                                      provenanceKind: e.target
-                                        .value as Track["provenanceKind"],
-                                    })
-                                  }
-                                >
-                                  {Object.entries(TRACK_SOURCE_LABELS).map(
-                                    ([value, label]) => (
-                                      <option key={value} value={value}>
-                                        {label}
-                                      </option>
-                                    ),
-                                  )}
-                                </select>
-                              </label>
-                            ))}
-                          </details>
+                            使用已核实的曲目时长（默认每首等份）
+                          </label>
+                        </details>
+                        {sameFamily && (
+                          <p className="subtle-hint">
+                            这些曲目属于同一风格家族，通常可先用一种主风格。
+                          </p>
                         )}
                       </div>
                     )}
-                  {!source.confirmed && record.ux?.sourceKind !== "unknown" && (
-                    <p className="subtle-hint">{source.message}</p>
-                  )}
-                </section>
-              </fieldset>
-              <div className="flow-footer">
-                <span />
-                <button
-                  className="button primary"
-                  disabled={busy || readonly}
-                  onClick={nextRating}
-                >
-                  下一步：评分
-                  <ArrowRight size={17} />
-                </button>
-              </div>
-            </>
-          )}
-          {screen === "rating" && (
-            <section className="rating-page">
-              <div className="rating-album-heading">
-                {record.cover ? (
-                  <img src={record.cover} alt="" />
-                ) : (
-                  <Disc3 size={28} />
-                )}
-                <div>
-                  <h1>{record.title || "未命名专辑"}</h1>
-                  <p>
-                    {record.artist}
-                    {record.year ? ` · ${record.year}` : ""}
-                  </p>
-                </div>
-              </div>
-              <div className="rating-rows">
-                {DIMENSIONS.map((d) => (
-                  <div className="rating-row" key={d}>
-                    <div className="dimension-name">
-                      <h2>{LABELS[d]}</h2>
-                    </div>
-                    <StarRating
-                      label={LABELS[d]}
-                      value={record.ratings[d].value}
-                      disabled={readonly || busy}
-                      onChange={(value) => updateRating(d, value)}
-                    />
-                    <output aria-live="polite">
-                      {typeof record.ratings[d].value === "number"
-                        ? Number(record.ratings[d].value).toFixed(1)
-                        : record.ratings[d].value === "na"
-                          ? "N/A"
-                          : "—"}
-                    </output>
-                    <div className="rating-more">
-                      <button
-                        className="icon-button"
-                        aria-label={`${LABELS[d]}更多选项`}
-                        disabled={readonly || busy}
-                        onClick={() =>
-                          setMoreRating(moreRating === d ? null : d)
-                        }
-                      >
-                        <MoreHorizontal size={18} />
-                      </button>
-                      {moreRating === d && (
-                        <div className="rating-menu">
-                          <button
-                            onClick={() => {
-                              updateRating(d, null);
-                              setMoreRating(null);
-                            }}
-                          >
-                            清除评分
-                          </button>
-                          {(d === "lyrics" || d === "performance") && (
-                            <button
-                              onClick={() => {
-                                setNaDimension(d);
-                                setNaReason(record.ratings[d].naReason);
-                                setMoreRating(null);
-                              }}
+                  </section>
+                  <section className="confirm-section source-section">
+                    <h2>这张专辑的歌曲主要是？</h2>
+                    {!record.ux?.sourceKind && (
+                      <p className="subtle-hint">
+                        保留此前的来源选择；如需更改，请在此重新确认。
+                      </p>
+                    )}
+                    <select
+                      aria-label="歌曲主要来源"
+                      value={record.ux?.sourceKind || ""}
+                      onChange={(e) =>
+                        updateUX({
+                          sourceKind: e.target.value as AlbumUX["sourceKind"],
+                          sourcePresetConfirmed: undefined,
+                          sourceDoubleCount: undefined,
+                        })
+                      }
+                    >
+                      <option value="" disabled>
+                        选择歌曲来源
+                      </option>
+                      {Object.entries(SOURCE_LABELS).map(([value, label]) => (
+                        <option key={value} value={value}>
+                          {label}
+                        </option>
+                      ))}
+                    </select>
+                    {record.ux?.sourceKind &&
+                      ["cover", "mixed", "rerecord"].includes(
+                        record.ux.sourceKind,
+                      ) && (
+                        <div className="source-followup">
+                          <label>
+                            这次评价应怎样侧重？
+                            <select
+                              aria-label="来源侧重方式"
+                              value={record.ux.sourcePresetConfirmed || ""}
+                              onChange={(e) =>
+                                updateUX({
+                                  sourcePresetConfirmed: e.target.value,
+                                })
+                              }
                             >
-                              {d === "lyrics"
-                                ? "纯器乐 · 作词不适用"
-                                : "特殊情形 · 表演不适用"}
-                            </button>
+                              <option value="" disabled>
+                                请确认一种处理方式
+                              </option>
+                              {PRIVATE_SOURCE_PRESET_OPTIONS.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                  {option.label}
+                                </option>
+                              ))}
+                            </select>
+                          </label>
+                          <label>
+                            所选风格是否已经侧重旧歌的演绎？
+                            <select
+                              aria-label="来源是否重复计算"
+                              value={record.ux.sourceDoubleCount || "unknown"}
+                              onChange={(e) =>
+                                updateUX({
+                                  sourceDoubleCount: e.target
+                                    .value as AlbumUX["sourceDoubleCount"],
+                                })
+                              }
+                            >
+                              <option value="unknown">尚未确认</option>
+                              <option value="clear">
+                                没有，可以使用本次选择
+                              </option>
+                              <option value="included">
+                                已经考虑，沿用风格原有侧重
+                              </option>
+                            </select>
+                          </label>
+                          {record.ux.sourceKind === "mixed" && (
+                            <details className="mixed-sources">
+                              <summary>
+                                逐曲确认新旧来源（可选）
+                                <ChevronDown size={13} />
+                              </summary>
+                              {record.tracks.map((track, i) => (
+                                <label key={track.id}>
+                                  <span>{track.title || `曲目 ${i + 1}`}</span>
+                                  <select
+                                    aria-label={`曲目 ${i + 1} 来源`}
+                                    value={track.provenanceKind || "unknown"}
+                                    onChange={(e) =>
+                                      updateTrack(track.id, {
+                                        provenanceKind: e.target
+                                          .value as Track["provenanceKind"],
+                                      })
+                                    }
+                                  >
+                                    {Object.entries(TRACK_SOURCE_LABELS).map(
+                                      ([value, label]) => (
+                                        <option key={value} value={value}>
+                                          {label}
+                                        </option>
+                                      ),
+                                    )}
+                                  </select>
+                                </label>
+                              ))}
+                            </details>
                           )}
                         </div>
                       )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="rating-bottom">
-                <span>
-                  {scored === 6 ? "六维已完成" : `${scored} / 6 维已评分`}
-                </span>
-                {!calculation.total && shortError && (
+                    {!source.confirmed &&
+                      record.ux?.sourceKind !== "unknown" && (
+                        <p className="subtle-hint">{source.message}</p>
+                      )}
+                  </section>
+                </fieldset>
+                <div className="flow-footer">
+                  <span />
                   <button
-                    className="rating-requirement"
-                    onClick={() => setScreen("confirm")}
+                    className="button primary"
+                    disabled={busy || readonly}
+                    onClick={nextRating}
                   >
-                    {shortError}
-                    <ChevronRight size={13} />
+                    下一步：评分
+                    <ArrowRight size={17} />
                   </button>
-                )}
-              </div>
-              <div className="flow-footer">
-                <button
-                  className="back-link"
-                  onClick={() => setScreen("confirm")}
-                >
-                  <ArrowLeft size={15} />
-                  修改风格
-                </button>
-                <button
-                  className="button primary"
-                  disabled={!calculation.total || busy}
-                  onClick={generateCard}
-                >
-                  生成评分卡
-                  <ArrowRight size={17} />
-                </button>
-              </div>
-            </section>
-          )}
-          {screen === "card" && (
-            <section className="card-workspace">
-              <div className="card-tools">
-                <div
-                  className="ratio-options"
-                  role="group"
-                  aria-label="评分卡比例"
-                >
-                  {(["4:5", "3:4", "1:1"] as const).map((value) => (
-                    <button
-                      key={value}
-                      aria-pressed={ratio === value}
-                      onClick={() => setPresentation("cardRatio", value)}
-                    >
-                      {value}
-                    </button>
+                </div>
+              </>
+            )}
+            {screen === "rating" && (
+              <section className="rating-page">
+                <div className="rating-album-heading">
+                  {record.cover ? (
+                    <img src={record.cover} alt="" />
+                  ) : (
+                    <Disc3 size={28} />
+                  )}
+                  <div>
+                    <h1>{record.title || "未命名专辑"}</h1>
+                    <p>
+                      {record.artist}
+                      {record.year ? ` · ${record.year}` : ""}
+                    </p>
+                  </div>
+                </div>
+                <div className="rating-rows">
+                  {DIMENSIONS.map((d) => (
+                    <div className="rating-row" key={d}>
+                      <div className="dimension-name">
+                        <h2>{LABELS[d]}</h2>
+                      </div>
+                      <StarRating
+                        label={LABELS[d]}
+                        value={record.ratings[d].value}
+                        disabled={readonly || busy}
+                        onChange={(value) => updateRating(d, value)}
+                      />
+                      <output aria-live="polite">
+                        {typeof record.ratings[d].value === "number"
+                          ? Number(record.ratings[d].value).toFixed(1)
+                          : record.ratings[d].value === "na"
+                            ? "N/A"
+                            : "—"}
+                      </output>
+                      <div className="rating-more">
+                        <button
+                          className="icon-button"
+                          aria-label={`${LABELS[d]}更多选项`}
+                          disabled={readonly || busy}
+                          onClick={() =>
+                            setMoreRating(moreRating === d ? null : d)
+                          }
+                        >
+                          <MoreHorizontal size={18} />
+                        </button>
+                        {moreRating === d && (
+                          <div className="rating-menu">
+                            <button
+                              onClick={() => {
+                                updateRating(d, null);
+                                setMoreRating(null);
+                              }}
+                            >
+                              清除评分
+                            </button>
+                            {(d === "lyrics" || d === "performance") && (
+                              <button
+                                onClick={() => {
+                                  setNaDimension(d);
+                                  setNaReason(record.ratings[d].naReason);
+                                  setMoreRating(null);
+                                }}
+                              >
+                                {d === "lyrics"
+                                  ? "纯器乐 · 作词不适用"
+                                  : "特殊情形 · 表演不适用"}
+                              </button>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   ))}
                 </div>
-                <div
-                  className="theme-options"
-                  role="group"
-                  aria-label="评分卡主题"
-                >
+                <div className="rating-bottom">
+                  <span>
+                    {scored === 6 ? "六维已完成" : `${scored} / 6 维已评分`}
+                  </span>
+                  {!calculation.total && shortError && (
+                    <button
+                      className="rating-requirement"
+                      onClick={() => setScreen("confirm")}
+                    >
+                      {shortError}
+                      <ChevronRight size={13} />
+                    </button>
+                  )}
+                </div>
+                <div className="flow-footer">
                   <button
-                    className="theme-swatch paper"
-                    aria-label="米白主题"
-                    aria-pressed={theme === "paper"}
-                    onClick={() => setPresentation("cardTheme", "paper")}
-                  />
+                    className="back-link"
+                    onClick={() => setScreen("confirm")}
+                  >
+                    <ArrowLeft size={15} />
+                    修改风格
+                  </button>
                   <button
-                    className="theme-swatch ink"
-                    aria-label="深色主题"
-                    aria-pressed={theme === "ink"}
-                    onClick={() => setPresentation("cardTheme", "ink")}
+                    className="button primary"
+                    disabled={!calculation.total || busy}
+                    onClick={generateCard}
+                  >
+                    生成评分卡
+                    <ArrowRight size={17} />
+                  </button>
+                </div>
+              </section>
+            )}
+            {screen === "card" && (
+              <section className="card-workspace">
+                <div className="card-tools">
+                  <div
+                    className="ratio-options"
+                    role="group"
+                    aria-label="评分卡比例"
+                  >
+                    {(["4:5", "3:4", "1:1"] as const).map((value) => (
+                      <button
+                        key={value}
+                        aria-pressed={ratio === value}
+                        onClick={() => setPresentation("cardRatio", value)}
+                      >
+                        {value}
+                      </button>
+                    ))}
+                  </div>
+                  <div
+                    className="theme-options"
+                    role="group"
+                    aria-label="评分卡主题"
+                  >
+                    <button
+                      className="theme-swatch paper"
+                      aria-label="米白主题"
+                      aria-pressed={theme === "paper"}
+                      onClick={() => setPresentation("cardTheme", "paper")}
+                    />
+                    <button
+                      className="theme-swatch ink"
+                      aria-label="深色主题"
+                      aria-pressed={theme === "ink"}
+                      onClick={() => setPresentation("cardTheme", "ink")}
+                    />
+                  </div>
+                </div>
+                <div className="score-card-preview">
+                  <ScoreCard
+                    data={toScoreCardData(
+                      record,
+                      calculation,
+                      snapshot?.provenance,
+                    )}
+                    ratio={ratio}
+                    theme={theme}
                   />
                 </div>
-              </div>
-              <div className="score-card-preview">
-                <ScoreCard
-                  data={toScoreCardData(
-                    record,
-                    calculation,
-                    snapshot?.provenance,
-                  )}
-                  ratio={ratio}
-                  theme={theme}
-                />
-              </div>
-              <div className="summary-editor">
-                <label htmlFor="album-summary">
-                  写一句短评 <span>可选</span>
-                </label>
-                <textarea
-                  id="album-summary"
-                  disabled={readonly || busy}
-                  rows={3}
-                  aria-label="专辑短评"
-                  placeholder="建议 120 字以内，不写也可以。"
-                  value={record.summary}
-                  onChange={(e) =>
-                    update({
-                      summary: Array.from(e.target.value)
-                        .slice(0, 200)
-                        .join(""),
-                    })
-                  }
-                />
-                <span className="character-count">
-                  {Array.from(record.summary).length} / 200
-                </span>
-              </div>
-              <div className="card-downloads">
-                <button
-                  className="button primary"
-                  disabled={!calculation.total || busy}
-                  onClick={() => imageExport("png")}
-                >
-                  {busy ? (
-                    <LoaderCircle size={17} className="spinning" />
-                  ) : (
-                    <ArrowDownToLine size={17} />
-                  )}
-                  下载 PNG
-                </button>
-                <button
-                  className="button secondary"
-                  disabled={!calculation.total || busy}
-                  onClick={() => imageExport("svg")}
-                >
-                  下载 SVG
-                </button>
-              </div>
-              {readonly && (
-                <button
-                  className="quiet-link copy-from-card"
-                  onClick={copyRecord}
-                >
-                  复制为新评分，继续修改
-                  <ArrowRight size={14} />
-                </button>
-              )}
-            </section>
-          )}
-        </main>
-      )}
-      <input
-        type="file"
-        ref={backupInput}
-        hidden
-        accept="application/json,.json"
-        onChange={(e) => restore(e.target.files?.[0])}
-      />
-      {settings && (
-        <Modal title="设置" onClose={() => setSettings(false)}>
-          <section className="settings-section">
-            <h3>备份与恢复</h3>
-            <p>评分保存在当前浏览器。请定期备份。</p>
-            <div className="settings-buttons">
-              <button
-                className="button secondary"
-                onClick={backup}
-                disabled={busy}
-              >
-                <ArrowDownToLine size={16} />
-                导出全部备份
-              </button>
-              <button
-                className="button secondary"
-                onClick={() => backupInput.current?.click()}
-                disabled={busy}
-              >
-                <ArrowUpFromLine size={16} />
-                导入备份
-              </button>
-            </div>
-          </section>
-          <details className="settings-details">
-            <summary>
-              全部本机专辑
-              <ChevronDown size={15} />
-            </summary>
-            {albums.length ? (
-              albums.map((album) => (
-                <button
-                  className="history-item"
-                  key={album.id}
-                  onClick={() => {
-                    setSettings(false);
-                    openAlbum(album);
-                  }}
-                >
-                  <span>
-                    <b>{album.title || "未命名专辑"}</b>
-                    <small>
-                      {album.artist}
-                      {album.year ? ` · ${album.year}` : ""}
-                    </small>
+                <div className="summary-editor">
+                  <label htmlFor="album-summary">
+                    写一句短评 <span>可选</span>
+                  </label>
+                  <textarea
+                    id="album-summary"
+                    disabled={readonly || busy}
+                    rows={3}
+                    aria-label="专辑短评"
+                    placeholder="建议 120 字以内，不写也可以。"
+                    value={record.summary}
+                    onChange={(e) =>
+                      update({
+                        summary: Array.from(e.target.value)
+                          .slice(0, 200)
+                          .join(""),
+                      })
+                    }
+                  />
+                  <span className="character-count">
+                    {Array.from(record.summary).length} / 200
                   </span>
-                  <ChevronRight size={15} />
-                </button>
-              ))
-            ) : (
-              <p>暂无本机专辑</p>
+                </div>
+                <div className="card-downloads">
+                  <button
+                    className="button primary"
+                    disabled={!calculation.total || busy}
+                    onClick={() => imageExport("png")}
+                  >
+                    {busy ? (
+                      <LoaderCircle size={17} className="spinning" />
+                    ) : (
+                      <ArrowDownToLine size={17} />
+                    )}
+                    下载 PNG
+                  </button>
+                  <button
+                    className="button secondary"
+                    disabled={!calculation.total || busy}
+                    onClick={() => imageExport("svg")}
+                  >
+                    下载 SVG
+                  </button>
+                </div>
+                {readonly && (
+                  <button
+                    className="quiet-link copy-from-card"
+                    onClick={copyRecord}
+                  >
+                    复制为新评分，继续修改
+                    <ArrowRight size={14} />
+                  </button>
+                )}
+              </section>
             )}
-          </details>
-          <details className="settings-details">
-            <summary>
-              历史版本
-              <ChevronDown size={15} />
-            </summary>
-            {history.length ? (
-              history.map((item) => (
-                <button
-                  className="history-item"
-                  key={item.id}
-                  onClick={() => openSnapshot(item)}
-                >
-                  <span>
-                    <b>{item.album.title || "未命名专辑"}</b>
-                    <small>
-                      {item.album.artist} · {timestamp(item.createdAt)}
-                    </small>
-                  </span>
-                  <strong>{item.calculation.total || "—"}</strong>
-                  <ChevronRight size={15} />
-                </button>
-              ))
-            ) : (
-              <p>暂无历史版本</p>
-            )}
-          </details>
-          {screen !== "home" && screen !== "workbench" && (
-            <details className="settings-details">
-              <summary>
-                当前评分文件
-                <ChevronDown size={15} />
-              </summary>
+          </main>
+        )}
+        <input
+          type="file"
+          ref={backupInput}
+          hidden
+          accept="application/json,.json"
+          onChange={(e) => restore(e.target.files?.[0])}
+        />
+        {settings && (
+          <Modal title="文件与备份" onClose={() => setSettings(false)}>
+            <section className="settings-section">
+              <h3>备份与恢复</h3>
+              <p>评分保存在当前浏览器。请定期备份。</p>
               <div className="settings-buttons">
                 <button
                   className="button secondary"
-                  onClick={() =>
-                    exportJSON(record, calculation, snapshot?.provenance)
-                  }
+                  onClick={backup}
+                  disabled={busy}
                 >
-                  导出 JSON
+                  <ArrowDownToLine size={16} />
+                  导出全部备份
                 </button>
                 <button
                   className="button secondary"
-                  onClick={() =>
-                    exportCSV(record, calculation, snapshot?.provenance)
-                  }
+                  onClick={() => backupInput.current?.click()}
+                  disabled={busy}
                 >
-                  导出 CSV
+                  <ArrowUpFromLine size={16} />
+                  导入备份
                 </button>
               </div>
-              {!readonly && (
-                <button className="quiet-link danger" onClick={removeCurrent}>
-                  <Trash2 size={14} />
-                  删除当前草稿
-                </button>
+            </section>
+            <details className="settings-details">
+              <summary>
+                全部本机专辑
+                <ChevronDown size={15} />
+              </summary>
+              {albums.length ? (
+                albums.map((album) => (
+                  <button
+                    className="history-item"
+                    key={album.id}
+                    onClick={() => {
+                      setSettings(false);
+                      openAlbum(album);
+                    }}
+                  >
+                    <span>
+                      <b>{album.title || "未命名专辑"}</b>
+                      <small>
+                        {album.artist}
+                        {album.year ? ` · ${album.year}` : ""}
+                      </small>
+                    </span>
+                    <ChevronRight size={15} />
+                  </button>
+                ))
+              ) : (
+                <p>暂无本机专辑</p>
               )}
             </details>
-          )}
-          <details className="settings-details diagnostics">
-            <summary>
-              高级 / 诊断
-              <ChevronDown size={15} />
-            </summary>
-            <p>
-              模型 {provenance.modelVersion} · {genres.length} 项基础风格
-            </p>
-            <p>
-              计算规则保留，私人评分无需发表审批。图片导出不会改变发表状态。
-            </p>
+            <details className="settings-details">
+              <summary>
+                历史版本
+                <ChevronDown size={15} />
+              </summary>
+              {history.length ? (
+                history.map((item) => (
+                  <button
+                    className="history-item"
+                    key={item.id}
+                    onClick={() => openSnapshot(item)}
+                  >
+                    <span>
+                      <b>{item.album.title || "未命名专辑"}</b>
+                      <small>
+                        {item.album.artist} · {timestamp(item.createdAt)}
+                      </small>
+                    </span>
+                    <strong>{item.calculation.total || "—"}</strong>
+                    <ChevronRight size={15} />
+                  </button>
+                ))
+              ) : (
+                <p>暂无历史版本</p>
+              )}
+            </details>
             {screen !== "home" && screen !== "workbench" && (
-              <>
-                <p>
-                  来源：{source.confirmed ? "已确认" : "尚未确认"}
-                  {source.preset ? ` · ${source.preset}` : ""}
-                </p>
-                <p>当前风格：{currentGenre?.name || "未选择"}</p>
-                <ul>
-                  {calculation.errors.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </>
+              <details className="settings-details">
+                <summary>
+                  当前评分文件
+                  <ChevronDown size={15} />
+                </summary>
+                <div className="settings-buttons">
+                  <button
+                    className="button secondary"
+                    onClick={() =>
+                      exportJSON(record, calculation, snapshot?.provenance)
+                    }
+                  >
+                    导出 JSON
+                  </button>
+                  <button
+                    className="button secondary"
+                    onClick={() =>
+                      exportCSV(record, calculation, snapshot?.provenance)
+                    }
+                  >
+                    导出 CSV
+                  </button>
+                </div>
+                {!readonly && (
+                  <button className="quiet-link danger" onClick={removeCurrent}>
+                    <Trash2 size={14} />
+                    删除当前草稿
+                  </button>
+                )}
+              </details>
             )}
-            {Object.entries(provenance.sourceFiles).map(([name, hash]) => (
-              <div className="diagnostic-hash" key={name}>
-                <span>{name}</span>
-                <code>{hash}</code>
-              </div>
-            ))}
-          </details>
-        </Modal>
-      )}
-      {importOpen && (
-        <Modal title="通过链接添加" onClose={() => setImportOpen(false)}>
-          <AlbumImportPanel
-            albums={albums}
-            busy={busy}
-            onConfirm={confirmImportedAlbum}
-            onOpen={async (album) => {
-              setImportOpen(false);
-              await openAlbum(album);
-            }}
-            onManual={() => {
-              setImportOpen(false);
-              manual();
-            }}
-          />
-        </Modal>
-      )}
-      {naDimension && (
-        <Modal
-          title={naDimension === "lyrics" ? "作词不适用" : "表演不适用"}
-          onClose={() => setNaDimension(null)}
-        >
-          <div className="na-dialog">
-            <p>
-              {naDimension === "lyrics"
-                ? "仅适用于整张发行没有可评价语言文本的纯器乐作品。个别器乐曲不适用此选项。"
-                : "仅适用于确实没有可评价表演行为的极特殊情形。请明确记录具体情况。"}
-            </p>
-            {naDimension === "performance" && (
-              <textarea
-                aria-label="表演不适用的具体情况"
-                placeholder="描述具体情况，无最低字数。"
-                value={naReason}
-                onChange={(e) => setNaReason(e.target.value)}
-              />
-            )}
-            <button
-              className="button primary"
-              disabled={naDimension === "performance" && !naReason.trim()}
-              onClick={() => {
-                updateRating(naDimension, "na", {
-                  naReason:
-                    naDimension === "lyrics"
-                      ? "用户明确确认：整张发行没有可评价语言文本。"
-                      : naReason,
-                  naApproved: naDimension === "performance",
-                });
-                setNaDimension(null);
+            <details className="settings-details diagnostics">
+              <summary>
+                高级 / 诊断
+                <ChevronDown size={15} />
+              </summary>
+              <p>
+                模型 {provenance.modelVersion} · {genres.length} 项基础风格
+              </p>
+              <p>
+                计算规则保留，私人评分无需发表审批。图片导出不会改变发表状态。
+              </p>
+              {screen !== "home" && screen !== "workbench" && (
+                <>
+                  <p>
+                    来源：{source.confirmed ? "已确认" : "尚未确认"}
+                    {source.preset ? ` · ${source.preset}` : ""}
+                  </p>
+                  <p>当前风格：{currentGenre?.name || "未选择"}</p>
+                  <ul>
+                    {calculation.errors.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </>
+              )}
+              {Object.entries(provenance.sourceFiles).map(([name, hash]) => (
+                <div className="diagnostic-hash" key={name}>
+                  <span>{name}</span>
+                  <code>{hash}</code>
+                </div>
+              ))}
+            </details>
+          </Modal>
+        )}
+        {importOpen && (
+          <Modal title="通过链接添加" onClose={() => setImportOpen(false)}>
+            <AlbumImportPanel
+              albums={albums}
+              busy={busy}
+              onConfirm={confirmImportedAlbum}
+              onOpen={async (album) => {
+                setImportOpen(false);
+                await openAlbum(album);
               }}
-            >
-              确认不适用
-            </button>
+              onManual={() => {
+                setImportOpen(false);
+                manual();
+              }}
+            />
+          </Modal>
+        )}
+        {naDimension && (
+          <Modal
+            title={naDimension === "lyrics" ? "作词不适用" : "表演不适用"}
+            onClose={() => setNaDimension(null)}
+          >
+            <div className="na-dialog">
+              <p>
+                {naDimension === "lyrics"
+                  ? "仅适用于整张发行没有可评价语言文本的纯器乐作品。个别器乐曲不适用此选项。"
+                  : "仅适用于确实没有可评价表演行为的极特殊情形。请明确记录具体情况。"}
+              </p>
+              {naDimension === "performance" && (
+                <textarea
+                  aria-label="表演不适用的具体情况"
+                  placeholder="描述具体情况，无最低字数。"
+                  value={naReason}
+                  onChange={(e) => setNaReason(e.target.value)}
+                />
+              )}
+              <button
+                className="button primary"
+                disabled={naDimension === "performance" && !naReason.trim()}
+                onClick={() => {
+                  updateRating(naDimension, "na", {
+                    naReason:
+                      naDimension === "lyrics"
+                        ? "用户明确确认：整张发行没有可评价语言文本。"
+                        : naReason,
+                    naApproved: naDimension === "performance",
+                  });
+                  setNaDimension(null);
+                }}
+              >
+                确认不适用
+              </button>
+            </div>
+          </Modal>
+        )}
+        {toast && (
+          <div className="toast" role="status">
+            <Check size={16} />
+            {toast}
           </div>
-        </Modal>
-      )}
-      {toast && (
-        <div className="toast" role="status">
-          <Check size={16} />
-          {toast}
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

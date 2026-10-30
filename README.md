@@ -17,6 +17,10 @@ npm run local
 
 ## 日常流程
 
+所有内容位于统一应用工作空间。左上角菜单可随时展开／收起；桌面使用侧栏，手机使用覆盖式抽屉。“专业工作台”入口只展开菜单。首页、作品库、评分记录、风格管理、评分卡、数据管理与设置均可从菜单切换。
+
+使用兼容 GitHub Pages 的 hash 路由，支持浏览器后退、前进、子页面刷新与深链接。草稿在切换工作区时保留并保存，首页可继续当前评分；风格库只读，明确应用后才更改草稿风格。
+
 - 首页：搜索本机作品（可选 Spotify 官方搜索）、通过链接添加、手动添加、快速评分、专业工作台、最近编辑。
 - 快速评分：添加／导入 → 确认信息与两级风格 → 六维半星评分 → 卡片预览及 PNG／SVG 导出。支持返回修改、草稿自动保存、继续编辑及可选短评，无强制理由文字。
 - 专业工作台：作品库搜索／排序／打开／复制／删除、冻结的评分版本、JSON 备份恢复、CSV 导出、新作品偏好、现有卡片工具。
@@ -26,7 +30,7 @@ npm run local
 
 ## 免费链接导入
 
-详见 [本地服务与 JSON 工具说明](docs/ALBUM_IMPORT.md)。首批适配：Apple Music 链接对应的官方免费 iTunes Lookup 元数据，以及 Bandcamp 公开页面的结构化资料。只取能读取的字段；外部标签不自动变成内部风格，Single 不猜成 EP，封面获取受限可手动上传。
+详见 [本地服务与 JSON 工具说明](docs/ALBUM_IMPORT.md)。本轮第一优先级仅网易云、QQ；第二优先级保留 Spotify 官方搜索与 Apple Music，Bandcamp 保留。网易／QQ 已加入公开资料解析和分享短链识别，但真实源站访问仍被云环境拒绝，尚未完成实网验收。只取能读取的字段；外部标签不自动变成内部风格，Single 不猜成 EP，封面获取受限可手动上传。
 
 GitHub Pages 是静态托管，无法运行 Python。在线版使用本地工具生成 JSON 后导入：
 
@@ -36,7 +40,7 @@ python3 -m tools.album_import '专辑HTTPS链接' -o album.json
 
 随后选择“通过链接添加 → 导入元数据 JSON”。工具不会覆盖已有输出文件。网页只接受元数据，重新生成记录 ID；可能重复时可打开原记录或另建记录。
 
-**当前实网限制：** 本云环境出口代理拒绝 Apple / Bandcamp 请求（CONNECT 403）。已实际跑通固定样本 → Python HTTP → React 确认 → IndexedDB → 评分 → PNG，但未验证两个真实网站当前可用。不能将样本测试当作真实链接采集成功。所需域名已存环境配置草稿，仍需在环境设置应用。Spotify、网易云和 QQ 音乐的公开网页完整曲目采集本轮未接入。
+**当前实网限制：** 本云环境出口代理拒绝相关音乐来源请求（CONNECT 403）。固定样本 → Python HTTP → React 确认 → IndexedDB → 评分 → PNG 已跑通；用户提供的网易／QQ 真实短链新 CLI 仍失败。不能将样本测试当作真实链接采集成功。所需域名已存环境配置草稿，仍需在环境设置应用后验证当前源站结构与完整曲目。
 
 ## 可选 Spotify 官方搜索
 
@@ -65,4 +69,4 @@ npm run build:standalone  # standalone/新乐评主义.html，内嵌静态资源
 
 GitHub Pages 的手动发布工作流位于 `.github/workflows/pages.yml`，只发布应用单文件与下载包，不包含本地 Python 服务、凭据或未选视觉方案。`npm run preview` 是本机预览，不是公网部署。
 
-本轮任务与实际截图见 [交付记录](docs/next-stage/RESULTS.md)。原模型资料位于 `docs/reference-supplement/` 与 `docs/model-source/`，未修改评分数学或重生成风格库。
+本轮导航、数据保留验证及实际截图见 [统一工作空间交付记录](docs/workspace-navigation/RESULTS.md)。此前交付记录保存在 `docs/next-stage/`。原模型资料位于 `docs/reference-supplement/` 与 `docs/model-source/`，未修改评分数学或重生成风格库。

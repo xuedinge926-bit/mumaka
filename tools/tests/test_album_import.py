@@ -87,7 +87,7 @@ class ParserTests(unittest.TestCase):
                 identify(url)
 
     def test_unavailable_sources_have_manual_fallback(self):
-        for url in ["https://open.spotify.com/album/example", "https://music.163.com/album?id=1", "https://y.qq.com/n/ryqq/albumDetail/abc"]:
+        for url in ["https://open.spotify.com/album/example", "https://www.kugou.com/album/1.html", "https://www.deezer.com/album/1"]:
             with self.assertRaisesRegex(ImportFailure, "手动"):
                 identify(url)
 

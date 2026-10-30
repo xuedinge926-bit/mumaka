@@ -42,11 +42,15 @@ GitHub Pages **不能直接运行 Python 或抓取任意第三方网页**。线�
 
 ## 首批来源与边界
 
+当前任务范围已修订：第一优先级仅网易云、QQ，第二优先级 Spotify／Apple Music，保留 Bandcamp，不扩展其他平台。国内适配器及短链解析已实现，**未完成实网验收**，详见 [本轮来源验证记录](workspace-navigation/RESULTS.md)。
+
 | 链接 | 实现 | 取得的数据及限制 |
 | --- | --- | --- |
+| 网易云详情页、`163cn.tv` 分享短链 | 正常公开跳转，解析 MusicAlbum JSON-LD、公开 DOM 和页面内曲目 JSON | 固定样本贯通；用户真实短链仍被云环境出口拒绝。当前源站结构、完整曲目与图片可用性待实网核验。 |
+| QQ 专辑详情页、`c6.y.qq.com` 等官方分享短链 | 正常公开跳转，解析公开 JSON-LD／页面内有效 JSON | 同上；不调用逆向音乐接口，不执行页面 JavaScript。只读取字面公开跳转地址，不绕过验证。 |
 | Apple Music `music.apple.com/{地区}/album/.../{ID}` | 官方公开 iTunes Lookup，`entity=song`，无需 MusicKit 或 Spotify 订阅 | 名称、音乐人、发行日期、曲目顺序／时长、接口实际返回的封面、参考分类。地区目录可能不完整；缺曲目会提示。接口不能可靠区分 Album / EP / Single 时保留“待确认”。不猜改 CDN 图片尺寸，封面分辨率取决于返回值，可自行上传清晰图片。 |
 | Bandcamp `{艺人}.bandcamp.com/album/...` | 先检查 robots，再解析公开页面 JSON-LD／页面自带 `data-tralbum` | 名称、音乐人、日期、封面、曲目、可读到的时长和标签；明确提供发行类型时才记录。不访问私有接口，不下载音频。缺失字段提示补充。自定义域名暂未纳入允许列表。 |
-| Spotify 公开网页、网易云、QQ 音乐及其他网站 | 本轮未接入免费完整曲目适配器 | 友好提示后可手动添加。没有宣称这些网站一定可抓取。原 Spotify 官方搜索代理可选保留。 |
+| Spotify 公开网页及其他网站 | 免费完整曲目网页适配器未接入，原 Spotify 官方代理保留 | 友好提示后可手动添加。没有宣称其他来源一定可读取。 |
 
 Apple 官方公开接口文档入口：
 https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/LookupExamples.html
@@ -58,7 +62,7 @@ https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/
 - JSON 格式为 `mumaka-album-import`，版本 1。只接受元数据，不接受评分、记录 ID、权重、发表状态或内部风格 ID。
 - 确认后创建新 ID 和曲目 ID，写入原有数据库；不覆盖任何已有专辑。
 - 同来源 URL，或相同名称＋音乐人的作品，会显示可能重复：可打开原记录，或明确选择另建记录。
-- 保存原始来源、元数据来源地址、获取时间、适配器版本、外部标签及来源发行类型。用户确认后的名称、年份、曲目、封面等作为作品数据保存。
+- 保存原始来源、原始分享短链（`originalUrl`）、元数据来源地址、获取时间、适配器版本、外部标签及来源发行类型。用户确认后的名称、年份、曲目、封面等作为作品数据保存。
 - 外部标签只作参考，不自动映射到 558 项风格库。Single 保留来源标注，不按曲目数量猜成 EP；内部评分单位仍使用原有专辑／EP 结构。
 - 图片保存为 data URL，因此刷新、备份恢复和导出不依赖再次请求来源图片。无法取得封面时允许上传；不会把远程链接假装成已持久保存的图片。
 
@@ -66,6 +70,6 @@ https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/
 
 Python 固定样本、实际本机 HTTP 服务、浏览器导入确认、同库保存、重复提示、采集失败兜底和 PNG 导出已经运行验证。测试上游是明确标注的合成样本，未作为用户搜索结果内置。
 
-**真实来源连通性尚未验证通过。** 本云环境对 `itunes.apple.com`、`music.apple.com`、Bandcamp 的访问由出口代理拒绝（CONNECT 403）；这发生在请求来源网站之前，不能据此判断网站是否允许或当前是否可用。所需域名已加入环境配置草稿，运行时尚未应用；不能把解析测试等同于实站成功。
+**真实来源连通性尚未验证通过。** 本云环境的出口策略未放行音乐来源，包括网易／QQ 分享域名、Apple 和 Bandcamp；已观察到 CONNECT 403。拒绝发生在请求来源网站之前，不能据此判断网站是否允许或当前是否可用。所需域名已加入环境配置草稿，运行时尚未应用；不能把解析测试等同于实站成功。
 
-网络放行后，应至少以一个 Apple Music 和一个 Bandcamp 真实链接运行 CLI，再从本地网页确认封面、曲目、年份与原页面一致。本轮未完成此实网步骤。
+网络放行后，优先用用户提供的网易／QQ 两条真实分享链接运行 CLI，再从本地网页确认名称、艺人、封面、完整曲目和年份与源页面一致。Spotify／Apple Music 随后复验；Bandcamp 保留既有能力。本轮尚未完成真实来源成功采集验收。

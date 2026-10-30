@@ -616,3 +616,66 @@ input[type=checkbox] { accent-color: var(--accent); width: 16px; height: 16px; f
   .multi-actions { justify-content: flex-start; gap: 7px; }
   .multi-top { flex-direction: column; gap: 12px; }
 }
+
+/* One application frame. Cards and the six-star input controls keep their styling. */
+.app-content { min-width: 0; margin-left: 0; transition: margin-left 200ms ease; }
+.navigation-open .app-content { margin-left: 248px; }
+.app-header-brand { display: flex; align-items: center; min-width: 0; gap: 15px; }
+.app-content > .site-header { position: sticky; top: 0; z-index: 30; background: var(--paper); }
+.navigation-toggle { width: 44px; height: 44px; flex-shrink: 0; }
+.app-navigation { position: fixed; inset: 0 auto 0 0; width: 248px; z-index: 40; background: var(--paper); border-right: 1px solid var(--line); transform: translateX(-100%); visibility: hidden; transition: transform 200ms ease, visibility 0s 200ms; overflow-y: auto; }
+.app-navigation.is-open { transform: translateX(0); visibility: visible; transition-delay: 0s; }
+.app-navigation-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; padding: 28px 21px 28px 25px; }
+.app-navigation-heading b { display: block; font-size: 21px; letter-spacing: 1px; }
+.app-navigation-heading span { display: block; color: var(--muted); font-size: 10px; margin-top: 8px; }
+.app-navigation-heading .icon-button { min-width: 44px; min-height: 44px; }
+.app-navigation nav { display: flex; flex-direction: column; padding: 14px 15px; border-top: 1px solid var(--line); gap: 4px; }
+.app-navigation nav button { display: flex; align-items: center; justify-content: space-between; text-align: left; padding: 14px 14px; min-height: 47px; border-left: 2px solid transparent; color: var(--muted); font-size: 13px; }
+.app-navigation nav button[aria-current=page] { background: var(--surface); color: var(--ink); border-left-color: var(--accent); }
+.app-navigation nav button:hover { color: var(--ink); background: var(--surface); }
+.workspace-breadcrumb { display: flex; align-items: center; justify-content: space-between; max-width: 1240px; margin: 7px auto 20px; padding: 0 46px; gap: 18px; }
+.workspace-breadcrumb nav { display: flex; align-items: center; gap: 10px; font-size: 11px; color: var(--muted); }
+.workspace-breadcrumb nav [aria-current] { color: var(--ink); }
+.workspace-breadcrumb .back-link { padding: 9px 0; white-space: nowrap; }
+.resume-editor { max-width: 1120px; margin: 0 auto; padding: 0 46px; text-align: right; }
+.resume-editor .quiet-link { font-size: 11px; }
+.workspace-page { max-width: 1120px; min-width: 0; margin: 25px auto 0; padding: 0 46px 70px; }
+.workspace-page .workbench-heading h1 { font-size: 26px; font-weight: 550; }
+.route-error p { margin: 20px 0; line-height: 1.9; color: var(--muted); }
+.route-error .quiet-link { margin-left: 22px; }
+.read-only-note { font-size: 11px; color: var(--muted); }
+.genre-library { max-width: 760px; }
+.genre-library > p { font-size: 12px; color: var(--muted); line-height: 1.8; margin-bottom: 24px; }
+.genre-library-selection { border-top: 1px solid var(--line); margin-top: 35px; padding-top: 25px; }
+.genre-library-selection > small { font-size: 11px; color: var(--muted); }
+.genre-library-selection h2 { margin-top: 12px; font-size: 24px; font-weight: 550; }
+.genre-library-selection > p { font-size: 12px; color: var(--muted); margin-top: 12px; }
+.genre-library-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 25px; }
+@media (max-width: 900px) {
+  .workspace-page, .resume-editor { padding-left: 25px; padding-right: 25px; }
+  .workspace-breadcrumb { padding-left: 25px; padding-right: 25px; }
+}
+@media (max-width: 760px) {
+  .navigation-open .app-content { margin-left: 0; }
+  .app-navigation { width: min(82vw, 292px); z-index: 80; }
+  .app-nav-scrim { position: fixed; inset: 0; background: #1a1a1a55; z-index: 70; cursor: default; }
+}
+@media (max-width: 560px) {
+  .app-header-brand { gap: 7px; }
+  .site-header { padding: 19px 16px; gap: 8px; }
+  .navigation-toggle { width: 44px; height: 44px; }
+  .wordmark strong { font-size: 19px; letter-spacing: .6px; }
+  .wordmark strong span { font-size: 11px; }
+  .wordmark small { font-size: 8px; letter-spacing: 0; }
+  .header-right { gap: 6px; }
+  .header-right .save-note { font-size: 9px; }
+  .workspace-page { padding: 0 20px 50px; margin-top: 20px; }
+  .workspace-breadcrumb { padding: 0 20px; gap: 10px; margin-top: 0; }
+  .workspace-breadcrumb nav { gap: 6px; font-size: 10px; }
+  .workspace-breadcrumb .back-link { font-size: 11px; }
+  .resume-editor { padding: 0 20px; }
+  .genre-library-actions { flex-direction: column; align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-navigation, .app-content { transition: none; }
+}

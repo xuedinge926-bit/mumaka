@@ -52,8 +52,8 @@ export function validateAlbum(value: unknown): asserts value is Album {
   }
   if (a.importSource !== undefined) {
     const s = a.importSource as Record<string, unknown>;
-    if (!object(s) || !['apple-music','bandcamp'].includes(s.provider as string) || !['url','metadataUrl','adapter','releaseDate'].every(k=>text(s[k])) || !date(s.fetchedAt) || (s.releaseType!==null&&!['album','ep','single'].includes(s.releaseType as string)) || !strings(s.referenceGenres) || s.referenceGenres.length>40) fail('导入来源记录格式错误');
-    for (const key of ['url','metadataUrl']) {
+    if (!object(s) || !['netease','qq-music','apple-music','bandcamp'].includes(s.provider as string) || !['url','metadataUrl','adapter','releaseDate'].every(k=>text(s[k])) || !date(s.fetchedAt) || (s.releaseType!==null&&!['album','ep','single'].includes(s.releaseType as string)) || !strings(s.referenceGenres) || s.referenceGenres.length>40 || (s.originalUrl!==undefined&&!text(s.originalUrl))) fail('导入来源记录格式错误');
+    for (const key of ['url','metadataUrl',...(s.originalUrl?['originalUrl']:[])]) {
       try { const u=new URL(s[key] as string);if(u.protocol!=='https:'||u.username||u.password)fail('导入来源链接须使用 HTTPS'); } catch { fail('导入来源链接须使用 HTTPS'); }
     }
   }

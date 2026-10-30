@@ -6,6 +6,7 @@ import {
   localImporterAvailable,
   possibleDuplicates,
   readImportFile,
+  IMPORT_PROVIDER_LABELS,
   type AlbumImport,
   type AlbumMetadata,
 } from "../lib/albumImport";
@@ -156,9 +157,10 @@ export function AlbumImportPanel({
           >
             <input
               id="album-link"
-              type="url"
+              type="text"
+              inputMode="url"
               autoFocus
-              placeholder="粘贴 Apple Music 或 Bandcamp 专辑链接"
+              placeholder="粘贴网易云、QQ 或 Apple Music 专辑链接"
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               disabled={disabled}
@@ -211,6 +213,9 @@ export function AlbumImportPanel({
         </>
       ) : (
         <>
+          <p className="import-reference">
+            资料来源：{IMPORT_PROVIDER_LABELS[value.source.provider]}
+          </p>
           <div className="import-preview-head">
             <div className="import-cover">
               <button

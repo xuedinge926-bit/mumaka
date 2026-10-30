@@ -6,7 +6,7 @@ import json
 import math
 import re
 from html.parser import HTMLParser
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import parse_qs, urlsplit, urlunsplit
 
 
 class ImportFailure(ValueError):
@@ -22,6 +22,11 @@ def number(value):
 
 
 def identify(url):
+    if isinstance(url, str):
+        matches = re.findall(r'https://[^\s<>"\u201c\u201d()\uff08\uff09]+', url)
+        if len(matches)>1:raise ImportFailure("一次只能导入一张专辑，请分别粘贴链接。")
+        if len(matches) == 1:
+            url = matches[0].rstrip(')）》,，。')
     try:
         p = urlsplit(url.strip())
         if p.scheme != "https" or p.username or p.password or p.port not in (None, 443):
@@ -29,6 +34,25 @@ def identify(url):
     except (ValueError, AttributeError):
         raise ImportFailure("请粘贴不含账号密码的 HTTPS 专辑详情页链接。")
     host = (p.hostname or "").lower()
+    if host == "163cn.tv" and re.fullmatch(r"/[A-Za-z0-9_-]+/?",p.path):
+        return "netease", urlunsplit(("https",host,p.path,"","")), {"short":True}
+    if host in {"music.163.com","y.music.163.com"}:
+        page = urlsplit(p.fragment) if p.fragment.startswith("/album") else p
+        album_id = parse_qs(page.query).get("id",[""])[0]
+        if page.path.rstrip("/") not in {"/album","/m/album"} or not re.fullmatch(r"[0-9]{1,20}",album_id):
+            raise ImportFailure("请使用网易云专辑链接，歌曲或歌单不能直接作为专辑导入。")
+        return "netease", "https://music.163.com/album?id="+album_id, {"id":album_id}
+    if host in {"y.qq.com","i.y.qq.com","c.y.qq.com","c6.y.qq.com"}:
+        query=parse_qs(p.query)
+        if p.path=="/base/fcgi-bin/u" and re.fullmatch(r"[A-Za-z0-9_-]{1,200}",query.get("__",[""])[0]):
+            return "qq-music", urlunsplit(("https",host,p.path,"__="+query['__'][0],"")), {"short":True}
+        match=re.fullmatch(r"/n/ryqq(?:_v2)?/albumDetail/([A-Za-z0-9]{1,80})/?",p.path) or re.fullmatch(r"/n/yqq/album/([A-Za-z0-9]{1,80})\.html",p.path)
+        album_id=match.group(1) if match else ""
+        if p.path=="/n2/m/share/details/album.html":
+            album_id=query.get("albummid",query.get("albumid",[""]))[0]
+        if not re.fullmatch(r"[A-Za-z0-9]{1,80}",album_id):
+            raise ImportFailure("请使用 QQ 音乐专辑链接，歌曲或歌单不能直接作为专辑导入。")
+        return "qq-music", "https://y.qq.com/n/ryqq/albumDetail/"+album_id, {"id":album_id}
     if host == "music.apple.com":
         match = re.fullmatch(r"/([a-zA-Z]{2})/album/(?:[^/]+/)?([0-9]+)/?", p.path)
         if not match:
@@ -37,9 +61,9 @@ def identify(url):
         return "apple-music", urlunsplit(("https", host, p.path.rstrip("/"), "", "")), {"country": country.lower(), "id": album_id}
     if re.fullmatch(r"[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.bandcamp\.com", host) and re.fullmatch(r"/album/[^/]+/?", p.path):
         return "bandcamp", urlunsplit(("https", host, p.path.rstrip("/"), "", "")), {}
-    if host in {"open.spotify.com", "music.163.com", "y.qq.com", "i.y.qq.com"}:
+    if host == "open.spotify.com":
         raise ImportFailure("此来源暂未接入免费的完整曲目导入，请手动添加；Spotify 官方搜索仍可单独配置。")
-    raise ImportFailure("目前支持 Apple Music 和 Bandcamp 专辑链接。其他来源请手动添加，或使用本地工具生成的元数据 JSON。")
+    raise ImportFailure("本轮处理网易云、QQ 音乐和 Apple Music 专辑链接，保留已有 Bandcamp 格式。此链接暂未接入，请手动添加。")
 
 
 def blank_album():

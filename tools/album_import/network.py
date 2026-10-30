@@ -16,7 +16,7 @@ USER_AGENT = "MUMAKA/0.1 (+personal public album metadata import)"
 
 
 def permitted_host(host):
-    return host in {"itunes.apple.com", "music.apple.com"} or bool(re.fullmatch(r"[a-z0-9-]+\.bandcamp\.com", host)) or bool(re.fullmatch(r"f\d+\.bcbits\.com", host)) or bool(re.fullmatch(r"[a-z0-9-]+\.mzstatic\.com", host))
+    return host in {"itunes.apple.com", "music.apple.com", "music.163.com", "y.music.163.com", "163cn.tv", "y.qq.com", "i.y.qq.com", "c.y.qq.com", "c6.y.qq.com", "y.gtimg.cn"} or bool(re.fullmatch(r"[a-z0-9-]+\.bandcamp\.com", host)) or bool(re.fullmatch(r"f\d+\.bcbits\.com", host)) or bool(re.fullmatch(r"[a-z0-9-]+\.mzstatic\.com", host)) or bool(re.fullmatch(r"[a-z0-9-]+\.music\.126\.net",host))
 
 
 def check_url(url, resolve=True):
@@ -107,3 +107,35 @@ class PublicFetcher:
             if time.monotonic() + delay >= self.deadline:
                 raise ImportFailure("来源要求更长的访问间隔，请稍后使用本地工具或手动添加。")
             time.sleep(delay)
+
+    def read_public_album_page(self, url, provider):
+        from .domestic import public_redirect
+        from .sources import identify
+        hosts = {'netease':{'163cn.tv','music.163.com','y.music.163.com'},'qq-music':{'y.qq.com','i.y.qq.com','c.y.qq.com','c6.y.qq.com'}}[provider]
+        current=url
+        visited=set()
+        for _ in range(6):
+            check_url(current)
+            if urlsplit(current).hostname not in hosts or current in visited:raise ImportFailure('分享链接跳转异常，请使用专辑详情页的完整地址或手动添加。')
+            visited.add(current)
+            self.allow_page(current)
+            target=''
+            try:
+                raw,kind=self.read(current,accept='text/html',redirects=0)
+            except urllib.error.HTTPError as error:
+                if error.code not in (301,302,303,307,308) or not error.headers.get('Location'):raise
+                target=urljoin(current,error.headers['Location'])
+            else:
+                try:identified,canonical,params=identify(current)
+                except ImportFailure:identified,params=provider,{'short':True}
+                if identified==provider and not params.get('short'):
+                    if kind!='text/html':raise ImportFailure('来源没有返回可读取的专辑页面，请手动添加。')
+                    return current,raw,kind
+                if kind=='text/html':target=public_redirect(raw.decode('utf-8','replace'),current)
+            if not target:raise ImportFailure('分享短链没有提供可读取的专辑地址，请复制完整专辑链接或手动添加。')
+            parsed=urlsplit(target)
+            if parsed.scheme=='http' and parsed.hostname in hosts:target='https://'+target[7:]
+            # A share link may only redirect within its own official provider.
+            if urlsplit(target).hostname not in hosts:raise ImportFailure('分享链接跳到了其他网站，未继续读取，请使用完整专辑链接。')
+            current=target
+        raise ImportFailure('分享链接跳转次数过多，请使用完整专辑链接或手动添加。')

@@ -19,13 +19,19 @@ export interface AlbumMetadata {
   tracks: { position: number; title: string; duration: number | null }[];
   referenceGenres: string[];
 }
+export const IMPORT_PROVIDER_LABELS = {
+  netease: "网易云音乐",
+  "qq-music": "QQ 音乐",
+  "apple-music": "Apple Music",
+  bandcamp: "Bandcamp",
+} as const;
 export interface AlbumImport {
   format: "mumaka-album-import";
   schemaVersion: 1;
   source: Pick<
     AlbumImportSource,
     "provider" | "url" | "metadataUrl" | "fetchedAt" | "adapter"
-  >;
+  > & { originalUrl?: string };
   album: AlbumMetadata;
   warnings: string[];
 }
@@ -66,7 +72,7 @@ export async function parseAlbumImport(value: unknown): Promise<AlbumImport> {
   const source = value.source,
     album = value.album;
   if (
-    !["apple-music", "bandcamp"].includes(String(source.provider)) ||
+    !Object.hasOwn(IMPORT_PROVIDER_LABELS, String(source.provider)) ||
     typeof source.fetchedAt !== "string" ||
     !Number.isFinite(Date.parse(source.fetchedAt))
   )
@@ -131,13 +137,17 @@ export async function parseAlbumImport(value: unknown): Promise<AlbumImport> {
   const warnings = Array.isArray(value.warnings)
     ? value.warnings.slice(0, 20).map((v) => text(v, 2000))
     : [];
-  if (!https(source.url) || !https(source.metadataUrl)) fail('元数据缺少原始来源链接。');
+  if (!https(source.url) || !https(source.metadataUrl))
+    fail("元数据缺少原始来源链接。");
   return {
     format: "mumaka-album-import",
     schemaVersion: 1,
     source: {
       provider: source.provider as AlbumImport["source"]["provider"],
       url: https(source.url),
+      ...(source.originalUrl === undefined
+        ? {}
+        : { originalUrl: https(source.originalUrl) }),
       metadataUrl: https(source.metadataUrl),
       fetchedAt: source.fetchedAt,
       adapter: text(source.adapter, 100),

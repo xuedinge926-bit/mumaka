@@ -18,7 +18,6 @@ interface Props {
   snapshots: Snapshot[];
   busy: boolean;
   tab: WorkbenchTab;
-  onTab: (tab: WorkbenchTab) => void;
   preferences: Preferences;
   onPreferences: (value: Preferences) => void;
   onOpen: (
@@ -38,7 +37,7 @@ const TABS: Record<WorkbenchTab, string> = {
   ratings: "评分记录",
   data: "数据管理",
   settings: "设置",
-  cards: "卡片工具",
+  cards: "评分卡",
 };
 const date = (value: string) =>
   new Intl.DateTimeFormat("zh-CN", {
@@ -66,7 +65,7 @@ export function libraryCalculation(
 }
 
 export function Workbench(props: Props) {
-  const { albums, snapshots, busy, tab, onTab } = props;
+  const { albums, snapshots, busy, tab } = props;
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState("updated");
   const [status, setStatus] = useState("all");
@@ -132,25 +131,7 @@ export function Workbench(props: Props) {
     );
   }
   return (
-    <main className="workbench-layout">
-      <aside className="workbench-sidebar">
-        <h1>专业工作台</h1>
-        <nav aria-label="工作台导航">
-          {(Object.keys(TABS) as WorkbenchTab[]).map((key) => (
-            <button
-              key={key}
-              aria-current={key === tab ? "page" : undefined}
-              onClick={() => onTab(key)}
-            >
-              {TABS[key]}
-            </button>
-          ))}
-        </nav>
-        <button className="quiet-link" onClick={props.onManual} disabled={busy}>
-          新建评分
-          <ArrowRight size={14} />
-        </button>
-      </aside>
+    <main className="workspace-page">
       <section className="workbench-content" aria-label={TABS[tab]}>
         <div className="workbench-heading">
           <div>
