@@ -37,6 +37,13 @@ export function exportCSV(album: Album, calculation: Calculation, frozenProvenan
 export function serializeSVG(element: SVGSVGElement): string {
   const svg = element.cloneNode(true) as SVGSVGElement;
   svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+  svg.removeAttribute('style');
+  const viewBox = element.viewBox.baseVal;
+  if (viewBox.width && viewBox.height) { svg.setAttribute('width', String(viewBox.width)); svg.setAttribute('height', String(viewBox.height)); }
+  for (const image of svg.querySelectorAll('image')) {
+    const href = image.getAttribute('href') || image.getAttributeNS('http://www.w3.org/1999/xlink', 'href') || '';
+    if (!/^data:image\/(?:png|jpe?g|webp|gif);base64,[A-Za-z0-9+/=]+$/.test(href)) throw new Error('封面尚未嵌入图片，无法完整导出。请先使用本地上传封面后重试。');
+  }
   return '<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(svg);
 }
 
@@ -45,18 +52,19 @@ export async function exportSVG(element: SVGSVGElement, name = '新乐评主义-
 }
 
 export async function exportPNG(element: SVGSVGElement, name = '新乐评主义-评分卡.png'): Promise<void> {
+  if (document.fonts) await document.fonts.ready;
   const source = serializeSVG(element);
   const url = URL.createObjectURL(new Blob([source], { type: 'image/svg+xml;charset=utf-8' }));
   try {
     const img = new Image();
     await new Promise<void>((resolve, reject) => { img.onload = () => resolve(); img.onerror = () => reject(new Error('评分卡图片渲染失败，可改用 SVG 导出')); img.src = url; });
-    const width = element.viewBox.baseVal.width || element.width.baseVal.value || 760;
-    const height = element.viewBox.baseVal.height || element.height.baseVal.value || 900;
+    const width = element.viewBox.baseVal.width || element.width.baseVal.value || 1080;
+    const height = element.viewBox.baseVal.height || element.height.baseVal.value || 1350;
     const canvas = document.createElement('canvas');
-    canvas.width = width * 2; canvas.height = height * 2;
+    canvas.width = width; canvas.height = height;
     const context = canvas.getContext('2d');
     if (!context) throw new Error('浏览器无法创建图片画布，可改用 SVG 导出');
-    context.scale(2, 2); context.drawImage(img, 0, 0, width, height);
+    context.drawImage(img, 0, 0, width, height);
     const png = await new Promise<Blob>((resolve, reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('无法生成 PNG，请尝试 SVG')), 'image/png'));
     downloadBlob(png, name.endsWith('.png') ? name : `${name}.png`);
   } finally { URL.revokeObjectURL(url); }

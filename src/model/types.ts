@@ -6,7 +6,16 @@ export type Weights = [number,number,number,number,number,number];
 export interface Genre { id:string; name:string; nameEn:string; status:string; weights:number[]; parentId?:string; note?:string; validation?:string; orientationReason?:string }
 export interface ChinaEntry { id:string; name:string; group:string; genreId:string; status:string; kind:string; criteria:string; insufficient:string; verification:string }
 export interface Rating { value:number|null|'na'; evidence:string; counterEvidence:string; rationale:string; highJustification:string; notLower:string; naReason:string; naApproved:boolean }
-export interface Track { id:string; title:string; duration:number; genreId:string; genreEvidence?:string; lyricsSource:string; compositionSource:string; sourceEvidence:string }
+export type ProvenanceKind = 'new'|'existing'|'rerecord'|'unknown';
+export interface Track { id:string; title:string; duration:number; genreId:string; genreEvidence?:string; provenanceKind?:ProvenanceKind; lyricsSource:string; compositionSource:string; sourceEvidence:string }
+export interface AlbumUX {
+ market:'china'|'global';
+ sourceKind?:'new'|'cover'|'mixed'|'rerecord'|'unknown';
+ sourcePresetConfirmed?:string;
+ sourceDoubleCount?:'clear'|'included'|'unknown';
+ cardRatio?:'4:5'|'3:4'|'1:1';
+ cardTheme?:'paper'|'ink';
+}
 export type RecordStatus = 'draft'|'research_candidate'|'publish_eligible'|'published';
 export interface Album {
  id:string; title:string; artist:string; year:string; release:string; kind:'专辑'|'EP'; cover:string; language:string; region:string; label:string;
@@ -15,6 +24,8 @@ export interface Album {
  cultureNote:string; cultureDelta:Weights; sourceDelta:Weights; sourcePreset?:string; sourceNote:string; sourceReviewed:boolean; noDoubleCount:boolean;
  ratings:Record<Dimension,Rating>; summary:string; reviewer:string; fullListenConfirmed:boolean; releaseIdentityVerified?:boolean;
  status:RecordStatus; createdAt:string; updatedAt:string; revision:number; parentSnapshotId?:string;
+ ux?:AlbumUX;
+ spotify?:{id:string;url:string;coverUrl?:string;releaseDate?:string};
 }
 export interface Calculation { valid:boolean; complete:boolean; total:string|null; exactTotal:string|null; baseWeights:string[]; finalWeights:string[]; baseWeightsExact?:string[]; finalWeightsExact?:string[]; errors:string[]; warnings:string[]; eligibilityIssues:string[]; publishEligible:boolean }
 export interface Snapshot { id:string; albumId:string; createdAt:string; reviewer:string; album:Album; calculation:Calculation; provenance:unknown; kind:'saved'|'published' }

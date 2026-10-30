@@ -5,6 +5,7 @@ import provenance from '../data/provenance.json';
 import genres from '../data/genres.json';
 import chinaIndex from '../data/china-index.json';
 import { calculate } from '../model/engine';
+import { calculatePrivate } from '../model/privateReview';
 
 interface LibraryDB extends DBSchema {
   albums: { key: string; value: Album };
@@ -34,6 +35,21 @@ export function validateAlbum(value: unknown): asserts value is Album {
   if (a.parentSnapshotId !== undefined && !text(a.parentSnapshotId)) fail('历史版本引用格式错误');
   for (const key of ['sourcePreset', 'historicTraditionEvidence', 'crossFamilyReason']) if (a[key] !== undefined && !text(a[key])) fail('扩展审核字段格式错误');
   if (a.releaseIdentityVerified !== undefined && typeof a.releaseIdentityVerified !== 'boolean') fail('发行身份审核字段格式错误');
+  if (a.ux !== undefined) {
+    if (!object(a.ux) || !['china', 'global'].includes(a.ux.market as string) || (a.ux.sourceKind !== undefined && !['new', 'cover', 'mixed', 'rerecord', 'unknown'].includes(a.ux.sourceKind as string))) fail('私人评分设置格式错误');
+    const ux = a.ux as Record<string, unknown>;
+    if (ux.sourcePresetConfirmed !== undefined && !text(ux.sourcePresetConfirmed)) fail('来源确认格式错误');
+    if (ux.sourceDoubleCount !== undefined && !['clear', 'included', 'unknown'].includes(ux.sourceDoubleCount as string)) fail('来源重叠确认格式错误');
+    if (ux.cardRatio !== undefined && !['4:5', '3:4', '1:1'].includes(ux.cardRatio as string)) fail('评分卡比例无效');
+    if (ux.cardTheme !== undefined && !['paper', 'ink'].includes(ux.cardTheme as string)) fail('评分卡主题无效');
+  }
+  if (a.spotify !== undefined) {
+    if (!object(a.spotify) || !text(a.spotify.id) || !text(a.spotify.url) || (a.spotify.coverUrl !== undefined && !text(a.spotify.coverUrl)) || (a.spotify.releaseDate !== undefined && !text(a.spotify.releaseDate))) fail('Spotify 来源信息格式错误');
+    for (const key of ['url', 'coverUrl']) {
+      const field = (a.spotify as Record<string, unknown>)[key];
+      if (field) { try { const url = new URL(field as string); if (url.protocol !== 'https:' || url.username || url.password) fail('Spotify 来源链接须使用 HTTPS'); } catch { fail('Spotify 来源链接须使用 HTTPS'); } }
+    }
+  }
   if (!['专辑', 'EP'].includes(a.kind as string) || !['single', 'equal', 'duration'].includes(a.blendMode as string) || !statuses.includes(a.status as string)) fail('作品类型、聚合方式或审核状态无效');
   if (!date(a.createdAt) || !date(a.updatedAt) || !Number.isInteger(a.revision) || (a.revision as number) < 1) fail('作品日期或版本号无效');
   if (!['sourceReviewed', 'noDoubleCount', 'fullListenConfirmed'].every(k => typeof a[k] === 'boolean')) fail('审核确认字段无效');
@@ -47,6 +63,7 @@ export function validateAlbum(value: unknown): asserts value is Album {
     if (!object(track) || !['id', 'title', 'genreId', 'lyricsSource', 'compositionSource', 'sourceEvidence'].every(k => text(track[k])) || !track.id || !finite(track.duration) || track.duration < 0) fail('曲目字段或时长无效');
     const t = track as Record<string, unknown>;
     if (t.genreEvidence !== undefined && !text(t.genreEvidence)) fail('曲目风格依据格式错误');
+    if (t.provenanceKind !== undefined && !['new', 'existing', 'rerecord', 'unknown'].includes(t.provenanceKind as string)) fail('曲目来源选择格式错误');
     if (trackIds.has(t.id as string)) fail('曲目 ID 重复');
     trackIds.add(t.id as string);
   }
@@ -80,6 +97,8 @@ function validateSnapshot(value: unknown): asserts value is Snapshot {
   if ((s.album as Album).id !== s.albumId) fail('快照与作品 ID 不一致');
   if (!object(s.provenance) || !text(s.provenance.modelVersion) || !object(s.provenance.sourceFiles) || typeof s.provenance.referenceVerified !== 'boolean') fail('快照缺少模型版本与来源哈希');
   const p = s.provenance as Record<string, unknown>;
+  if (p.purpose !== undefined && !['private', 'review'].includes(p.purpose as string)) fail('快照用途格式错误');
+  if (p.purpose === 'private' && (s.kind !== 'saved' || (s.calculation as Calculation).publishEligible || p.approval !== undefined)) fail('私人评分快照不得冒充正式审批');
   if (!Object.keys(p.sourceFiles as object).length || !Object.values(p.sourceFiles as Record<string, unknown>).every(v => text(v) && /^[a-f0-9]{64}$/.test(v))) fail('模型来源哈希格式无效');
   if (!object(p.dataHashes) || !['genres', 'chinaIndex'].every(k => text((p.dataHashes as Record<string, unknown>)[k]) && /^[a-f0-9]{64}$/.test((p.dataHashes as Record<string, string>)[k]))) fail('快照缺少有效的风格数据哈希');
   if (s.kind === 'published') {
@@ -133,10 +152,12 @@ async function digest(value: unknown): Promise<string> {
   return sha256Hex(JSON.stringify(value));
 }
 
-export async function saveSnapshot(album: Album, calculation: Calculation, kind: Snapshot['kind'] = 'saved'): Promise<Snapshot> {
+export async function saveSnapshot(album: Album, calculation: Calculation, kind: Snapshot['kind'] = 'saved', purpose: 'review'|'private' = 'review'): Promise<Snapshot> {
   validateAlbum(album); validateCalculation(calculation);
   if (kind !== 'saved' && kind !== 'published') fail('快照类型无效');
-  const current = calculate(album);
+  if (purpose !== 'review' && purpose !== 'private') fail('快照用途无效');
+  if (purpose === 'private' && kind === 'published') fail('私人评分不执行正式发表审批');
+  const current = purpose === 'private' ? calculatePrivate(album) : calculate(album);
   if (kind === 'published' && (!current.publishEligible || !album.reviewer.trim())) fail(`未通过发表门禁：${current.eligibilityIssues.join('；') || '请填写审核人'}`);
   if (album.status === 'published') fail('已发表评价不可再次保存，请创建新版本');
   const frozenAlbum = clone(album);
@@ -144,7 +165,7 @@ export async function saveSnapshot(album: Album, calculation: Calculation, kind:
   const snapshot: Snapshot = {
     id: createId(), albumId: album.id, createdAt: new Date().toISOString(), reviewer: album.reviewer,
     album: frozenAlbum, calculation: clone(current), kind,
-    provenance: { ...clone(provenance), dataHashes: { genres: await digest(genres), chinaIndex: await digest(chinaIndex) }, selectedGenres: clone(genres.filter(g => g.id === album.genreId || album.tracks.some(t => t.genreId === g.id))), ...(kind === 'published' ? { approval: { approvedBy: album.reviewer, approvedAt: new Date().toISOString(), action: 'explicit_manual_publication' } } : {}) },
+    provenance: { ...clone(provenance), purpose, dataHashes: { genres: await digest(genres), chinaIndex: await digest(chinaIndex) }, selectedGenres: clone(genres.filter(g => g.id === album.genreId || album.tracks.some(t => t.genreId === g.id))), ...(kind === 'published' ? { approval: { approvedBy: album.reviewer, approvedAt: new Date().toISOString(), action: 'explicit_manual_publication' } } : {}) },
   };
   const database = await db();
   try {
@@ -157,6 +178,11 @@ export async function saveSnapshot(album: Album, calculation: Calculation, kind:
   }
   finally { database.close(); }
   return clone(snapshot);
+}
+
+/** Private exports never create review evidence, reviewer identities or publication approval. */
+export async function savePrivateSnapshot(album: Album): Promise<Snapshot> {
+  return saveSnapshot(album, calculatePrivate(album), 'saved', 'private');
 }
 
 export interface Backup { format: 'nmc-library'; schemaVersion: 1; exportedAt: string; albums: Album[]; snapshots: Snapshot[] }

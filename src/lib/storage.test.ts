@@ -2,7 +2,7 @@ import 'fake-indexeddb/auto';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { DIMENSIONS, newAlbum, type Calculation } from '../model/types';
 import { calculate } from '../model/engine';
-import { deleteAlbum, exportBackup, importBackup, listAlbums, listSnapshots, saveAlbum, saveSnapshot } from './storage';
+import { deleteAlbum, exportBackup, importBackup, listAlbums, listSnapshots, saveAlbum, saveSnapshot, savePrivateSnapshot } from './storage';
 import { csvCell, evaluationCSV } from './exports';
 import provenance from '../data/provenance.json';
 
@@ -161,5 +161,62 @@ describe('CSV output', () => {
     expect(csv).toContain('未评价'); expect(csv).toContain("'=HYPERLINK");
     expect(csv).toContain('参考程序已核验');
     expect(evaluationCSV(album, calculation, { modelVersion: 'V0.18-历史快照', referenceVerified: false })).toContain('V0.18-历史快照');
+  });
+});
+
+describe('private workflow compatibility', () => {
+  it('freezes an ordinary private score without fabricating review prose or publication approval', async () => {
+    const album = newAlbum(); album.title = '私人评价'; album.genreId = 'genre:pop-general';
+    album.ux = { market: 'china', sourceKind: 'new', cardRatio: '4:5', cardTheme: 'paper' };
+    for (const dimension of DIMENSIONS) album.ratings[dimension].value = 4;
+    const original = structuredClone(album);
+    await saveAlbum(album);
+    const snapshot = await savePrivateSnapshot(album);
+    expect(snapshot.calculation.total).toBe('8.00');
+    expect(snapshot.calculation.publishEligible).toBe(false);
+    expect(snapshot.album).toEqual(original);
+    expect(album).toEqual(original);
+    expect(snapshot.kind).toBe('saved');
+    expect(snapshot.provenance).toMatchObject({ purpose: 'private' });
+    expect(snapshot.provenance).not.toHaveProperty('approval');
+    expect(snapshot.reviewer).toBe('');
+    expect(snapshot.album.sourceReviewed).toBe(false);
+    expect(snapshot.album.ratings.lyrics.evidence).toBe('');
+    const backup = await exportBackup(); await clearDatabase(); await importBackup(backup);
+    expect((await listAlbums())[0]).toEqual(original);
+    expect((await listSnapshots())[0]).toEqual(snapshot);
+  });
+
+  it('retains uncertainty in a saved draft instead of inventing an original-source preset or a score', async () => {
+    const album = newAlbum(); album.genreId = 'genre:pop-general';
+    album.ux = { market: 'global', sourceKind: 'unknown' };
+    album.spotify = { id: 'metadata-id', url: 'https://open.spotify.com/album/example', coverUrl: 'https://i.scdn.co/image/example', releaseDate: '2020-01-01' };
+    for (const dimension of DIMENSIONS) album.ratings[dimension].value = 4;
+    await saveAlbum(album); const snapshot = await savePrivateSnapshot(album);
+    expect(snapshot.calculation.total).toBeNull();
+    expect(snapshot.calculation.valid).toBe(false);
+    expect(snapshot.album.ux?.sourceKind).toBe('unknown');
+    expect(snapshot.album.ux?.sourcePresetConfirmed).toBeUndefined();
+    const backup = await exportBackup(); await clearDatabase(); await importBackup(backup);
+    expect((await listAlbums())[0].spotify).toEqual(album.spotify);
+    expect((await listSnapshots())[0]).toEqual(snapshot);
+  });
+
+  it('preserves old records without injecting new UX choices and validates optional fields only when present', async () => {
+    const legacy = newAlbum(); await saveAlbum(legacy);
+    expect((await listAlbums())[0]).not.toHaveProperty('ux');
+    expect((await listAlbums())[0]).toEqual(legacy);
+    const invalid = { ...legacy, ux: { market: 'china', sourceKind: 'new', cardRatio: '16:9' } };
+    await expect(saveAlbum(invalid as typeof legacy)).rejects.toThrow('评分卡比例');
+    await expect(saveAlbum({ ...legacy, spotify: { id: 'id', url: 'javascript:alert(1)' } })).rejects.toThrow('HTTPS');
+    expect((await listAlbums())[0]).toEqual(legacy);
+  });
+
+  it('does not allow a private snapshot to masquerade as publication on import', async () => {
+    const album = newAlbum(); await saveAlbum(album); await savePrivateSnapshot(album);
+    const data = JSON.parse(await exportBackup());
+    data.snapshots[0].calculation.publishEligible = true;
+    await expect(importBackup(JSON.stringify(data))).rejects.toThrow('私人评分快照不得冒充正式审批');
+    expect((await listSnapshots())[0].calculation.publishEligible).toBe(false);
   });
 });

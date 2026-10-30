@@ -72,9 +72,25 @@ const databaseErrors = validateDatabase();
  * Scores are never inferred from metadata or an artist's reputation.
  */
 export function calculate(album: Album): Calculation {
+  return calculateCore(album, 'strict');
+}
+
+/** Private scoring reuses the exact math without requiring editorial prose.
+ * Public publication must continue to use calculate(), never this helper.
+ */
+export function calculatePrivateMath(album: Album): Calculation {
+  return calculateCore(album, 'private');
+}
+
+function calculateCore(album: Album, mode: 'strict'|'private'): Calculation {
   const errors: string[] = [...databaseErrors];
   const warnings: string[] = ['显示权重最多保留六位小数，计算使用未舍入的精确分数。'];
   const eligibilityIssues: string[] = [];
+  if (album.ux?.sourceKind !== undefined) eligibilityIssues.push('私人工作流记录尚未经过独立的公开发表审核');
+  // Text/audio attestation belongs to public editorial review, not arithmetic.
+  const editorialRequirement = (message: string) => {
+    (mode === 'strict' ? errors : eligibilityIssues).push(message);
+  };
   if (!provenance.referenceVerified) { eligibilityIssues.push('参考程序与黄金测试尚未完成核验，暂不开放正式发表'); warnings.push('参考程序与黄金测试尚未完成核验；当前总分仅供研究预览。'); }
   let base: Fraction[] = [];
   const selected = genreMap.get(album.genreId);
@@ -83,12 +99,12 @@ export function calculate(album: Album): Calculation {
     else base = selected.weights.map(f);
   } else if (album.blendMode === 'equal' || album.blendMode === 'duration') {
     warnings.push('跨风格仅聚合权重，整张专辑仍只评价一组六维星级；家族分类须人工核实。');
-    if ((album.crossFamilyReason ?? '').trim().length < 20) errors.push('跨家族合成需要至少20字的必要性说明');
+    if ((album.crossFamilyReason ?? '').trim().length < 20) editorialRequirement('跨家族合成需要至少20字的必要性说明');
     if (!album.tracks.length) errors.push('跨风格聚合需要逐曲风格记录');
     const weighted = album.tracks.map((track, index) => {
       const genre = genreMap.get(track.genreId);
       if (!genre) errors.push(`曲目${index + 1}须选择已有全球风格，候选标签不能充当风格ID`);
-      if ((track.genreEvidence ?? '').trim().length < 8) errors.push(`曲目${index + 1}需要至少8字的风格证据`);
+      if ((track.genreEvidence ?? '').trim().length < 8) editorialRequirement(`曲目${index + 1}需要至少8字的风格证据`);
       const duration = album.blendMode === 'equal' ? 1 : track.duration;
       if (!Number.isFinite(duration) || duration <= 0) errors.push(`曲目${index + 1}的聚合时长必须大于0`);
       return { genre, duration };
@@ -102,8 +118,8 @@ export function calculate(album: Album): Calculation {
   const entry = album.chinaEntryId ? chinaIndex.find(i => i.id === album.chinaEntryId) : undefined;
   if (album.chinaEntryId && !entry) errors.push('未知中国市场入口');
   if (entry && album.blendMode === 'single' && entry.genreId !== album.genreId) errors.push('中国市场入口与主库风格映射不一致');
-  if (entry?.status === 'conditional' && (!album.fullListenConfirmed || album.genreEvidence.trim().length < 20)) errors.push('条件试用风格需要全碟听评确认及至少20字的音乐结构证据');
-  if (entry?.id === 'cn-index:campus-folk' && (!album.fullListenConfirmed || album.genreEvidence.trim().length < 12 || (album.historicTraditionEvidence ?? '').trim().length < 12)) errors.push('校园民谣入口需要全碟听评确认、至少12字音乐证据及至少12字历史传统证据');
+  if (entry?.status === 'conditional' && (!album.fullListenConfirmed || album.genreEvidence.trim().length < 20)) editorialRequirement('条件试用风格需要全碟听评确认及至少20字的音乐结构证据');
+  if (entry?.id === 'cn-index:campus-folk' && (!album.fullListenConfirmed || album.genreEvidence.trim().length < 12 || (album.historicTraditionEvidence ?? '').trim().length < 12)) editorialRequirement('校园民谣入口需要全碟听评确认、至少12字音乐证据及至少12字历史传统证据');
   // Searching the global catalogue must not bypass the two conditional styles'
   // editorial gate. Keep research arithmetic available, just as the reference's
   // direct-global route does, while retaining the documented publication rule.
@@ -192,5 +208,5 @@ export function calculate(album: Album): Calculation {
   let total: Fraction | null = null;
   if (!errors.length && complete && final.length === 6) total = sum(DIMENSIONS.map((d, i) => album.ratings[d].value === 'na' ? f(0) : f(album.ratings[d].value as number).mul(final[i]))).div(f(50));
   const issues = unique([...errors, ...eligibilityIssues]);
-  return { valid: errors.length === 0, complete, total: total?.round(2) ?? null, exactTotal: total?.exact() ?? null, baseWeights: base.map(v => v.display()), finalWeights: final.map(v => v.display()), baseWeightsExact: base.map(v => v.exact()), finalWeightsExact: final.map(v => v.exact()), errors: unique(errors), warnings: unique(warnings), eligibilityIssues: issues, publishEligible: errors.length === 0 && complete && issues.length === 0 };
+  return { valid: errors.length === 0, complete, total: total?.round(2) ?? null, exactTotal: total?.exact() ?? null, baseWeights: base.map(v => v.display()), finalWeights: final.map(v => v.display()), baseWeightsExact: base.map(v => v.exact()), finalWeightsExact: final.map(v => v.exact()), errors: unique(errors), warnings: unique(warnings), eligibilityIssues: issues, publishEligible: mode === 'strict' && errors.length === 0 && complete && issues.length === 0 };
 }
