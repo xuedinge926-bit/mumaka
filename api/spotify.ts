@@ -30,7 +30,6 @@ export default async function handler(req: Request) {
       return Response.json({ error: 'Missing Spotify credentials env' }, { status: 500 });
     }
 
-    // 替换 btoa，Edge 稳定方案
     const auth = `${clientId}:${clientSecret}`;
     const encoder = new TextEncoder();
     const data = encoder.encode(auth);
@@ -45,7 +44,18 @@ export default async function handler(req: Request) {
       body: 'grant_type=client_credentials',
     });
 
-    const tokenJson = await tokenRes.json();
+    const tokenRawText = await tokenRes.text();
+    let tokenJson;
+    try {
+      tokenJson = JSON.parse(tokenRawText);
+    } catch {
+      return Response.json({
+        error: 'Spotify token endpoint did not return JSON',
+        status: tokenRes.status,
+        responseText: tokenRawText.slice(0, 300)
+      }, { status: 500 });
+    }
+
     if (!tokenRes.ok) {
       return Response.json({ error: 'Spotify token fetch failed', detail: tokenJson }, { status: 500 });
     }
@@ -54,7 +64,18 @@ export default async function handler(req: Request) {
     const spotifyRes = await fetch(`https://api.spotify.com/v1/${path}`, {
       headers: { Authorization: `Bearer ${accessToken}` },
     });
-    const spotifyData = await spotifyRes.json();
+
+    const spotifyRawText = await spotifyRes.text();
+    let spotifyData;
+    try {
+      spotifyData = JSON.parse(spotifyRawText);
+    } catch {
+      return Response.json({
+        error: 'Spotify api did not return JSON',
+        status: spotifyRes.status,
+        responseText: spotifyRawText.slice(0,300)
+      }, { status: 500 });
+    }
 
     return Response.json(spotifyData, {
       headers: {
