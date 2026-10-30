@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "functions/spotify.ts": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/spotify",
+      "destination": "/functions/spotify"
+    }
+  ]
+}
