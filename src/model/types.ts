@@ -16,6 +16,11 @@ export interface AlbumUX {
  cardRatio?:'4:5'|'3:4'|'1:1';
  cardTheme?:'paper'|'ink';
 }
+/** Optional, additive provenance. Old records and frozen snapshots require no migration. */
+export interface AlbumImportSource {
+ provider:'apple-music'|'bandcamp'; url:string; metadataUrl:string; fetchedAt:string; adapter:string;
+ releaseDate:string; releaseType:'album'|'ep'|'single'|null; referenceGenres:string[];
+}
 export type RecordStatus = 'draft'|'research_candidate'|'publish_eligible'|'published';
 export interface Album {
  id:string; title:string; artist:string; year:string; release:string; kind:'专辑'|'EP'; cover:string; language:string; region:string; label:string;
@@ -26,6 +31,7 @@ export interface Album {
  status:RecordStatus; createdAt:string; updatedAt:string; revision:number; parentSnapshotId?:string;
  ux?:AlbumUX;
  spotify?:{id:string;url:string;coverUrl?:string;releaseDate?:string};
+ importSource?:AlbumImportSource;
 }
 export interface Calculation { valid:boolean; complete:boolean; total:string|null; exactTotal:string|null; baseWeights:string[]; finalWeights:string[]; baseWeightsExact?:string[]; finalWeightsExact?:string[]; errors:string[]; warnings:string[]; eligibilityIssues:string[]; publishEligible:boolean }
 export interface Snapshot { id:string; albumId:string; createdAt:string; reviewer:string; album:Album; calculation:Calculation; provenance:unknown; kind:'saved'|'published' }

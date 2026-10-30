@@ -1,11 +1,10 @@
 import { type Album, type Calculation } from '../model/types';
 import { RoseGraphic } from './Rose';
+import { toScoreCardData, type ScoreCardData } from '../lib/scoreCardData';
 
 export type CardRatio = '4:5' | '3:4' | '1:1';
 export type CardTheme = 'paper' | 'ink';
-export interface ScoreCardProps {
-  album: Album;
-  calculation: Calculation;
+export type ScoreCardProps = ({data:ScoreCardData;album?:never;calculation?:never}|{data?:never;album:Album;calculation:Calculation}) & {
   /** Legacy snapshot metadata is kept by storage, never printed on the card. */
   modelProvenance?: unknown;
   ratio?: CardRatio;
@@ -29,7 +28,11 @@ export function wrapCardText(text: string, maxUnits: number): string[] {
 }
 
 /** Standalone 1080px SVG; all imagery is embedded and all styling is local. */
-export function ScoreCard({ album, calculation, ratio = '4:5', theme = 'paper' }: ScoreCardProps) {
+export function ScoreCard(props: ScoreCardProps) {
+  const {ratio='4:5',theme='paper'} = props;
+  const data = props.data ?? toScoreCardData(props.album,props.calculation,props.modelProvenance);
+  const album = {...data.album,summary:data.summary,ratings:data.ratings};
+  const calculation = data.score;
   const height = ratio === '3:4' ? 1440 : ratio === '1:1' ? 1080 : 1350;
   const dark = theme === 'ink';
   const paper = dark ? '#242624' : '#f7f3eb';

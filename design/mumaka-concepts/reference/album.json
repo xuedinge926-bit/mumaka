@@ -1,0 +1,11 @@
+{
+  "artist": "Radiohead",
+  "title": "In Rainbows",
+  "year": 2007,
+  "release": "2007",
+  "cover": "./reference/album-cover.jpg",
+  "coverFilename": "album-cover.jpg",
+  "reviewStatus": "layout-demo",
+  "ratingDisclaimer": "界面排版示例，非正式专辑评价。",
+  "metadataSource": "source.json"
+}

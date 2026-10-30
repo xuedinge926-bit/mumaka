@@ -50,7 +50,7 @@ test('极简首页 → 手动评分零理由 → 三种比例真实PNG → 保�
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('/');
   await expect(page.getByLabel('搜索专辑或音乐人')).toBeVisible();
-  await expect(page.getByText('未连接 Spotify，')).toBeVisible();
+  await expect(page.getByText('Spotify 搜索未配置')).toBeVisible();
   await expect(page.getByRole('main')).not.toContainText(/SHA|L1|半入|模型|558|审核|权重|听评/);
   await page.screenshot({ path: '/tmp/nmc-ux-home.png', fullPage: true });
   await manual(page);
@@ -214,7 +214,7 @@ test('旧版已发表记录读取冻结分数，复制修改不覆盖历史，�
   await expect(page.locator('#score-card-svg')).toContainText('6.66');
   await page.getByRole('button', { name: '复制为新评分，继续修改', exact: true }).click();
   await page.getByLabel('专辑名称').fill('新副本');
-  await page.getByRole('button', { name: '新乐评主义，返回首页', exact: true }).click();
+  await page.getByRole('button', { name: 'MUMAKA / 木马卡，返回首页', exact: true }).click();
   await expect(page.locator('.recent-album')).toHaveCount(2);
   await page.evaluate(async () => { await navigator.serviceWorker.ready; });
   await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller)).toBe(true);

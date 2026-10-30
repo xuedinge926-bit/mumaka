@@ -1,7 +1,7 @@
 import { DIMENSIONS, LABELS, type Album } from '../model/types';
 
 export interface RoseProps {
-  ratings: Album['ratings'];
+  ratings: { [D in keyof Album['ratings']]: Pick<Album['ratings'][D], 'value'> };
   /** Retained for old callers; weights never alter or annotate the rose. */
   weights?: string[];
   size?: number;

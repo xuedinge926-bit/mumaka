@@ -1,0 +1,10 @@
+{
+  "fixtureNotice": "Synthetic public API shape for repeatable tests; not a real release.",
+  "resultCount": 4,
+  "results": [
+    {"wrapperType":"collection","collectionId":123456789,"collectionName":"导入流程测试专辑（样本）","artistName":"测试音乐人","releaseDate":"2024-03-01T08:00:00Z","trackCount":3,"primaryGenreName":"Alternative","artworkUrl100":"https://is1-ssl.mzstatic.com/image/thumb/test/100x100bb.jpg"},
+    {"wrapperType":"track","kind":"song","collectionId":123456789,"trackName":"第三首","discNumber":1,"trackNumber":3,"trackTimeMillis":200500},
+    {"wrapperType":"track","kind":"song","collectionId":123456789,"trackName":"第一首","discNumber":1,"trackNumber":1,"trackTimeMillis":180000},
+    {"wrapperType":"track","kind":"song","collectionId":123456789,"trackName":"第二首","discNumber":1,"trackNumber":2,"trackTimeMillis":210000}
+  ]
+}

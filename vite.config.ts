@@ -10,5 +10,6 @@ export default defineConfig(({ mode }) => {
   return { plugins: [react(), tailwindcss(), spotifyProxy({ env: {
     SPOTIFY_CLIENT_ID: env.SPOTIFY_CLIENT_ID,
     SPOTIFY_CLIENT_SECRET: env.SPOTIFY_CLIENT_SECRET,
+    SPOTIFY_ALLOWED_ORIGINS: env.SPOTIFY_ALLOWED_ORIGINS,
   } })], test: { environment: 'node', include: ['src/**/*.test.ts'] } };
 });

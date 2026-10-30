@@ -50,6 +50,13 @@ export function validateAlbum(value: unknown): asserts value is Album {
       if (field) { try { const url = new URL(field as string); if (url.protocol !== 'https:' || url.username || url.password) fail('Spotify 来源链接须使用 HTTPS'); } catch { fail('Spotify 来源链接须使用 HTTPS'); } }
     }
   }
+  if (a.importSource !== undefined) {
+    const s = a.importSource as Record<string, unknown>;
+    if (!object(s) || !['apple-music','bandcamp'].includes(s.provider as string) || !['url','metadataUrl','adapter','releaseDate'].every(k=>text(s[k])) || !date(s.fetchedAt) || (s.releaseType!==null&&!['album','ep','single'].includes(s.releaseType as string)) || !strings(s.referenceGenres) || s.referenceGenres.length>40) fail('导入来源记录格式错误');
+    for (const key of ['url','metadataUrl']) {
+      try { const u=new URL(s[key] as string);if(u.protocol!=='https:'||u.username||u.password)fail('导入来源链接须使用 HTTPS'); } catch { fail('导入来源链接须使用 HTTPS'); }
+    }
+  }
   if (!['专辑', 'EP'].includes(a.kind as string) || !['single', 'equal', 'duration'].includes(a.blendMode as string) || !statuses.includes(a.status as string)) fail('作品类型、聚合方式或审核状态无效');
   if (!date(a.createdAt) || !date(a.updatedAt) || !Number.isInteger(a.revision) || (a.revision as number) < 1) fail('作品日期或版本号无效');
   if (!['sourceReviewed', 'noDoubleCount', 'fullListenConfirmed'].every(k => typeof a[k] === 'boolean')) fail('审核确认字段无效');

@@ -1,0 +1,56 @@
+name: Publish scoring app to GitHub Pages branch
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mumaka-pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - name: Build with the public Spotify proxy URL
+        env:
+          VITE_SPOTIFY_PROXY_URL: ${{ vars.SPOTIFY_PROXY_URL }}
+        run: |
+          npm run build
+          node scripts/build-standalone.mjs /tmp/mumaka-pages/index.html
+      - name: Prepare static branch and local package
+        run: |
+          touch /tmp/mumaka-pages/.nojekyll
+          python3 - <<'PY'
+          from pathlib import Path
+          import zipfile
+          root = Path('/tmp/mumaka-pages')
+          with zipfile.ZipFile(root / 'nmc-local.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
+              archive.write(root / 'index.html', 'nmc-local.html')
+          PY
+      - name: Publish app only; design studies are excluded
+        run: |
+          git fetch origin gh-pages:refs/remotes/origin/gh-pages
+          previous=$(git rev-parse origin/gh-pages)
+          cd /tmp/mumaka-pages
+          git init
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add index.html nmc-local.zip .nojekyll
+          git commit -m 'Build static app'
+          tree=$(git rev-parse HEAD^{tree})
+          git --git-dir="$GITHUB_WORKSPACE/.git" config user.name github-actions[bot]
+          git --git-dir="$GITHUB_WORKSPACE/.git" config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git --git-dir="$GITHUB_WORKSPACE/.git" fetch /tmp/mumaka-pages HEAD
+          commit=$(git --git-dir="$GITHUB_WORKSPACE/.git" commit-tree "$tree" -p "$previous" -m 'Deploy scoring app with configured Spotify proxy')
+          git --git-dir="$GITHUB_WORKSPACE/.git" push origin "$commit:refs/heads/gh-pages"

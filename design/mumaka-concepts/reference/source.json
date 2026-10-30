@@ -1,0 +1,38 @@
+{
+  "purpose": "三个视觉方向共用的真实专辑资料与原封面，仅用于用户要求的界面设计比较。",
+  "album": {
+    "artist": "Radiohead",
+    "title": "In Rainbows",
+    "year": 2007
+  },
+  "cover": {
+    "localFile": "album-cover.jpg",
+    "width": 492,
+    "height": 492,
+    "bytes": 60562,
+    "sha256": "9cf5665ac6ad67d45bfed514e49a6b62bb3e6fdb1c81904cfc6600661ebb7ab0",
+    "sourceType": "公开 GitHub 仓库中保存的真实专辑封面；非生成、重绘或模拟图片。",
+    "repository": "https://github.com/cj-holmes/inRainbows",
+    "commit": "6bfc6a13ae0a0d080cfb716882c3e82da71eb1d6",
+    "sourceUrl": "https://raw.githubusercontent.com/cj-holmes/inRainbows/6bfc6a13ae0a0d080cfb716882c3e82da71eb1d6/data-raw/album_covers/in_rainbows.jpg",
+    "contextUrl": "https://github.com/cj-holmes/inRainbows/blob/6bfc6a13ae0a0d080cfb716882c3e82da71eb1d6/README.md",
+    "context": "仓库 README 说明其项目以 Radiohead 专辑封面创建配色；图片从 data-raw/album_covers 原始素材目录取得，并经视觉核对包含原版 IN RAINBOWS / RADIOHEAD 彩色文字与橙红图像。",
+    "rightsNote": "专辑美术著作权属于其权利人。第三方代码仓库不代表授予专辑封面开源许可。这里仅以真实专辑封面作为设计参考素材。"
+  },
+  "metadata": {
+    "sourceType": "公开 Pitchfork 评论元数据集，仅查询专辑名称、音乐人和发行年字段。",
+    "repository": "https://github.com/nolanbconaway/pitchfork-data",
+    "commit": "d7af96ee6fd0b8b24e1c1bbcd95bf90ad205bb6d",
+    "sourceUrl": "https://raw.githubusercontent.com/nolanbconaway/pitchfork-data/d7af96ee6fd0b8b24e1c1bbcd95bf90ad205bb6d/pitchfork.db",
+    "record": {
+      "reviewid": 10785,
+      "title": "in rainbows",
+      "artist": "radiohead",
+      "year": 2007
+    },
+    "upstreamReviewUrl": "http://pitchfork.com/reviews/albums/10785-in-rainbows/",
+    "verification": "以上元数据通过固定 commit 的 SQLite reviews 与 years 表连接查询核对。上游评论网页本次未直接读取。未复制、导入或使用第三方评分。"
+  },
+  "retrievedOn": "2026-10-30",
+  "ratingPolicy": "所有展示分数必须由本项目正式引擎根据明确标注的布局示例输入计算；本文件不包含、推断或授权正式评分。"
+}

@@ -7,9 +7,13 @@ import { build } from 'esbuild';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { loadEnv } from 'vite';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const output = resolve(process.argv[2] || resolve(root, 'standalone/新乐评主义.html'));
+// Only the public endpoint is embedded. Never copy service credentials from env.
+const env = loadEnv('production', root, 'VITE_');
+const proxyUrl = process.env.VITE_SPOTIFY_PROXY_URL || env.VITE_SPOTIFY_PROXY_URL || '';
 const assetDirectory = resolve(root, 'dist/assets');
 const cssFiles = (await readdir(assetDirectory)).filter(name => name.endsWith('.css')).sort();
 if (!cssFiles.length) throw new Error('找不到生产样式，请先运行 npm run build。');
@@ -30,9 +34,9 @@ const bundled = await build({
   loader: { '.css': 'empty' },
   define: {
     'process.env.NODE_ENV': '"production"',
-    // The HTML already contains every runtime asset. No file:// SW is needed.
-    'import.meta.env.PROD': 'false',
-    'import.meta.env.DEV': 'false',
+    // Explicit public fields only; supports optional-chain access too.
+    // The HTML contains every asset, so it does not register a file:// worker.
+    'import.meta.env': JSON.stringify({ PROD: false, DEV: false, VITE_SPOTIFY_PROXY_URL: proxyUrl }),
   },
 });
 const javascript = bundled.outputFiles[0].text;
@@ -42,7 +46,7 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#244c40">
 <meta name="description" content="新乐评主义：本地优先、人工主导的六维专辑评价工作台">
-<title>新乐评主义 · 六维评价工作台</title>
+<title>MUMAKA / 木马卡 · 新乐评主义</title>
 <style>${css.replace(/<\/style/gi, '<\\/style')}</style>
 </head><body><div id="root"></div>
 <script>${javascript.replace(/<\/script/gi, '<\\/script')}</script>
