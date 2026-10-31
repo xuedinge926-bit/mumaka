@@ -57,12 +57,17 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           name: public-site
           path: public-site
+      - name: Verify existing Pages source
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: test "$(gh api repos/$GITHUB_REPOSITORY/pages --jq .source.branch)" = "gh-pages"
       - name: Append deployment to existing gh-pages history
         env:
           SOURCE_SHA: ${{ github.sha }}
@@ -78,6 +83,10 @@ jobs:
           tree=$(git rev-parse HEAD^{tree})
           git --git-dir="$GITHUB_WORKSPACE/.git" config user.name github-actions[bot]
           git --git-dir="$GITHUB_WORKSPACE/.git" config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git --git-dir="$GITHUB_WORKSPACE/.git" fetch . HEAD
+          git --git-dir="$GITHUB_WORKSPACE/.git" fetch "$GITHUB_WORKSPACE/public-site" HEAD
           commit=$(git --git-dir="$GITHUB_WORKSPACE/.git" commit-tree "$tree" -p "$previous" -m "Deploy MUMAKA $SOURCE_SHA")
           git --git-dir="$GITHUB_WORKSPACE/.git" push origin "$commit:refs/heads/gh-pages"
+      - name: Request build on existing Pages site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/$GITHUB_REPOSITORY/pages/builds
