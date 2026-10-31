@@ -19,7 +19,7 @@ describe("Pages-compatible navigation addresses", () => {
     ])
       expect(parseRoute(hash)).toEqual(HOME);
   });
-  it("covers the seven real workspace destinations", () => {
+  it("covers every real workspace destination", () => {
     for (const tab of Object.keys(
       WORKSPACE_LABELS,
     ) as (keyof typeof WORKSPACE_LABELS)[]) {
@@ -27,6 +27,13 @@ describe("Pages-compatible navigation addresses", () => {
       expect(parseRoute("#" + routePath(route))).toEqual(route);
       expect(routeLabel(route)).toBe(WORKSPACE_LABELS[tab]);
     }
+  });
+  it('round-trips separate research drafts and immutable revision routes', () => {
+    for (const kind of ['draft','revision'] as const) {
+      const route = {view:'workspace' as const,tab:'research' as const,research:{kind,id:'研究 / version#1'}};
+      expect(parseRoute('#'+routePath(route))).toEqual(route);
+    }
+    for (const hash of ['#/research/delete/x','#/research/revision/%ZZ','#/research/draft/%00']) expect(parseRoute(hash)).toEqual(HOME);
   });
   it("keeps legacy arbitrary record IDs and frozen history separate, including encoded slashes", () => {
     for (const kind of ["album", "snapshot"] as const)

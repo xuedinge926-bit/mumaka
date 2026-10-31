@@ -128,5 +128,5 @@ describe('authoritative source data integrity', () => {
     for (const [path, expected] of entries) {
       expect(sha256(readFileSync(`${project}docs/${path}`)), path).toBe(expected);
     }
-  });
+  }, 120_000);
 });

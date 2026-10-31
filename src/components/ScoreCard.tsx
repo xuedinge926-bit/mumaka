@@ -56,7 +56,8 @@ export function ScoreCard(props: ScoreCardProps) {
     ? wrapCardText(summary.replace(/\s+/gu, ' ').trim(), 36)
     : naturalSummaryLines;
   const summaryHeight = summaryLines.length ? summaryLines.length * 39 + 22 : 0;
-  const availableMain = height - headerBottom - 48 - 80 - (summaryHeight ? summaryHeight + 40 : 0);
+  const researchHeight = data.research ? 110 : 0;
+  const availableMain = height - headerBottom - 48 - 80 - researchHeight - (summaryHeight ? summaryHeight + 40 : 0);
   const mainHeight = Math.max(200, Math.min(summaryHeight ? 520 : 610, availableMain));
   const mainTop = headerBottom + 48 + Math.max(0, (availableMain - mainHeight) / 2);
   const coverSize = Math.min(450, mainHeight * .9);
@@ -66,11 +67,12 @@ export function ScoreCard(props: ScoreCardProps) {
   const roseX = 790 - roseSize / 2;
   const roseY = mainTop + (mainHeight - roseSize) / 2;
   const summaryY = mainTop + mainHeight + 40;
-  return <svg id="score-card-svg" viewBox={`0 0 1080 ${height}`} width="1080" height={height} role="img" aria-label={`${rawTitle}的私人评分卡`} xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', width: '100%', height: 'auto' }}>
+  return <svg id="score-card-svg" viewBox={`0 0 1080 ${height}`} width="1080" height={height} role="img" aria-label={`${rawTitle}的${data.research ? '研究' : '私人'}评分卡`} xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', width: '100%', height: 'auto' }}>
+    {data.research && <metadata>{JSON.stringify(data.research.metadata)}</metadata>}
     <rect width="1080" height={height} fill={paper} />
     <g fontFamily="'PingFang SC', 'Microsoft YaHei', sans-serif">
       <text x="64" y="65" fill={ink} fontSize="27" fontWeight="700" letterSpacing="3">新乐评主义</text>
-      <text x="1016" y="63" textAnchor="end" fill={muted} fontSize="21">私人评分</text>
+      <text x="1016" y="63" textAnchor="end" fill={muted} fontSize="21">{data.research?.badge ?? '私人评分'}</text>
       <line x1="64" x2="1016" y1="92" y2="92" stroke={line} />
       {titleLines.map((value, i) => <text key={i} x="64" y={titleY + i * (titleFont + 11)} fill={ink} fontSize={titleFont} fontWeight="700">{value}</text>)}
       {artistLines.map((value, i) => <text key={i} x="66" y={artistY + i * 35} fill={muted} fontSize="27">{value}{i === artistLines.length - 1 && album.year ? ` · ${album.year}` : ''}</text>)}
@@ -84,10 +86,14 @@ export function ScoreCard(props: ScoreCardProps) {
           <circle cx="290" cy={coverY + coverSize / 2} r={coverSize * .025} />
         </g>}
       </g>
-      <g transform={`translate(${roseX} ${roseY}) scale(${roseSize / 360})`} aria-label="六维风向玫瑰图"><RoseGraphic ratings={album.ratings} dark={dark} /></g>
+      <g transform={`translate(${roseX} ${roseY}) scale(${roseSize / 360})`} aria-label="六维风向玫瑰图"><RoseGraphic ratings={album.ratings} dark={dark} axisLabels={data.dimensionLabels} axisEnglish={data.dimensionEnglish} axisWeights={data.axisWeights} /></g>
       {summaryLines.length > 0 && <g aria-label="专辑短评">
         <line x1="64" x2="1016" y1={summaryY - 23} y2={summaryY - 23} stroke={line} />
         {summaryLines.map((value, i) => <text key={i} x="64" y={summaryY + 14 + i * 39} fill={ink} fontSize="26">{value}</text>)}
+      </g>}
+      {data.research && <g aria-label="研究版本与审核状态">
+        <line x1="64" x2="1016" y1={height - 155} y2={height - 155} stroke={line} />
+        {data.research.lines.slice(0, 3).map((value, i)=><text key={i} x="64" y={height - 126 + i * 26} fill={muted} fontSize="17">{value}</text>)}
       </g>}
       <text x="64" y={height - 42} fill={muted} fontSize="17" letterSpacing="2">NEW MUSIC CRITICISM</text>
       <circle cx="1008" cy={height - 49} r="5" fill={accent} />

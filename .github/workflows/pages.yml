@@ -1,56 +1,83 @@
-name: Publish scoring app to GitHub Pages branch
+name: Check and publish MUMAKA
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: mumaka-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  publish:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - run: npm ci
-      - name: Build with the public Spotify proxy URL
+      - run: npm test -- --maxWorkers=2
+      - run: npm run test:reference
+      - run: npm run test:import
+      - run: npm run build
+        env:
+          VITE_SPOTIFY_PROXY_URL: ${{ vars.SPOTIFY_PROXY_URL }}
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - name: Build self-contained Pages application
         env:
           VITE_SPOTIFY_PROXY_URL: ${{ vars.SPOTIFY_PROXY_URL }}
         run: |
-          npm run build
-          node scripts/build-standalone.mjs /tmp/mumaka-pages/index.html
-      - name: Prepare static branch and local package
-        run: |
-          touch /tmp/mumaka-pages/.nojekyll
+          node scripts/build-standalone.mjs public-site/index.html
+          touch public-site/.nojekyll
           python3 - <<'PY'
           from pathlib import Path
           import zipfile
-          root = Path('/tmp/mumaka-pages')
+          root = Path('public-site')
           with zipfile.ZipFile(root / 'nmc-local.zip', 'w', zipfile.ZIP_DEFLATED) as archive:
               archive.write(root / 'index.html', 'nmc-local.html')
           PY
-      - name: Publish app only; design studies are excluded
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-site
+          path: public-site/
+          include-hidden-files: true
+          retention-days: 14
+  publish:
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: public-site
+          path: public-site
+      - name: Append deployment to existing gh-pages history
+        env:
+          SOURCE_SHA: ${{ github.sha }}
         run: |
           git fetch origin gh-pages:refs/remotes/origin/gh-pages
           previous=$(git rev-parse origin/gh-pages)
-          cd /tmp/mumaka-pages
+          cd public-site
           git init
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add index.html nmc-local.zip .nojekyll
-          git commit -m 'Build static app'
+          git commit -m "Build MUMAKA $SOURCE_SHA"
           tree=$(git rev-parse HEAD^{tree})
           git --git-dir="$GITHUB_WORKSPACE/.git" config user.name github-actions[bot]
           git --git-dir="$GITHUB_WORKSPACE/.git" config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git --git-dir="$GITHUB_WORKSPACE/.git" fetch /tmp/mumaka-pages HEAD
-          commit=$(git --git-dir="$GITHUB_WORKSPACE/.git" commit-tree "$tree" -p "$previous" -m 'Deploy scoring app with configured Spotify proxy')
+          git --git-dir="$GITHUB_WORKSPACE/.git" fetch . HEAD
+          commit=$(git --git-dir="$GITHUB_WORKSPACE/.git" commit-tree "$tree" -p "$previous" -m "Deploy MUMAKA $SOURCE_SHA")
           git --git-dir="$GITHUB_WORKSPACE/.git" push origin "$commit:refs/heads/gh-pages"

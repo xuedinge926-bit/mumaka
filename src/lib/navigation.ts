@@ -5,6 +5,7 @@ export const WORKSPACE_LABELS = {
   library: "作品库",
   ratings: "评分记录",
   genres: "风格管理",
+  research: "V0.35 研究评分",
   cards: "评分卡",
   data: "数据管理",
   settings: "设置",
@@ -12,7 +13,7 @@ export const WORKSPACE_LABELS = {
 export type Workspace = keyof typeof WORKSPACE_LABELS;
 export type EditorStage = "confirm" | "rating" | "card";
 export type AppRoute =
-  | { view: "workspace"; tab: Workspace }
+  | { view: "workspace"; tab: Workspace; research?: { kind: 'draft' | 'revision'; id: string } }
   | {
       view: "editor";
       kind: "album" | "snapshot";
@@ -25,12 +26,21 @@ const marker = "mumakaNavigation";
 
 export function routePath(route: AppRoute): string {
   return route.view === "workspace"
-    ? `/${route.tab}`
+    ? route.tab === 'research' && route.research
+      ? `/research/${route.research.kind}/${encodeURIComponent(route.research.id)}`
+      : `/${route.tab}`
     : `/${route.kind}/${encodeURIComponent(route.id)}/${route.stage}`;
 }
 export function parseRoute(hash: string): AppRoute {
   const path = hash.replace(/^#/, "");
   const segments = path.split("/").filter(Boolean);
+  if (segments.length === 3 && segments[0] === 'research' && ['draft', 'revision'].includes(segments[1])) {
+    try {
+      const id = decodeURIComponent(segments[2]);
+      if (id && id.length <= 500 && !/[\u0000-\u001f]/u.test(id)) return { view: 'workspace', tab: 'research', research: { kind: segments[1] as 'draft' | 'revision', id } };
+    } catch { /* Invalid research IDs use the normal fallback. */ }
+    return HOME;
+  }
   if (segments.length === 1 && Object.hasOwn(WORKSPACE_LABELS, segments[0]))
     return { view: "workspace", tab: segments[0] as Workspace };
   if (

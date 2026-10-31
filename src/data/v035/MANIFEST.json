@@ -1,0 +1,31 @@
+{
+  "bundle_id": "MUMAKA_CODEX_V035_RC1",
+  "weight_source": "V0.34 research candidate, NOT approved production weights",
+  "model_policy": "V0.29 rules + V0.35 naming confirmed 2026-10-31",
+  "counts": {
+    "families": 34,
+    "genre_ids": 565,
+    "weighted_candidates": 522,
+    "index_only": 43,
+    "definition_review": 5,
+    "general_entries": 15,
+    "approved_weight_profiles": 0
+  },
+  "files": [
+    {
+      "path": "data/MODEL_POLICY_V035.json",
+      "sha256": "5a0c5ab5aa8c98f92e817325a43d49ee258ec725e4d9c78b57c07fa1b8db66d2",
+      "size": 3219
+    },
+    {
+      "path": "data/families.v035.json",
+      "sha256": "7765f453dd6f3046b418a15c80b7ed620ed9a947ade986ffae1389b2c72344a8",
+      "size": 21749
+    },
+    {
+      "path": "data/genres.v035.json",
+      "sha256": "3c1f72baf14136fee880b640438223f4e785f0c2c20709d8606c4fbf1ced9f83",
+      "size": 851333
+    }
+  ]
+}

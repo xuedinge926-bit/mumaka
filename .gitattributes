@@ -1,0 +1,3 @@
+# Preserve the supplied byte-level source checksums on every checkout platform.
+src/data/v035/*.json -text
+docs/v035/reference/** -text

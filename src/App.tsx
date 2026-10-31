@@ -3,6 +3,8 @@ import {
   useEffect,
   useRef,
   useState,
+  lazy,
+  Suspense,
   type ReactNode,
 } from "react";
 import {
@@ -84,6 +86,8 @@ import {
 } from "./lib/preferences";
 import { toScoreCardData } from "./lib/scoreCardData";
 import provenance from "./data/provenance.json";
+
+const ResearchWorkspace = lazy(() => import('./components/ResearchWorkspace').then(module => ({ default: module.ResearchWorkspace })));
 
 type Screen = "home" | "workbench" | "confirm" | "rating" | "card";
 const SOURCE_LABELS = {
@@ -184,7 +188,7 @@ export default function App() {
         ? "home"
         : "workbench";
   const workbenchTab: WorkbenchTab =
-    route.view === "workspace" && route.tab !== "home" && route.tab !== "genres"
+    route.view === "workspace" && route.tab !== "home" && route.tab !== "genres" && route.tab !== "research"
       ? route.tab
       : "library";
   const [snapshot, storeSnapshot] = useState<Snapshot | null>(null);
@@ -1109,6 +1113,12 @@ export default function App() {
           <main className="workspace-page" role="status">
             正在读取评分记录…
           </main>
+        ) : route.view === "workspace" && route.tab === "research" ? (
+          <Suspense fallback={<main className="workspace-page" role="status">正在打开V0.35研究工作区…</main>}>
+            <ResearchWorkspace record={route.research} legacyAlbums={albums} legacySnapshots={history}
+              onNavigate={research => router.navigate({ view: 'workspace', tab: 'research', ...(research ? { research } : {}) })}
+              onOpenLegacy={openAlbum} />
+          </Suspense>
         ) : route.view === "workspace" && route.tab === "genres" ? (
           <GenreWorkspace
             album={albums.some((a) => a.id === draft.id) ? draft : null}
@@ -1156,6 +1166,8 @@ export default function App() {
               </button>
             </div>
             <div className="search-helper">
+              <button disabled={busy} onClick={() => navigateWorkspace('research')}>V0.35 研究评分</button>
+              <span aria-hidden="true">·</span>
               <button disabled={busy} onClick={() => setImportOpen(true)}>
                 通过链接添加
               </button>

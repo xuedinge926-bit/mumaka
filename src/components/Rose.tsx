@@ -6,6 +6,9 @@ export interface RoseProps {
   weights?: string[];
   size?: number;
   dark?: boolean;
+  axisLabels?: typeof LABELS;
+  axisEnglish?: Record<keyof typeof LABELS, string>;
+  axisWeights?: string[];
 }
 
 const point = (angle: number, radius: number): [number, number] => [180 + Math.cos(angle) * radius, 180 + Math.sin(angle) * radius];
@@ -22,7 +25,7 @@ export function ratingText(value: number | null | 'na'): string {
 }
 
 /** A pair of tangent cubic curves forms each soft, rounded petal. */
-export function RoseGraphic({ ratings, dark = false }: Omit<RoseProps, 'size'>) {
+export function RoseGraphic({ ratings, dark = false, axisLabels = LABELS, axisEnglish, axisWeights }: Omit<RoseProps, 'size'>) {
   const ink = dark ? '#f5f0e5' : '#353a35';
   const muted = dark ? '#c3bdb1' : '#77756d';
   const colors = dark
@@ -48,17 +51,18 @@ export function RoseGraphic({ ratings, dark = false }: Omit<RoseProps, 'size'>) 
       const angle = -Math.PI / 2 + index * Math.PI / 3;
       const [x, y] = point(angle, 142);
       return <g key={dimension} textAnchor="middle">
-        <text x={x} y={y - 3} fill={ink} fontSize="14" fontWeight="600">{LABELS[dimension]}</text>
-        <text x={x} y={y + 15} fill={muted} fontSize="10.5">{ratingText(ratings[dimension].value)}</text>
+        {axisEnglish && <text x={x} y={y - 20} fill={muted} fontSize="8">{axisEnglish[dimension]}</text>}
+        <text x={x} y={y - 3} fill={ink} fontSize="14" fontWeight="600">{axisLabels[dimension]}</text>
+        <text x={x} y={y + 15} fill={muted} fontSize="10.5">{ratingText(ratings[dimension].value)}{axisWeights ? ` · ${displayWeight(axisWeights[index])}` : ''}</text>
       </g>;
     })}
   </g>;
 }
 
-export function Rose({ ratings, size = 340, dark = false }: RoseProps) {
-  const description = DIMENSIONS.map(d => `${LABELS[d]} ${ratingText(ratings[d].value)}`).join('；');
+export function Rose({ ratings, size = 340, dark = false, axisLabels = LABELS, axisEnglish, axisWeights }: RoseProps) {
+  const description = DIMENSIONS.map(d => `${axisLabels[d]} ${ratingText(ratings[d].value)}`).join('；');
   return <svg viewBox="0 0 360 360" width={size} height={size} role="img" aria-label={`六维风向玫瑰图：${description}`} style={{ maxWidth: '100%', height: 'auto', overflow: 'visible' }} xmlns="http://www.w3.org/2000/svg">
-    <RoseGraphic ratings={ratings} dark={dark} />
+    <RoseGraphic ratings={ratings} dark={dark} axisLabels={axisLabels} axisEnglish={axisEnglish} axisWeights={axisWeights} />
   </svg>;
 }
 

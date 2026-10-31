@@ -54,13 +54,13 @@ async function backup(page: Page) {
 async function restore(page: Page, data: string) {
   await page.goto("/");
   await page.getByRole("button", { name: "文件与备份", exact: true }).click();
-  await page
-    .locator('input[type=file][accept="application/json,.json"]')
-    .setInputFiles({
-      name: "test-backup.json",
-      mimeType: "application/json",
-      buffer: Buffer.from(data),
-    });
+  const chooser = page.waitForEvent("filechooser");
+  await page.getByRole("button", { name: "导入备份", exact: true }).click();
+  await (await chooser).setFiles({
+    name: "test-backup.json",
+    mimeType: "application/json",
+    buffer: Buffer.from(data),
+  });
   await expect(page.getByRole("status")).toContainText("已导入");
   await page
     .getByRole("button", { name: "关闭文件与备份", exact: true })

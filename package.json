@@ -11,6 +11,7 @@
     "import:serve": "python3 -m tools.album_import serve --root dist",
     "test:import": "python3 -m unittest discover -s tools/tests -v",
     "test": "vitest run",
+    "test:v035": "vitest run src/model/v035 src/lib/v035Storage.test.ts src/lib/navigation.test.ts",
     "test:e2e": "playwright test",
     "pretest": "python3 scripts/generate-reference-matrix.py",
     "test:reference": "python3 -m unittest discover -s docs/reference-supplement/tests -v",

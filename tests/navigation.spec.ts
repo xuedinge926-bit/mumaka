@@ -69,7 +69,7 @@ test("首页工作台入口展开同一菜单；全工作区往返与浏览器�
   await expect(page).toHaveURL(/#\/home$/);
   await expect(
     page.getByRole("navigation", { name: "应用导航" }).getByRole("button"),
-  ).toHaveCount(7);
+  ).toHaveCount(8);
   await settleMenu(page);
   await page.screenshot({
     path: shot + "/desktop-home-menu.png",

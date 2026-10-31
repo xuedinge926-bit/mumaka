@@ -25,6 +25,10 @@ export interface ScoreCardData {
   reviewer: string;
   updatedAt: string;
   modelProvenance?: unknown;
+  dimensionLabels?: Record<Dimension, string>;
+  dimensionEnglish?: Record<Dimension, string>;
+  axisWeights?: string[];
+  research?: { badge: string; lines: string[]; metadata: unknown };
 }
 
 /** No calculation, migration, or write. A historic result is passed through verbatim. */

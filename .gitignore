@@ -8,3 +8,20 @@ __pycache__/
 *.pyc
 
 standalone/
+work/
+outputs/
+local-records/
+
+# Private local records must never be committed
+.DS_Store
+MUMAKA_HANDOFF.md
+MUMAKA_CLOUD_SYNC.md
+docs/v035/PLAN.md
+docs/v035/MIGRATION.md
+docs/v035/RESULTS.md
+docs/v035/screenshots/
+启动MUMAKA.command
+本地开发说明.md
+MUMAKA_CODEX_*.zip
+CODEX_START_HERE.md
+public-site/
