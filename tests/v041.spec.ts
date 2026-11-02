@@ -42,6 +42,10 @@ test("desktop drawer floats, closes on backdrop and Escape, traps focus and all 
     page.getByRole("dialog", { name: "功能菜单", exact: true }),
   ).toBeVisible();
   expect((await home.boundingBox())!.x).toBe(before!.x);
+  await page.keyboard.press('Shift+Tab');
+  await expect(page.getByRole('navigation', {name:'应用导航',exact:true}).getByRole('button',{name:'数据与工具',exact:true})).toBeFocused();
+  await page.keyboard.press('Tab');
+  await expect(page.getByRole('button',{name:'收起侧边导航',exact:true})).toBeFocused();
   await expect(page.locator("#app-navigation")).not.toContainText(
     /MUMAKA|新乐评主义|研究评分|专业工作台/,
   );
@@ -302,6 +306,8 @@ test("reference manager replaces one candidate locally; home shares it; backup r
   await page
     .getByLabel("参考理由", { exact: true })
     .fill("用户候选校对：重编与新作的层次安排是比较起点，尚待完整试听审定。");
+  await page.route('https://example.com/mumaka-test-missing-cover.png', route => route.fulfill({status:404,body:'missing test image'}));
+  await page.getByLabel('参考封面地址',{exact:true}).fill('https://example.com/mumaka-test-missing-cover.png');
   await page.getByRole("button", { name: "保存此格", exact: true }).click();
   await expect(page.getByRole("status")).toContainText("参考已保存在本机");
   await page.goto("/#/reference");
@@ -309,6 +315,8 @@ test("reference manager replaces one candidate locally; home shares it; backup r
   const cell = page.locator('[data-anchor-id="china-song-Production-5"]');
   await cell.getByText("为何作参照", { exact: true }).click();
   await expect(cell).toContainText("用户候选校对");
+  await expect(cell.locator('.reference-cover')).toHaveAttribute('aria-label','暂无封面');
+  await expect(cell.locator('img')).toHaveCount(0);
   await page.goto("/#/data");
   const event = page.waitForEvent("download");
   await page
