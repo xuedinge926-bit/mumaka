@@ -20,7 +20,8 @@
     "test:reference": "python3 -m unittest discover -s docs/reference-supplement/tests -v",
     "build:standalone": "npm run build && node scripts/build-standalone.mjs",
     "package:local": "npm run build && node scripts/package-local.mjs",
-    "check:public": "node scripts/check-public.mjs"
+    "check:public": "node scripts/check-public.mjs",
+    "research:reference-covers": "node scripts/research-reference-covers.mjs"
   },
   "dependencies": {
     "@noble/hashes": "^2.4.0",

@@ -44,7 +44,8 @@
     "sources": [
       "https://www.yanni.com/music",
       "https://music.apple.com/us/album/sensuous-chill/1067977710",
-      "https://mainlypiano.com/reviews/yanni-sensuous-chill"
+      "https://mainlypiano.com/reviews/yanni-sensuous-chill",
+      "https://music.apple.com/us/album/sensuous-chill/1067977710?uo=4"
     ],
     "evidence": "官网确认2016发行；发行目录确认17曲，专业评论讨论电子化、节奏与传统旋律取向。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -54,7 +55,20 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/c3/f7/34/c3f734d6-8673-6324-e637-16f57d4e791f/886445585421.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/sensuous-chill/1067977710?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1067977710,
+      "catalogArtist": "Yanni",
+      "catalogTitle": "Sensuous Chill",
+      "catalogTrackCount": 18,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json",
+      "editionCaution": "目录条目计数比评分所选原版主体多1；只取同名官方封面作识别，附加项性质另核，不自动并入评分对象。"
+    }
   },
   {
     "id": "global-instrumental-Material-6",
@@ -71,7 +85,8 @@
     "feature": "短小旋律与分解和弦在多数曲目中直接配合，抒情材料基本稳定；与高档相比，动机变形和节奏材料的展开范围较集中。",
     "edition": "2001年Stomp原始录音15曲；采用标注The Original & the Very First Recording的版本，不用后期重录。",
     "sources": [
-      "https://music.apple.com/us/album/yiruma-2nd-album-first-love-the-original-the-very/1436677753"
+      "https://music.apple.com/us/album/yiruma-2nd-album-first-love-the-original-the-very/1436677753",
+      "https://music.apple.com/us/album/yiruma-2nd-album-first-love-the-original-the-very/1436677753?uo=4"
     ],
     "evidence": "发行页核首录版本、2001年和15曲；材料特点是初稿观察，不能仅凭River Flows in You代表整碟。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -81,7 +96,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5f/f4/9b/5ff49b8c-d0bb-3748-14f4-131edfb332ce/first_love_3000.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/yiruma-2nd-album-first-love-the-original-the-very/1436677753?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1436677753,
+      "catalogArtist": "Yiruma",
+      "catalogTitle": "Yiruma 2nd Album 'First Love' (The Original & the Very First Recording)",
+      "catalogTrackCount": 15,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Material-7",
@@ -99,7 +126,8 @@
     "edition": "1987年Relativity原专辑10曲；不纳2007现场盘及2019去主奏伴奏盘。",
     "sources": [
       "https://www.satriani.com/discography/Surfing_With_The_Alien/",
-      "https://www.allmusic.com/album/surfing-with-the-alien-mw0000651425"
+      "https://www.allmusic.com/album/surfing-with-the-alien-mw0000651425",
+      "https://music.apple.com/us/album/surfing-with-the-alien/405602019?uo=4"
     ],
     "evidence": "作者官网核原版日期、10曲与配器；AllMusic评论肯定旋律写作和技术结合。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -109,7 +137,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/40/cc/4a/40cc4a28-8630-bf68-fe8d-5fe4801fc915/884977849714.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/surfing-with-the-alien/405602019?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 405602019,
+      "catalogArtist": "Joe Satriani",
+      "catalogTitle": "Surfing with the Alien",
+      "catalogTrackCount": 10,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Material-8",
@@ -127,7 +167,8 @@
     "edition": "1992年Apollo/R&S原专辑13曲；有采样人声，主体为器乐电子。",
     "sources": [
       "https://music.apple.com/us/album/selected-ambient-works-85-92/1668862636",
-      "https://musicbrainz.org/release/6129adbf-1db8-35aa-b41e-d714a1fbe499"
+      "https://musicbrainz.org/release/6129adbf-1db8-35aa-b41e-d714a1fbe499",
+      "https://music.apple.com/us/album/selected-ambient-works-85-92/1668862636?uo=4"
     ],
     "evidence": "Apple编辑说明温暖、克制的节拍制作，MusicBrainz提供原版身份；月日有目录差异，仅锁1992年。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -137,7 +178,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5f/b3/e0/5fb3e08d-c2cd-3da4-6ad7-c5dc61803683/cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/selected-ambient-works-85-92/1668862636?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1668862636,
+      "catalogArtist": "Aphex Twin",
+      "catalogTitle": "Selected Ambient Works 85-92",
+      "catalogTrackCount": 13,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Material-9",
@@ -182,7 +235,8 @@
     "edition": "1959年Columbia原专辑5曲，不计附加take；播放版本需修正原版转速误差。",
     "sources": [
       "https://www.milesdavis.com/albums/kind-of-blue/",
-      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/KindOfBlue.pdf"
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/KindOfBlue.pdf",
+      "https://music.apple.com/us/album/kind-of-blue/268443092?uo=4"
     ],
     "evidence": "艺人官方目录核1959日期、五曲及调式/蓝调与声音留白；LOC文章支持录音史背景。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -192,7 +246,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/7f/9f/d6/mzi.vtnaewef.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/kind-of-blue/268443092?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 268443092,
+      "catalogArtist": "Miles Davis",
+      "catalogTitle": "Kind of Blue",
+      "catalogTrackCount": 5,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Structure-4",
@@ -210,7 +276,8 @@
     "edition": "2019年Decca七碟完整套装，非单独Day One或演唱会；Day Seven为钢琴独奏。",
     "sources": [
       "https://mainlypiano.com/reviews/ludovico-einaudi-seven-days-walking",
-      "https://www.qobuz.com/us-en/album/seven-days-walking-day-one-ludovico-einaudi/lyq6fuxfklr4a"
+      "https://www.qobuz.com/us-en/album/seven-days-walking-day-one-ludovico-einaudi/lyq6fuxfklr4a",
+      "https://music.apple.com/us/album/seven-days-walking/1482345109?uo=4"
     ],
     "evidence": "完整套装评论核7碟、13个反复标题及前6碟弦乐/第7碟独奏；它肯定细节差异，不是2星的权威依据。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -220,7 +287,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/fd/b2/e4/fdb2e401-eb45-3c6b-c9ac-4ab21d5b6dc7/19UMGIM83311.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/seven-days-walking/1482345109?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1482345109,
+      "catalogArtist": "Ludovico Einaudi",
+      "catalogTitle": "Seven Days Walking",
+      "catalogTrackCount": 80,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Structure-5",
@@ -238,7 +317,8 @@
     "edition": "2014年Rock Action标准10曲；大多数为器乐，Blues Hour及The Lord Is Out of Control有人声，不纳后续EP。",
     "sources": [
       "https://mogwai.bandcamp.com/album/rave-tapes",
-      "https://pitchfork.com/reviews/albums/18896-mogwai-rave-tapes/"
+      "https://pitchfork.com/reviews/albums/18896-mogwai-rave-tapes/",
+      "https://music.apple.com/us/album/rave-tapes/1743115346?uo=4"
     ],
     "evidence": "官方页确认10曲2014发行；Pitchfork评论指出电子化并未完全改变熟悉的组织空间，同时承认局部充分实现。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -248,7 +328,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6d/8d/2a/6d8d2a75-91ca-3237-293a-e07ce91d03b5/102989.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/rave-tapes/1743115346?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1743115346,
+      "catalogArtist": "Mogwai",
+      "catalogTitle": "Rave Tapes",
+      "catalogTrackCount": 10,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Structure-6",
@@ -265,7 +357,8 @@
     "feature": "钢琴小品以短段落、停顿和前后呼应建立清楚次序，完整而克制；结构重心在小型场景的衔接，较少追求长篇发展。",
     "edition": "2009年单钢琴作品集原版，14曲；不与同名乐谱或后续The Clearing混用。",
     "sources": [
-      "https://rachelgrimes.bandcamp.com/album/book-of-leaves"
+      "https://rachelgrimes.bandcamp.com/album/book-of-leaves",
+      "https://music.apple.com/us/album/book-of-leaves/6801300466?uo=4"
     ],
     "evidence": "作者发行页核2009年与完整曲序；结构3星是小品组织的研究定位，并非把篇幅短当作缺陷。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -275,7 +368,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/37/67/e43767e4-8b22-79cd-c3e2-cc4a719fd8bb/68294.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/book-of-leaves/6801300466?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 6801300466,
+      "catalogArtist": "Rachel Grimes",
+      "catalogTitle": "Book of Leaves",
+      "catalogTrackCount": 14,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Structure-7",
@@ -293,7 +398,8 @@
     "edition": "1998年Thrill Jockey原12曲；不把2016再版当作首发年。",
     "sources": [
       "https://www.thrilljockey.com/products/tnt",
-      "https://music.apple.com/us/album/tnt/314874253"
+      "https://music.apple.com/us/album/tnt/314874253",
+      "https://music.apple.com/us/album/tnt/314874253?uo=4"
     ],
     "evidence": "厂牌说明长时录音和重混方法进入作曲，Apple核1998年及12曲。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -303,7 +409,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4c/82/dd/4c82ddf1-30e7-8f7c-2df0-e20d4c3789f5/dj.ioxepqhb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/tnt/314874253?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 314874253,
+      "catalogArtist": "Tortoise",
+      "catalogTitle": "TNT",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Structure-8",
@@ -320,7 +438,8 @@
     "feature": "循环节拍在音色、重音和层次位移中逐渐变形，机械重复被组织成持续变化的时间过程；十曲多数能兼顾局部密度与整体辨识。",
     "edition": "1995年Warp WARPCD38原10曲；不把美国Tri Repetae++附加EP算入专辑。",
     "sources": [
-      "https://autechre.warp.net/release/202839-autechre-tri-repetae"
+      "https://autechre.warp.net/release/202839-autechre-tri-repetae",
+      "https://music.apple.com/us/album/tri-repetae/281109010?uo=4"
     ],
     "evidence": "艺人/厂牌页核1995日期、编号和原10曲；变形结构判断需人工逐曲验证。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -330,7 +449,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/a9/36/b6/mzi.vtdskskv.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/tri-repetae/281109010?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 281109010,
+      "catalogArtist": "Autechre",
+      "catalogTitle": "Tri Repetae",
+      "catalogTrackCount": 10,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Structure-9",
@@ -348,7 +479,8 @@
     "edition": "1963年Impulse! A-35原专辑，完整六乐章/四个分轨口径，不按流媒体碎片单独评分。",
     "sources": [
       "https://www.impulserecords.com/releases-archive/black-saint-and-sinner-lady/",
-      "https://en.wikipedia.org/wiki/The_Black_Saint_and_the_Sinner_Lady"
+      "https://en.wikipedia.org/wiki/The_Black_Saint_and_the_Sinner_Lady",
+      "https://music.apple.com/us/album/the-black-saint-and-the-sinner-lady/1443280597?uo=4"
     ],
     "evidence": "厂牌确认发行身份，专辑条目说明1963年、连续作品及四轨六乐章的关系。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -358,7 +490,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cb/85/94/cb85949f-5a43-58d5-c866-d9d0292354bd/06UMGIM01616.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/the-black-saint-and-the-sinner-lady/1443280597?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1443280597,
+      "catalogArtist": "Charles Mingus",
+      "catalogTitle": "The Black Saint and the Sinner Lady",
+      "catalogTrackCount": 4,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Structure-10",
@@ -375,7 +519,8 @@
     "feature": "和声循环、脉冲和呼吸长度贯穿全作，段落转换从演奏关系中自然生成；微观变化与长程回归同时可感，是连续时间组织的典范候选。",
     "edition": "ECM 1129，1976录音、1978发行首录；不用1998年Nonesuch重录替代。",
     "sources": [
-      "https://ecmrecords.com/product/steve-reich-music-for-18-musicians-steve-reich-ensemble/"
+      "https://ecmrecords.com/product/steve-reich-music-for-18-musicians-steve-reich-ensemble/",
+      "https://music.apple.com/us/album/reich-music-for-18-musicians/1452312720?uo=4"
     ],
     "evidence": "ECM核1978首发、1976录音、完整曲段与参与者；无词人声作为器乐编制部分。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -385,7 +530,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3f/f3/1f/3ff31f10-a505-440f-4639-1d5640b529e5/00042282141729.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/reich-music-for-18-musicians/1452312720?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1452312720,
+      "catalogArtist": "Steve Reich Ensemble",
+      "catalogTitle": "Reich: Music for 18 Musicians",
+      "catalogTrackCount": 1,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Performance-4",
@@ -403,7 +560,8 @@
     "edition": "1978年同名专辑12曲BMG目录口径；不是同名单曲或后期精选。",
     "sources": [
       "https://music.apple.com/us/album/a-comme-amour/1616215993",
-      "https://www.qobuz.com/us-en/album/a-comme-amour-richard-clayderman/o3betj5wkksi3"
+      "https://www.qobuz.com/us-en/album/a-comme-amour-richard-clayderman/o3betj5wkksi3",
+      "https://music.apple.com/us/album/a-comme-amour/1616215993?uo=4"
     ],
     "evidence": "两家发行目录核12曲1978年与录音身份；尚无整碟表演负面证据，因此2星不得当作定案。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -413,7 +571,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/4a/73/8f/4a738ffb-26ec-69f7-2095-973fb62de920/4050538804850.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/a-comme-amour/1616215993?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1616215993,
+      "catalogArtist": "Richard Clayderman",
+      "catalogTitle": "A comme amour",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Performance-5",
@@ -431,7 +601,8 @@
     "edition": "2003年EMI标准13曲，非现场集，也不将协奏曲节选当完整原作。",
     "sources": [
       "https://music.apple.com/us/album/the-piano-player/695999850",
-      "https://www.prestomusic.com/classical/products/7925122--maksim-the-piano-player"
+      "https://www.prestomusic.com/classical/products/7925122--maksim-the-piano-player",
+      "https://music.apple.com/us/album/the-piano-player/695999850?uo=4"
     ],
     "evidence": "发行页核2003年及13曲；Presto说明所收古典作品与节选；未取得足够评论证明整碟诠释局限。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -441,7 +612,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/74/e0/8b/74e08b07-657d-68b4-2992-11912b0e3a95/0724355746153_1401x1401_300dpi.tif/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/the-piano-player/695999850?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 695999850,
+      "catalogArtist": "MAKSIM",
+      "catalogTitle": "The Piano Player",
+      "catalogTrackCount": 13,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Performance-6",
@@ -487,7 +670,8 @@
     "edition": "2014年Sumerian原专辑12曲，不采用现场演奏片段替代。",
     "sources": [
       "https://music.apple.com/us/album/the-joy-of-motion/1820375074",
-      "https://en.wikipedia.org/wiki/The_Joy_of_Motion"
+      "https://en.wikipedia.org/wiki/The_Joy_of_Motion",
+      "https://music.apple.com/us/album/the-joy-of-motion/1820375074?uo=4"
     ],
     "evidence": "厂牌授权目录核2014年、12曲54分钟及器乐属性；3.5为待审表演定位。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -497,7 +681,20 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/6b/6c/b86b6c41-4807-d22c-564f-c48c772cb605/00817424013741_Cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/the-joy-of-motion/1820375074?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1820375074,
+      "catalogArtist": "Animals As Leaders",
+      "catalogTitle": "The Joy of Motion",
+      "catalogTrackCount": 13,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json",
+      "editionCaution": "目录条目计数比评分所选原版主体多1；只取同名官方封面作识别，附加项性质另核，不自动并入评分对象。"
+    }
   },
   {
     "id": "global-instrumental-Performance-8",
@@ -572,7 +769,8 @@
     "edition": "1975年ECM 1064/1065完整现场双LP节目；1975年1月24日科隆录音，不以传说中的钢琴故障作评分依据。",
     "sources": [
       "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/The-Koln-Concert_Elsdon.pdf",
-      "https://en.wikipedia.org/wiki/The_K%C3%B6ln_Concert"
+      "https://en.wikipedia.org/wiki/The_K%C3%B6ln_Concert",
+      "https://music.apple.com/us/album/the-k%C3%B6ln-concert-live/1440840566?uo=4"
     ],
     "evidence": "LOC录音保存文章核整场即兴身份与1975年；专辑条目核当年双LP发行。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -582,7 +780,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/88/a5/ac/88a5ac07-7eac-6e07-a970-8073f48c0ad6/00602547299819.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/the-k%C3%B6ln-concert-live/1440840566?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1440840566,
+      "catalogArtist": "Keith Jarrett",
+      "catalogTitle": "The Köln Concert (Live)",
+      "catalogTrackCount": 5,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Production-4",
@@ -600,7 +810,8 @@
     "edition": "1993年Instinct原12曲；唱片公司编集性质在评论中有争议，勿宣称作者完整概念专辑。",
     "sources": [
       "https://www.allmusic.com/album/ambient-mw0000111086",
-      "https://en.wikipedia.org/wiki/Ambient_%28album%29"
+      "https://en.wikipedia.org/wiki/Ambient_%28album%29",
+      "https://music.apple.com/us/album/ambient/1500632090?uo=4"
     ],
     "evidence": "AllMusic核1993发行及氛围电子，并认为部分实验悦耳但创意不及同期代表作；该评论不直接证明制作只有2星。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -610,7 +821,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7a/04/5b/7a045b77-9a1a-e451-7a6c-54a4b1c84b00/5060236632685_1.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/ambient/1500632090?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1500632090,
+      "catalogArtist": "Moby",
+      "catalogTitle": "Ambient",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Production-5",
@@ -629,7 +852,8 @@
     "sources": [
       "https://www.musicomh.com/reviews/albums/jean-michel-jarre-equinoxe-infinity",
       "https://www.allmusic.com/album/equinoxe-infinity-mw0003216163",
-      "https://en.wikipedia.org/wiki/Equinoxe_Infinity"
+      "https://en.wikipedia.org/wiki/Equinoxe_Infinity",
+      "https://music.apple.com/us/album/equinoxe-infinity/1441178079?uo=4"
     ],
     "evidence": "评论确认续作身份及多类合成器/舞曲处理，并指出回收旧构想；具体2.5制作档仍非已有结论。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -639,7 +863,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4d/3c/60/4d3c6065-716b-0cb7-cf7b-c802cc0049b7/00602577298325.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/equinoxe-infinity/1441178079?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1441178079,
+      "catalogArtist": "Jean-Michel Jarre",
+      "catalogTitle": "Equinoxe Infinity",
+      "catalogTrackCount": 10,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Production-6",
@@ -656,7 +892,8 @@
     "feature": "吉他、低音与鼓的复杂线条大多保持可辨，声音整洁并服务旋律；制作重点是让密集乐句清楚成立，声场与音色转化的跨度相对集中。",
     "edition": "2016年标准7曲，作者卧室制作，鼓组另录；不将低预算等同低等级。",
     "sources": [
-      "https://plini.bandcamp.com/album/handmade-cities"
+      "https://plini.bandcamp.com/album/handmade-cities",
+      "https://music.apple.com/us/album/handmade-cities/1562296268?uo=4"
     ],
     "evidence": "作者页列7曲、2016日期和录音/混音分工；3星基于声音实现初步判断，不由卧室条件推导。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -666,7 +903,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/0f/6b/f50f6bb3-2e91-d365-df84-49078b627590/11689.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/handmade-cities/1562296268?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1562296268,
+      "catalogArtist": "Plini",
+      "catalogTitle": "Handmade Cities",
+      "catalogTrackCount": 7,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Production-7",
@@ -684,7 +933,8 @@
     "edition": "2011年Ghostly标准10曲，不计豪华版重混。",
     "sources": [
       "https://music.apple.com/us/album/dive/679251532",
-      "https://www.thevinylfactory.com/news/tycho-ghostly-tenth-anniversary-dive"
+      "https://www.thevinylfactory.com/news/tycho-ghostly-tenth-anniversary-dive",
+      "https://music.apple.com/us/album/dive/679251532?uo=4"
     ],
     "evidence": "Apple编辑说明分项讨论合成器、吉他与贝斯；厂牌再版报道核2011原作与长期制作过程。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -694,7 +944,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/46/be/ed/46beed8a-5d0f-1077-cbeb-aace15e69f44/cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/dive/679251532?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 679251532,
+      "catalogArtist": "Tycho",
+      "catalogTitle": "Dive",
+      "catalogTrackCount": 10,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Production-8",
@@ -712,7 +974,8 @@
     "edition": "1982年原7曲版；2012年Finders Keepers再版附加材料不计入。",
     "sources": [
       "https://www.finderskeepersrecords.com/shop/suzanne-ciani-seven-waves/",
-      "https://www.sonicimmersion.org/suzanne-ciani-seven-waves/"
+      "https://www.sonicimmersion.org/suzanne-ciani-seven-waves/",
+      "https://music.apple.com/us/album/seven-waves/47638147?uo=4"
     ],
     "evidence": "正式再版厂牌说明1982原作及电子制作取向；专业评论核7曲波浪意象与动态。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -722,7 +985,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/16/a5/35/16a535fd-f2c7-0fb4-f209-c2051f869733/s05.mdndyfag.tif/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/seven-waves/47638147?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 47638147,
+      "catalogArtist": "Suzanne Ciani",
+      "catalogTitle": "Seven Waves",
+      "catalogTrackCount": 7,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Production-9",
@@ -740,7 +1015,8 @@
     "edition": "1978年EG原四段录音；无词人声作声音层，不采用后来乐团重演版。",
     "sources": [
       "https://music.apple.com/us/album/ambient-1-music-for-airports/724435863",
-      "https://en.wikipedia.org/wiki/Ambient_1%3A_Music_for_Airports"
+      "https://en.wikipedia.org/wiki/Ambient_1%3A_Music_for_Airports",
+      "https://music.apple.com/us/album/ambient-1-music-for-airports/724435863?uo=4"
     ],
     "evidence": "发行编辑说明循环及后续影响，条目核1978年、四段与器乐/无词声源。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -750,7 +1026,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ee/71/42/ee71425d-6bc9-3df8-c90b-8539f59144ab/00724386649553.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/ambient-1-music-for-airports/724435863?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 724435863,
+      "catalogArtist": "Brian Eno",
+      "catalogTitle": "Ambient 1: Music for Airports",
+      "catalogTrackCount": 4,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Production-10",
@@ -768,7 +1056,8 @@
     "edition": "2006年Kranky原15曲，约50分钟；不把2009双LP再版年当首发。",
     "sources": [
       "https://music.apple.com/us/album/harmony-in-ultraviolet/189047071",
-      "https://en.wikipedia.org/wiki/Harmony_in_Ultraviolet"
+      "https://en.wikipedia.org/wiki/Harmony_in_Ultraviolet",
+      "https://music.apple.com/us/album/harmony-in-ultraviolet/189047071?uo=4"
     ],
     "evidence": "授权发行页核2006、15曲与长度；条目汇集作品评价，制作特征和5星仍需逐段核验。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -778,7 +1067,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features/12/30/38/dj.afgrrogf.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/harmony-in-ultraviolet/189047071?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 189047071,
+      "catalogArtist": "Tim Hecker",
+      "catalogTitle": "Harmony In Ultraviolet",
+      "catalogTrackCount": 15,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Vision-4",
@@ -796,7 +1097,8 @@
     "edition": "2015年Portrait/Sony Masterworks标准13曲，不含DVD；曲目是器乐改编，郎朗客串不是主艺人另占位。",
     "sources": [
       "https://sony.mediaroom.com/2014-12-09-2CELLOS-Create-A-New-Dimension-With-Celloverse-Album-Available-January-27-2015",
-      "https://elmoremagazine.com/2015/04/reviews/albums/2cellos-celloverse"
+      "https://elmoremagazine.com/2015/04/reviews/albums/2cellos-celloverse",
+      "https://music.apple.com/us/album/celloverse/941192489?uo=4"
     ],
     "evidence": "厂牌新闻明确重返摇滚根源与13曲；Elmore正面评论也指出曲目多元但缺共同主题，主题缺席本身不等于低愿景。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -806,7 +1108,20 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/1b/ae/8e/1bae8e2d-b353-b797-91f2-b8892d476de0/886444645089.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/celloverse/941192489?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 941192489,
+      "catalogArtist": "2CELLOS",
+      "catalogTitle": "Celloverse",
+      "catalogTrackCount": 14,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json",
+      "editionCaution": "目录条目计数比评分所选原版主体多1；只取同名官方封面作识别，附加项性质另核，不自动并入评分对象。"
+    }
   },
   {
     "id": "global-instrumental-Vision-5",
@@ -824,7 +1139,8 @@
     "edition": "1995年EMI原录音室10曲口径，不计地区附加曲或混音版。",
     "sources": [
       "https://www.allmusic.com/album/the-violin-player-mw0000173198",
-      "https://www.scmp.com/article/143764/sultry-strings"
+      "https://www.scmp.com/article/143764/sultry-strings",
+      "https://music.apple.com/us/album/the-violin-player/1465123736?uo=4"
     ],
     "evidence": "AllMusic核1995及电子流行属性；本人采访明确探索跨类型意图，否定将包装争议直接当艺术结论。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -834,7 +1150,20 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/d1/d1/f8/d1d1f873-dba9-48c2-1779-df9e5c54c65d/190295411398.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/the-violin-player/1465123736?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1465123736,
+      "catalogArtist": "Vanessa-Mae",
+      "catalogTitle": "The Violin Player",
+      "catalogTrackCount": 11,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json",
+      "editionCaution": "目录条目计数比评分所选原版主体多1；只取同名官方封面作识别，附加项性质另核，不自动并入评分对象。"
+    }
   },
   {
     "id": "global-instrumental-Vision-6",
@@ -880,7 +1209,8 @@
     "edition": "2018年Mercury KX标准12曲；unfold为SOHN演唱，其余主体为器乐。",
     "sources": [
       "https://olafurarnalds.com/works/",
-      "https://music.apple.com/us/album/re-member/1390704147"
+      "https://music.apple.com/us/album/re-member/1390704147",
+      "https://music.apple.com/us/album/re-member/1390704147?uo=4"
     ],
     "evidence": "作者官网明确本碟探索创作过程及首次使用STRATUS，授权发行编辑说明钢琴、弦乐、电子关系。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -890,7 +1220,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/20/71/9b20711d-7ffe-2b59-4bae-6d6f614a1451/18UMGIM24750.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/re-member/1390704147?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1390704147,
+      "catalogArtist": "Ólafur Arnalds",
+      "catalogTitle": "re:member",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Vision-8",
@@ -909,7 +1251,8 @@
     "sources": [
       "https://maxrichtermusic.com/blogs/studio-albums",
       "https://music.apple.com/us/album/sleep/1452629309",
-      "https://time.com/4022816/max-richter-sleep/"
+      "https://time.com/4022816/max-richter-sleep/",
+      "https://music.apple.com/us/album/sleep/1440791983?uo=4"
     ],
     "evidence": "作者目录列2015 Sleep与From Sleep为不同发行；Apple现行细分轨道版及首发采访核8小时目标。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -919,7 +1262,20 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d6/1f/4a/d61f4a9a-1b9f-b0ff-b857-23d8ddf9a592/15UMGIM26134.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/sleep/1440791983?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1440791983,
+      "catalogArtist": "Max Richter",
+      "catalogTitle": "Sleep",
+      "catalogTrackCount": 32,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json",
+      "editionCaution": "目录条目计数比评分所选原版主体多1；只取同名官方封面作识别，附加项性质另核，不自动并入评分对象。"
+    }
   },
   {
     "id": "global-instrumental-Vision-9",
@@ -966,7 +1322,8 @@
     "sources": [
       "https://www.centrepompidou.fr/fr/ressources/oeuvre/cL9jRpp",
       "https://elianeradigue.bandcamp.com/album/trilogie-de-la-mort",
-      "https://www.kylegann.com/VV-ConsumerGuide-9-98.pdf"
+      "https://www.kylegann.com/VV-ConsumerGuide-9-98.pdf",
+      "https://music.apple.com/us/album/trilogie-de-la-mort/73244805?uo=4"
     ],
     "evidence": "蓬皮杜馆藏核1998三CD、ARP录制及全套长度；作者发行页与1998评论支持三部曲的精神与时间构想。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -976,7 +1333,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/65/93/1d/65931d49-6a8e-eb8f-2df1-55412373b7e6/803680578605.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/trilogie-de-la-mort/73244805?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 73244805,
+      "catalogArtist": "Eliane Radigue",
+      "catalogTitle": "Trilogie de la Mort",
+      "catalogTrackCount": 3,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Context-4",
@@ -994,7 +1363,8 @@
     "edition": "2014年Portrait/Sony Masterworks标准节目；有客席演唱曲，不纳豪华版附加曲与视频观看数作评分证据。",
     "sources": [
       "https://sony.mediaroom.com/2014-10-16-The-Piano-Guys-Land-Highest-Chart-Debut-Of-Career",
-      "https://music.apple.com/us/album/wonders/911904522"
+      "https://music.apple.com/us/album/wonders/911904522",
+      "https://music.apple.com/us/album/wonders/911904522?uo=4"
     ],
     "evidence": "厂牌新闻核2014及网络传播背景；Apple编辑说明古典、影视与流行拼接；传播事实不证明低或高语境。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -1004,7 +1374,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/6a/10/72/6a10724e-74b9-c937-dca1-3bbf0ad29c4f/886444771221.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/wonders/911904522?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 911904522,
+      "catalogArtist": "The Piano Guys",
+      "catalogTitle": "Wonders",
+      "catalogTrackCount": 14,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Context-5",
@@ -1050,7 +1432,8 @@
     "edition": "2006年原同名专辑9曲；不用2017周年版附加都柏林现场替代。",
     "sources": [
       "https://atorecords.com/news/rodrigo-y-gabriela-announce-10-year-anniversary-reissue-of-self-titled-breakthrough-album/",
-      "https://en.wikipedia.org/wiki/Rodrigo_y_Gabriela_%28album%29"
+      "https://en.wikipedia.org/wiki/Rodrigo_y_Gabriela_%28album%29",
+      "https://music.apple.com/us/album/rodrigo-y-gabriela/432825225?uo=4"
     ],
     "evidence": "厂牌周年稿核2006原作、原声器乐定位与2017再版区别，条目提供原曲序。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "low",
@@ -1060,7 +1443,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/80/ef/a3/80efa3eb-79d7-4093-e56d-511c62527d1d/mzi.qistqxdp.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/rodrigo-y-gabriela/432825225?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 432825225,
+      "catalogArtist": "Rodrigo y Gabriela",
+      "catalogTitle": "Rodrigo y Gabriela",
+      "catalogTrackCount": 9,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Context-7",
@@ -1107,7 +1502,8 @@
     "sources": [
       "https://www.impulserecords.com/releases-archive/journey-satchidananda/",
       "https://www.sfomuseum.org/sites/default/files/2025-06/Extended-Labels-Women-of-Afrofurturism-Literature-Recording-Artists.pdf",
-      "https://en.wikipedia.org/wiki/Journey_in_Satchidananda"
+      "https://en.wikipedia.org/wiki/Journey_in_Satchidananda",
+      "https://music.apple.com/us/album/journey-in-satchidananda/1440719294?uo=4"
     ],
     "evidence": "厂牌核身份；博物馆展签核1971年及精神转型，唱片条目核5曲与录音年。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -1117,7 +1513,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/af/5c/40/af5c40a1-54b1-855d-3da2-f875efbd8372/06UMGIM04169.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/journey-in-satchidananda/1440719294?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1440719294,
+      "catalogArtist": "Alice Coltrane",
+      "catalogTitle": "Journey in Satchidananda",
+      "catalogTrackCount": 5,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Context-9",
@@ -1135,7 +1543,8 @@
     "edition": "1973年Columbia KC32731原4曲，不与后来的The Headhunters乐队同名发行混用。",
     "sources": [
       "https://www.herbiehancock.com/music/discography/album/head-hunters/",
-      "https://www.arts.gov/honors/jazz/herbie-hancock"
+      "https://www.arts.gov/honors/jazz/herbie-hancock",
+      "https://music.apple.com/us/album/head-hunters/158571524?uo=4"
     ],
     "evidence": "作者官网列原版年份、4曲、设备和爵士/放克关系；NEA访谈提供本人回忆。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -1145,7 +1554,19 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4f/e5/f5/4fe5f511-462e-e87b-0711-d4e42809fb17/dj.goshfswo.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/head-hunters/158571524?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 158571524,
+      "catalogArtist": "Herbie Hancock",
+      "catalogTitle": "Head Hunters",
+      "catalogTrackCount": 4,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-instrumental-Context-10",
@@ -1163,7 +1584,8 @@
     "edition": "1959年Columbia原7曲；不含Time Further Out或后来Time Outtakes附加录音。",
     "sources": [
       "https://www.davebrubeck.com/news/celebrating-60-years-of-time-out",
-      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/TimeOut.pdf"
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/TimeOut.pdf",
+      "https://music.apple.com/us/album/time-out/193085545?uo=4"
     ],
     "evidence": "作者官网核1959年12月发行、不同拍号与复调探索，LOC录音保存文章支持音乐文化背景。 以上资料支持发行身份或艺术特征；本格半星为待审编辑判断，资料评价分数不换算为MUMAKA星级。",
     "confidence": "medium",
@@ -1173,6 +1595,18 @@
     "listening": "未做完整试听",
     "auditExtent": "在线资料核对；未声称全碟复听或逐曲完成核验",
     "researchDate": "2026-11-02",
-    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权"
+    "coverStatus": "未取得可明确复用的图片；保留可信发行页供封面核对，不伪造图片授权",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7a/e3/06/7ae30672-0c73-a4d4-0a74-624eefc2843b/dj.ytdbjvto.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/time-out/193085545?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 193085545,
+      "catalogArtist": "The Dave Brubeck Quartet",
+      "catalogTitle": "Time Out",
+      "catalogTrackCount": 7,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   }
 ]

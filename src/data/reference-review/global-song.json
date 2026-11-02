@@ -14,7 +14,8 @@
     "feature": "口号式押韵和夸张炫耀形成鲜明角色，但多数曲目停留在同类短句，叙述与意象发展有限。",
     "edition": "2019年 Warner 原版16曲。",
     "sources": [
-      "https://pitchfork.com/reviews/albums/lil-pump-harverd-dropout/"
+      "https://pitchfork.com/reviews/albums/lil-pump-harverd-dropout/",
+      "https://music.apple.com/us/album/harverd-dropout/1456329001?uo=4"
     ],
     "evidence": "Pitchfork正文核得年份、标题和贯穿多曲的夸耀口号与模板化写作批评。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -22,7 +23,19 @@
     "pending": "逐曲检查重复是有效口语节奏还是妨碍表达，不以题材粗俗直接扣分。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/a9/3d/5b/a93d5bc6-ae00-f18d-f307-0c9d55466010/093624905837.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/harverd-dropout/1456329001?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1456329001,
+      "catalogArtist": "Lil Pump",
+      "catalogTitle": "Harverd Dropout",
+      "catalogTrackCount": 16,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Lyrics-5",
@@ -64,7 +77,8 @@
     "feature": "闲谈、调情和名人生活维持清晰的说话者形象，句意与韵脚顺畅；观察常回到熟悉姿态，人物层次有限。",
     "edition": "2022年 Generation Now/Atlantic 标准版15曲。",
     "sources": [
-      "https://pitchfork.com/reviews/albums/jack-harlow-come-home-the-kids-miss-you/"
+      "https://pitchfork.com/reviews/albums/jack-harlow-come-home-the-kids-miss-you/",
+      "https://music.apple.com/us/album/come-home-the-kids-miss-you/1622624421?uo=4"
     ],
     "evidence": "Pitchfork检索正文确认年份、发行方和写作变化不足的评价；3.0并非其总评分换算。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -72,7 +86,19 @@
     "pending": "核验多数曲目是否稳定达到有效叙述的3.0下限，补不同立场评论。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/cf/9a/0e/cf9a0ee1-3b03-c511-cf7c-4929265e261c/075679745118.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/come-home-the-kids-miss-you/1622624421?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1622624421,
+      "catalogArtist": "Jack Harlow",
+      "catalogTitle": "Come Home The Kids Miss You",
+      "catalogTrackCount": 15,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Lyrics-7",
@@ -115,7 +141,8 @@
     "edition": "2020年首发标准版16曲；不含the lakes。",
     "sources": [
       "https://music.apple.com/us/album/folklore/1524801260",
-      "https://pitchfork.com/reviews/albums/taylor-swift-folklore/"
+      "https://pitchfork.com/reviews/albums/taylor-swift-folklore/",
+      "https://music.apple.com/us/album/folklore/1524793738?uo=4"
     ],
     "evidence": "Apple Music编辑说明支持短篇人物写作；Pitchfork讨论跨曲细节及少数曲目可精简。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -123,7 +150,19 @@
     "pending": "按16曲核对人物视角和细节密度，与4.5档比较。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7c/04/ba/7c04ba17-2ff8-21b3-0ac0-7d141f86e924/20UMGIM64216.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/folklore/1524793738?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1524793738,
+      "catalogArtist": "Taylor Swift",
+      "catalogTitle": "folklore",
+      "catalogTrackCount": 16,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Lyrics-9",
@@ -141,7 +180,8 @@
     "edition": "1986年 Rough Trade 原版10曲；不计2017附加录音。",
     "sources": [
       "https://www.officialsmiths.co.uk/album/queen-dead",
-      "https://en.wikipedia.org/wiki/The_Queen_Is_Dead"
+      "https://en.wikipedia.org/wiki/The_Queen_Is_Dead",
+      "https://music.apple.com/us/album/the-queen-is-dead/800092985?uo=4"
     ],
     "evidence": "官方页核名称、艺人、1986；百科及所列资料用于主题与版本交叉定位，非逐曲词义验证。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -149,7 +189,19 @@
     "pending": "补逐曲文本与不同立场评论，检验轻巧过场是否达到4.5整碟持续性。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1a/e8/70/1ae870c3-b402-096b-c4c4-8022af5a2ed9/745099189662.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/the-queen-is-dead/800092985?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 800092985,
+      "catalogArtist": "The Smiths",
+      "catalogTitle": "The Queen Is Dead",
+      "catalogTrackCount": 10,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Lyrics-10",
@@ -166,7 +218,8 @@
     "feature": "关系破裂在不同人物、时间和叙述距离中不断改写，意象与口语共同推进歌曲，复杂经验贯穿长短篇章。",
     "edition": "1975年 Columbia 正式发行10曲；纽约/明尼阿波利斯混合录音，不采用纽约试压版。",
     "sources": [
-      "https://www.bobdylan.com/albums/blood-tracks/"
+      "https://www.bobdylan.com/albums/blood-tracks/",
+      "https://music.apple.com/us/album/blood-on-the-tracks/158320766?uo=4"
     ],
     "evidence": "Dylan官方页及原版内页支持1975、曲目、象征意象与开放叙事；不等同作者私生活。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -174,7 +227,19 @@
     "pending": "核对短篇与长篇叙事的同等有效性，与4.5档作不依赖声望的比较。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/34/6e/4d/346e4d1c-c9ef-cf7f-96d9-aad97286febb/074643323529.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/blood-on-the-tracks/158320766?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 158320766,
+      "catalogArtist": "Bob Dylan",
+      "catalogTitle": "Blood On the Tracks",
+      "catalogTrackCount": 10,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Composition-4",
@@ -360,7 +425,8 @@
     "edition": "1985年 EMI 原版12曲，两面曲序完整。",
     "sources": [
       "https://music.katebush.com/buy/hounds-of-love/",
-      "https://en.wikipedia.org/wiki/Hounds_of_Love"
+      "https://en.wikipedia.org/wiki/Hounds_of_Love",
+      "https://music.apple.com/us/album/hounds-of-love/1675375084?uo=4"
     ],
     "evidence": "作者厂牌页核作品身份；百科核1985、两面结构与12曲，作曲分析为编辑判断。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -368,7 +434,19 @@
     "pending": "将旋律和段落与采样音色区分，核短段落的作曲作用。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2c/3e/c9/2c3ec991-0f6e-bec3-7eff-750f50c5b3a6/cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/hounds-of-love/1675375084?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1675375084,
+      "catalogArtist": "Kate Bush",
+      "catalogTitle": "Hounds of Love",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Composition-10",
@@ -386,7 +464,8 @@
     "edition": "1966年 Capitol 原版13曲单声道专辑；不混入扩展素材。",
     "sources": [
       "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/PetSounds.pdf",
-      "https://thebeachboys.com/pages/music"
+      "https://thebeachboys.com/pages/music",
+      "https://music.apple.com/us/album/pet-sounds/1440841241?uo=4"
     ],
     "evidence": "官方目录核1966；国会图书馆专文用于全碟创作背景和版本。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -394,7 +473,19 @@
     "pending": "验证较短曲目同样维持旋律与和声质量；5.0不声称完美。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/35/bb/c4/35bbc4eb-9387-97b0-b138-64b7a949ea43/13UABIM03512.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/pet-sounds/1440841241?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1440841241,
+      "catalogArtist": "The Beach Boys",
+      "catalogTitle": "Pet Sounds",
+      "catalogTrackCount": 13,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Performance-4",
@@ -413,7 +504,8 @@
     "sources": [
       "https://www.muumuse.com/2010/01/heidi-montag-superficial-album-review.html/",
       "https://apnews.com/article/3a7093940da67efab4472cb5f4e956d2",
-      "https://open.spotify.com/album/0MHyAAVcnhmU76kko43Cax"
+      "https://open.spotify.com/album/0MHyAAVcnhmU76kko43Cax",
+      "https://music.apple.com/us/album/superficial/348940532?uo=4"
     ],
     "evidence": "MuuMuse原评具体讨论人声处理及camp趣味；AP确认是2010年专辑。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -421,7 +513,19 @@
     "pending": "卖点匹配与2.0下限均须重点审议；不能以电视明星身份或修音本身判低分。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ba/54/9f/ba549ffb-d16e-caa1-07c8-8ace924173eb/075597980516.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/superficial/348940532?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 348940532,
+      "catalogArtist": "Heidi Montag",
+      "catalogTitle": "Superficial",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Performance-5",
@@ -466,7 +570,8 @@
     "sources": [
       "https://www.scmp.com/article/565545/paris-paris-hilton",
       "https://en.wikipedia.org/wiki/Paris_(Paris_Hilton_album)",
-      "https://music.apple.com/us/album/paris/179421430"
+      "https://music.apple.com/us/album/paris/179421430",
+      "https://music.apple.com/us/album/paris/179421430?uo=4"
     ],
     "evidence": "SCMP评论讨论制作团队与演唱关系；百科核2006、原版曲数及不同评论。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -474,7 +579,19 @@
     "pending": "核验亲密口吻是否整碟奏效；表演是否为本碟主要可成立卖点仍待审。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bc/6d/55/bc6d55a6-b6a7-a0a7-870a-4b25a555b91d/mzi.vllqorgg.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/paris/179421430?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 179421430,
+      "catalogArtist": "Paris Hilton",
+      "catalogTitle": "Paris",
+      "catalogTrackCount": 11,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Performance-7",
@@ -518,7 +635,8 @@
     "edition": "1962年10月录音、1963年 King 首版现场专辑，非1968年Volume II。",
     "sources": [
       "https://jamesbrown.com/pages/music",
-      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Live-at-the-Apollo_Fauthoux.pdf"
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Live-at-the-Apollo_Fauthoux.pdf",
+      "https://music.apple.com/us/album/live-at-the-apollo-1962/1445669062?uo=4"
     ],
     "evidence": "官网标1962场次；国会图书馆明确1963发行，讨论现场演唱和节目控制。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -526,7 +644,19 @@
     "pending": "用完整原版节目比较，不将观众热烈或历史地位直接加分；4.0/4.5待听辨。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/e7/41/db/e741dbd4-3795-8eef-969c-546ff7c5b1a8/00602537429806.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/live-at-the-apollo-1962/1445669062?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1445669062,
+      "catalogArtist": "James Brown",
+      "catalogTitle": "Live At The Apollo (1962)",
+      "catalogTrackCount": 11,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Performance-9",
@@ -544,7 +674,8 @@
     "edition": "1967年 Atlantic 原版11曲，附加曲不计；单声道/立体声另记。",
     "sources": [
       "https://www.rhino.com/aod/i-never-loved-a-man-the-way-i-love-you-aretha-franklin-0",
-      "https://music.apple.com/us/album/i-never-loved-a-man-the-way-i-love-you/937107826"
+      "https://music.apple.com/us/album/i-never-loved-a-man-the-way-i-love-you/937107826",
+      "https://music.apple.com/us/album/i-never-loved-a-man-the-way-i-love-you/937107826?uo=4"
     ],
     "evidence": "Rhino以11曲说明灵魂乐表演成就；Apple编辑说明提供与乐队互动背景。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -552,7 +683,19 @@
     "pending": "比较克制与强力度曲目的同等表达精度，不只凭Respect定档。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/31/ee/d131eec4-614c-d661-b580-3dc32b8547e8/603497896622.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/i-never-loved-a-man-the-way-i-love-you/937107826?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 937107826,
+      "catalogArtist": "Aretha Franklin",
+      "catalogTitle": "I Never Loved a Man the Way I Love You",
+      "catalogTrackCount": 11,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Performance-10",
@@ -570,7 +713,8 @@
     "edition": "1965年 Philips 原版9曲，PHM 200-187/PHS 600-187；不计扩展曲。",
     "sources": [
       "https://www.ninasimone.com/albums/pastel-blues/",
-      "https://music.apple.com/us/album/pastel-blues/1445668394"
+      "https://music.apple.com/us/album/pastel-blues/1445668394",
+      "https://music.apple.com/us/album/pastel-blues/1445668394?uo=4"
     ],
     "evidence": "官方页全文转载原内页，逐段谈九首诠释和人员，支持整碟取材而非仅Sinnerman。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -578,7 +722,19 @@
     "pending": "核九首短长篇同等乐句控制，不将政治题材代替表演判断。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/99/98/27/99982707-07ed-cf56-7bc7-bc18f7443574/13UAAIM08287.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/pastel-blues/1445668394?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1445668394,
+      "catalogArtist": "Nina Simone",
+      "catalogTitle": "Pastel Blues",
+      "catalogTrackCount": 9,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Production-4",
@@ -648,7 +804,8 @@
     "edition": "1997年 Creation 原版12轨，2016重制另标。",
     "sources": [
       "https://www.allmusic.com/album/mw0000594848",
-      "https://pitchfork.com/reviews/albums/22318-be-here-now/"
+      "https://pitchfork.com/reviews/albums/22318-be-here-now/",
+      "https://music.apple.com/us/album/be-here-now/1517475368?uo=4"
     ],
     "evidence": "AllMusic认可饱满开放制作，Pitchfork批评冗满；两者均指向制作为核心特征。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -656,7 +813,19 @@
     "pending": "统一1997母带核多数曲目，不将重制压缩差异算作原版，3.0非总分转换。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/fa/7a/57/fa7a57c6-fbf7-61b4-4f19-fd341f1ad7d8/5051961008104.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/be-here-now/1517475368?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1517475368,
+      "catalogArtist": "Oasis",
+      "catalogTitle": "Be Here Now",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Production-7",
@@ -726,7 +895,8 @@
     "edition": "1977年 ABC 原版7曲；不同再版母带另记。",
     "sources": [
       "https://music.apple.com/us/album/aja/1706428459",
-      "https://en.wikipedia.org/wiki/Aja_(album)"
+      "https://en.wikipedia.org/wiki/Aja_(album)",
+      "https://music.apple.com/us/album/aja/1706428459?uo=4"
     ],
     "evidence": "Apple编辑页核1977；百科所引录音资料与评论说明制作为主要公认成就。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -734,7 +904,19 @@
     "pending": "比较七曲动态与声部适配，不把昂贵录音或发烧声誉直接等同4.5。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c2/3c/54/c23c5414-20d1-7aea-f0f5-187974c58d65/23UMGIM79990.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/aja/1706428459?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1706428459,
+      "catalogArtist": "Steely Dan",
+      "catalogTitle": "Aja",
+      "catalogTrackCount": 7,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Production-10",
@@ -778,7 +960,8 @@
     "edition": "2010年最初数字发行11曲；后附Girly-Sound旧录音不计。",
     "sources": [
       "https://pitchfork.com/reviews/albums/14444-funstyle/",
-      "https://www.allmusic.com/album/funstyle-mw0002022939"
+      "https://www.allmusic.com/album/funstyle-mw0002022939",
+      "https://music.apple.com/us/album/funstyle/835107111?uo=4"
     ],
     "evidence": "Pitchfork描述怪诞节拍与常规歌曲混合；AllMusic承认主动冒险和有意出丑，不等同无意失败。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -786,7 +969,19 @@
     "pending": "高争议低档，检验混乱是否有效形式，不以不统一自动扣分。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/bb/27/87/bb278779-fa77-1b52-e3df-bc3122e5436d/884977751048.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/funstyle/835107111?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 835107111,
+      "catalogArtist": "Liz Phair",
+      "catalogTitle": "Funstyle",
+      "catalogTrackCount": 11,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Vision-5",
@@ -856,7 +1051,8 @@
     "edition": "2013年标准版19轨；地区附加曲不计。",
     "sources": [
       "https://pitchfork.com/reviews/albums/18470-janelle-monae-the-electric-lady/",
-      "https://pitchfork.com/features/cover-story/9210-janelle-monae/"
+      "https://pitchfork.com/features/cover-story/9210-janelle-monae/",
+      "https://music.apple.com/us/album/the-electric-lady/665514095?uo=4"
     ],
     "evidence": "Pitchfork专评支持更松动、更私人但细致统筹；本人采访用于绘画与角色构想。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -864,7 +1060,19 @@
     "pending": "核19轨角色和过场是否持续改变音乐选择，3.5可挑战4.0。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/a2/31/f1/a231f168-3033-d043-8efe-4728d3b23ea1/dj.kajrbqrd.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/the-electric-lady/665514095?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 665514095,
+      "catalogArtist": "Janelle Monáe",
+      "catalogTitle": "The Electric Lady",
+      "catalogTrackCount": 19,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Vision-8",
@@ -908,7 +1116,8 @@
     "edition": "1997年原版12曲，不计OKNOTOK附加曲或档案录音。",
     "sources": [
       "https://music.apple.com/us/album/ok-computer/1097861387",
-      "https://radiohead.bandcamp.com/album/ok-computer"
+      "https://radiohead.bandcamp.com/album/ok-computer",
+      "https://music.apple.com/us/album/ok-computer/1097861387?uo=4"
     ],
     "evidence": "Apple编辑说明讨论1997、技术焦虑和全碟探索；乐队Bandcamp核发行身份。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -916,7 +1125,19 @@
     "pending": "比较短过场与长歌曲整体作用，不单把风格统一当愿景4.5。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/07/60/ba/0760ba0f-148c-b18f-d0ff-169ee96f3af5/634904078164.png/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/ok-computer/1097861387?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1097861387,
+      "catalogArtist": "Radiohead",
+      "catalogTitle": "OK Computer",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Vision-10",
@@ -959,7 +1180,8 @@
     "edition": "2019年 Bad Dreams/EMPIRE 原版12曲。",
     "sources": [
       "https://pitchfork.com/reviews/albums/iggy-azalea-in-my-defense/",
-      "https://www.allmusic.com/album/in-my-defense-mw0003301912"
+      "https://www.allmusic.com/album/in-my-defense-mw0003301912",
+      "https://music.apple.com/us/album/in-my-defense/1470566420?uo=4"
     ],
     "evidence": "Pitchfork正文承认舞池能力并讨论模仿和自我辩护主题；AllMusic提供另一评论。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -967,7 +1189,19 @@
     "pending": "禁止族裔、文化身份或道德立场直接折分，须另证音乐转化不足覆盖多数曲目。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/02/ae/7e/02ae7ef4-15f7-ec05-27b8-032a9afc7f29/888915944950_cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/in-my-defense/1470566420?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1470566420,
+      "catalogArtist": "Iggy Azalea",
+      "catalogTitle": "In My Defense",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Context-5",
@@ -1011,7 +1245,8 @@
     "edition": "2016年国际版12曲，含From Dusk Till Dawn与英语The One；不混日版替换曲。",
     "sources": [
       "https://www.loudersound.com/reviews/babymetal-metal-resistance-1",
-      "https://en.wikipedia.org/wiki/Metal_Resistance"
+      "https://en.wikipedia.org/wiki/Metal_Resistance",
+      "https://music.apple.com/us/album/metal-resistance/1830273195?uo=4"
     ],
     "evidence": "Metal Hammer/Louder专评和百科用于偶像/金属结合与版本，文化转化程度是编辑判断。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -1019,7 +1254,19 @@
     "pending": "核引用是否超越拼贴，避免因偶像工业身份低估音乐转化；3.0为低信心起点。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f3/68/66/f36866f3-dad3-9c75-b26b-61e1c04fa443/116514.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/metal-resistance/1830273195?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1830273195,
+      "catalogArtist": "BABYMETAL",
+      "catalogTitle": "METAL RESISTANCE",
+      "catalogTrackCount": 12,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Context-7",
@@ -1037,7 +1284,8 @@
     "edition": "1998年 Virgin 原版16曲，不并入2019新增曲。",
     "sources": [
       "https://manuchao.bandcamp.com/album/clandestino",
-      "https://en.wikipedia.org/wiki/Clandestino"
+      "https://en.wikipedia.org/wiki/Clandestino",
+      "https://music.apple.com/us/album/clandestino/745099303?uo=4"
     ],
     "evidence": "作者Bandcamp简介明确1998、社会议题和非洲/南美节奏；百科核游历采录和声段。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -1045,7 +1293,19 @@
     "pending": "核多语言与街声实际新增观察，不把政治姿态或世界音乐标签自动当高分；可挑战4.0。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f7/1b/15/f71b15b8-0acb-3146-af7c-c8c669191b2d/5060281617262_cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/clandestino/745099303?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 745099303,
+      "catalogArtist": "Manu Chao",
+      "catalogTitle": "Clandestino",
+      "catalogTrackCount": 16,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Context-8",
@@ -1064,7 +1324,8 @@
     "sources": [
       "https://music.apple.com/us/album/egypt/20002817",
       "https://worldmusiccentral.org/nonesuch-releases-youssou-ndours-egypt/",
-      "https://people.clas.ufl.edu/fmcl/files/NDourSantYallaPopularMusic.pdf"
+      "https://people.clas.ufl.edu/fmcl/files/NDourSantYallaPopularMusic.pdf",
+      "https://music.apple.com/us/album/egypt/20002817?uo=4"
     ],
     "evidence": "Apple核2004和8曲；发行资料说明塞内加尔/埃及音乐关系；Fiona McLaughlin在Popular Music(2011)论文摘要明确2003年达喀尔Sant Yàlla与2004年国际Egypt的版次及八首关联歌曲。星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -1072,7 +1333,19 @@
     "pending": "逐曲核文化关系实际实现，不以宗教立场本身加分；区分前身与国际版年份。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2004/m08/d03/h16/s06.trpslolf.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/egypt/20002817?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 20002817,
+      "catalogArtist": "Youssou N'Dour",
+      "catalogTitle": "Egypt",
+      "catalogTrackCount": 8,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   },
   {
     "id": "global-song-Context-9",
@@ -1090,7 +1363,8 @@
     "edition": "2015年原版16曲，专辑版i不换成先行单曲混音。",
     "sources": [
       "https://pitchfork.com/reviews/albums/20390-to-pimp-a-butterfly/",
-      "https://time.com/3747392/kendrick-lamar-to-pimp-a-butterfly-review/"
+      "https://time.com/3747392/kendrick-lamar-to-pimp-a-butterfly-review/",
+      "https://music.apple.com/us/album/to-pimp-a-butterfly/1440871877?uo=4"
     ],
     "evidence": "Pitchfork与TIME发行期评论均讨论黑人音乐传统、角色叙事和社会关系的全碟组织。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -1098,7 +1372,20 @@
     "pending": "核跨曲对话与采样功能，避免因政治重要性直接判4.5。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b5/a6/91/b5a69171-5232-3d5b-9c15-8963802f83dd/15UMGIM15814.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/to-pimp-a-butterfly/1440871877?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1440871877,
+      "catalogArtist": "Kendrick Lamar",
+      "catalogTitle": "To Pimp a Butterfly",
+      "catalogTrackCount": 17,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json",
+      "editionCaution": "目录条目计数比评分所选原版主体多1；只取同名官方封面作识别，附加项性质另核，不自动并入评分对象。"
+    }
   },
   {
     "id": "global-song-Context-10",
@@ -1116,7 +1403,8 @@
     "edition": "1971年 Tamla 原版9曲洛杉矶正式混音，不以2001释出Detroit Mix替代。",
     "sources": [
       "https://classic.motown.com/story/marvin-gaye-whats-going-on/",
-      "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Whats-Going-On_Howard.pdf"
+      "https://lcweb2.loc.gov/static/programs/national-recording-preservation-board/documents/Whats-Going-On_Howard.pdf",
+      "https://music.apple.com/us/album/whats-going-on/1538081586?uo=4"
     ],
     "evidence": "Motown官方核1971年5月21日和9曲；国会图书馆讨论与Motown传统及时代的突破。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -1124,6 +1412,18 @@
     "pending": "逐曲检验公共议题如何改变音乐，不以历史排名、销量或单曲影响力作为5.0依据。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/36/2d/76362d74-cb7a-8ef9-104e-cde1d858e9a9/20UMGIM95279.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/whats-going-on/1538081586?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1538081586,
+      "catalogArtist": "Marvin Gaye",
+      "catalogTitle": "What's Going On",
+      "catalogTrackCount": 9,
+      "decision": "核对唱片封面身份：主艺人、完整标题与原始发行年份一致；同名他人、现场替代、明确的重制及年份冲突未采用。目录计数可能包括附加媒体，不取代edition所选原版的音乐曲序。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-global-ci.json"
+    }
   }
 ]

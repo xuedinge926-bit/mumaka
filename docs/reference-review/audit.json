@@ -9,8 +9,8 @@
   "sourceFiles": {
     "china-song.json": "b4a1b4c5e548e465648820d094ed7cbfed2e2d0602b53e9a5aab0e76474a9e02",
     "china-instrumental.json": "1797f83338f5f0c069e74df0daf52d75f3d926418160c0f1b39026953cbb2db7",
-    "global-song.json": "61dceef342825ddc70164fc5cad1334098331880cf18c7cc982903b57c7d188d",
-    "global-instrumental.json": "4d65d55331ee155dcc71a8ab8e359d50410dc100a039821b1fb6f225e83bd0de"
+    "global-song.json": "9f7bd3ae8ec72ce29809399a8c6f60dc467832d5f6c25c655dedffd7968b9d62",
+    "global-instrumental.json": "fe9b61940b14fb51e1b9f6be8916daa37a21ef9934c365289e68ad946c8426c9"
   },
   "tables": [
     {
@@ -52,7 +52,7 @@
       "artists": 42,
       "repeats": [],
       "works": 42,
-      "covers": 3,
+      "covers": 26,
       "discussion": 0,
       "lowConfidence": 24,
       "years": [
@@ -66,7 +66,7 @@
       "artists": 42,
       "repeats": [],
       "works": 42,
-      "covers": 0,
+      "covers": 33,
       "discussion": 0,
       "lowConfidence": 18,
       "years": [
@@ -77,5 +77,5 @@
   ],
   "errors": [],
   "listeningReviewed": 0,
-  "metadataSources": 377
+  "metadataSources": 433
 }

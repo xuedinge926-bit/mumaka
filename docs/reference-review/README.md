@@ -36,8 +36,10 @@
 
 ## 封面与验证记录
 
-封面只采用已核对的官方发行展示缩略图，并提供回到发行页的链接和版权用途说明；未匹配到可信封面时继续显示缺图占位。`research-reference-covers.mjs` 只收集官方商品目录候选，不能改专辑、星级或人工选择，不能直接采用搜索首图。候选结果保存在 CI 的浏览器证据附件中，供版次、艺人与封面逐条复核。
+封面只采用已核对的官方发行展示缩略图，并提供回到发行页的链接和版权用途说明；未匹配到可信封面时继续显示缺图占位。`research-reference-covers.mjs` 只收集官方商品目录候选，不能改专辑、星级或人工选择，不能直接采用搜索首图。本轮候选保存在资料文件与CI证据中，供版次、艺人与封面逐条复核。后续可手动运行 `npm run research:reference-covers`；一次一请求，至少间隔3.5秒，遇到拒绝或限流即停止，常规测试与发布不再自动查询。
 
-[GitHub Actions 完整验收](https://github.com/xuedinge926-bit/mumaka/actions/runs/41429124157) 已通过：301 项单元测试、18 项 Python 模型基准、33 项导入测试、TypeScript/Vite 构建、公开产物扫描、51 项 Playwright 浏览器测试，以及单文件 Pages 打包。本机无法监听服务端口，浏览器验收由远端执行，没有将本机受限项目虚报为通过。后续封面与来源修订仍走同一套检查后发布。
+[GitHub Actions 完整验收](https://github.com/xuedinge926-bit/mumaka/actions/runs/41430462787) 已通过：301 项单元测试、18 项 Python 模型基准、33 项导入测试、TypeScript/Vite 构建、公开产物扫描、51 项 Playwright 浏览器测试，以及单文件 Pages 打包。本机无法监听服务端口，浏览器验收由远端执行，没有将本机受限项目虚报为通过。后续封面与来源修订仍走同一套检查后发布。
 
-当前已核对52张官方目录封面。封面旁使用Apple提供的商店标识，直接回到相应发行页；仅在线展示，不打包图片副本，不声称取得再分发许可。使用说明参见[Search API条款](https://performance-partners.apple.com/search-api)及[Apple Music标识指南](https://marketing.services.apple/apple-music-identity-guidelines)。候选原始目录与未采用原因保留在资料文件及CI日志中。目录服务拒绝或限流时停止，不把错误当作搜索无结果。
+当前已核对108张官方目录封面（中国歌曲35、中国乐曲14、国际歌曲26、国际乐曲33），其余60格保留占位。封面旁使用Apple提供的商店标识，直接回到相应发行页；仅在线展示，不打包图片副本，不声称取得再分发许可。使用说明参见[Search API条款](https://performance-partners.apple.com/search-api)及[Apple Music标识指南](https://marketing.services.apple/apple-music-identity-guidelines)。候选原始目录与未采用原因保留在资料文件及CI日志中。目录服务拒绝或限流时停止，不把错误当作搜索无结果。
+
+封面取舍详见 `cover-review-decisions.json`，两个CI原始目录均独立保留。部分同名目录的条目计数比所选原版多1，已另存 `coverReview.editionCaution`；仅取同名官方封面作识别，不假定附加项性质，不让平台计数改写评分音乐主体。明确的现场替代、重制、地区扩曲及年份冲突均未直接套用。

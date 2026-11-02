@@ -27,11 +27,6 @@ jobs:
         with:
           python-version: '3.12'
       - run: npm ci
-      - name: Collect official cover candidates for the reference review
-        if: github.event_name == 'pull_request'
-        run: node scripts/research-reference-covers.mjs
-        env:
-          REFERENCE_RESEARCH_GROUPS: global-song,global-instrumental
       - run: npm test -- --maxWorkers=2
       - run: npm run test:reference
       - run: npm run test:import
