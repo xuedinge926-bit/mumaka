@@ -521,7 +521,7 @@ export function DualWorkspace({
                   e.preventDefault();
                   document
                     .getElementById("dual-info")
-                    ?.scrollIntoView({ behavior: "smooth" });
+                    ?.scrollIntoView({ behavior: document.documentElement.dataset.reduceMotion === "true" ? "auto" : "smooth" });
                 }}
               >
                 信息
@@ -532,7 +532,7 @@ export function DualWorkspace({
                   e.preventDefault();
                   document
                     .getElementById("dual-genres")
-                    ?.scrollIntoView({ behavior: "smooth" });
+                    ?.scrollIntoView({ behavior: document.documentElement.dataset.reduceMotion === "true" ? "auto" : "smooth" });
                 }}
               >
                 风格
@@ -543,7 +543,7 @@ export function DualWorkspace({
                   e.preventDefault();
                   document
                     .getElementById("dual-ratings")
-                    ?.scrollIntoView({ behavior: "smooth" });
+                    ?.scrollIntoView({ behavior: document.documentElement.dataset.reduceMotion === "true" ? "auto" : "smooth" });
                 }}
               >
                 评分
@@ -554,7 +554,7 @@ export function DualWorkspace({
                   e.preventDefault();
                   document
                     .getElementById("dual-preview")
-                    ?.scrollIntoView({ behavior: "smooth" });
+                    ?.scrollIntoView({ behavior: document.documentElement.dataset.reduceMotion === "true" ? "auto" : "smooth" });
                 }}
               >
                 卡片

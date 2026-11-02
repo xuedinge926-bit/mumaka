@@ -40,7 +40,7 @@ export function StarRating({
       aria-label={`${label}评分`}
       aria-valuemin={0.5}
       aria-valuemax={5}
-      aria-valuenow={typeof value === "number" ? value : undefined}
+      aria-valuenow={typeof value === "number" ? value : 0.5}
       aria-describedby={describedBy}
       aria-valuetext={
         value === null

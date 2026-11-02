@@ -58,7 +58,7 @@ def main():
                 return
         except (URLError, ValueError, socket.timeout):
             pass
-        raise SystemExit('8765端口已有其他程序或旧版本。请先关闭旧版启动窗口，再打开新版。')
+        raise SystemExit(f'{args.port}端口已有其他程序或旧版本。请先关闭旧版启动窗口，再打开新版。')
     print(f'MUMAKA V0.41：{url}\n保持此窗口开启；Ctrl+C 停止。', flush=True)
     if args.open:
         open_browser()

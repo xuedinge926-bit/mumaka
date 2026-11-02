@@ -713,3 +713,6 @@ body {
     font-size: 11px;
   }
 }
+html { scrollbar-gutter: stable; }
+.dual-dimension-heading h3, .dual-dimension-heading h3 button { color: var(--ink); }
+.dual-dimension-heading h3 small, .dual-star-row > span { color: var(--muted); }
