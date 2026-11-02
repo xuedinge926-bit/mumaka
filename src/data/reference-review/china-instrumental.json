@@ -12,7 +12,8 @@
     "feature": "短小旋律、键盘音色与动漫改编构成清楚的个人趣味；材料多为即景小品，原创动机的持续转化仍有限。",
     "edition": "采用麦爱2021年授权数字14曲版；2015年网络发布记录另列，不把再发行年当创作年。",
     "sources": [
-      "https://s.awa.fm/album/2fcbd4f51926374bda46"
+      "https://s.awa.fm/album/2fcbd4f51926374bda46",
+      "https://music.apple.com/hk/album/%E6%9B%BE%E7%BB%8F%E7%9A%84%E7%BA%AF%E9%9F%B3%E4%B9%90/1561995026?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。低档尚缺多数曲目稳定存在局限的独立听证；若简单、商业、低成本或旧录音是唯一理由，必须升档或替换。",
     "confidence": "low",
@@ -20,7 +21,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "新世纪与电子中的素材相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "新世纪与电子中的素材相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/01/24/58/012458d5-6650-fe0e-d928-c63e0a8247e1/196006411213.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E6%9B%BE%E7%BB%8F%E7%9A%84%E7%BA%AF%E9%9F%B3%E4%B9%90/1561995026?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1561995026,
+      "catalogArtist": "徐夢圓",
+      "catalogTitle": "曾经的纯音乐",
+      "trackCount": 14,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Material-5",
@@ -35,7 +48,8 @@
     "feature": "箫与钢琴以清楚的旋律轮廓建立温润的声音材料；多取既有主题，独立动机的发展是否充分仍需逐曲比较。",
     "edition": "2005年普罗之声原版10曲；陈悦为箫、马克为钢琴，不误记为张维良的同名风格。",
     "sources": [
-      "https://www.qobuz.com/us-en/album/-/b00h305pgbkwc"
+      "https://www.qobuz.com/us-en/album/-/b00h305pgbkwc",
+      "https://music.apple.com/hk/album/%E4%B9%B1%E7%BA%A2/1232231571?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。低档尚缺多数曲目稳定存在局限的独立听证；若简单、商业、低成本或旧录音是唯一理由，必须升档或替换。",
     "confidence": "low",
@@ -43,7 +57,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "箫与钢琴跨界中的素材相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "箫与钢琴跨界中的素材相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/ca/74/92ca74de-aba1-1eca-d624-f8e6e3959b24/191773040642.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E4%B9%B1%E7%BA%A2/1232231571?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1232231571,
+      "catalogArtist": "陳悅",
+      "catalogTitle": "乱红",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Material-6",
@@ -58,9 +84,10 @@
     "feature": "以排笛的呼吸性旋律与抒情动机完成多种情绪场景，材料清楚而稳定；重心仍在易辨认的旋律与温柔气质。",
     "edition": "2003年金革11首创作器乐专辑；排笛演奏与制作以张中立为主。",
     "sources": [
-      "https://baike.so.com/doc/10887482-26816749.html"
+      "https://www.iwant-radio.com/radioshow.php?act=1&ln=gb&smonth=&sn=8&stime=2003",
+      "https://www.yesasia.com/global/白屋之戀/1003316302-0-0-0-zh_TW/info.html"
     ],
-    "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。低档尚缺多数曲目稳定存在局限的独立听证；若简单、商业、低成本或旧录音是唯一理由，必须升档或替换。",
+    "evidence": "银河电台同期目录列2003年11月1日，YesAsia商品页为2004年4月7日上架、11曲曲目；区分原始发行与地区销售时间，排笛及自主创作为明确核心。",
     "confidence": "low",
     "status": "research-draft",
     "approved": false,
@@ -81,7 +108,8 @@
     "feature": "琵琶旋律、打击节奏与键盘音色形成鲜明的材料组合，多曲具有各自轮廓；主题转化的深度仍可同更高档比较。",
     "edition": "2003年原录音室专辑；作曲/制作林海，琵琶独奏蒋彦，不把所有演奏署给林海。",
     "sources": [
-      "https://zh.wikipedia.org/wiki/琵琶相"
+      "https://zh.wikipedia.org/wiki/琵琶相",
+      "https://music.apple.com/hk/album/%E7%90%B5%E7%90%B6%E7%9B%B8/698628164?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
     "confidence": "medium",
@@ -89,7 +117,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "新世纪与民乐中的素材相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "新世纪与民乐中的素材相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c4/8d/a3/c48da321-dec9-8f9d-4ca5-29ff48ffbc65/TCD-5263.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E7%90%B5%E7%90%B6%E7%9B%B8/698628164?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 698628164,
+      "catalogArtist": "林海",
+      "catalogTitle": "琵琶相",
+      "trackCount": 12,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Material-8",
@@ -104,7 +144,8 @@
     "feature": "本土采样、传统弹拨音色与不对称节拍在多曲中持续产生新关系，材料选择鲜明且能服务不断变化的音乐任务。",
     "edition": "2015年Alpha Pup原版13轨；按艺人正式标题保留声调符号。",
     "sources": [
-      "https://howielee.bandcamp.com/album/m-ch-sh-n-ch"
+      "https://howielee.bandcamp.com/album/m-ch-sh-n-ch",
+      "https://music.apple.com/hk/album/m%C3%B9-ch%C3%A8-sh%C4%81n-ch%C5%AB/1692819588?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
     "confidence": "medium",
@@ -112,7 +153,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "实验低音电子中的素材相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "实验低音电子中的素材相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/29/e3/74/29e37410-e41d-5f36-56e5-dc89459fa1c6/669158529698_Cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/m%C3%B9-ch%C3%A8-sh%C4%81n-ch%C5%AB/1692819588?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1692819588,
+      "catalogArtist": "李化迪",
+      "catalogTitle": "Mù Chè Shān Chū",
+      "trackCount": 13,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Material-9",
@@ -196,15 +249,29 @@
     "feature": "以流行主题重编建立连贯的钢琴篇章，情绪转折易于辨认；多数结构依赖熟悉的歌曲骨架，展开空间仍有限。",
     "edition": "2006年风潮钢琴演奏专辑；不用含声乐附加曲的三颗猫饼干替代。",
     "sources": [
-      "https://bkso.baidu.com/item/何真真/6669540"
+      "https://www.5music.com.tw/Cdlist-C.asp?cdno=427405679629",
+      "https://music.douban.com/subject/1477643/",
+      "https://music.apple.com/hk/album/%E8%A8%98%E6%86%B6%E8%A3%A1%E7%9A%84%E7%BE%8E%E5%A5%BD/886535616?uo=4"
     ],
-    "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。低档尚缺多数曲目稳定存在局限的独立听证；若简单、商业、低成本或旧录音是唯一理由，必须升档或替换。",
+    "evidence": "五大唱片具体发行页确认2006年3月28日与纯爱钢琴改编定位，豆瓣曲目目录作交叉核对；不能把主题重编或简约本身当结构缺陷，2.5仍需整碟比较。",
     "confidence": "low",
     "status": "research-draft",
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "钢琴改编与新世纪中的结构相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "钢琴改编与新世纪中的结构相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/7e/a9/ed/7ea9edb7-cc53-6518-45d4-a96037708012/TCD-5290.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E8%A8%98%E6%86%B6%E8%A3%A1%E7%9A%84%E7%BE%8E%E5%A5%BD/886535616?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 886535616,
+      "catalogArtist": "何真真",
+      "catalogTitle": "記憶裡的美好",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Structure-6",
@@ -358,7 +425,8 @@
     "edition": "2014年DG/Mercury Classics 4810710，贝多芬第五协奏曲与舒曼幻想曲；Daniel Harding、柏林爱乐。纠正误记Warner版。",
     "sources": [
       "https://www.prestomusic.com/classical/products/8038584--yundi-emperor-fantasy",
-      "https://www.musicalamerica.com/news/newsstory.cfm?categoryid=5&storyid=31554"
+      "https://www.musicalamerica.com/news/newsstory.cfm?categoryid=5&storyid=31554",
+      "https://music.apple.com/hk/album/beethoven-emperor-concerto-schumann-fantasie-in-c-major/1452268191?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。低档尚缺多数曲目稳定存在局限的独立听证；若简单、商业、低成本或旧录音是唯一理由，必须升档或替换。",
     "confidence": "low",
@@ -366,7 +434,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "古典钢琴中的表演相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "古典钢琴中的表演相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cd/78/d8/cd78d8ad-6d8a-07dd-5b61-542005245113/14UMGIM04519.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/beethoven-emperor-concerto-schumann-fantasie-in-c-major/1452268191?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1452268191,
+      "catalogArtist": "李雲迪, Berlin Philharmonic & 丹尼爾・哈汀",
+      "catalogTitle": "Beethoven: Emperor Concerto - Schumann: Fantasie in C Major",
+      "trackCount": 8,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Performance-6",
@@ -425,17 +505,19 @@
     "dimension": "表演",
     "stars": 4,
     "feature": "歌唱性的长线条、细密的滑音与清晰的节奏控制持续服务协奏曲及小品，民族性乐句与现代小提琴技法形成成熟平衡。",
-    "edition": "采用Marco Polo 1997年梁祝及六首小品录音；吕思清多次录制梁祝，须以此曲序复核。",
+    "edition": "Marco Polo 8.225940，Naxos发行目录标12/1997；Apple数字目录标1996/℗1996。采用1997发行口径，吕思清与中国交响/中央乐团版本，不混另一次上海交响陈燮阳录音。",
     "sources": [
-      "https://music.sonyselect.net/page/artist.html?artistId=2401"
+      "https://www.naxos.com/CatalogueDetail/?id=8.225940",
+      "https://music.apple.com/hk/album/chen-he-the-butterfly-lovers-violin-concerto/1206144904"
     ],
-    "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
+    "evidence": "Naxos具体唱片目录确认8.225940与1997年12月；Apple目录对应吕思清、Yao-Ling Wang、中国交响乐团，7轨54分钟，数字版权标1996。需以原盘曲序进一步交叉核对；不采用另次录音封面。",
     "confidence": "medium",
     "status": "research-draft",
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "古典小提琴中的表演相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "古典小提琴中的表演相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "identityNote": "官方实体目录与数字版权/上架年份不同，年份以具体发行版标注；1997不是已验证的录音年。"
   },
   {
     "id": "china-instrumental-Performance-9",
@@ -450,15 +532,28 @@
     "feature": "快速触键、音色变化与短曲的角色转换持续保持高控制力，技巧、节奏与叙述姿态彼此配合，形成贯穿全碟的诠释个性。",
     "edition": "2012年DG独奏小品专辑；固定录音室版本，不采用网络演奏剪辑。",
     "sources": [
-      "https://www.deutschegrammophon.com/en/artists/yujawang"
+      "https://www.deutschegrammophon.com/de/katalog/produkte/yuja-wang-fantasia-3187",
+      "https://music.apple.com/hk/album/fantasia/1452228024?uo=4"
     ],
-    "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
+    "evidence": "DG具体发行页确认2012年3月、独奏小品曲目及作者捕捉不同氛围的意图；这支持表演作为主要任务，不直接证明4.5分。需要整碟与相邻档比较。",
     "confidence": "medium",
     "status": "research-draft",
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "古典钢琴中的表演相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "古典钢琴中的表演相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4b/14/ff/4b14ff91-984c-dd08-251e-894058ddc0e9/12UMGIM08841.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/fantasia/1452228024?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1452228024,
+      "catalogArtist": "王羽佳",
+      "catalogTitle": "Fantasia",
+      "trackCount": 20,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Performance-10",
@@ -473,9 +568,10 @@
     "feature": "散、泛、按音的质感与吟猱、留白、句法呼吸共同承担音乐发展，不同古曲中都呈现细密而具有连续说服力的时间控制。",
     "edition": "1990年Ocora法国唱片口径；出版身份另由中央音乐学院艺人履历交叉支持。",
     "sources": [
-      "https://music.douban.com/subject/3055232/"
+      "https://webpac.npac-ntch.org/detail/119646/?seq=5",
+      "https://www.qobuz.com/ca-en/album/chine-lart-du-qin-li-xiangting/auxeygm0kp1dc"
     ],
-    "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
+    "evidence": "两厅院图书馆实体馆藏确认Ocora 1990、Li Xiangting演奏与九首完整曲目；Qobuz授权目录同记1990年2月。表演5.0为本项目研究定位，仍须比较录音内的持续诠释。",
     "confidence": "medium",
     "status": "research-draft",
     "approved": false,
@@ -519,7 +615,8 @@
     "feature": "合成器、低频和节拍维持统一的夜间质感，制作是明确的创作中心；相近音色与循环的持续变化仍需对整碟验证，2.5可推翻。",
     "edition": "采用2009年Substream欧洲11曲数字版；2008年摩登天空10曲CD为首版，分开记录。",
     "sources": [
-      "https://music.apple.com/us/album/post-haze/330491873"
+      "https://music.apple.com/us/album/post-haze/330491873",
+      "https://music.apple.com/hk/album/post-haze/330491873?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。低档尚缺多数曲目稳定存在局限的独立听证；若简单、商业、低成本或旧录音是唯一理由，必须升档或替换。",
     "confidence": "low",
@@ -527,7 +624,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "极简科技舞曲中的制作相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "极简科技舞曲中的制作相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features6/v4/2c/23/be/2c23bec1-6347-0e44-2bd3-1b38c3c81d55/dj.wrkchfxs.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/post-haze/330491873?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 330491873,
+      "catalogArtist": "B6",
+      "catalogTitle": "Post Haze",
+      "trackCount": 11,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Production-6",
@@ -613,7 +722,8 @@
     "feature": "合成器的远近、噪声纹理和低频推进在不同曲目中保持精细控制，密集材料与留白持续互相支持，声音实现具有独特的整体逻辑。",
     "edition": "2018年Tresor.306/Crater.001完整9轨LP；2015年Doppler Shift Pt.1是3轨EP，不混用。",
     "sources": [
-      "https://shaoyanpeng.bandcamp.com/album/doppler-shift-lp"
+      "https://shaoyanpeng.bandcamp.com/album/doppler-shift-lp",
+      "https://music.apple.com/hk/album/doppler-shift/1621762781?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
     "confidence": "medium",
@@ -621,7 +731,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "实验科技电子中的制作相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "实验科技电子中的制作相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c0/da/35/c0da356f-3b7d-b6f7-cb1f-4ab3c8d4d053/3663729067456_3000.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/doppler-shift/1621762781?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1621762781,
+      "catalogArtist": "SHAO",
+      "catalogTitle": "Doppler Shift",
+      "trackCount": 9,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Production-10",
@@ -682,7 +804,8 @@
     "feature": "直观旋律与内向的钢琴口吻建立可辨的作者身份；作品更接近情绪小品的并列，跨曲构想的持续统摄仍有限。",
     "edition": "采用官方授权目录标2008年的同名完整专辑，不用成名单曲或网络A Best合集充数。",
     "sources": [
-      "https://music.apple.com/us/album/pianoboy/1863892844"
+      "https://music.apple.com/us/album/pianoboy/1863892844",
+      "https://music.apple.com/hk/album/pianoboy/1863892844?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。低档尚缺多数曲目稳定存在局限的独立听证；若简单、商业、低成本或旧录音是唯一理由，必须升档或替换。",
     "confidence": "low",
@@ -690,7 +813,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "流行钢琴中的愿景相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "流行钢琴中的愿景相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/fb/09/57fb0959-1320-39f0-f150-f51036c2651c/17405.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/pianoboy/1863892844?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1863892844,
+      "catalogArtist": "Pianoboy高至豪",
+      "catalogTitle": "Pianoboy",
+      "trackCount": 12,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Vision-6",
@@ -703,17 +838,31 @@
     "dimension": "愿景",
     "stars": 3,
     "feature": "不同器乐主题共同回应古今文化的叙事方向，原声专辑的身份基本成立；离开节目影像后的跨曲组织仍需独立检验。",
-    "edition": "2021年第三季10首配乐专辑，不与2017节目首播年或第二季含声乐版的目录混用。",
+    "edition": "2021年第三季正式原声11轨流通版，发行文案称十首主体；不与2017节目首播年、第二季或音乐会视频混用。",
     "sources": [
-      "https://music.douban.com/subject/35416330/"
+      "https://www.joox.com/mo/album/1WKIEut40aLGb_Er%2BTbrbQ%3D%3D",
+      "https://xinwen.bjd.com.cn/content/s6051fa12e4b0063e4e7b2cc8.html",
+      "https://music.apple.com/hk/album/%E7%B6%9C%E8%97%9D-%E5%9C%8B%E5%AE%B6%E5%AF%B6%E8%97%8F-%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%8E%9F%E8%81%B2%E9%9F%B3%E6%A8%82-%E9%97%9C%E5%A4%A7%E6%B4%B2%E4%BD%9C%E5%93%81/1559520502?uo=4"
     ],
-    "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。低档尚缺多数曲目稳定存在局限的独立听证；若简单、商业、低成本或旧录音是唯一理由，必须升档或替换。",
+    "evidence": "授权JOOX目录列11曲，发行说明提十首主体；北京日报2021年对关大洲的直接采访确认3月27日发行及整体风格构想。按第三季正式原声全碟而非音乐会片段评价。",
     "confidence": "low",
     "status": "research-draft",
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "电视原声与管弦跨界中的愿景相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "电视原声与管弦跨界中的愿景相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/65/7e/fc/657efc1a-046f-7ecc-280b-badd85c6522e/cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E7%B6%9C%E8%97%9D-%E5%9C%8B%E5%AE%B6%E5%AF%B6%E8%97%8F-%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%8E%9F%E8%81%B2%E9%9F%B3%E6%A8%82-%E9%97%9C%E5%A4%A7%E6%B4%B2%E4%BD%9C%E5%93%81/1559520502?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1559520502,
+      "catalogArtist": "關大洲",
+      "catalogTitle": "綜藝《國家寶藏》第三季原聲音樂 (關大洲作品)",
+      "trackCount": 11,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Vision-7",
@@ -797,7 +946,8 @@
     "feature": "程序化节奏、破碎音色与声音变形共同建立有内在规则的电子世界，不同段落持续测试并发展同一创作方法，构想与实现紧密相连。",
     "edition": "2017年Detroit Underground原专辑；AYRTBH与王长存为同一主艺人，不以两个名字重复计数。",
     "sources": [
-      "https://detund.bandcamp.com/album/mtk"
+      "https://detund.bandcamp.com/album/mtk",
+      "https://music.apple.com/hk/album/mtk/1271875409?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
     "confidence": "medium",
@@ -805,7 +955,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "实验电子与IDM中的愿景相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "实验电子与IDM中的愿景相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/f5/c9/fc/f5c9fc77-b1c0-e322-3893-81ed6a7c3c98/191773593735.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/mtk/1271875409?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1271875409,
+      "catalogArtist": "王長存",
+      "catalogTitle": "Mtk",
+      "trackCount": 8,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Context-4",
@@ -890,7 +1052,8 @@
     "feature": "台湾自然录音与器乐持续互相呼应，使地方生态经验进入音乐组织，环境声音承担文化关系的一部分，超出单纯背景装饰。",
     "edition": "1999年风潮原版主体及自然声音图鉴2CD版本；不把2013套装当首版。",
     "sources": [
-      "https://store.windmusic.com.tw/zh/CD/CB-19"
+      "https://store.windmusic.com.tw/zh/CD/CB-19",
+      "https://music.apple.com/hk/album/%E6%A3%AE%E6%9E%97%E7%8B%82%E6%83%B3%E6%9B%B2/598522113?uo=4"
     ],
     "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
     "confidence": "medium",
@@ -898,7 +1061,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "自然声景与新世纪中的语境相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "自然声景与新世纪中的语境相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/2a/3e/f52a3e3c-ec92-4090-3213-b5a9afa1ff73/CB-19.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E6%A3%AE%E6%9E%97%E7%8B%82%E6%83%B3%E6%9B%B2/598522113?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 598522113,
+      "catalogArtist": "吳金黛",
+      "catalogTitle": "森林狂想曲",
+      "trackCount": 8,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Context-8",
@@ -913,15 +1088,29 @@
     "feature": "传统器乐和民间线索被转化为当代弦乐与管弦关系，多部协奏作品持续让不同音乐传统在具体音色和句法内相遇。",
     "edition": "2018年BMOP/sound，Boston Modern Orchestra Project、Gil Rose；不误记为Naxos或2016。",
     "sources": [
-      "https://musicbrainz.org/artist/d66a8c28-9d67-4b81-a068-af4beb185570"
+      "https://bmop.org/wp-content/uploads/2025/02/1058-chen-bklt-web.pdf",
+      "https://conservatory.umkc.edu/docs/encore2019.pdf",
+      "https://music.apple.com/hk/album/chen-yi-concertos-for-string-instruments/1420056844?uo=4"
     ],
-    "evidence": "已取得该条所列唱片目录、发行说明或作者资料线索；用于核对作品身份和创作取向，不是半星分数的来源。整碟持续性与相邻半星仍须人工复听。",
+    "evidence": "BMOP/sound 1058原版说明书版权2018并列出曲目、独奏者与Gil Rose/BMOP；UMKC院刊确认2018年发行。传统弦乐与当代管弦关系来自作者作品说明，4.0为本项目待校订判断。",
     "confidence": "medium",
     "status": "research-draft",
     "approved": false,
     "listening": "未做完整试听",
     "pending": "核对所列确切发行版、曲目与主要署名；完整复听绝大部分器乐曲并与相邻半星双向比较。低档须优先证明局限，不能由风格简单或资料宣传推断。",
-    "selectionRationale": "当代管弦乐中的语境相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。"
+    "selectionRationale": "当代管弦乐中的语境相关选择是本碟主要创作/诠释任务之一；理由见feature，维度适配与等级均可由用户修订。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/f4/58/7b/f4587b7b-8577-d626-c18a-fb3af9188728/794465968127.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/chen-yi-concertos-for-string-instruments/1420056844?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1420056844,
+      "catalogArtist": "波士頓摩登管弦樂團 & 吉爾・羅斯",
+      "catalogTitle": "Chen Yi: Concertos for String Instruments",
+      "trackCount": 9,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-instrumental-Context-9",

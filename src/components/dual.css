@@ -758,3 +758,5 @@
 }
  .reference-discussion { display: block; color: var(--accent, #875323); margin-top: .3rem; }
  .reference-cover-credit { display: block; font-size: .68rem; color: inherit; opacity: .65; margin-top: .25rem; }
+ .reference-store-badge { display: inline-flex; padding: 3px; margin-top: 4px; }
+ .reference-store-badge img { display: block; width: auto; height: 30px; max-width: 116px; object-fit: contain; }

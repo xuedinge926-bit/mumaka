@@ -217,7 +217,8 @@
     "edition": "1998年 Warner Bros. 原版12轨；短器乐过场按原曲序纳入。",
     "sources": [
       "https://www.allmusic.com/album/release/van-halen-iii-mr0000762566",
-      "https://en.wikipedia.org/wiki/Van_Halen_III"
+      "https://en.wikipedia.org/wiki/Van_Halen_III",
+      "https://music.apple.com/us/album/van-halen-iii/215638174?uo=4"
     ],
     "evidence": "AllMusic检索摘要指出分段结构问题；百科核1998、曲目和版次。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -225,7 +226,19 @@
     "pending": "逐曲区分结构和演唱适配，保留对可成立吉他段落的正面判断。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/11/24/1c/mzi.eitbbrvo.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/van-halen-iii/215638174?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 215638174,
+      "catalogArtist": "Van Halen",
+      "catalogTitle": "Van Halen III",
+      "trackCount": 12,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "global-song-Composition-6",
@@ -243,7 +256,8 @@
     "edition": "2005年 Geffen 原版12曲。",
     "sources": [
       "https://www.metacritic.com/music/make-believe/weezer",
-      "https://pitchfork.com/reviews/albums/8614-make-believe/"
+      "https://pitchfork.com/reviews/albums/8614-make-believe/",
+      "https://music.apple.com/us/album/make-believe/1440865423?uo=4"
     ],
     "evidence": "Metacritic核2005和不同评论；Pitchfork对写作惰性持强烈负评，不能机械换算为此维。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "low",
@@ -251,7 +265,19 @@
     "pending": "核后半碟旋律是否仍稳定有效，3.0可上调或下调。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/47/40/48/474048e5-27ed-319e-1b60-73dae6a716d8/06UMGIM12419.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/make-believe/1440865423?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1440865423,
+      "catalogArtist": "Weezer",
+      "catalogTitle": "Make Believe",
+      "trackCount": 12,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "global-song-Composition-7",
@@ -295,7 +321,8 @@
     "edition": "1977年 Warner 原版11曲；Silver Springs不是原曲序一部分。",
     "sources": [
       "https://www.fleetwoodmacofficial.com/album/rumours",
-      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rumours.pdf"
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Rumours.pdf",
+      "https://music.apple.com/us/album/rumours/594061854?uo=4"
     ],
     "evidence": "官网列11曲和作者；国会图书馆专文用于整碟艺术与历史背景。 星级为MUMAKA维度研究判断，非来源总分换算；未做整碟试听。",
     "confidence": "medium",
@@ -303,7 +330,19 @@
     "pending": "只比较歌曲骨架，排除和声演唱与录音的重复加分。",
     "approved": false,
     "listening": "未做完整试听",
-    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。"
+    "auditExtent": "2026-11-02在线检索及所述正文/摘要核对；未进行逐曲听评。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/us/album/rumours/594061854?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 594061854,
+      "catalogArtist": "Fleetwood Mac",
+      "catalogTitle": "Rumours",
+      "trackCount": 11,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "global-song-Composition-9",

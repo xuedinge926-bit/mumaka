@@ -38,4 +38,6 @@
 
 封面只采用已核对的官方发行展示缩略图，并提供回到发行页的链接和版权用途说明；未匹配到可信封面时继续显示缺图占位。`research-reference-covers.mjs` 只收集官方商品目录候选，不能改专辑、星级或人工选择，不能直接采用搜索首图。候选结果保存在 CI 的浏览器证据附件中，供版次、艺人与封面逐条复核。
 
-本机已完成 301 项单元测试、18 项 Python 模型基准、标准构建、单文件构建和公开产物扫描。导入测试的 30 个无服务用例通过；3 个真实 HTTP 用例被本机禁止监听端口的权限限制阻断，预览服务同样报 `listen EPERM`。完整 `npm test`、`build`、Python 导入及 Playwright 验证交由现有 GitHub Actions 运行，最终结果以本次提交的 CI 为准。不会因本机无法启动服务而虚报浏览器验收通过。
+[GitHub Actions 完整验收](https://github.com/xuedinge926-bit/mumaka/actions/runs/41429124157) 已通过：301 项单元测试、18 项 Python 模型基准、33 项导入测试、TypeScript/Vite 构建、公开产物扫描、51 项 Playwright 浏览器测试，以及单文件 Pages 打包。本机无法监听服务端口，浏览器验收由远端执行，没有将本机受限项目虚报为通过。后续封面与来源修订仍走同一套检查后发布。
+
+当前已核对52张官方目录封面。封面旁使用Apple提供的商店标识，直接回到相应发行页；仅在线展示，不打包图片副本，不声称取得再分发许可。使用说明参见[Search API条款](https://performance-partners.apple.com/search-api)及[Apple Music标识指南](https://marketing.services.apple/apple-music-identity-guidelines)。候选原始目录与未采用原因保留在资料文件及CI日志中。目录服务拒绝或限流时停止，不把错误当作搜索无结果。

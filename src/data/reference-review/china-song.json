@@ -680,7 +680,8 @@
     "edition": "2010年原专辑，八首旧作重编与四首新作的12作品口径；平台额外收录不并入。",
     "sources": [
       "https://www.qobuz.com/us-en/album/-/q84mmf9rh7egf",
-      "https://www.youtube.com/watch?v=LSu61V4OjiA"
+      "https://www.youtube.com/watch?v=LSu61V4OjiA",
+      "https://music.apple.com/hk/album/%E6%85%A2%E6%85%A2%E6%87%82/6774683127?uo=4"
     ],
     "evidence": "Qobuz目录与官方艺人频道支持2010版权及汪苏泷词曲、编曲、制作。制作自主性可核，2.5的持续性尚无整碟听证。",
     "confidence": "low",
@@ -688,7 +689,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "汪苏泷此作以制作相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "汪苏泷此作以制作相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9e/82/a1/9e82a1ad-3ba7-f932-e1c3-c7bb5fc508b7/8433391720004.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E6%85%A2%E6%85%A2%E6%87%82/6774683127?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 6774683127,
+      "catalogArtist": "汪蘇瀧",
+      "catalogTitle": "慢慢懂",
+      "trackCount": 12,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Production-6",
@@ -704,7 +717,8 @@
     "edition": "2004年原录音室专辑；标题2002不是发行年份。",
     "sources": [
       "https://news.cqnews.net/1/detail/1148627629129834496/web/content_1148627629129834496.html",
-      "https://www.youtube.com/watch?v=HriFMa8i25Q"
+      "https://www.youtube.com/watch?v=HriFMa8i25Q",
+      "https://music.apple.com/hk/album/2002%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/1783038001?uo=4"
     ],
     "evidence": "官方发行署名支持2004、作者与制作人；华龙网回顾涉及全碟原创与翻唱及制作粗糙的评论。3.0仅是稳定完成度的编辑初选，不能用行业争论代替多曲证据。",
     "confidence": "low",
@@ -712,7 +726,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "刀郎此作以制作相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "刀郎此作以制作相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/2c/87/832c8766-241b-22ed-8c32-9399845e3145/3617382672311.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/2002%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/1783038001?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1783038001,
+      "catalogArtist": "刀郎",
+      "catalogTitle": "2002年的第一场雪",
+      "trackCount": 12,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Production-7",
@@ -753,7 +779,8 @@
     "sources": [
       "https://www.hitoradio.com/newweb/16190album",
       "https://www.bjnews.com.cn/culture/2017/06/26/448083.html",
-      "https://zh.wikipedia.org/wiki/飛行器的執行週期"
+      "https://zh.wikipedia.org/wiki/飛行器的執行週期",
+      "https://music.apple.com/hk/album/%E9%A3%9B%E8%A1%8C%E5%99%A8%E7%9A%84%E5%9F%B7%E8%A1%8C%E9%80%B1%E6%9C%9F/1443637757?uo=4"
     ],
     "evidence": "沿用R3资料记录，未声称本轮重新核听：10曲目录及制作署名可核。发行说明与作者访谈将选曲、器乐录制及保留一次性表演联系起来。跨曲复核对象包括《凄美地》《落地之前》《把你的外套留在深巷》《水星记》《在云端》《保留》《有什么奇怪》《下次再进站》：分别检验鼓与贝斯、人声远近、器乐层次及末段收束。上述是制作选择及核听路径，不冒称已核出所有曲目的声音效果。",
     "confidence": "medium",
@@ -765,7 +792,19 @@
     "manualVersion": "manual-2026-11-02",
     "manualTitle": "飞行器的执行周期",
     "manualLocked": true,
-    "manualResolution": "exact"
+    "manualResolution": "exact",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4b/55/95/4b5595a2-5d2c-38c7-8179-0a27e5ba58a1/00602488600859.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E9%A3%9B%E8%A1%8C%E5%99%A8%E7%9A%84%E5%9F%B7%E8%A1%8C%E9%80%B1%E6%9C%9F/1443637757?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1443637757,
+      "catalogArtist": "郭頂",
+      "catalogTitle": "飛行器的執行週期",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Production-9",
@@ -778,10 +817,11 @@
     "dimension": "制作",
     "stars": 4.5,
     "feature": "人声叠录、节奏层次与摇滚及灵魂乐音色在不同曲目中得到精细处理，声音的明暗和力量持续支撑专辑的情绪跨度。",
-    "edition": "2002年原录音室专辑12轨口径，保留短段；不并后期现场与再版。",
+    "edition": "2002年原录音室专辑13轨，含新闻短段与Katrina demo；不并后期现场与再版。",
     "sources": [
       "https://music-tw.line.me/album/1000323",
-      "https://zh.wikipedia.org/wiki/黑色柳丁"
+      "https://zh.wikipedia.org/wiki/黑色柳丁",
+      "https://music.apple.com/hk/album/%E9%BB%91%E8%89%B2%E6%9F%B3%E4%B8%81/914664926?uo=4"
     ],
     "evidence": "发行目录、创作及录制人员可核；本次移到制作4.5遵守人工版，不能沿用旧作曲4.5的理由。",
     "confidence": "medium",
@@ -793,7 +833,19 @@
     "manualVersion": "manual-2026-11-02",
     "manualTitle": "黑色柳丁",
     "manualLocked": true,
-    "manualResolution": "exact"
+    "manualResolution": "exact",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/05/7a/97/057a9723-2dbd-873b-81e0-5090879b2942/825646245352.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E9%BB%91%E8%89%B2%E6%9F%B3%E4%B8%81/914664926?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 914664926,
+      "catalogArtist": "陶喆",
+      "catalogTitle": "黑色柳丁",
+      "trackCount": 13,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Production-10",
@@ -810,7 +862,8 @@
     "sources": [
       "https://www.hitoradio.com/newweb/2552album",
       "https://zh.wikipedia.org/wiki/浮躁",
-      "https://scholars.hkbu.edu.hk/files/55020877/OA-0343.pdf"
+      "https://scholars.hkbu.edu.hk/files/55020877/OA-0343.pdf",
+      "https://music.apple.com/hk/album/%E6%B5%AE%E8%BA%81/1443287350?uo=4"
     ],
     "evidence": "沿用R3资料记录，未声称本轮重新核听：《无常》《浮躁》《想像》《分裂》《哪儿》《堕落》《扫兴》《末日》及器乐段可作跨曲检查。曲目与人员资料支持自作曲、Cocteau Twins合作和人声实验等线索；拟核音色、层次、空间与转场的整碟一致性，不能只用合作名单判五星。",
     "confidence": "medium",
@@ -822,7 +875,19 @@
     "manualVersion": "manual-2026-11-02",
     "manualTitle": "浮躁",
     "manualLocked": true,
-    "manualResolution": "exact"
+    "manualResolution": "exact",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f6/31/d6/f631d6d6-1fd0-272a-3feb-de30b4e69ace/00602517665095.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E6%B5%AE%E8%BA%81/1443287350?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1443287350,
+      "catalogArtist": "王菲",
+      "catalogTitle": "浮躁",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Vision-4",
@@ -835,10 +900,11 @@
     "dimension": "愿景",
     "stars": 2,
     "feature": "“重启”的作者形象连接电子、节奏布鲁斯与抒情作品；鲜明的声音探索尚未等量转化为跨曲目的艺术联系，整碟构想仍偏分散。",
-    "edition": "2015年实体完整专辑8曲，不采用Reloaded I/II分拆EP，不并2016 Reloaded+。",
+    "edition": "2015年实体/数字完整专辑10轨（8首主体歌曲与2首混音）；不采用Reloaded I/II分拆EP，不并2016 Reloaded+。",
     "sources": [
       "https://music.yule.sohu.com/20150824/n419580062.shtml",
-      "https://music.douban.com/subject/26683363/"
+      "https://music.douban.com/subject/26683363/",
+      "https://music.apple.com/hk/album/reloaded-%E9%87%8D%E5%90%AF/1350216479?uo=4"
     ],
     "evidence": "同期宣传支持重启概念与未来视觉，实体目录支持8曲身份；低档构想判断并非来源结论，须对8曲挑战2.0。",
     "confidence": "low",
@@ -846,7 +912,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "鹿晗此作以愿景相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "鹿晗此作以愿景相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/e2/0a/ea/e20aeae9-2e65-1d17-d30f-81289810cd49/reloaded.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/reloaded-%E9%87%8D%E5%90%AF/1350216479?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1350216479,
+      "catalogArtist": "鹿晗",
+      "catalogTitle": "Reloaded 重启",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Vision-5",
@@ -862,7 +940,8 @@
     "edition": "2018年中英双版22轨，11首作品对应两种语言；不按22首独立作曲重复计算。",
     "sources": [
       "https://ent.people.com.cn/n1/2018/1020/c1012-30352692.html",
-      "https://ent.sina.cn/music/yneidi/2018-10-26/detail-ihmxrkzx2252354.d.html"
+      "https://ent.sina.cn/music/yneidi/2018-10-26/detail-ihmxrkzx2252354.d.html",
+      "https://music.apple.com/hk/album/%E5%A4%A2%E4%B8%8D%E8%90%BD%E9%9B%A8%E6%9E%97-namanana/1440726097?uo=4"
     ],
     "evidence": "同期报道核双语22轨；作者访谈说明M-POP及炼金术构想。2.5只是编辑研究位置，没有假装访谈证明实现程度低。",
     "confidence": "low",
@@ -870,7 +949,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "张艺兴此作以愿景相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "张艺兴此作以愿景相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/f2/c5/19f2c593-4521-800a-b76c-40c5f3f5caf4/nama.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E5%A4%A2%E4%B8%8D%E8%90%BD%E9%9B%A8%E6%9E%97-namanana/1440726097?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1440726097,
+      "catalogArtist": "張藝興",
+      "catalogTitle": "夢不落雨林/NAMANANA",
+      "trackCount": 22,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Vision-6",
@@ -886,7 +977,8 @@
     "edition": "2002年环球原录音室10曲；不用2003影音版或精选。",
     "sources": [
       "https://www.umusic.com.tw/album.php?q=M2z0U2x5M-w0E9AE6E9AE-",
-      "https://www.hitoradio.com/newweb/644album"
+      "https://www.hitoradio.com/newweb/644album",
+      "https://music.apple.com/hk/album/%E5%A3%81%E8%99%8E%E6%BC%AB%E6%AD%A5/1443367431?uo=4"
     ],
     "evidence": "环球发行页与公司提供的电台介绍支持双语Rap、四首方文山词及Pan式形象；愿景3为编辑判断。",
     "confidence": "low",
@@ -894,7 +986,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "潘玮柏此作以愿景相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "潘玮柏此作以愿景相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/80/a2/e6/80a2e628-b8ca-32e4-3b95-1c075e233342/06UMGIM33567.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E5%A3%81%E8%99%8E%E6%BC%AB%E6%AD%A5/1443367431?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1443367431,
+      "catalogArtist": "潘瑋柏",
+      "catalogTitle": "壁虎漫步",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Vision-7",
@@ -911,7 +1015,8 @@
     "sources": [
       "https://zh.wikipedia.org/wiki/苏格拉没有底",
       "https://ent.sina.com.cn/y/2011-06-19/20083338802.shtml?from=wap",
-      "https://news.cnnb.com.cn/system/2011/06/12/006962229.shtml"
+      "https://news.cnnb.com.cn/system/2011/06/12/006962229.shtml",
+      "https://music.apple.com/hk/album/%E8%98%87%E6%A0%BC%E6%8B%89%E6%B2%92%E6%9C%89%E5%BA%95/964698411?uo=4"
     ],
     "evidence": "沿用R3资料记录，未声称本轮重新核听：10曲原版目录与作者对社会／民生视角的说明可核。拟将《想象之中》的关系误认、《拆东墙》的历史借喻、《医生》的自我诊断、《微博控》的媒介关系、《毁人不倦》《敬酒不吃》的反讽及《降温》的私人／公共温度并置来检查。关键是这些分支是否由同一观看方式与表达选择相互支撑，不能只列社会议题便判愿景高分。",
     "confidence": "medium",
@@ -923,7 +1028,19 @@
     "manualVersion": "manual-2026-11-02",
     "manualTitle": "苏格拉没有底",
     "manualLocked": true,
-    "manualResolution": "exact"
+    "manualResolution": "exact",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/95/22/0e/95220ee4-412c-fdbf-cde2-16ba7e26af19/sugelameiyoudi.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E8%98%87%E6%A0%BC%E6%8B%89%E6%B2%92%E6%9C%89%E5%BA%95/964698411?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 964698411,
+      "catalogArtist": "許嵩",
+      "catalogTitle": "蘇格拉沒有底",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Vision-8",
@@ -939,7 +1056,8 @@
     "edition": "2015年原版双CD主体与前奏，不采用鱼丁糸后续复刻版。",
     "sources": [
       "https://www.kiss.com.tw/music/album.php?id=5903",
-      "https://zh.wikipedia.org/wiki/冬_未了"
+      "https://zh.wikipedia.org/wiki/冬_未了",
+      "https://music.apple.com/hk/album/%E5%86%AC-%E6%9C%AA%E4%BA%86/1593446659?uo=4"
     ],
     "evidence": "发行说明核2015、柏林与四季计划终章。人工图的冬未了按正式空格排印为冬 未了，4.0保持不动。",
     "confidence": "medium",
@@ -951,7 +1069,19 @@
     "manualVersion": "manual-2026-11-02",
     "manualTitle": "冬未了",
     "manualLocked": true,
-    "manualResolution": "verified-title"
+    "manualResolution": "verified-title",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6e/b1/6e/6eb16e18-c22e-e2ee-7587-de25ba4892a2/cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E5%86%AC-%E6%9C%AA%E4%BA%86/1593446659?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1593446659,
+      "catalogArtist": "蘇打綠",
+      "catalogTitle": "冬 未了",
+      "trackCount": 19,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Vision-9",
@@ -996,7 +1126,8 @@
     "edition": "2020年数字版8个分曲及整轨；整轨是同一内容，不能计为第9首新作。2022年CD为整轨。",
     "sources": [
       "https://zh.wikipedia.org/wiki/冀西南林路行",
-      "https://dzb.whb.cn/imgPath/2021-07-21/100721.pdf"
+      "https://dzb.whb.cn/imgPath/2021-07-21/100721.pdf",
+      "https://music.apple.com/hk/album/%E5%86%80%E8%A5%BF%E5%8D%97%E6%9E%97%E8%B7%AF%E8%A1%8C/1545534900?uo=4"
     ],
     "evidence": "沿用R3资料记录，未声称本轮重新核听：8个分曲已核：《早》《泥河》《平等云雾》《采石》《山雀》《绕越》《河北墨麒麟》《郊眠寺》。创作说明明确太行山与现代化地景，资料记录动机贯穿和器乐扩展。拟同时检验5首有词作品与3个器乐段是否共同完成同一意图，不把“概念大”本身算作愿景成功。",
     "confidence": "medium",
@@ -1008,7 +1139,19 @@
     "manualVersion": "manual-2026-11-02",
     "manualTitle": "冀西南林路行",
     "manualLocked": true,
-    "manualResolution": "exact"
+    "manualResolution": "exact",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/c5/bd/a6/c5bda6ad-0ed6-849d-dc07-c6b527c0b5aa/cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E5%86%80%E8%A5%BF%E5%8D%97%E6%9E%97%E8%B7%AF%E8%A1%8C/1545534900?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1545534900,
+      "catalogArtist": "萬能青年旅店",
+      "catalogTitle": "冀西南林路行",
+      "trackCount": 8,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Context-4",
@@ -1025,7 +1168,8 @@
     "sources": [
       "https://music.apple.com/us/album/古-玩/1817712876",
       "https://music.yule.sohu.com/20050915/n240647349.shtml",
-      "https://sports.sina.com.cn/s/2005-10-28/0910693562s.shtml"
+      "https://sports.sina.com.cn/s/2005-10-28/0910693562s.shtml",
+      "https://music.apple.com/hk/album/%E5%8F%A4-%E7%8E%A9/1817712876?uo=4"
     ],
     "evidence": "同期发行说明具体讨论多曲的文学与传统引用，证明语境是核心追求；同期报道同时涉及模仿争议及独特听感。没有证据证明整碟仅有表面引用，2.0列为优先挑战候选。",
     "confidence": "low",
@@ -1033,7 +1177,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "后弦此作以语境相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "后弦此作以语境相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/dd/c0/beddc04d-864f-76b8-c3bd-f0f6cdbc480c/4896004044272.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E5%8F%A4-%E7%8E%A9/1817712876?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1817712876,
+      "catalogArtist": "後弦",
+      "catalogTitle": "古·玩",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Context-5",
@@ -1049,7 +1205,8 @@
     "edition": "2002年内地原版10曲；不与同年Anson Hu港台改曲版或2003升级版混用。",
     "sources": [
       "https://ent.sina.com.cn/p/i/2002-07-05/90243.html",
-      "https://www.quick-china.com/music/detail/mc04546.html"
+      "https://www.quick-china.com/music/detail/mc04546.html",
+      "https://music.apple.com/hk/album/%E6%96%87%E6%AD%A6%E5%8F%8C%E5%85%A8/924494955?uo=4"
     ],
     "evidence": "同期首发报道核2002年、内地与跨地区R&B导入，实体目录核版本；2.5并非历史影响的量化结论，主要检验音乐内的文化转化。",
     "confidence": "low",
@@ -1057,7 +1214,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "胡彦斌此作以语境相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "胡彦斌此作以语境相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/b6/bd/db/b6bddbf9-30ed-4d7c-2cb7-6a16a8133460/825646233830.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E6%96%87%E6%AD%A6%E5%8F%8C%E5%85%A8/924494955?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 924494955,
+      "catalogArtist": "胡彥斌",
+      "catalogTitle": "文武双全",
+      "trackCount": 10,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Context-6",
@@ -1073,7 +1242,8 @@
     "edition": "2008年环球11曲，常简称《北京》；不把2014年报道中提及的后期《活着》等歌曲并入本专辑。",
     "sources": [
       "https://www.whb.cn/zhuzhan/bihui/20140228/3755.html",
-      "https://music.douban.com/subject/3014878/"
+      "https://music.douban.com/subject/3014878/",
+      "https://music.apple.com/hk/album/%E9%83%9D%E4%BA%91%E5%8C%97%E4%BA%AC/1443344628?uo=4"
     ],
     "evidence": "沿用R3资料记录，未声称本轮重新核听：李皖文章明确分析首专《北京北京》《这个城市》《太平盛世之小西天》里的家居、街区变化与通勤，以及说唱口吻与三弦关系。其余《鞋》《串儿》《祭》等需回原专辑核对；现有正文对开篇三曲取证较强，对后半碟不足。",
     "confidence": "low",
@@ -1081,7 +1251,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "郝云此作以语境相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "郝云此作以语境相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/59/30/27/593027a9-4026-8762-332d-56e3c56a39a0/00602517623606.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E9%83%9D%E4%BA%91%E5%8C%97%E4%BA%AC/1443344628?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1443344628,
+      "catalogArtist": "郝雲",
+      "catalogTitle": "郝云北京",
+      "trackCount": 11,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Context-7",
@@ -1098,7 +1280,8 @@
     "sources": [
       "https://open.spotify.com/album/16mDLyKo89P8ERFoEyoPvS",
       "https://www.youtube.com/watch?v=0krTxgWkEcg",
-      "https://hub.hku.hk/bitstream/10722/184273/2/Content.pdf?accept=1"
+      "https://hub.hku.hk/bitstream/10722/184273/2/Content.pdf?accept=1",
+      "https://music.apple.com/hk/album/lazy-clan/367988349?uo=4"
     ],
     "evidence": "沿用R3资料记录，未声称本轮重新核听：授权全碟目录核得《LMF》《咏春拳》《大懒堂》《无根草》《冚家拎》《今宵多珍重》《牛屎一族》《反骨仔》《多谢晒》《LMF Vs Gardener》《我要踩下去》。拟检查代际、阶层、身份和抗拒如何跨曲进入粤语说唱，而非将粗口本身当作社会深度。",
     "confidence": "medium",
@@ -1106,7 +1289,19 @@
     "approved": false,
     "listening": "未做完整试听",
     "pending": "独立研究候选；需核验原版多数曲目在本维的持续水平，并与相邻半星双向比较；来源核实不等于等级已审定。",
-    "selectionRationale": "LMF此作以语境相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。"
+    "selectionRationale": "LMF此作以语境相关的创作或诠释选择建立辨识度；具体理由见feature，低位有争议者保留挑战记录。",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/15/02/a0/1502a055-6f6a-d218-633e-a9175bc920b2/mzi.ayfebhto.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/lazy-clan/367988349?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 367988349,
+      "catalogArtist": "LMF",
+      "catalogTitle": "Lazy Clan",
+      "trackCount": 11,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Context-8",
@@ -1154,7 +1349,8 @@
     "sources": [
       "https://www.hitoradio.com/newweb/6488album",
       "https://musicbrainz.org/release/2ffd0114-1b86-33b6-8c44-00a0b2a5dc5f",
-      "https://www.hkihss.hku.hk/events/ccliu/paper.pdf"
+      "https://www.hkihss.hku.hk/events/ccliu/paper.pdf",
+      "https://music.apple.com/hk/album/%E5%8D%8A%E6%96%A4%E5%85%AB%E5%85%A9/1443345866?uo=4"
     ],
     "evidence": "沿用R3资料记录，未声称本轮重新核听：《半斤八两》《浪子心声》《打雀英雄传》《大家跟住唱》《有酒今朝醉》《鬼马大家乐》《夜半轻私语》《追求三部曲》跨日常与私人表达。目录核实12曲、包含多首原创；语境论证要回到市民经验如何进入曲词与唱法，而非只讲同名电影票房。",
     "confidence": "medium",
@@ -1166,7 +1362,19 @@
     "manualVersion": "manual-2026-11-02",
     "manualTitle": "半斤八两",
     "manualLocked": true,
-    "manualResolution": "exact"
+    "manualResolution": "exact",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c4/f1/a2/c4f1a25d-cb6c-d797-fd96-fe98d06d2493/00602488962063.rgb.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E5%8D%8A%E6%96%A4%E5%85%AB%E5%85%A9/1443345866?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1443345866,
+      "catalogArtist": "許冠傑",
+      "catalogTitle": "半斤八兩",
+      "trackCount": 12,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   },
   {
     "id": "china-song-Context-10",
@@ -1183,7 +1391,8 @@
     "sources": [
       "https://www.yaogun.com/wiki/新長征路上的揺滾（崔健）",
       "https://open.spotify.com/album/2sD8x7fpna487SFRkJAP4P",
-      "https://www.ybzqzysg.org.cn/mobile/mrmz_view1.aspx?id=48"
+      "https://www.ybzqzysg.org.cn/mobile/mrmz_view1.aspx?id=48",
+      "https://music.apple.com/hk/album/%E6%96%B0%E9%95%BF%E5%BE%81%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%91%87%E6%BB%9A/1585625540?uo=4"
     ],
     "evidence": "沿用R3资料记录，未声称本轮重新核听：跨曲应核《新长征路上的摇滚》《不再掩饰》《让我睡个好觉》《花房姑娘》《假行僧》《从头再来》《一无所有》《不是我不明白》《出走》。不仅看标题曲及1986年事件，要检查这些歌曲的私人、身体、迁徙与集体话语怎样在1989年整张录音中重新关联。",
     "confidence": "medium",
@@ -1195,6 +1404,18 @@
     "manualVersion": "manual-2026-11-02",
     "manualTitle": "新长征路上的摇滚",
     "manualLocked": true,
-    "manualResolution": "exact"
+    "manualResolution": "exact",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/52/8a/e9/528ae9b1-47a7-a082-8663-83dff561a4fd/cover.jpg/100x100bb.jpg",
+    "coverSource": "https://music.apple.com/hk/album/%E6%96%B0%E9%95%BF%E5%BE%81%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%91%87%E6%BB%9A/1585625540?uo=4",
+    "coverLicense": "Apple Music/iTunes官方展示缩略图；仅在线展示以介绍并链接该发行，配官方商店标识，版权归原权利人，不授予再分发权。",
+    "coverReview": {
+      "checkedOn": "2026-11-02",
+      "collectionId": 1585625540,
+      "catalogArtist": "崔健",
+      "catalogTitle": "新长征路上的摇滚",
+      "trackCount": 9,
+      "decision": "人工核对作品、主艺人或古典署名、发行年份；排除单曲、现场及不符再版。",
+      "sourceRecord": "docs/reference-review/apple-cover-candidates-ci.json"
+    }
   }
 ]

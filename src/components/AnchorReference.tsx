@@ -186,7 +186,13 @@ export function AnchorReference({
                             </p>
                             <small>{mainGenre(a)}</small>
                             {a.status === "discussion" && <small className="reference-discussion">人工位置 · 待商议</small>}
-                            {a.coverSource && safeCover(a.coverSource) && <a className="reference-cover-credit" href={a.coverSource} target="_blank" rel="noreferrer">封面出处</a>}
+                            {a.coverSource && safeCover(a.coverSource) && (
+                              /\/(?:music|itunes)\.apple\.com\//.test(a.coverSource) ? (
+                                <a className="reference-store-badge" href={a.coverSource} target="_blank" rel="noreferrer" aria-label={`在 Apple Music 查看《${a.album}》`}>
+                                  <img src="https://marketing.services.apple/mdsa/assets/storage/blobs/images/6408fd8630506600073b0d7e/en-us-large%401x.png" alt="Listen on Apple Music" loading="lazy" />
+                                </a>
+                              ) : <a className="reference-cover-credit" href={a.coverSource} target="_blank" rel="noreferrer">封面出处</a>
+                            )}
                           </div>
                         </div>
                         <details open={expanded || undefined}>

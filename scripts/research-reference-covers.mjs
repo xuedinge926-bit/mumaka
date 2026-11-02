@@ -3,12 +3,15 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const groups = ['china-song','china-instrumental','global-song','global-instrumental'];
+const allowed = ['china-song','china-instrumental','global-song','global-instrumental'];
+const groups = process.env.REFERENCE_RESEARCH_GROUPS?.split(',') || allowed;
+if (groups.some(group => !allowed.includes(group))) throw new Error('Unknown reference group');
 const albums = (await Promise.all(groups.map(async group => JSON.parse(await readFile(resolve(root,`src/data/reference-review/${group}.json`),'utf8'))))).flat();
 const result = [];
 let cursor = 0;
+let stopped = false;
 async function worker() {
-  while (cursor < albums.length) {
+  while (!stopped && cursor < albums.length) {
     const a = albums[cursor++];
     if (a.coverUrl) continue;
     const country = a.id.startsWith('china-') ? 'hk' : 'us';
@@ -16,15 +19,19 @@ async function worker() {
     query.search = new URLSearchParams({ term:`${a.artist} ${a.album}`, entity:'album',country,limit:'8' }).toString();
     try {
       const response = await fetch(query,{ signal:AbortSignal.timeout(15000) });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      if (!response.ok) {
+        // Respect provider refusal/rate limits; a later manual run may resume.
+        if ([403,429].includes(response.status)) stopped = true;
+        throw new Error(`HTTP ${response.status}`);
+      }
       const data = await response.json();
       result.push({ id:a.id, expected:{album:a.album,artist:a.artist,year:a.year,edition:a.edition}, query:String(query), results:(data.results || []).map(x=>Object.fromEntries(['collectionId','collectionName','artistName','releaseDate','trackCount','collectionViewUrl','artworkUrl100'].map(k=>[k,x[k]]))) });
     } catch (error) { result.push({id:a.id,query:String(query),error:String(error)}); }
-    // Bounded concurrency and pacing. Provider failures remain visible, without fabricated replacements.
-    await new Promise(r=>setTimeout(r,750));
+    // Apple documents approximately 20 calls/minute; use one request at a time.
+    if (!stopped) await new Promise(r=>setTimeout(r,3500));
   }
 }
-await Promise.all([worker(),worker(),worker()]);
+await worker();
 const directory = resolve(root,'test-results/reference-research');
 await mkdir(directory,{recursive:true});
 await writeFile(resolve(directory,'apple-cover-candidates.json'),JSON.stringify({version:'reference-2026-11-02-r1',purpose:'仅供逐条核对的发行元数据，不自动采用搜索首图',results:result.sort((a,b)=>a.id.localeCompare(b.id))},null,2)+'\n');
