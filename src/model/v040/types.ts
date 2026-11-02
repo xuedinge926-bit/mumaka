@@ -73,6 +73,11 @@ export interface Family {
   >;
 }
 export interface Anchor {
+  mainGenre?: string;
+  displayStandard?: string;
+  coverUrl?: string;
+  reviewedBy?: string;
+  reviewedAt?: string;
   id: string;
   region: "china" | "global";
   category: Category;

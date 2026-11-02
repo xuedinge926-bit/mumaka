@@ -406,3 +406,93 @@ export async function legacyCheckpoint(): Promise<string | null> {
     database.close();
   }
 }
+
+/** Updates one reference cell only, with an optimistic check and no access to model weights. */
+export async function saveReferenceCandidate(
+  candidate: import("../model/v040/types").Anchor,
+  expected: import("../model/v040/types").Anchor,
+  unlockReviewed = false,
+  listened = false,
+) {
+  return enqueue(async () => {
+    const database = await db();
+    try {
+      const tx = database.transaction("meta", "readwrite");
+      const installed = await tx.store.get("catalog");
+      const catalog = installed
+        ? validateCatalog(installed.value)
+        : structuredClone(bundledCatalog);
+      const previous = catalog.anchors.find((a) => a.id === expected.id);
+      if (!previous || canonical(previous) !== canonical(expected))
+        throw new Error("此格已在另一处修改，请重新打开后编辑。");
+      if (previous.approved && !unlockReviewed)
+        throw new Error("已审定格受保护，请先解除保护。");
+      if (
+        candidate.id !== previous.id ||
+        candidate.region !== previous.region ||
+        candidate.category !== previous.category ||
+        candidate.dimension !== previous.dimension ||
+        candidate.stars !== previous.stars
+      )
+        throw new Error("不能修改参考格位的身份。");
+      if (
+        !candidate.album.trim() ||
+        !candidate.artist.trim() ||
+        !/^\d{4}$/.test(candidate.year) ||
+        !candidate.mainGenre?.trim() ||
+        !candidate.feature.trim() ||
+        !candidate.displayStandard?.trim()
+      )
+        throw new Error(
+          "请填写真实专辑、艺术家、四位年份、主风格、标准与理由。",
+        );
+      if (
+        [
+          candidate.album,
+          candidate.artist,
+          candidate.mainGenre,
+          candidate.displayStandard,
+          candidate.feature,
+        ].some((v) => v.length > 2000)
+      )
+        throw new Error("单个字段不得超过2000字。");
+      const urls = [
+        ...candidate.sources,
+        ...(candidate.coverUrl ? [candidate.coverUrl] : []),
+      ];
+      if (
+        urls.some((value) => {
+          try {
+            const u = new URL(value);
+            return u.protocol !== "https:" || !!u.username || !!u.password;
+          } catch {
+            return true;
+          }
+        })
+      )
+        throw new Error("图片与来源请使用不含账号密码的HTTPS地址。");
+      if (
+        candidate.approved &&
+        (!listened ||
+          !candidate.reviewedBy?.trim() ||
+          !candidate.sources.length)
+      )
+        throw new Error("审定需要完整专辑核验、审定人和资料来源。");
+      const next = {
+        ...structuredClone(candidate),
+        unassigned: false,
+        status: candidate.approved ? "approved" : "draft",
+        reviewedAt: candidate.approved ? new Date().toISOString() : undefined,
+      };
+      catalog.anchors = catalog.anchors.map((a) =>
+        a.id === next.id ? next : a,
+      );
+      validateCatalog(catalog);
+      await tx.store.put({ id: "catalog", value: catalog });
+      await tx.done;
+      return catalog;
+    } finally {
+      database.close();
+    }
+  });
+}

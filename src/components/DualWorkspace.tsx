@@ -24,7 +24,8 @@ import { evaluationCSV } from "../lib/v040Exports";
 import { blobToCoverDataURL } from "../lib/images";
 import { importedAlbum } from "../lib/albumImport";
 import { createId } from "../lib/browserCrypto";
-import { StarRating } from "./StarRating";
+import { DimensionRating } from "./DimensionRating";
+import { readPreferences } from "../lib/preferences";
 import { DualScoreCard } from "./DualScoreCard";
 import { AlbumImportPanel } from "./AlbumImportPanel";
 import "./dual.css";
@@ -200,7 +201,16 @@ export function DualWorkspace({
       if (mounted.current) setBusy(false);
     }
   }
-  async function create(next = newDraft()) {
+  async function create(next?: Draft) {
+    if (!next) {
+      const p = readPreferences();
+      next = {
+        ...newDraft(),
+        region: p.market,
+        cardRatio: p.cardRatio,
+        cardTheme: p.cardTheme,
+      };
+    }
     await storage.initialize();
     await storage.saveDraft(next);
     onNavigate({ kind: "draft", id: next.id });
@@ -248,10 +258,10 @@ export function DualWorkspace({
           <p className="dual-eyebrow">DUAL MODEL · {MODEL_VERSION}</p>
           <h2>
             {view === "ratings"
-              ? "双体系评分历史"
+              ? "评分记录"
               : view === "cards"
-                ? "双体系评分卡"
-                : "双体系作品库"}
+                ? "评分卡"
+                : "作品库"}
           </h2>
         </div>
         <button
@@ -260,7 +270,7 @@ export function DualWorkspace({
           onClick={() => run(() => create())}
         >
           <Plus size={15} />
-          新建双体系评分
+          添加评分
         </button>
       </div>
       <input
@@ -445,30 +455,52 @@ export function DualWorkspace({
         <>
           <div className="dual-heading">
             <div>
-              <p className="dual-eyebrow">MUMAKA · {MODEL_VERSION}</p>
+              <p className="dual-eyebrow">ALBUM REVIEW</p>
               <h1>专辑评分工作台</h1>
               <p>从作品出发，留下可追溯的判断。</p>
             </div>
-            <div className="dual-actions">
-              <span className="dual-save" role="status">
-                {status}
+            <span className="dual-save" role="status" title={status}>
+              <span aria-hidden="true">
+                {status === "保存失败" ? "保存失败" : "●"}
               </span>
+              <span className="sr-only">{status}</span>
+            </span>
+          </div>
+          {!readonly && (
+            <div className="draft-tabs" role="tablist" aria-label="评分草稿">
+              {[...drafts.filter((d) => d.id !== draft.id), draft]
+                .sort((a, b) => a.createdAt.localeCompare(b.createdAt))
+                .map((item, i) => (
+                  <button
+                    key={item.id}
+                    role="tab"
+                    aria-selected={item.id === draft.id}
+                    aria-controls="dual-info"
+                    onClick={() =>
+                      run(async () => {
+                        if (latest.current)
+                          await storage.saveDraft(latest.current);
+                        onNavigate({ kind: "draft", id: item.id });
+                      })
+                    }
+                  >
+                    {item.title || `评分 ${i + 1}`}
+                  </button>
+                ))}
               <button
-                className="button secondary"
-                disabled={busy}
-                onClick={() => run(() => create())}
+                className="draft-add"
+                aria-label="添加评分草稿"
+                onClick={() =>
+                  run(async () => {
+                    if (latest.current) await storage.saveDraft(latest.current);
+                    await create();
+                  })
+                }
               >
-                新建评分
-              </button>
-              <button
-                className="quiet-link"
-                disabled={busy}
-                onClick={() => setImportOpen(!importOpen)}
-              >
-                通过链接／JSON添加
+                <Plus size={16} />
               </button>
             </div>
-          </div>
+          )}
           <div className="dual-topline">
             <div className="dual-segment" role="group" aria-label="作品类别">
               {CATEGORIES.map((c) => (
@@ -482,11 +514,6 @@ export function DualWorkspace({
                 </button>
               ))}
             </div>
-            <span className="dual-badge">
-              {snapshot?.status === "published"
-                ? "人工批准的正式快照"
-                : "研究候选 · 禁止自动批准"}
-            </span>
             <nav aria-label="页面内分区">
               <a
                 href="#dual-info"
@@ -865,12 +892,7 @@ export function DualWorkspace({
                         {genre!.name} · {CATEGORY_LABELS[draft.category]} ·{" "}
                         {profile.applicability}
                       </b>
-                      <p>{profile.rationale}</p>
-                      <small>
-                        {profile.reviewStatus} · {activeCatalog.sourceVersion} /
-                        权重 {activeCatalog.weightVersion} ·{" "}
-                        {profile.sourceSheet} 第{profile.sourceRow}行
-                      </small>
+
                       {profile.applicability.includes("条件") && (
                         <label>
                           本作品的条件适用依据
@@ -901,10 +923,6 @@ export function DualWorkspace({
                     </div>
                   ))}
                 </div>
-                <p className="dual-muted">
-                  前四维70% · 愿景15% · 语境15% ·
-                  半百分点精度。522候选保留独立双模式；43索引与5定义争议不生成有效评分。
-                </p>
               </section>
               <section id="dual-ratings" className="dual-panel">
                 <div className="dual-section-title">
@@ -913,84 +931,35 @@ export function DualWorkspace({
                   <small>{CATEGORY_LABELS[draft.category]} · 半星刻度</small>
                 </div>
                 <fieldset disabled={readonly || busy}>
-                  {NAMES[draft.category].map((name, i) => {
-                    const help = HELP[draft.category][i],
-                      tick = ratingView(draft)[i];
-                    const shared = draft.mixed.enabled && i >= 4;
-                    return (
-                      <div
-                        key={`${draft.category}-${name}`}
-                        className="dual-dimension"
-                        data-dimension={name}
-                      >
-                        <div className="dual-dimension-heading">
-                          <div>
-                            <h3>
-                              {name}
-                              <small>{ENGLISH[draft.category][i]}</small>
-                            </h3>
-                            {shared && (
-                              <span className="dual-muted">
-                                专辑层面 · 只计一次
-                              </span>
-                            )}
-                          </div>
-                          <b>
-                            {profile?.weightsTicks
-                              ? `${profile.weightsTicks[i] / 2}%`
-                              : "—"}
-                          </b>
-                        </div>
-                        <div className="dual-star-row">
-                          <StarRating
-                            label={name}
-                            value={tick === null ? null : tick / 2}
-                            disabled={readonly || busy}
-                            onChange={(value) =>
-                              change((d) => {
-                                const ticks = value === null ? null : value * 2;
-                                if (shared) {
-                                  if (i === 4) d.mixed.visionTicks = ticks;
-                                  else d.mixed.contextTicks = ticks;
-                                } else
-                                  d.modes[d.category].ratingsTicks[i] = ticks;
-                              })
-                            }
-                          />
-                          <span>
-                            {tick === null
-                              ? "未评价"
-                              : `${(tick / 2).toFixed(1)} ★`}
-                          </span>
-                          <button
-                            className="quiet-link"
-                            onClick={() =>
-                              change((d) => {
-                                if (shared) {
-                                  if (i === 4) d.mixed.visionTicks = null;
-                                  else d.mixed.contextTicks = null;
-                                } else
-                                  d.modes[d.category].ratingsTicks[i] = null;
-                              })
-                            }
-                          >
-                            清除
-                          </button>
-                        </div>
-                        <details className="dual-help">
-                          <summary>评判范围与计分边界</summary>
-                          <p>{help.scope}</p>
-                          <p>{help.points}</p>
-                          <p>
-                            <b>边界：</b>
-                            {help.boundary}
-                          </p>
-                        </details>
+                  {NAMES[draft.category].map((name, i) => (
+                    <DimensionRating
+                      key={`${draft.category}-${name}`}
+                      category={draft.category}
+                      index={i}
+                      tick={ratingView(draft)[i]}
+                      weight={profile?.weightsTicks?.[i] ?? null}
+                      disabled={readonly || busy}
+                      shared={draft.mixed.enabled && i >= 4}
+                      onChange={(value) =>
+                        change((d) => {
+                          const ticks = value === null ? null : value * 2;
+                          if (d.mixed.enabled && i >= 4) {
+                            if (i === 4) d.mixed.visionTicks = ticks;
+                            else d.mixed.contextTicks = ticks;
+                          } else d.modes[d.category].ratingsTicks[i] = ticks;
+                        })
+                      }
+                    />
+                  ))}
+                  <details className="optional-notes">
+                    <summary>可选笔记与复核</summary>
+                    {NAMES[draft.category].map((name, i) => (
+                      <label key={name}>
+                        {name}笔记
                         <textarea
                           aria-label={`${name}文字证据`}
-                          placeholder="记录整碟证据、反例与相邻半星差别（可稍后补充）"
                           value={
-                            shared
+                            draft.mixed.enabled && i >= 4
                               ? i === 4
                                 ? draft.mixed.visionEvidence
                                 : draft.mixed.contextEvidence
@@ -998,7 +967,7 @@ export function DualWorkspace({
                           }
                           onChange={(e) =>
                             change((d) => {
-                              if (shared) {
+                              if (d.mixed.enabled && i >= 4) {
                                 if (i === 4)
                                   d.mixed.visionEvidence = e.target.value;
                                 else d.mixed.contextEvidence = e.target.value;
@@ -1008,62 +977,62 @@ export function DualWorkspace({
                             })
                           }
                         />
-                      </div>
-                    );
-                  })}
-                  <label className="dual-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={mode.performanceUncertain}
-                      onChange={(e) =>
-                        change((d) => {
-                          d.modes[d.category].performanceUncertain =
-                            e.target.checked;
-                        })
-                      }
-                    />
-                    缺少独立表演证据，标为待复核
-                  </label>
-                  <p className="dual-muted">
-                    程序、算法及电子作品不会被强制低分。待复核期间保留草稿，不生成假定总分。
-                  </p>
-                  <label>
-                    专辑短评
-                    <textarea
-                      aria-label="专辑短评"
-                      value={draft.summary}
-                      maxLength={200}
-                      onChange={(e) =>
-                        change((d) => {
-                          d.summary = e.target.value;
-                        })
-                      }
-                    />
-                  </label>
-                  <label>
-                    评分人
-                    <input
-                      aria-label="评分人"
-                      value={draft.reviewer}
-                      onChange={(e) =>
-                        change((d) => {
-                          d.reviewer = e.target.value;
-                        })
-                      }
-                    />
-                  </label>
-                  <label className="dual-checkbox">
-                    <input
-                      type="checkbox"
-                      checked={draft.fullAlbumListening}
-                      onChange={(e) =>
-                        change((d) => {
-                          d.fullAlbumListening = e.target.checked;
-                        })
-                      }
-                    />
-                    已完成整碟试听核验
-                  </label>
+                      </label>
+                    ))}
+                    <label className="dual-checkbox">
+                      <input
+                        type="checkbox"
+                        checked={mode.performanceUncertain}
+                        onChange={(e) =>
+                          change((d) => {
+                            d.modes[d.category].performanceUncertain =
+                              e.target.checked;
+                          })
+                        }
+                      />
+                      缺少独立表演证据，标为待复核
+                    </label>
+                    <p className="dual-muted">
+                      程序、算法及电子作品不会被强制低分。待复核期间保留草稿，不生成假定总分。
+                    </p>
+                    <label>
+                      专辑短评
+                      <textarea
+                        aria-label="专辑短评"
+                        value={draft.summary}
+                        maxLength={200}
+                        onChange={(e) =>
+                          change((d) => {
+                            d.summary = e.target.value;
+                          })
+                        }
+                      />
+                    </label>
+                    <label>
+                      评分人
+                      <input
+                        aria-label="评分人"
+                        value={draft.reviewer}
+                        onChange={(e) =>
+                          change((d) => {
+                            d.reviewer = e.target.value;
+                          })
+                        }
+                      />
+                    </label>
+                    <label className="dual-checkbox">
+                      <input
+                        type="checkbox"
+                        checked={draft.fullAlbumListening}
+                        onChange={(e) =>
+                          change((d) => {
+                            d.fullAlbumListening = e.target.checked;
+                          })
+                        }
+                      />
+                      已完成整碟试听核验
+                    </label>
+                  </details>
                 </fieldset>
               </section>
             </div>
@@ -1083,7 +1052,6 @@ export function DualWorkspace({
                   <span>
                     / 10
                     <br />
-                    ROUND_HALF_UP
                   </span>
                 </div>
                 {calculation.errors.length > 0 && (
@@ -1096,11 +1064,7 @@ export function DualWorkspace({
                     </ul>
                   </details>
                 )}
-                {calculation.warnings.map((w) => (
-                  <p key={w} className="dual-muted">
-                    {w}
-                  </p>
-                ))}
+
                 <div className="dual-toolbar">
                   <label>
                     卡片比例
@@ -1225,93 +1189,15 @@ export function DualWorkspace({
                       })
                     }
                   >
-                    保存研究快照
-                  </button>
-                  <button
-                    className="button secondary"
-                    disabled={readonly || busy || !calculation.publishable}
-                    title="仅已审定权重、完整试听及证据齐备后可人工发布"
-                    onClick={() =>
-                      run(async () => {
-                        await storage.saveSnapshot(
-                          latest.current!,
-                          catalog,
-                          true,
-                        );
-                        await refresh();
-                        setStatus("已人工批准正式快照");
-                      })
-                    }
-                  >
-                    正式发布{calculation.publishable ? "" : "（权重待审）"}
+                    保存评分版本
                   </button>
                 </div>
                 <p className="dual-source">
-                  {draft.modelVersion} · 定义{" "}
-                  {draft.dimensionDefinitionsVersion} · 权重{" "}
-                  {activeCatalog.weightVersion}
-                  。冻结快照含数值、两套草稿、来源哈希及版本，未来权重更新不会改写历史。
+                  权重待审定 · 评分版本保存后保留当时的权重与总分。
                 </p>
               </section>
             </aside>
           </div>
-          {importOpen && (
-            <section className="dual-panel">
-              <AlbumImportPanel
-                albums={legacyAlbums}
-                busy={busy}
-                onOpen={onOpenLegacy}
-                onManual={() => setImportOpen(false)}
-                onConfirm={async (value) => {
-                  await storage.flushWrites();
-                  const next = fromLegacy(
-                    importedAlbum(value, { market: draft.region }),
-                  );
-                  delete next.parent;
-                  await create(next);
-                  setImportOpen(false);
-                }}
-              />
-            </section>
-          )}
-          <details className="dual-panel">
-            <summary>从旧作品复用资料（不转换旧评分）</summary>
-            <div className="dual-toolbar">
-              <select
-                aria-label="选择旧作品资料"
-                value={legacyChoice}
-                onChange={(e) => setLegacyChoice(e.target.value)}
-              >
-                <option value="">选择旧作品</option>
-                {legacyAlbums.map((a) => (
-                  <option key={a.id} value={a.id}>
-                    {a.title || "未命名"} · {a.artist}
-                  </option>
-                ))}
-              </select>
-              <button
-                disabled={!legacyChoice || busy}
-                onClick={() =>
-                  run(async () => {
-                    const album = legacyAlbums.find(
-                      (a) => a.id === legacyChoice,
-                    )!;
-                    await create(fromLegacy(album));
-                  })
-                }
-              >
-                仅复制资料到新模型
-              </button>
-            </div>
-            <p>
-              旧词、表意、作曲、声音及旧权重保持原样，新模型从空白星级开始。
-            </p>
-          </details>
-          {lists}
-          <details className="dual-panel">
-            <summary>数据管理与导入接口</summary>
-            {dataPanel}
-          </details>
         </>
       ) : null}
       {status && view !== "studio" && <p role="status">{status}</p>}
@@ -1324,12 +1210,26 @@ export function DualWorkspace({
           const file = e.target.files?.[0];
           e.target.value = "";
           if (!file) return;
+          const target = latest.current?.id;
           blobToCoverDataURL(file)
-            .then((cover) =>
-              change((d) => {
-                d.cover = cover;
-              }),
-            )
+            .then(async (cover) => {
+              if (latest.current?.id === target)
+                change((d) => {
+                  d.cover = cover;
+                });
+              else {
+                const original = (await storage.state()).drafts.find(
+                  (d) => d.id === target,
+                );
+                if (original)
+                  await storage.saveDraft({
+                    ...original,
+                    cover,
+                    revision: original.revision + 1,
+                    updatedAt: new Date().toISOString(),
+                  });
+              }
+            })
             .catch((e) => setError(message(e)));
         }}
       />

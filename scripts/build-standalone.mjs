@@ -46,7 +46,7 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#244c40">
 <meta name="description" content="新乐评主义：本地优先、人工主导的六维专辑评价工作台">
-<title>MUMAKA / 木马卡 · 新乐评主义</title>
+<title>木马卡 MUMAKA · 新乐评主义</title>
 <style>${css.replace(/<\/style/gi, '<\\/style')}</style>
 </head><body><div id="root"></div>
 <script>${javascript.replace(/<\/script/gi, '<\\/script')}</script>

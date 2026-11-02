@@ -68,13 +68,12 @@ test("single page has all four sections, live exact score, six petals and three 
   await expect(page.getByTestId("dual-total")).toHaveText("7.81");
   expect(await petal.getAttribute("d")).not.toBe(before);
   await star(page, "歌词", 4);
+  await page.getByText("可选笔记与复核", { exact: true }).click();
   await page
     .getByLabel("专辑短评", { exact: true })
     .fill("单页实时预览；技术测试，不代表真实评价。");
   await expect(card).toContainText("v0.40.0");
-  await expect(
-    page.getByRole("button", { name: "正式发布（权重待审）", exact: true }),
-  ).toBeDisabled();
+  await expect(page.getByRole("button", { name: /正式发布/ })).toHaveCount(0);
   for (const [ratio, height] of [
     ["4:5", 1350],
     ["3:4", 1440],
@@ -95,6 +94,7 @@ test("switching modes keeps separate ratings, evidence, genre weights and saved 
 }) => {
   await start(page);
   await rate(page);
+  await page.getByText("可选笔记与复核", { exact: true }).click();
   await page.getByLabel("歌词文字证据").fill("歌曲专属证据");
   await category(page, "乐曲");
   await expect(
@@ -116,6 +116,7 @@ test("switching modes keeps separate ratings, evidence, genre weights and saved 
   await expect(page.getByTestId("dual-total")).toHaveText("8.00");
   await category(page, "乐曲");
   await expect(page.getByTestId("dual-total")).toHaveText("7.00");
+  await page.getByText("可选笔记与复核", { exact: true }).click();
   await expect(page.getByLabel("素材文字证据")).toHaveValue("乐曲专属证据");
 });
 test("mixed albums require reviewed artistic shares and count vision/context once", async ({
@@ -158,10 +159,8 @@ test("snapshots are frozen; full JSON restore and single evaluation roundtrip do
 }) => {
   await start(page);
   await rate(page);
-  await page.getByRole("button", { name: "保存研究快照", exact: true }).click();
-  await expect(
-    page.getByRole("button", { name: "查看冻结卡片", exact: true }),
-  ).toHaveCount(1);
+  await page.getByRole("button", { name: "保存评分版本", exact: true }).click();
+  await expect(page.getByRole("status")).toContainText("已保存冻结快照");
   const exportEvent = page.waitForEvent("download");
   await page.getByRole("button", { name: "评分JSON", exact: true }).click();
   const evaluation = await readFile(
@@ -169,6 +168,7 @@ test("snapshots are frozen; full JSON restore and single evaluation roundtrip do
     "utf8",
   );
   await star(page, "歌词", 3);
+  await page.goto("/#/ratings");
   await page.getByRole("button", { name: "查看冻结卡片", exact: true }).click();
   await expect(page.getByTestId("dual-total")).toHaveText("8.00");
   await expect(
@@ -260,52 +260,26 @@ for (const width of [320, 390])
       fullPage: true,
     });
   });
-test("four reference sets each retain 42 slots, seven tiers, R3 gaps and review warnings", async ({
-  page,
-}) => {
-  await page.goto("/#/reference");
-  await expect(page.locator(".anchor-cell")).toHaveCount(42);
-  await expect(page.getByRole("status")).toContainText("39个具名候选，3格待选");
-  await expect(
-    page.locator(".anchor-cell h3").filter({ hasText: "待选格位" }),
-  ).toHaveCount(3);
-  await page.getByLabel("参考维度", { exact: true }).selectOption("歌词");
-  await expect(page.locator(".anchor-cell")).toHaveCount(7);
-  await page.getByLabel("参考维度", { exact: true }).selectOption("");
-  for (const r of ["中国", "国际"])
-    for (const c of ["歌曲", "乐曲"]) {
-      await page
-        .getByRole("group", { name: "参考地区", exact: true })
-        .getByRole("button", { name: r, exact: true })
-        .click();
-      await page
-        .getByRole("group", { name: "参考类别", exact: true })
-        .getByRole("button", { name: c, exact: true })
-        .click();
-      await expect(page.locator(".anchor-cell")).toHaveCount(42);
-    }
+test("four reference sets expose 168 named candidates and seven tiers", async ({ page }) => {
+  await page.goto('/#/reference');
+  const ids = new Set<string>();
+  for (const label of ['中国歌曲','中国乐曲','国际歌曲','国际乐曲']) {
+    await page.getByRole('tab', { name:label, exact:true }).click();
+    await expect(page.locator('.anchor-cell')).toHaveCount(42);
+    for (const id of await page.locator('.anchor-cell').evaluateAll(nodes => nodes.map(n => n.getAttribute('data-anchor-id')!))) ids.add(id);
+    await expect(page.locator('.anchor-cell h3').filter({ hasText: '待选专辑' })).toHaveCount(0);
+  }
+  expect(ids.size).toBe(168);
+  await page.getByRole('tab', {name:'中国歌曲',exact:true}).click();
+  await page.getByLabel('参考维度',{exact:true}).selectOption('歌词');
+  await expect(page.locator('.anchor-cell')).toHaveCount(7);
 });
-test("metadata import enters the same one-page workbench with no inferred stars or style", async ({
-  page,
-}) => {
-  await page.goto("/");
-  await page.getByRole("button", { name: "通过链接添加", exact: true }).click();
-  // Use the same explicit metadata contract exercised by the legacy importer.
-  const { execFileSync } = await import("node:child_process");
-  const metadata = execFileSync("python3", [
-    "-c",
-    "import json; from tools.album_import.importer import import_album; from tools.tests.test_album_import import FixtureFetcher; print(json.dumps(import_album('https://fixture.bandcamp.com/album/fixture', FixtureFetcher()),ensure_ascii=False))",
-  ]);
-  await page
-    .getByLabel("导入专辑元数据文件", { exact: true })
-    .setInputFiles({
-      name: "album.json",
-      mimeType: "application/json",
-      buffer: metadata,
-    });
-  await page.getByRole("button", { name: "确认并继续", exact: true }).click();
+test("manual entry has no links, Spotify or inferred stars and style", async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('button',{name:/通过链接|Spotify|配置/})).toHaveCount(0);
+  await page.getByRole('button',{name:'快速评分',exact:true}).click();
   await expect(page).toHaveURL(/#\/studio\/draft\//);
-  await expect(page.getByRole("slider")).toHaveCount(6);
-  await expect(page.getByLabel("二级风格", { exact: true })).toHaveValue("");
-  await expect(page.getByTestId("dual-total")).toHaveText("—");
+  await expect(page.getByRole('slider')).toHaveCount(6);
+  await expect(page.getByLabel('二级风格',{exact:true})).toHaveValue('');
+  await expect(page.getByTestId('dual-total')).toHaveText('—');
 });

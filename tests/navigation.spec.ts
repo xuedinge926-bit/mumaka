@@ -69,13 +69,13 @@ test("首页工作台入口展开同一菜单；全工作区往返与浏览器�
   await expect(page).toHaveURL(/#\/home$/);
   await expect(
     page.getByRole("navigation", { name: "应用导航" }).getByRole("button"),
-  ).toHaveCount(8);
+  ).toHaveCount(7);
   await settleMenu(page);
   await page.screenshot({
     path: shot + "/desktop-home-menu.png",
     fullPage: true,
   });
-  await page.getByRole("button", { name: "收起导航菜单", exact: true }).click();
+  await page.getByRole("button", { name: "收起侧边导航", exact: true }).click();
   await expect(
     page.getByRole("navigation", { name: "应用导航" }),
   ).not.toBeVisible();
@@ -112,7 +112,7 @@ test("首页工作台入口展开同一菜单；全工作区往返与浏览器�
   await expect(
     page.getByRole("heading", { name: "评分卡", exact: true }),
   ).toBeVisible();
-  await navigate(page, "数据管理");
+  await navigate(page, "数据与工具");
   await expect(
     page.getByRole("button", { name: "导出全部备份", exact: true }),
   ).toBeVisible();

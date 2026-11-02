@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type RefObject } from "react";
+import { useEffect, useRef, type RefObject } from "react";
 import { ArrowLeft, ChevronRight, X } from "lucide-react";
 import {
   WORKSPACE_LABELS,
@@ -24,32 +24,20 @@ export function AppNavigation({
   legacyMode = false,
 }: Props) {
   const panel = useRef<HTMLElement>(null);
-  const [mobile, setMobile] = useState(
-    () => window.matchMedia("(max-width: 760px)").matches,
-  );
-  useEffect(() => {
-    const media = window.matchMedia("(max-width: 760px)");
-    const changed = () => setMobile(media.matches);
-    media.addEventListener("change", changed);
-    return () => media.removeEventListener("change", changed);
-  }, []);
   useEffect(() => {
     if (!open) return;
-    const focusWas = document.activeElement;
-    if (mobile)
-      panel.current?.querySelector<HTMLButtonElement>("button")?.focus();
     const previousOverflow = document.body.style.overflow;
-    if (mobile) document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    panel.current?.querySelector<HTMLButtonElement>("button")?.focus();
     const key = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         event.preventDefault();
         onClose();
-        toggleRef.current?.focus();
       }
-      if (event.key === "Tab" && mobile) {
+      if (event.key === "Tab") {
         const choices = Array.from(
-          panel.current?.querySelectorAll<HTMLButtonElement>(
-            "button:not(:disabled)",
+          panel.current?.querySelectorAll<HTMLElement>(
+            "button:not(:disabled), a[href]",
           ) ?? [],
         );
         const first = choices[0],
@@ -67,15 +55,19 @@ export function AppNavigation({
     return () => {
       document.removeEventListener("keydown", key);
       document.body.style.overflow = previousOverflow;
-      if (mobile && focusWas === toggleRef.current) toggleRef.current?.focus();
+      toggleRef.current?.focus();
     };
-  }, [open, mobile, onClose, toggleRef]);
+  }, [open, onClose, toggleRef]);
+  const tabs: Workspace[] = legacyMode
+    ? ["home", "library", "ratings", "genres", "cards", "data", "settings"]
+    : ["home", "library", "ratings", "genres", "reference", "settings", "data"];
   return (
     <>
-      {mobile && open && (
+      {open && (
         <button
           className="app-nav-scrim"
           aria-label="关闭导航遮罩"
+          tabIndex={-1}
           onClick={onClose}
         />
       )}
@@ -86,27 +78,21 @@ export function AppNavigation({
         aria-label="功能菜单"
         aria-hidden={!open}
         inert={!open}
-        role={mobile ? "dialog" : undefined}
-        aria-modal={mobile && open ? true : undefined}
+        role="dialog"
+        aria-modal={open || undefined}
       >
         <div className="app-navigation-heading">
-          <div>
-            <b>MUMAKA</b>
-            <span>新乐评主义</span>
-          </div>
+          <span>导航</span>
           <button
             className="icon-button"
             aria-label="收起侧边导航"
-            onClick={() => {
-              onClose();
-              toggleRef.current?.focus();
-            }}
+            onClick={onClose}
           >
             <X size={19} />
           </button>
         </div>
         <nav aria-label="应用导航">
-          {(Object.keys(WORKSPACE_LABELS) as Workspace[]).filter(tab => !legacyMode || !['studio', 'reference'].includes(tab)).map((tab) => (
+          {tabs.map((tab) => (
             <button
               key={tab}
               aria-current={
@@ -116,7 +102,7 @@ export function AppNavigation({
               }
               onClick={() => {
                 onNavigate(tab);
-                if (mobile) onClose();
+                onClose();
               }}
             >
               {WORKSPACE_LABELS[tab]}

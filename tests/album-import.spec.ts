@@ -83,7 +83,7 @@ async function rate(page: Page) {
 }
 async function home(page: Page) {
   await page
-    .getByRole("button", { name: "MUMAKA / 木马卡，返回首页", exact: true })
+    .getByRole("button", { name: "木马卡 MUMAKA，返回首页", exact: true })
     .click();
 }
 async function fileImport(page: Page) {

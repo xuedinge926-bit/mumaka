@@ -70,19 +70,13 @@ export function cardData(
     reviewer: draft.reviewer,
     updatedAt: draft.updatedAt,
     research: {
-      badge:
-        snapshot?.status === "published"
-          ? "人工批准 · 正式评分"
-          : "研究候选 · 非正式评分",
+      badge: snapshot?.status === 'published' ? '已审定评分' : '个人评分 · 权重待审',
       metadata,
       lines: [
-        `${draft.mixed.enabled ? `混合专辑 · 歌曲${draft.mixed.songShareTicks / 2}% / 乐曲${100 - draft.mixed.songShareTicks / 2}% · 当前图：${CATEGORY_LABELS[category]}` : CATEGORY_LABELS[category]} · ${draft.modelVersion} · 权重 ${frozenCatalog.weightVersion}`,
-        draft.mixed.enabled
-          ? "两套前四维按人工艺术比重合成；愿景、语境仅计一次。"
-          : "前四维70% · 愿景15% · 语境15% · ROUND_HALF_UP",
-        snapshot
-          ? `快照 ${snapshot.id} · ${snapshot.createdAt.slice(0, 10)}`
-          : "实时草稿 · 研究权重待审；保存后冻结版本与权重",
+        `${CATEGORY_LABELS[category]} · ${draft.modelVersion}`,
+        draft.mixed.enabled ? '混合专辑 · 按人工艺术比重评价' : '六维星级 · 整张专辑',
+        snapshot ? `保存于 ${snapshot.createdAt.slice(0, 10)}` : '实时预览',
+
       ],
     },
   };
