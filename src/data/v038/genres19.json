@@ -1,0 +1,862 @@
+[
+  {
+    "id": "genre:baroque-music",
+    "name": "巴洛克古典音乐",
+    "nameEn": "Baroque Music",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          38,
+          62,
+          32,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：复杂结构／前卫构作；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 362
+      },
+      "instrumental": {
+        "weightsTicks": [
+          30,
+          64,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：复杂结构／前卫构作；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 362
+      }
+    }
+  },
+  {
+    "id": "genre:classical-era-music",
+    "name": "古典主义时期音乐",
+    "nameEn": "Classical-Era Music",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          58,
+          34,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：器乐与编配密度；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 363
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          58,
+          40,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：器乐与编配密度；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 363
+      }
+    }
+  },
+  {
+    "id": "genre:romantic-era-classical",
+    "name": "浪漫主义古典音乐",
+    "nameEn": "Romantic-Era Classical",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          58,
+          34,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：器乐与编配密度；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 364
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          58,
+          40,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：器乐与编配密度；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 364
+      }
+    }
+  },
+  {
+    "id": "genre:impressionist-classical-music",
+    "name": "印象主义古典音乐",
+    "nameEn": "Impressionist Classical Music",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          58,
+          34,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：器乐与编配密度；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 365
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          58,
+          40,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：器乐与编配密度；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 365
+      }
+    }
+  },
+  {
+    "id": "genre:modernist-art-music",
+    "name": "现代主义古典音乐",
+    "nameEn": "Modernist Art Music",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          54,
+          32,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 366
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          56,
+          40,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 366
+      }
+    }
+  },
+  {
+    "id": "genre:contemporary-classical",
+    "name": "当代古典音乐",
+    "nameEn": "Contemporary Classical",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          58,
+          34,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：器乐与编配密度；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 367
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          58,
+          40,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：器乐与编配密度；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 367
+      }
+    }
+  },
+  {
+    "id": "genre:minimalism",
+    "name": "极简主义音乐",
+    "nameEn": "Minimalism",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          34,
+          64,
+          34,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "极简：结构可通过循环/持续建立，不以变化多寡打分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 368
+      },
+      "instrumental": {
+        "weightsTicks": [
+          30,
+          68,
+          34,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "极简：结构可通过循环/持续建立，不以变化多寡打分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 368
+      }
+    }
+  },
+  {
+    "id": "genre:post-minimalism",
+    "name": "后极简主义音乐",
+    "nameEn": "Post-Minimalism",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          34,
+          64,
+          34,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "后极简与极简暂有意同值，但须保留独立分类",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 369
+      },
+      "instrumental": {
+        "weightsTicks": [
+          30,
+          68,
+          34,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "后极简与极简暂有意同值，但须保留独立分类",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 369
+      }
+    }
+  },
+  {
+    "id": "genre:opera",
+    "name": "歌剧",
+    "nameEn": "Opera",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          38,
+          52,
+          42,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "歌剧属于声乐与戏剧整体：唱词/声乐诠释均不能低估",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 370
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          56,
+          40,
+          8,
+          30,
+          30
+        ],
+        "applicability": "不适用",
+        "trialAllowed": false,
+        "source": "理论组合占位｜原判不适用",
+        "rationale": "保留两模式完整数字供分类复核；此组合在研究版本中不可用于实际评分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 370
+      }
+    }
+  },
+  {
+    "id": "genre:electroacoustic-art-music",
+    "name": "电声艺术音乐",
+    "nameEn": "Electroacoustic Art Music",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          50,
+          28,
+          22,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 371
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          52,
+          36,
+          18,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 371
+      }
+    }
+  },
+  {
+    "id": "genre:spectral-music",
+    "name": "频谱音乐",
+    "nameEn": "Spectral Music",
+    "familyId": "western_art",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          54,
+          32,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 372
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          56,
+          40,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 372
+      }
+    }
+  },
+  {
+    "id": "genre:musique-concrete",
+    "name": "具体音乐",
+    "nameEn": "Musique Concrète",
+    "familyId": "experimental",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          30,
+          40,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "不适用",
+        "trialAllowed": false,
+        "source": "理论组合占位｜原判不适用",
+        "rationale": "保留两模式完整数字供分类复核；此组合在研究版本中不可用于实际评分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 373
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          36,
+          14,
+          52,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 373
+      }
+    }
+  },
+  {
+    "id": "genre:hindustani-classical",
+    "name": "印度斯坦古典音乐",
+    "nameEn": "Hindustani Classical",
+    "familyId": "south_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 374
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          48,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 374
+      }
+    }
+  },
+  {
+    "id": "genre:carnatic-classical",
+    "name": "卡纳提克古典音乐",
+    "nameEn": "Carnatic Classical",
+    "familyId": "south_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 375
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          48,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 375
+      }
+    }
+  },
+  {
+    "id": "genre:dhrupad",
+    "name": "杜鲁帕德",
+    "nameEn": "Dhrupad",
+    "familyId": "south_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 376
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          48,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 376
+      }
+    }
+  },
+  {
+    "id": "genre:khayal",
+    "name": "卡亚尔",
+    "nameEn": "Khayal",
+    "familyId": "south_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          36,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 377
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          48,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 377
+      }
+    }
+  },
+  {
+    "id": "genre:thumri",
+    "name": "图姆里",
+    "nameEn": "Thumri",
+    "familyId": "south_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          36,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 378
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          48,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 378
+      }
+    }
+  },
+  {
+    "id": "genre:ghazal",
+    "name": "加扎勒",
+    "nameEn": "Ghazal",
+    "familyId": "south_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          36,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 379
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          48,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "不适用",
+        "trialAllowed": false,
+        "source": "理论组合占位｜原判不适用",
+        "rationale": "保留两模式完整数字供分类复核；此组合在研究版本中不可用于实际评分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 379
+      }
+    }
+  },
+  {
+    "id": "genre:qawwali",
+    "name": "卡瓦里",
+    "nameEn": "Qawwali",
+    "familyId": "south_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 380
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          48,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 380
+      }
+    }
+  },
+  {
+    "id": "genre:bhajan",
+    "name": "巴赞",
+    "nameEn": "Bhajan",
+    "familyId": "south_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          36,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 381
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          48,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 381
+      }
+    }
+  }
+]

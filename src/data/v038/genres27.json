@@ -1,0 +1,792 @@
+[
+  {
+    "id": "genre:r-b-general",
+    "name": "节奏布鲁斯（一般）",
+    "nameEn": "R&B (General)",
+    "familyId": "rnb",
+    "classification": "general_entry",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          38,
+          38,
+          20,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 522
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          36,
+          24,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 522
+      }
+    }
+  },
+  {
+    "id": "genre:soul-general",
+    "name": "灵魂乐（一般）",
+    "nameEn": "Soul (General)",
+    "familyId": "soul",
+    "classification": "general_entry",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          40,
+          40,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 523
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 523
+      }
+    }
+  },
+  {
+    "id": "genre:funk-general",
+    "name": "放克（一般）",
+    "nameEn": "Funk (General)",
+    "familyId": "funk",
+    "classification": "general_entry",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          38,
+          48,
+          26,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 524
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          42,
+          50,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 524
+      }
+    }
+  },
+  {
+    "id": "genre:hip-hop-general",
+    "name": "嘻哈／说唱（一般）",
+    "nameEn": "Hip-Hop (General)",
+    "familyId": "hiphop",
+    "classification": "general_entry",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          32,
+          32,
+          16,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 525
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          26,
+          34,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 525
+      }
+    }
+  },
+  {
+    "id": "genre:electronic-general",
+    "name": "电子与俱乐部音乐（一般）",
+    "nameEn": "Electronic (General)",
+    "familyId": "electronic",
+    "classification": "general_entry",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 526
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          20,
+          36,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 526
+      }
+    }
+  },
+  {
+    "id": "genre:disco-general",
+    "name": "迪斯科（一般）",
+    "nameEn": "Disco (General)",
+    "familyId": "disco",
+    "classification": "general_entry",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          26,
+          36,
+          44,
+          34,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 527
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          40,
+          42,
+          22,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 527
+      }
+    }
+  },
+  {
+    "id": "genre:reggae-general",
+    "name": "雷鬼、斯卡与舞厅音乐（一般）",
+    "nameEn": "Reggae (General)",
+    "familyId": "reggae",
+    "classification": "general_entry",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          40,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 528
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          38,
+          36,
+          28,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 528
+      }
+    }
+  },
+  {
+    "id": "genre:gospel-general",
+    "name": "福音与灵歌（一般）",
+    "nameEn": "Gospel (General)",
+    "familyId": "gospel",
+    "classification": "general_entry",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          54,
+          36,
+          40,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 529
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          48,
+          40,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "通用风格入口沿用该家族新双体系基准；尚需代表唱片验证",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 529
+      }
+    }
+  },
+  {
+    "id": "genre:kawaii-metal",
+    "name": "可爱金属",
+    "nameEn": "Kawaii Metal",
+    "familyId": "metal",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          52,
+          48,
+          16,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 530
+      },
+      "instrumental": {
+        "weightsTicks": [
+          28,
+          54,
+          46,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 530
+      }
+    }
+  },
+  {
+    "id": "genre:beat-music",
+    "name": "节拍音乐",
+    "nameEn": "Beat Music",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          44,
+          48,
+          20,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 531
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          48,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 531
+      }
+    }
+  },
+  {
+    "id": "genre:rock-and-roll",
+    "name": "早期摇滚乐",
+    "nameEn": "Rock and Roll",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          46,
+          40,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 532
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 532
+      }
+    }
+  },
+  {
+    "id": "genre:traditional-pop",
+    "name": "传统流行",
+    "nameEn": "Traditional Pop",
+    "familyId": "pop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          44,
+          26,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 533
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          50,
+          28,
+          24,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 533
+      }
+    }
+  },
+  {
+    "id": "genre:vocal-jazz",
+    "name": "声乐爵士",
+    "nameEn": "Vocal Jazz",
+    "familyId": "jazz",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          44,
+          60,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 534
+      },
+      "instrumental": {
+        "weightsTicks": [
+          32,
+          48,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 534
+      }
+    }
+  },
+  {
+    "id": "genre:gospel-rock",
+    "name": "福音摇滚",
+    "nameEn": "Gospel Rock",
+    "familyId": "rock",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 535
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 535
+      }
+    }
+  },
+  {
+    "id": "genre:mandarin-rnb-pop",
+    "name": "华语R&B流行",
+    "nameEn": "Mandarin R&B Pop",
+    "familyId": "rnb",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 536
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 536
+      }
+    }
+  },
+  {
+    "id": "genre:chinese-style-pop",
+    "name": "国风",
+    "nameEn": "Guofeng",
+    "familyId": "pop",
+    "classification": "definition_review",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          42,
+          46,
+          30,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": false,
+        "source": "专项逐项候选",
+        "rationale": "国风命名，原ID兼容；区别古风，分类仍需审定",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 537
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          52,
+          32,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": false,
+        "source": "专项逐项候选",
+        "rationale": "国风命名，原ID兼容；区别古风，分类仍需审定",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 537
+      }
+    }
+  },
+  {
+    "id": "genre:gufeng-pop",
+    "name": "古风流行",
+    "nameEn": "Gufeng Pop",
+    "familyId": "pop",
+    "classification": "definition_review",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          42,
+          48,
+          24,
+          26,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": false,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 538
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          52,
+          24,
+          28,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": false,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 538
+      }
+    }
+  },
+  {
+    "id": "genre:mandarin-ballad-pop",
+    "name": "华语抒情流行",
+    "nameEn": "Mandarin Ballad Pop",
+    "familyId": "pop",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 539
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 539
+      }
+    }
+  },
+  {
+    "id": "genre:taiwanese-hokkien-pop",
+    "name": "台语流行",
+    "nameEn": "Taiwanese Hokkien Pop",
+    "familyId": "pop",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 540
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 540
+      }
+    }
+  },
+  {
+    "id": "genre:hakka-pop",
+    "name": "客语流行",
+    "nameEn": "Hakka Pop",
+    "familyId": "pop",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 541
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 541
+      }
+    }
+  }
+]

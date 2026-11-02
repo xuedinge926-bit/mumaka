@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "sourceVersion": "v0.38.1",
+  "weightVersion": "v0.38",
+  "sourceSha256": "a71174c951a73f95f1f8a563308e2741b51c0ce68f7a18a3da18aca4ef5337f2",
+  "r3Sha256": "5cb58c3c43a83cc21cf18598f26f249349b1339aa194003f93a4ed1b42cb673c",
+  "publicRelease": "Extracted model fields authorized by the owner on 2026-11-02; research approval is separate."
+}

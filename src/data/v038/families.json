@@ -1,0 +1,1056 @@
+[
+  {
+    "id": "pop",
+    "name": "流行音乐",
+    "nameEn": "Pop",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          42,
+          48,
+          24,
+          26,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 2
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          52,
+          24,
+          28,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 3
+      }
+    }
+  },
+  {
+    "id": "rock",
+    "name": "摇滚",
+    "nameEn": "Rock",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          46,
+          40,
+          22,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 4
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          40,
+          16,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 5
+      }
+    }
+  },
+  {
+    "id": "punk",
+    "name": "朋克及后朋克",
+    "nameEn": "Punk & Post-Punk",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          38,
+          44,
+          18,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 6
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          42,
+          44,
+          20,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 7
+      }
+    }
+  },
+  {
+    "id": "metal",
+    "name": "金属",
+    "nameEn": "Metal",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          52,
+          48,
+          16,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 8
+      },
+      "instrumental": {
+        "weightsTicks": [
+          28,
+          54,
+          46,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 9
+      }
+    }
+  },
+  {
+    "id": "folk",
+    "name": "现代民谣与唱作",
+    "nameEn": "Contemporary Folk & Singer-Songwriter",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          54,
+          48,
+          26,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 10
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          50,
+          42,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 11
+      }
+    }
+  },
+  {
+    "id": "country",
+    "name": "乡村与美式根源音乐",
+    "nameEn": "Country & Americana",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          46,
+          34,
+          14,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 12
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          42,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 13
+      }
+    }
+  },
+  {
+    "id": "blues",
+    "name": "布鲁斯",
+    "nameEn": "Blues",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          38,
+          40,
+          48,
+          14,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 14
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          48,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 15
+      }
+    }
+  },
+  {
+    "id": "jazz",
+    "name": "爵士",
+    "nameEn": "Jazz",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          44,
+          50,
+          14,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 16
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          48,
+          50,
+          8,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 17
+      }
+    }
+  },
+  {
+    "id": "funk",
+    "name": "放克",
+    "nameEn": "Funk",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          38,
+          48,
+          26,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 18
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          42,
+          50,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 19
+      }
+    }
+  },
+  {
+    "id": "rnb",
+    "name": "节奏布鲁斯",
+    "nameEn": "R&B",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          38,
+          38,
+          20,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 20
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          36,
+          24,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 21
+      }
+    }
+  },
+  {
+    "id": "soul",
+    "name": "灵魂乐",
+    "nameEn": "Soul",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          40,
+          40,
+          14,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 22
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          40,
+          16,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 23
+      }
+    }
+  },
+  {
+    "id": "hiphop",
+    "name": "嘻哈／说唱",
+    "nameEn": "Hip-Hop / Rap",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          32,
+          32,
+          16,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 24
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          26,
+          34,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 25
+      }
+    }
+  },
+  {
+    "id": "electronic",
+    "name": "电子与俱乐部音乐",
+    "nameEn": "Electronic & Club Music",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          26,
+          44,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 26
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          20,
+          36,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 27
+      }
+    }
+  },
+  {
+    "id": "african_pop",
+    "name": "非洲现代流行音乐",
+    "nameEn": "African Popular",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          36,
+          40,
+          44,
+          20,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 28
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          46,
+          14,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 29
+      }
+    }
+  },
+  {
+    "id": "disco",
+    "name": "迪斯科",
+    "nameEn": "Disco",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          26,
+          36,
+          44,
+          34,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 30
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          40,
+          42,
+          22,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 31
+      }
+    }
+  },
+  {
+    "id": "industrial",
+    "name": "工业音乐",
+    "nameEn": "Industrial",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          30,
+          36,
+          32,
+          42,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 32
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          40,
+          24,
+          40,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 33
+      }
+    }
+  },
+  {
+    "id": "ambient",
+    "name": "氛围／持续音",
+    "nameEn": "Ambient / Drone",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          34,
+          24,
+          54,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 34
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          44,
+          12,
+          46,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 35
+      }
+    }
+  },
+  {
+    "id": "reggae",
+    "name": "雷鬼、斯卡与舞厅音乐",
+    "nameEn": "Reggae, Ska & Dancehall",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          40,
+          40,
+          16,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 36
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          38,
+          36,
+          28,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 37
+      }
+    }
+  },
+  {
+    "id": "experimental",
+    "name": "实验音乐与声音艺术",
+    "nameEn": "Experimental & Sound Art",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          30,
+          40,
+          26,
+          44,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 38
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          18,
+          42,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 39
+      }
+    }
+  },
+  {
+    "id": "caribbean",
+    "name": "加勒比流行传统",
+    "nameEn": "Caribbean Popular",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          38,
+          42,
+          16,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 40
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          38,
+          50,
+          16,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 41
+      }
+    }
+  },
+  {
+    "id": "latin",
+    "name": "拉丁美洲／西语音乐（其他）",
+    "nameEn": "Latin American & Hispanic (Other)",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          40,
+          14,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 42
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          50,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 43
+      }
+    }
+  },
+  {
+    "id": "brazil",
+    "name": "巴西流行与根源音乐",
+    "nameEn": "Brazilian Popular & Roots",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 44
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 45
+      }
+    }
+  },
+  {
+    "id": "mexican",
+    "name": "墨西哥及墨裔美式音乐",
+    "nameEn": "Mexican & Mexican-American",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          52,
+          40,
+          36,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 46
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          44,
+          44,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 47
+      }
+    }
+  },
+  {
+    "id": "mena",
+    "name": "西亚及北非音乐传统",
+    "nameEn": "West Asian & North African Traditions",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          46,
+          36,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 48
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          50,
+          38,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 49
+      }
+    }
+  },
+  {
+    "id": "african_roots",
+    "name": "非洲传统与根源音乐",
+    "nameEn": "African Traditional & Roots",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          40,
+          44,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 50
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 51
+      }
+    }
+  },
+  {
+    "id": "gospel",
+    "name": "福音与灵歌",
+    "nameEn": "Gospel & Spirituals",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          54,
+          36,
+          40,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 52
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          48,
+          40,
+          12,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 53
+      }
+    }
+  },
+  {
+    "id": "western_art",
+    "name": "西方古典与艺术音乐",
+    "nameEn": "Western Classical & Art Music",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          54,
+          32,
+          8,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 54
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          56,
+          40,
+          8,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 55
+      }
+    }
+  },
+  {
+    "id": "south_asian",
+    "name": "南亚音乐传统",
+    "nameEn": "South Asian Music Traditions",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          36,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 56
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          48,
+          46,
+          8,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 57
+      }
+    }
+  },
+  {
+    "id": "east_asian",
+    "name": "东亚传统与艺术音乐",
+    "nameEn": "East Asian Traditional & Art Music",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 58
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 59
+      }
+    }
+  },
+  {
+    "id": "southeast_asian",
+    "name": "东南亚音乐传统",
+    "nameEn": "Southeast Asian Music Traditions",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          40,
+          40,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 60
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          50,
+          42,
+          8,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 61
+      }
+    }
+  },
+  {
+    "id": "european_roots",
+    "name": "欧洲及地中海根源音乐",
+    "nameEn": "European & Mediterranean Roots",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          42,
+          40,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 62
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          44,
+          50,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 63
+      }
+    }
+  },
+  {
+    "id": "new_age",
+    "name": "新世纪音乐",
+    "nameEn": "New Age",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          44,
+          22,
+          46,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 64
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          42,
+          30,
+          28,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 65
+      }
+    }
+  },
+  {
+    "id": "north_america_roots",
+    "name": "北美根源与原住民音乐",
+    "nameEn": "North American Roots & Indigenous Traditions",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          40,
+          50,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 66
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          50,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 67
+      }
+    }
+  },
+  {
+    "id": "oceania_pacific",
+    "name": "大洋洲与太平洋音乐传统",
+    "nameEn": "Oceania & Pacific Traditions",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          38,
+          44,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 68
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          44,
+          48,
+          10,
+          30,
+          30
+        ],
+        "rationale": "一级音乐家族研究基准，针对二级风格可按可辨音乐语法偏移",
+        "sourceRow": 69
+      }
+    }
+  }
+]

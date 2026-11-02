@@ -9,6 +9,7 @@ export type ScoreCardProps = ({data:ScoreCardData;album?:never;calculation?:neve
   modelProvenance?: unknown;
   ratio?: CardRatio;
   theme?: CardTheme;
+  svgId?: string;
 }
 
 /** Width is measured in approximate CJK cells, preserving every codepoint. */
@@ -67,7 +68,7 @@ export function ScoreCard(props: ScoreCardProps) {
   const roseX = 790 - roseSize / 2;
   const roseY = mainTop + (mainHeight - roseSize) / 2;
   const summaryY = mainTop + mainHeight + 40;
-  return <svg id="score-card-svg" viewBox={`0 0 1080 ${height}`} width="1080" height={height} role="img" aria-label={`${rawTitle}的${data.research ? '研究' : '私人'}评分卡`} xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', width: '100%', height: 'auto' }}>
+  return <svg id={props.svgId ?? 'score-card-svg'} viewBox={`0 0 1080 ${height}`} width="1080" height={height} role="img" aria-label={`${rawTitle}的${data.research ? '研究' : '私人'}评分卡`} xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', width: '100%', height: 'auto' }}>
     {data.research && <metadata>{JSON.stringify(data.research.metadata)}</metadata>}
     <rect width="1080" height={height} fill={paper} />
     <g fontFamily="'PingFang SC', 'Microsoft YaHei', sans-serif">

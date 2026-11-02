@@ -107,7 +107,7 @@ test("本地真实 HTTP 链接导入 → 修改确认 → 评分与卡片更新 
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto(origin);
+  await page.goto(origin + "?model=v019");
   await expect(
     page.getByText("Spotify 搜索未配置", { exact: true }),
   ).toBeVisible();
@@ -184,7 +184,7 @@ test("本地真实 HTTP 链接导入 → 修改确认 → 评分与卡片更新 
 test("静态页面的 JSON 导入真实写入同库；采集拒绝后手动添加不丢记录", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await page.getByRole("button", { name: "通过链接添加", exact: true }).click();
   await expect(
     page.getByText("当前页面没有本地采集服务。", { exact: false }),
@@ -205,7 +205,7 @@ test("静态页面的 JSON 导入真实写入同库；采集拒绝后手动添�
   await page.reload();
   await expect(page.locator(".recent-album")).toHaveCount(1);
   // The blocked-source path uses the real local API but an explicit denial fixture.
-  await page.goto(origin);
+  await page.goto(origin + "?model=v019");
   await openLink(page, "https://fixture.bandcamp.com/album/blocked");
   await expect(page.getByRole("alert")).toContainText("来源限制");
   await page.getByRole("button", { name: "改为手动添加", exact: true }).click();
@@ -222,7 +222,7 @@ test("静态页面的 JSON 导入真实写入同库；采集拒绝后手动添�
 test("三首多风格 EP、新旧混合来源、工作台管理、备份与偏好完整走通", async ({
   page,
 }) => {
-  await page.goto(origin);
+  await page.goto(origin + "?model=v019");
   await openLink(page, bandcampLink);
   await page.getByRole("button", { name: "确认并继续", exact: true }).click();
   await genre(page);
@@ -335,7 +335,7 @@ test("手机导入确认与工作台在 390px 和 320px 宽度下可操作且不
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(origin);
+  await page.goto(origin + "?model=v019");
   await openLink(page, bandcampLink);
   await expect(page.getByLabel("导入专辑名称")).toBeVisible();
   expect(
@@ -382,7 +382,7 @@ for (const provider of ["netease", "qq-music"] as const)
       provider === "netease"
         ? "网易云导入测试（固定样本）"
         : "QQ 导入测试（固定样本）";
-    await page.goto(origin);
+    await page.goto(origin + "?model=v019");
     await openLink(page, "分享专辑《固定样本》 " + url + " @音乐平台");
     await expect(page.getByLabel("导入专辑名称")).toHaveValue(title);
     await expect(
