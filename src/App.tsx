@@ -836,6 +836,11 @@ export default function App() {
     });
   }
   async function openSettings() {
+    if (!legacyMode) {
+      if (dirtyRef.current) await persist();
+      navigateWorkspace('data');
+      return;
+    }
     await action(async () => {
       if (dirty) await persist();
       setHistory(await listSnapshots());
@@ -1317,6 +1322,7 @@ export default function App() {
           </main>
         ) : screen === "workbench" ? (
           <>{!legacyMode && ['library', 'ratings', 'cards', 'data'].includes(workbenchTab) && <Suspense fallback={<p role="status">正在读取双体系记录…</p>}><DualWorkspace view={workbenchTab as 'library' | 'ratings' | 'cards' | 'data'} legacyAlbums={albums} onOpenLegacy={openAlbum} onNavigate={dual => router.navigate({ view: 'workspace', tab: 'studio', ...(dual ? { dual } : {}) })} /></Suspense>}
+          {!legacyMode && workbenchTab === 'data' && <div className="dual-workspace dual-embedded"><p className="dual-note">以下是V0.19归档资料与备份，仅包含旧模型记录。双体系作品请使用上方V0.40完整备份；V0.35研究记录使用其研究工作区备份入口。</p></div>}
           <Workbench
             albums={albums}
             snapshots={history}

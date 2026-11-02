@@ -54,7 +54,7 @@ python3 scripts/import-v038.py SOURCE.xlsx --r3 CN_R3.xlsx --split --out src/dat
 
 单元、Python基准、构建与完整浏览器检查在PR工作流执行。浏览器涵盖新双体系/独立草稿、权重切换、混合比重、实时总分与六瓣图、PNG三比例、JSON往返、历史快照、320/390px手机、file://单文件及原工具归档回归。测试用唱片均为固定技术样本，不是实际评分。
 
-开发主机已通过291项单元、18项Python基准和33项导入服务测试，标准与单文件构建及公开内容扫描通过。当前自动化Chrome启动被主机限制，浏览器验收以PR的GitHub Actions实际结果为准，失败不发布。测试输出及截图在Actions的browser-test-evidence产物中保留14天。测试依赖更新到Vitest4.1.12后npm审计为0个漏洞。
+已通过291项单元、18项Python基准和33项导入服务测试，标准与单文件构建及公开内容扫描通过。开发主机的自动化Chrome启动受限，因此完整浏览器验收在GitHub Actions执行：42项Playwright全部通过，包含旧版回归、新双模式、混合专辑、320/390px手机、JSON往返、PNG三比例和真实file://单文件。证据见[首轮完整验收](https://github.com/xuedinge926-bit/mumaka/actions/runs/41406016133)。测试输出及截图在Actions的browser-test-evidence产物中保留14天。测试依赖更新到Vitest4.1.12后npm审计为0个漏洞。
 
 构建命令：`npm test`、`npm run test:reference`、`npm run test:import`、`npm run build`、`npm run test:e2e`、`npm run build:standalone`、`npm run check:public`。发布沿用 `.github/workflows/pages.yml`、`gh-pages`分支与原Pages网址；PR只检查，main全绿后发布。原`site/`发布留档不覆盖。
 
