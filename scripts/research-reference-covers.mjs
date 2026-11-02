@@ -28,4 +28,6 @@ await Promise.all([worker(),worker(),worker()]);
 const directory = resolve(root,'test-results/reference-research');
 await mkdir(directory,{recursive:true});
 await writeFile(resolve(directory,'apple-cover-candidates.json'),JSON.stringify({version:'reference-2026-11-02-r1',purpose:'仅供逐条核对的发行元数据，不自动采用搜索首图',results:result.sort((a,b)=>a.id.localeCompare(b.id))},null,2)+'\n');
+// Public catalogue metadata is also readable without downloading a ZIP artifact.
+for (const candidate of result) console.log(`REFERENCE_COVER_CANDIDATE ${JSON.stringify(candidate)}`);
 console.log(`官方封面候选：${result.filter(r=>r.results?.length).length}/${result.length}有目录返回；没有改变任何作品、星级或人工数据。`);
