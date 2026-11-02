@@ -1,0 +1,81 @@
+{
+  "version": "reference-2026-11-02-r1",
+  "auditDate": "2026-11-02",
+  "scope": "结构、元数据完整性、重复、人工数据锁；不宣称验证艺术等级或整碟试听",
+  "passed": true,
+  "cells": 168,
+  "manualCount": 23,
+  "nullCount": 19,
+  "sourceFiles": {
+    "china-song.json": "419039f757491ff8481420198e466e7d9165682d58846c1f25155907fdd34bb2",
+    "china-instrumental.json": "05c242bd22e9635c6a54c20ba822eda93351c7a72d63f3e19bad117ac4289d75",
+    "global-song.json": "cf4e10a540ecf2f8c092afacf0f6ab1bb23cf3057292e62df7a08764b577d68b",
+    "global-instrumental.json": "4d65d55331ee155dcc71a8ab8e359d50410dc100a039821b1fb6f225e83bd0de"
+  },
+  "tables": [
+    {
+      "group": "china-song",
+      "cells": 42,
+      "artists": 41,
+      "repeats": [
+        {
+          "artist": "万能青年旅店",
+          "count": 2
+        }
+      ],
+      "works": 42,
+      "covers": 18,
+      "discussion": 3,
+      "lowConfidence": 18,
+      "years": [
+        1976,
+        2020
+      ]
+    },
+    {
+      "group": "china-instrumental",
+      "cells": 42,
+      "artists": 42,
+      "repeats": [],
+      "works": 42,
+      "covers": 0,
+      "discussion": 0,
+      "lowConfidence": 18,
+      "years": [
+        1990,
+        2024
+      ]
+    },
+    {
+      "group": "global-song",
+      "cells": 42,
+      "artists": 42,
+      "repeats": [],
+      "works": 42,
+      "covers": 0,
+      "discussion": 0,
+      "lowConfidence": 24,
+      "years": [
+        1963,
+        2022
+      ]
+    },
+    {
+      "group": "global-instrumental",
+      "cells": 42,
+      "artists": 42,
+      "repeats": [],
+      "works": 42,
+      "covers": 0,
+      "discussion": 0,
+      "lowConfidence": 18,
+      "years": [
+        1956,
+        2019
+      ]
+    }
+  ],
+  "errors": [],
+  "listeningReviewed": 0,
+  "metadataSources": 337
+}

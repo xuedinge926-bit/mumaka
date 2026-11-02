@@ -185,6 +185,8 @@ export function AnchorReference({
                               {a.year && ` · ${a.year}`}
                             </p>
                             <small>{mainGenre(a)}</small>
+                            {a.status === "discussion" && <small className="reference-discussion">人工位置 · 待商议</small>}
+                            {a.coverSource && safeCover(a.coverSource) && <a className="reference-cover-credit" href={a.coverSource} target="_blank" rel="noreferrer">封面出处</a>}
                           </div>
                         </div>
                         <details open={expanded || undefined}>

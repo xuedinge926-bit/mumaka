@@ -1,4 +1,6 @@
 import source from "../../data/v038";
+import { auditReferences, artistIdentity } from "../../lib/referenceAudit";
+import { upgradeReferenceCatalog, REFERENCE_VERSION } from "../../lib/referenceReview";
 import {
   CATEGORIES,
   NAMES,
@@ -28,15 +30,14 @@ export function anchorIssues(anchor: Anchor, anchors: Anchor[]): string[] {
       (a) =>
         a.region === anchor.region &&
         a.category === anchor.category &&
-        a.artist === anchor.artist &&
+        artistIdentity(a) === artistIdentity(anchor) &&
         !a.unassigned,
     );
     if (set.filter((a) => a.dimension === anchor.dimension).length > 1)
       issues.push("同维七档艺人重复，待重选");
-    if (set.length > 3)
-      issues.push(`同表艺人出现${set.length}次，超过3次，待重选`);
-    else if (set.length > 1)
-      issues.push(`同表艺人出现${set.length}次，建议优先去重`);
+    if (set.length > 2)
+      issues.push(`同表艺人出现${set.length}次，超过2次，待重选`);
+    issues.push(...auditReferences(anchors).filter(i => i.id === anchor.id && i.severity === "error").map(i => i.message));
   }
   if (!anchor.approved) issues.push("未审定，不能作为正式标尺");
   return issues;
@@ -140,7 +141,7 @@ export function validateCatalog(value: unknown): Catalog {
           throw new Error("参考只设六维×2—5星七档");
       }
   for (const a of c.anchors)
-    if (a.approved && anchorIssues(a, c.anchors).length)
+    if (a.approved && a.version === REFERENCE_VERSION && anchorIssues(a, c.anchors).length)
       throw new Error("不符合去重规则的参考不得标为审定");
   return structuredClone(c);
 }
@@ -151,7 +152,7 @@ function freeze<T>(value: T): T {
   }
   return value;
 }
-export const bundledCatalog = freeze(validateCatalog(source));
+export const bundledCatalog = freeze(validateCatalog(upgradeReferenceCatalog(validateCatalog(source))));
 export const catalogCounts = {
   families: bundledCatalog.families.length,
   stableIds: bundledCatalog.genres.length,

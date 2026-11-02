@@ -308,6 +308,8 @@ test("reference manager replaces one candidate locally; home shares it; backup r
     .fill("用户候选校对：重编与新作的层次安排是比较起点，尚待完整试听审定。");
   await page.route('https://example.com/mumaka-test-missing-cover.png', route => route.fulfill({status:404,body:'missing test image'}));
   await page.getByLabel('参考封面地址',{exact:true}).fill('https://example.com/mumaka-test-missing-cover.png');
+  await page.getByLabel('参考封面出处',{exact:true}).fill('https://example.com/mumaka-test-cover');
+  await page.getByLabel('参考封面版权',{exact:true}).fill('测试封面，仅用于缺图回退验证');
   await page.getByRole("button", { name: "保存此格", exact: true }).click();
   await expect(page.getByRole("status")).toContainText("参考已保存在本机");
   await page.goto("/#/reference");

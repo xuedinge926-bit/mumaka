@@ -28,13 +28,13 @@ const criteria: Record<string, string> = {
   语境: "作品与传统、时代及地域文化的艺术关系",
 };
 const levels = [
-  "存在明显短板，影响多首作品的成立",
-  "已有有效片段，整碟持续性仍不足",
-  "基本成立，完成度稳定",
-  "多处出色，形成鲜明特点",
-  "持续优秀，细节与整体互相支撑",
-  "高度成熟，独特成就贯穿整碟",
-  "具有典范性，整碟成就与反例经得起比较",
+  "有可辨艺术特点，但多数曲目的关键任务仍受明显局限",
+  "部分手法有效，类似局限仍在多首曲目中持续出现",
+  "多数曲目稳定完成表达任务，发展与细节仍较常规",
+  "鲜明的方法在多数曲目中奏效，部分段落仍不够充分",
+  "多数曲目持续优秀，细节与整体互相支撑",
+  "高度成熟且独特，核心艺术成就贯穿绝大部分曲目",
+  "典范性的艺术成就贯穿绝大部分曲目，经得起反例与同档比较",
 ];
 /** Reading guidance only. Does not enter the engine, snapshots or weight data. */
 export function levelStandard(category: Category, name: string, stars: number) {

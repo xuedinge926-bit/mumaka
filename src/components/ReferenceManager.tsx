@@ -8,6 +8,8 @@ import {
   mainGenre,
 } from "../lib/referencePresentation";
 import type { Anchor } from "../model/v040/types";
+import { normalizeArtist, auditReferences } from "../lib/referenceAudit";
+import { manualSnapshot } from "../lib/referenceReview";
 
 export function ReferenceManager() {
   const [catalog, setCatalog] = useState(bundledCatalog),
@@ -28,6 +30,11 @@ export function ReferenceManager() {
     if (a)
       setEdit({
         ...a,
+        workId: a.workId || `album:${normalizeArtist(a.artist)}:${normalizeArtist(a.album)}:${a.year}`,
+        primaryArtistId: a.primaryArtistId || `artist:${normalizeArtist(a.artist)}`,
+        confidence: a.confidence || "low",
+        evidence: a.evidence || "升级前的本机记录；本轮证据尚待补核。",
+        edition: a.edition || "升级前的本机版本，具体发行待核",
         mainGenre: mainGenre(a),
         displayStandard:
           a.displayStandard || levelStandard(a.category, a.dimension, a.stars),
@@ -37,17 +44,22 @@ export function ReferenceManager() {
   }, [catalog, id]);
   const original = catalog.anchors.find((a) => a.id === id),
     selected = REFERENCE_GROUPS[group];
-  const locked = !!original?.approved && !unlocked;
+  const protectedCell = !!(original?.approved || original?.manualLocked);
+  const locked = protectedCell && !unlocked;
   const update = (key: keyof Anchor, value: unknown) =>
-    setEdit((a) =>
-      a
-        ? {
+    setEdit((a) => {
+      if (!a) return a;
+      const next = {
             ...a,
             [key]: value,
             approved: key === "approved" ? (value as boolean) : false,
-          }
-        : a,
-    );
+          };
+      if (["album", "artist", "year"].includes(key)) {
+        next.primaryArtistId = `artist:${normalizeArtist(next.artist)}`;
+        next.workId = `album:${normalizeArtist(next.artist)}:${normalizeArtist(next.album)}:${next.year}`;
+      }
+      return next;
+    });
   async function save() {
     if (!edit || !original) return;
     setBusy(true);
@@ -70,7 +82,19 @@ export function ReferenceManager() {
   return (
     <details className="dual-panel reference-manager">
       <summary>管理标尺候选</summary>
-      <p>四类共168格。编辑和审定保存在本机完整备份中；已审定格需先解除保护。</p>
+      <p>四类共168格。人工选片与已审定格均受保护；本机修订进入完整备份，原始截图版独立保留。</p>
+      <details>
+        <summary>人工底稿与全表校验</summary>
+        <p>{manualSnapshot.version} · 23个人工位置、19个原始空格。补全候选不写回底稿。</p>
+        <button className="quiet-link" onClick={() => {
+          const blob = new Blob([JSON.stringify(manualSnapshot, null, 2)], { type: "application/json" });
+          const url = URL.createObjectURL(blob), link = document.createElement("a");
+          link.href = url; link.download = `${manualSnapshot.version}.json`; link.click();
+          setTimeout(() => URL.revokeObjectURL(url), 1000);
+        }}>导出原始人工底稿</button>
+        <p>同维七位不同主艺人；每表最多一位艺人出现两次，同一专辑不可重复占格。</p>
+        <p>{auditReferences(referenceAnchors(catalog)).filter(i => i.severity === "error").length === 0 ? "四表结构与去重校验通过。艺术定位仍须整碟人工审定。" : "存在待处理的格位约束，请检查下方资料。"}</p>
+      </details>
       <div className="dual-field-row">
         <label>
           参考分类
@@ -116,9 +140,9 @@ export function ReferenceManager() {
           </select>
         </label>
       </div>
-      {original?.approved && (
+      {protectedCell && (
         <p>
-          此格已审定。
+          {original?.manualLocked ? "此格为人工选片；原图与原始文字受独立版本保护。" : "此格已审定。"}
           <button
             className="quiet-link"
             onClick={() => {
@@ -193,6 +217,9 @@ export function ReferenceManager() {
               onChange={(e) => update("coverUrl", e.target.value)}
             />
           </label>
+          <label>封面出处页<input aria-label="参考封面出处" value={edit.coverSource || ""} onChange={e => update("coverSource", e.target.value)} /></label>
+          <label>封面版权与用途<input aria-label="参考封面版权" value={edit.coverLicense || ""} onChange={e => update("coverLicense", e.target.value)} /></label>
+          <label>采用的发行版本<input aria-label="参考发行版本" value={edit.edition || ""} onChange={e => update("edition", e.target.value)} /></label>
           <label>
             资料来源（每行一个网址）
             <textarea
@@ -241,6 +268,9 @@ export function ReferenceManager() {
             {edit.status} · {edit.version} · {edit.listening}
           </p>
           <p>{edit.pending}</p>
+          <p>资料信心：{edit.confidence}。{edit.identityNote}</p>
+          <p>{edit.evidence}</p>
+          {edit.manualTitle && <p>原始人工文字：{edit.manualTitle} · {edit.manualVersion}</p>}
           {anchorIssues(edit, referenceAnchors(catalog)).map((issue) => (
             <p key={issue}>{issue}</p>
           ))}
