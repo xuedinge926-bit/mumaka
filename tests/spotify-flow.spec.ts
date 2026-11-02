@@ -135,7 +135,7 @@ for (const release of releases)
         headers: { "Access-Control-Allow-Origin": "*" },
       }),
     );
-    await page.goto(origin);
+    await page.goto(origin + "?model=v019");
     await page.getByLabel("搜索专辑或音乐人").fill(release.q);
     await page.locator(".album-result").click();
     await expect(page.getByLabel("专辑名称", { exact: true })).toHaveValue(

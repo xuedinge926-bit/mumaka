@@ -1,0 +1,806 @@
+[
+  {
+    "id": "genre:bro-country",
+    "name": "兄弟乡村",
+    "nameEn": "Bro-Country",
+    "familyId": "country",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 122
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 122
+      }
+    }
+  },
+  {
+    "id": "genre:country-folk",
+    "name": "乡村民谣",
+    "nameEn": "Country Folk",
+    "familyId": "country",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 123
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 123
+      }
+    }
+  },
+  {
+    "id": "genre:delta-blues",
+    "name": "三角洲布鲁斯",
+    "nameEn": "Delta Blues",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          36,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 124
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 124
+      }
+    }
+  },
+  {
+    "id": "genre:chicago-blues",
+    "name": "芝加哥布鲁斯",
+    "nameEn": "Chicago Blues",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          36,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 125
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 125
+      }
+    }
+  },
+  {
+    "id": "genre:electric-blues",
+    "name": "电声布鲁斯",
+    "nameEn": "Electric Blues",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          36,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 126
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 126
+      }
+    }
+  },
+  {
+    "id": "genre:country-blues",
+    "name": "乡村布鲁斯",
+    "nameEn": "Country Blues",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          36,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 127
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 127
+      }
+    }
+  },
+  {
+    "id": "genre:piedmont-blues",
+    "name": "皮德蒙特布鲁斯",
+    "nameEn": "Piedmont Blues",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          36,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 128
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 128
+      }
+    }
+  },
+  {
+    "id": "genre:texas-blues",
+    "name": "得克萨斯布鲁斯",
+    "nameEn": "Texas Blues",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          36,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 129
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 129
+      }
+    }
+  },
+  {
+    "id": "genre:jump-blues",
+    "name": "跳跃布鲁斯",
+    "nameEn": "Jump Blues",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          36,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 130
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 130
+      }
+    }
+  },
+  {
+    "id": "genre:soul-blues",
+    "name": "灵魂布鲁斯",
+    "nameEn": "Soul Blues",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          36,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 131
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 131
+      }
+    }
+  },
+  {
+    "id": "genre:blues-revival",
+    "name": "布鲁斯复兴",
+    "nameEn": "Blues Revival",
+    "familyId": "blues",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 132
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 132
+      }
+    }
+  },
+  {
+    "id": "genre:contemporary-blues",
+    "name": "当代布鲁斯",
+    "nameEn": "Contemporary Blues",
+    "familyId": "blues",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 133
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 133
+      }
+    }
+  },
+  {
+    "id": "genre:boogie-woogie",
+    "name": "布吉乌吉",
+    "nameEn": "Boogie-Woogie",
+    "familyId": "blues",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          38,
+          40,
+          48,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 134
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          48,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 134
+      }
+    }
+  },
+  {
+    "id": "genre:traditional-jazz",
+    "name": "传统爵士",
+    "nameEn": "Traditional Jazz",
+    "familyId": "jazz",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          38,
+          40,
+          52,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 135
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          46,
+          50,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 135
+      }
+    }
+  },
+  {
+    "id": "genre:dixieland",
+    "name": "迪克西兰爵士",
+    "nameEn": "Dixieland",
+    "familyId": "jazz",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          44,
+          50,
+          14,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 136
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          48,
+          50,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 136
+      }
+    }
+  },
+  {
+    "id": "genre:swing-jazz",
+    "name": "摇摆爵士",
+    "nameEn": "Swing Jazz",
+    "familyId": "jazz",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          58,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 137
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          50,
+          48,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 137
+      }
+    }
+  },
+  {
+    "id": "genre:bebop",
+    "name": "比波普",
+    "nameEn": "Bebop",
+    "familyId": "jazz",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          44,
+          60,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 138
+      },
+      "instrumental": {
+        "weightsTicks": [
+          32,
+          48,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 138
+      }
+    }
+  },
+  {
+    "id": "genre:hard-bop",
+    "name": "硬波普",
+    "nameEn": "Hard Bop",
+    "familyId": "jazz",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          34,
+          44,
+          50,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "硬波普即兴、节奏组互动与主题语言",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 139
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          48,
+          50,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "硬波普即兴、节奏组互动与主题语言",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 139
+      }
+    }
+  },
+  {
+    "id": "genre:cool-jazz",
+    "name": "冷爵士",
+    "nameEn": "Cool Jazz",
+    "familyId": "jazz",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          44,
+          60,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 140
+      },
+      "instrumental": {
+        "weightsTicks": [
+          32,
+          48,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：即兴／器乐诠释；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 140
+      }
+    }
+  },
+  {
+    "id": "genre:modal-jazz",
+    "name": "调式爵士",
+    "nameEn": "Modal Jazz",
+    "familyId": "jazz",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          50,
+          52,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "调式爵士：音乐材料及即时发展比复杂调性更关键",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 141
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          50,
+          48,
+          6,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "调式爵士：音乐材料及即时发展比复杂调性更关键",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 141
+      }
+    }
+  }
+]

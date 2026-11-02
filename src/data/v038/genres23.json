@@ -1,0 +1,834 @@
+[
+  {
+    "id": "genre:sound-collage",
+    "name": "声音拼贴",
+    "nameEn": "Sound Collage",
+    "familyId": "experimental",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          30,
+          40,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 442
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          18,
+          42,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 442
+      }
+    }
+  },
+  {
+    "id": "genre:plunderphonics",
+    "name": "拼贴挪用音乐",
+    "nameEn": "Plunderphonics",
+    "familyId": "experimental",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          36,
+          22,
+          58,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 443
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          36,
+          14,
+          52,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 443
+      }
+    }
+  },
+  {
+    "id": "genre:soundscape-composition",
+    "name": "声音景观创作",
+    "nameEn": "Soundscape Composition",
+    "familyId": "experimental",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          30,
+          40,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "不适用",
+        "trialAllowed": false,
+        "source": "理论组合占位｜原判不适用",
+        "rationale": "保留两模式完整数字供分类复核；此组合在研究版本中不可用于实际评分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 444
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          12,
+          48,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：空间／氛围／持续；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 444
+      }
+    }
+  },
+  {
+    "id": "genre:microsound",
+    "name": "微声音乐",
+    "nameEn": "Microsound",
+    "familyId": "experimental",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          30,
+          40,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "不适用",
+        "trialAllowed": false,
+        "source": "理论组合占位｜原判不适用",
+        "rationale": "保留两模式完整数字供分类复核；此组合在研究版本中不可用于实际评分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 445
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          36,
+          14,
+          52,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 445
+      }
+    }
+  },
+  {
+    "id": "genre:acousmatic-music",
+    "name": "离源听觉音乐",
+    "nameEn": "Acousmatic Music",
+    "familyId": "experimental",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          30,
+          40,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "不适用",
+        "trialAllowed": false,
+        "source": "理论组合占位｜原判不适用",
+        "rationale": "保留两模式完整数字供分类复核；此组合在研究版本中不可用于实际评分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 446
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          36,
+          14,
+          52,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 446
+      }
+    }
+  },
+  {
+    "id": "genre:new-age",
+    "name": "新世纪音乐",
+    "nameEn": "New Age",
+    "familyId": "new_age",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          44,
+          22,
+          46,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "新世纪录音作品侧重材料/声音/长时体验，非单一乐器分类",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 447
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          42,
+          30,
+          28,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "新世纪录音作品侧重材料/声音/长时体验，非单一乐器分类",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 447
+      }
+    }
+  },
+  {
+    "id": "genre:new-age-piano",
+    "name": "新世纪钢琴",
+    "nameEn": "New Age Piano",
+    "familyId": "new_age",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 448
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 448
+      }
+    }
+  },
+  {
+    "id": "genre:celtic-new-age",
+    "name": "凯尔特新世纪",
+    "nameEn": "Celtic New Age",
+    "familyId": "new_age",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 449
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 449
+      }
+    }
+  },
+  {
+    "id": "genre:progressive-pop",
+    "name": "前卫流行",
+    "nameEn": "Progressive Pop",
+    "familyId": "pop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          34,
+          60,
+          24,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：复杂结构／前卫构作；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 450
+      },
+      "instrumental": {
+        "weightsTicks": [
+          30,
+          66,
+          22,
+          22,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：复杂结构／前卫构作；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 450
+      }
+    }
+  },
+  {
+    "id": "genre:lo-fi-pop",
+    "name": "低保真流行",
+    "nameEn": "Lo-Fi Pop",
+    "familyId": "pop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          36,
+          42,
+          20,
+          42,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：重声音／录音室构建；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 451
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          50,
+          18,
+          36,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：重声音／录音室构建；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 451
+      }
+    }
+  },
+  {
+    "id": "genre:yacht-rock",
+    "name": "游艇摇滚",
+    "nameEn": "Yacht Rock",
+    "familyId": "pop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          42,
+          48,
+          24,
+          26,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 452
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          52,
+          24,
+          28,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 452
+      }
+    }
+  },
+  {
+    "id": "genre:jangle-pop",
+    "name": "清亮吉他流行",
+    "nameEn": "Jangle Pop",
+    "familyId": "pop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          42,
+          48,
+          24,
+          26,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 453
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          52,
+          24,
+          28,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 453
+      }
+    }
+  },
+  {
+    "id": "genre:slowcore",
+    "name": "慢核摇滚",
+    "nameEn": "Slowcore",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          46,
+          40,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 454
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 454
+      }
+    }
+  },
+  {
+    "id": "genre:slacker-rock",
+    "name": "松散摇滚",
+    "nameEn": "Slacker Rock",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          46,
+          40,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 455
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 455
+      }
+    }
+  },
+  {
+    "id": "genre:post-punk-revival",
+    "name": "后朋克复兴",
+    "nameEn": "Post-Punk Revival",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          46,
+          40,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 456
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 456
+      }
+    }
+  },
+  {
+    "id": "genre:garage-rock-revival",
+    "name": "车库摇滚复兴",
+    "nameEn": "Garage Rock Revival",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          46,
+          40,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 457
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 457
+      }
+    }
+  },
+  {
+    "id": "genre:paisley-underground",
+    "name": "佩斯利地下",
+    "nameEn": "Paisley Underground",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          46,
+          40,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 458
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 458
+      }
+    }
+  },
+  {
+    "id": "genre:emo",
+    "name": "情绪核",
+    "nameEn": "Emo",
+    "familyId": "punk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          38,
+          44,
+          18,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 459
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          42,
+          44,
+          20,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 459
+      }
+    }
+  },
+  {
+    "id": "genre:midwest-emo",
+    "name": "中西部情绪核",
+    "nameEn": "Midwest Emo",
+    "familyId": "punk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          38,
+          44,
+          18,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 460
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          42,
+          44,
+          20,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 460
+      }
+    }
+  },
+  {
+    "id": "genre:emo-pop",
+    "name": "情绪流行",
+    "nameEn": "Emo Pop",
+    "familyId": "punk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          40,
+          38,
+          44,
+          18,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 461
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          42,
+          44,
+          20,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 461
+      }
+    }
+  }
+]

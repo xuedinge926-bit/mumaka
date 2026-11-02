@@ -12,7 +12,7 @@ test('实际单文件在模拟 Pages HTTPS origin 运行，未配置 Python 时�
   // The route is a local HTTPS hosting simulation, not a claim about live Pages.
   await page.route('https://xuedinge926-bit.github.io/**',route=>new URL(route.request().url()).pathname==='/mumaka/'
     ? route.fulfill({body:html,contentType:'text/html'}) : route.fulfill({status:404,body:'Not configured'}));
-  await page.goto('https://xuedinge926-bit.github.io/mumaka/');
+  await page.goto('https://xuedinge926-bit.github.io/mumaka/?model=v019');
   await expect(page).toHaveTitle('MUMAKA / 木马卡 · 新乐评主义');
   await page.getByRole('button',{name:'通过链接添加',exact:true}).click();
   await expect(page.getByRole('button',{name:'获取信息',exact:true})).toBeDisabled();

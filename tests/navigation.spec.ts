@@ -63,7 +63,7 @@ test("首页工作台入口展开同一菜单；全工作区往返与浏览器�
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await expect(page).toHaveURL(/#\/home$/);
   await page.getByRole("button", { name: "专业工作台", exact: true }).click();
   await expect(page).toHaveURL(/#\/home$/);
@@ -125,7 +125,7 @@ test("评分中切换菜单、其他工作区、返回与刷新，草稿及评�
   page,
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await create(page, "工作空间验收专辑（虚构样本）");
   await page.getByRole("button", { name: "下一步：评分", exact: true }).click();
   const values = [3.5, 4, 4, 4.5, 4, 3];
@@ -205,7 +205,7 @@ test("评分中切换菜单、其他工作区、返回与刷新，草稿及评�
 test("浏览器历史在两个草稿之间切换不会串写，尚未到自动保存间隔也能恢复", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await create(page, "草稿A（虚构）");
   await page.getByRole("button", { name: "下一步：评分", exact: true }).click();
   await star(page, "作词", 3.5);
@@ -250,7 +250,7 @@ test("浏览器历史在两个草稿之间切换不会串写，尚未到自动�
 test("只读风格库能搜索选择并明确应用到同一草稿，原评分保持", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await create(page, "风格选择验收（虚构）");
   await page.getByRole("button", { name: "下一步：评分", exact: true }).click();
   await star(page, "声音", 4);
@@ -287,7 +287,7 @@ test("手机抽屉支持触摸、遮罩、Escape及焦点返回；收起不离�
     isMobile: true,
   });
   const page = await context.newPage();
-  await page.goto("/");
+  await page.goto("/?model=v019");
   const toggle = page.getByRole("button", {
     name: "展开导航菜单",
     exact: true,
@@ -336,13 +336,13 @@ test("手机抽屉支持触摸、遮罩、Escape及焦点返回；收起不离�
 });
 
 test("深链接、刷新以及不存在的记录均有可用返回入口", async ({ page }) => {
-  await page.goto("/#/settings");
+  await page.goto("/?model=v019#/settings");
   await expect(page.getByLabel("默认导出比例")).toBeVisible();
   await page.reload();
   await expect(page.getByLabel("默认导出比例")).toBeVisible();
   await page.getByRole("button", { name: "返回上一级", exact: true }).click();
   await expect(page).toHaveURL(/#\/home$/);
-  await page.goto("/#/album/this-record-does-not-exist/rating");
+  await page.goto("/?model=v019#/album/this-record-does-not-exist/rating");
   await expect(
     page.getByRole("heading", { name: "暂时无法打开记录", exact: true }),
   ).toBeVisible();

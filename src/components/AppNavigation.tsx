@@ -13,6 +13,7 @@ interface Props {
   route: AppRoute;
   onNavigate: (tab: Workspace) => void;
   toggleRef: RefObject<HTMLButtonElement | null>;
+  legacyMode?: boolean;
 }
 export function AppNavigation({
   open,
@@ -20,6 +21,7 @@ export function AppNavigation({
   route,
   onNavigate,
   toggleRef,
+  legacyMode = false,
 }: Props) {
   const panel = useRef<HTMLElement>(null);
   const [mobile, setMobile] = useState(
@@ -104,7 +106,7 @@ export function AppNavigation({
           </button>
         </div>
         <nav aria-label="应用导航">
-          {(Object.keys(WORKSPACE_LABELS) as Workspace[]).map((tab) => (
+          {(Object.keys(WORKSPACE_LABELS) as Workspace[]).filter(tab => !legacyMode || !['studio', 'reference'].includes(tab)).map((tab) => (
             <button
               key={tab}
               aria-current={

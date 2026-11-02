@@ -1,0 +1,862 @@
+[
+  {
+    "id": "genre:tango",
+    "name": "探戈",
+    "nameEn": "Tango",
+    "familyId": "latin",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          40,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 302
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 302
+      }
+    }
+  },
+  {
+    "id": "genre:nueva-cancion",
+    "name": "新歌运动音乐",
+    "nameEn": "Nueva Cancion",
+    "familyId": "latin",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          40,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 303
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 303
+      }
+    }
+  },
+  {
+    "id": "genre:andean-folk",
+    "name": "安第斯民间音乐",
+    "nameEn": "Andean Folk",
+    "familyId": "latin",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          38,
+          42,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 304
+      },
+      "instrumental": {
+        "weightsTicks": [
+          42,
+          38,
+          52,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 304
+      }
+    }
+  },
+  {
+    "id": "genre:huayno",
+    "name": "瓦伊诺",
+    "nameEn": "Huayno",
+    "familyId": "latin",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          40,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 305
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 305
+      }
+    }
+  },
+  {
+    "id": "genre:samba",
+    "name": "桑巴",
+    "nameEn": "Samba",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 306
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 306
+      }
+    }
+  },
+  {
+    "id": "genre:samba-cancao",
+    "name": "桑巴歌曲",
+    "nameEn": "Samba-Canção",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 307
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 307
+      }
+    }
+  },
+  {
+    "id": "genre:pagode",
+    "name": "帕戈吉",
+    "nameEn": "Pagode",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 308
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 308
+      }
+    }
+  },
+  {
+    "id": "genre:bossa-nova",
+    "name": "波萨诺瓦",
+    "nameEn": "Bossa Nova",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 309
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 309
+      }
+    }
+  },
+  {
+    "id": "genre:musica-popular-brasileira",
+    "name": "巴西流行音乐（MPB）",
+    "nameEn": "Música Popular Brasileira",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 310
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 310
+      }
+    }
+  },
+  {
+    "id": "genre:tropicalia",
+    "name": "热带主义",
+    "nameEn": "Tropicália",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 311
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 311
+      }
+    }
+  },
+  {
+    "id": "genre:choro",
+    "name": "肖罗",
+    "nameEn": "Choro",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 312
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 312
+      }
+    }
+  },
+  {
+    "id": "genre:forro",
+    "name": "福霍",
+    "nameEn": "Forró",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 313
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 313
+      }
+    }
+  },
+  {
+    "id": "genre:baiao",
+    "name": "巴亚翁",
+    "nameEn": "Baião",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 314
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 314
+      }
+    }
+  },
+  {
+    "id": "genre:frevo",
+    "name": "弗雷沃",
+    "nameEn": "Frevo",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 315
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 315
+      }
+    }
+  },
+  {
+    "id": "genre:sertanejo",
+    "name": "巴西乡村音乐",
+    "nameEn": "Sertanejo",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 316
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 316
+      }
+    }
+  },
+  {
+    "id": "genre:sertanejo-universitario",
+    "name": "大学派巴西乡村",
+    "nameEn": "Sertanejo Universitário",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 317
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 317
+      }
+    }
+  },
+  {
+    "id": "genre:funk-carioca",
+    "name": "巴西放克",
+    "nameEn": "Funk Carioca",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          44,
+          40,
+          12,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 318
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          48,
+          44,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 318
+      }
+    }
+  },
+  {
+    "id": "genre:brega-funk",
+    "name": "布雷加放克",
+    "nameEn": "Brega Funk",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          44,
+          40,
+          12,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 319
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          48,
+          44,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 319
+      }
+    }
+  },
+  {
+    "id": "genre:maracatu",
+    "name": "马拉卡图",
+    "nameEn": "Maracatu",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 320
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 320
+      }
+    }
+  },
+  {
+    "id": "genre:axe",
+    "name": "阿谢",
+    "nameEn": "Axé",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 321
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 321
+      }
+    }
+  }
+]

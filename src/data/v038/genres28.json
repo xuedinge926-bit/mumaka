@@ -1,0 +1,750 @@
+[
+  {
+    "id": "genre:chinese-instrumental-pop-fusion",
+    "name": "民乐融合流行",
+    "nameEn": "Chinese Instrumental Pop Fusion",
+    "familyId": "pop",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 542
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 542
+      }
+    }
+  },
+  {
+    "id": "genre:xiqu-pop-fusion",
+    "name": "戏曲融合流行",
+    "nameEn": "Xiqu-Pop Fusion",
+    "familyId": "pop",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 543
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 543
+      }
+    }
+  },
+  {
+    "id": "genre:alternative-pop",
+    "name": "另类流行",
+    "nameEn": "Alternative Pop",
+    "familyId": "pop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          42,
+          48,
+          24,
+          26,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 544
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          52,
+          24,
+          28,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 544
+      }
+    }
+  },
+  {
+    "id": "genre:taiwan-folk-rock",
+    "name": "台湾民谣摇滚",
+    "nameEn": "Taiwanese Folk-Rock",
+    "familyId": "rock",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 545
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 545
+      }
+    }
+  },
+  {
+    "id": "genre:taiwan-campus-folk",
+    "name": "台湾校园民歌",
+    "nameEn": "Taiwan Campus Folk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          44,
+          28,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 546
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 546
+      }
+    }
+  },
+  {
+    "id": "genre:chinese-regional-folk-vocal",
+    "name": "中国地方声乐民歌",
+    "nameEn": "Chinese Regional Folk Vocal",
+    "familyId": "east_asian",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 547
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 547
+      }
+    }
+  },
+  {
+    "id": "genre:chinese-orchestral",
+    "name": "民族管弦乐",
+    "nameEn": "Chinese Orchestra",
+    "familyId": "east_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 548
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 548
+      }
+    }
+  },
+  {
+    "id": "genre:chinese-instrumental-fusion",
+    "name": "民族器乐融合",
+    "nameEn": "Chinese Instrumental Fusion",
+    "familyId": "east_asian",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 549
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 549
+      }
+    }
+  },
+  {
+    "id": "genre:qin-opera",
+    "name": "秦腔",
+    "nameEn": "Qinqiang",
+    "familyId": "east_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 550
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 550
+      }
+    }
+  },
+  {
+    "id": "genre:huangmei-opera",
+    "name": "黄梅戏",
+    "nameEn": "Huangmei Opera",
+    "familyId": "east_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 551
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 551
+      }
+    }
+  },
+  {
+    "id": "genre:sichuan-opera",
+    "name": "川剧",
+    "nameEn": "Sichuan Opera",
+    "familyId": "east_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 552
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 552
+      }
+    }
+  },
+  {
+    "id": "genre:chaozhou-opera",
+    "name": "潮剧",
+    "nameEn": "Teochew Opera",
+    "familyId": "east_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 553
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 553
+      }
+    }
+  },
+  {
+    "id": "genre:pingju-opera",
+    "name": "评剧",
+    "nameEn": "Pingju",
+    "familyId": "east_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 554
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 554
+      }
+    }
+  },
+  {
+    "id": "genre:suzhou-pingtan",
+    "name": "苏州评弹",
+    "nameEn": "Suzhou Pingtan",
+    "familyId": "east_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 555
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 555
+      }
+    }
+  },
+  {
+    "id": "genre:jingyun-dagu",
+    "name": "京韵大鼓",
+    "nameEn": "Jingyun Dagu",
+    "familyId": "east_asian",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          42,
+          38,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 556
+      },
+      "instrumental": {
+        "weightsTicks": [
+          44,
+          50,
+          38,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 556
+      }
+    }
+  },
+  {
+    "id": "genre:guzheng-music",
+    "name": "古筝器乐",
+    "nameEn": "Guzheng Music",
+    "familyId": "east_asian",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 557
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 557
+      }
+    }
+  },
+  {
+    "id": "genre:pipa-music",
+    "name": "琵琶器乐",
+    "nameEn": "Pipa Music",
+    "familyId": "east_asian",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 558
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 558
+      }
+    }
+  },
+  {
+    "id": "genre:erhu-music",
+    "name": "二胡器乐",
+    "nameEn": "Erhu Music",
+    "familyId": "east_asian",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 559
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 559
+      }
+    }
+  },
+  {
+    "id": "genre:roots-rock",
+    "name": "根源摇滚",
+    "nameEn": "Roots Rock",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          46,
+          40,
+          22,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 560
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          48,
+          40,
+          16,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 560
+      }
+    }
+  },
+  {
+    "id": "genre:singer-songwriter",
+    "name": "唱作人音乐",
+    "nameEn": "Singer-Songwriter",
+    "familyId": "folk",
+    "classification": "definition_review",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          44,
+          28,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": false,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 561
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          50,
+          42,
+          10,
+          30,
+          30
+        ],
+        "applicability": "不适用",
+        "trialAllowed": false,
+        "source": "理论组合占位｜原判不适用",
+        "rationale": "保留两模式完整数字供分类复核；此组合在研究版本中不可用于实际评分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 561
+      }
+    }
+  }
+]

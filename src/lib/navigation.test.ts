@@ -35,6 +35,13 @@ describe("Pages-compatible navigation addresses", () => {
     }
     for (const hash of ['#/research/delete/x','#/research/revision/%ZZ','#/research/draft/%00']) expect(parseRoute(hash)).toEqual(HOME);
   });
+  it('round-trips new single-page drafts and frozen V0.40 versions', () => {
+    for (const kind of ['draft', 'revision'] as const) {
+      const route = { view: 'workspace' as const, tab: 'studio' as const, dual: { kind, id: '双体系 / v1#' } };
+      expect(parseRoute('#' + routePath(route))).toEqual(route);
+    }
+    expect(parseRoute('#/studio/draft/%00')).toEqual(HOME);
+  });
   it("keeps legacy arbitrary record IDs and frozen history separate, including encoded slashes", () => {
     for (const kind of ["album", "snapshot"] as const)
       for (const stage of ["confirm", "rating", "card"] as const) {

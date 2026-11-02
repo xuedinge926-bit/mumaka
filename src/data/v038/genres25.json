@@ -1,0 +1,764 @@
+[
+  {
+    "id": "genre:rage-rap",
+    "name": "狂怒说唱",
+    "nameEn": "Rage Rap",
+    "familyId": "hiphop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          32,
+          32,
+          16,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 482
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          26,
+          34,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 482
+      }
+    }
+  },
+  {
+    "id": "genre:plugg",
+    "name": "Plugg说唱",
+    "nameEn": "Plugg",
+    "familyId": "hiphop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          32,
+          32,
+          16,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 483
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          26,
+          34,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 483
+      }
+    }
+  },
+  {
+    "id": "genre:chopped-and-screwed",
+    "name": "切碎放慢说唱",
+    "nameEn": "Chopped and Screwed",
+    "familyId": "hiphop",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 484
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 484
+      }
+    }
+  },
+  {
+    "id": "genre:country-rap",
+    "name": "乡村说唱",
+    "nameEn": "Country Rap",
+    "familyId": "hiphop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          66,
+          28,
+          34,
+          12,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 485
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          30,
+          30,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 485
+      }
+    }
+  },
+  {
+    "id": "genre:christian-hip-hop",
+    "name": "基督教嘻哈",
+    "nameEn": "Christian Hip-Hop",
+    "familyId": "hiphop",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 486
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 486
+      }
+    }
+  },
+  {
+    "id": "genre:jersey-club",
+    "name": "泽西俱乐部舞曲",
+    "nameEn": "Jersey Club",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 487
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          20,
+          36,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 487
+      }
+    }
+  },
+  {
+    "id": "genre:baltimore-club",
+    "name": "巴尔的摩俱乐部舞曲",
+    "nameEn": "Baltimore Club",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 488
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          20,
+          36,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 488
+      }
+    }
+  },
+  {
+    "id": "genre:lo-fi-house",
+    "name": "低保真浩室",
+    "nameEn": "Lo-Fi House",
+    "familyId": "electronic",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 489
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 489
+      }
+    }
+  },
+  {
+    "id": "genre:witch-house",
+    "name": "巫屋电子",
+    "nameEn": "Witch House",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          40,
+          34,
+          42,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 490
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          48,
+          28,
+          26,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 490
+      }
+    }
+  },
+  {
+    "id": "genre:chiptune",
+    "name": "芯片音乐",
+    "nameEn": "Chiptune",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 491
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          20,
+          36,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 491
+      }
+    }
+  },
+  {
+    "id": "genre:indietronica",
+    "name": "独立电子流行",
+    "nameEn": "Indietronica",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 492
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          20,
+          36,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 492
+      }
+    }
+  },
+  {
+    "id": "genre:deconstructed-club",
+    "name": "解构俱乐部",
+    "nameEn": "Deconstructed Club",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 493
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          20,
+          36,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 493
+      }
+    }
+  },
+  {
+    "id": "genre:post-disco",
+    "name": "后迪斯科",
+    "nameEn": "Post-Disco",
+    "familyId": "disco",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 494
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 494
+      }
+    }
+  },
+  {
+    "id": "genre:chicha",
+    "name": "奇恰（秘鲁迷幻库姆比亚）",
+    "nameEn": "Chicha",
+    "familyId": "latin",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          44,
+          42,
+          40,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 495
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          40,
+          50,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 495
+      }
+    }
+  },
+  {
+    "id": "genre:samba-rock",
+    "name": "桑巴摇滚",
+    "nameEn": "Samba-Rock",
+    "familyId": "brazil",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          48,
+          46,
+          32,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 496
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          44,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 496
+      }
+    }
+  },
+  {
+    "id": "genre:cumbia-nortena",
+    "name": "北方库姆比亚",
+    "nameEn": "Cumbia Norteña",
+    "familyId": "mexican",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          52,
+          40,
+          36,
+          12,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 497
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          44,
+          44,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 497
+      }
+    }
+  },
+  {
+    "id": "genre:afro-house",
+    "name": "非洲浩室",
+    "nameEn": "Afro-House",
+    "familyId": "african_pop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          32,
+          38,
+          52,
+          18,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 498
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          44,
+          50,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 498
+      }
+    }
+  },
+  {
+    "id": "genre:opera-seria",
+    "name": "正歌剧",
+    "nameEn": "Opera Seria",
+    "familyId": "western_art",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 499
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 499
+      }
+    }
+  },
+  {
+    "id": "genre:opera-buffa",
+    "name": "喜歌剧",
+    "nameEn": "Opera Buffa",
+    "familyId": "western_art",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 500
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 500
+      }
+    }
+  },
+  {
+    "id": "genre:contemporary-opera",
+    "name": "当代歌剧",
+    "nameEn": "Contemporary Opera",
+    "familyId": "western_art",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 501
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 501
+      }
+    }
+  }
+]

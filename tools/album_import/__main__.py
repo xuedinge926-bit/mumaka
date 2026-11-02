@@ -17,12 +17,16 @@ def main():
     parser.add_argument("-o", "--output", help="保存元数据 JSON，供网页导入")
     parser.add_argument("--root", default="dist", help="本地网页构建目录（默认 dist）")
     parser.add_argument("--port", type=int, default=8765, help="本地端口（默认 8765，请固定使用以读取原有本地数据）")
+    parser.add_argument("--open", action="store_true", help="服务启动后在浏览器中打开页面")
     args = parser.parse_args()
     try:
         if args.url == "serve":
             with LocalServer(("127.0.0.1", args.port), args.root) as server:
                 print(f"MUMAKA 已启动：http://127.0.0.1:{server.server_port}", flush=True)
                 print("请从此地址打开网页；GitHub Pages 的浏览器数据需要先导出备份再在这里导入。", flush=True)
+                if args.open:
+                    import webbrowser
+                    webbrowser.open(f"http://127.0.0.1:{server.server_port}/#/studio")
                 server.serve_forever()
         else:
             result = json.dumps(import_album(args.url), ensure_ascii=False, indent=2)

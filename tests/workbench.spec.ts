@@ -14,7 +14,7 @@ async function chooseGenre(page: Page, query = "Pop (General)") {
   await page.locator(".global-choice .choice-options button").first().click();
 }
 async function manual(page: Page, title = "界面流程测试唱片（虚构）") {
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await page.getByRole("button", { name: "手动添加专辑", exact: true }).click();
   await page.getByLabel("专辑名称", { exact: true }).fill(title);
   await page.getByLabel("音乐人", { exact: true }).fill("测试音乐人");
@@ -52,7 +52,7 @@ async function backup(page: Page) {
   return data;
 }
 async function restore(page: Page, data: string) {
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await page.getByRole("button", { name: "文件与备份", exact: true }).click();
   const chooser = page.waitForEvent("filechooser");
   await page.getByRole("button", { name: "导入备份", exact: true }).click();
@@ -73,7 +73,7 @@ test("极简首页 → 手动评分零理由 → 三种比例真实PNG → 保�
 }) => {
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await expect(page.getByLabel("搜索专辑或音乐人")).toBeVisible();
   await expect(page.getByText("Spotify 搜索未配置")).toBeVisible();
   await expect(page.getByRole("main")).not.toContainText(
@@ -309,7 +309,7 @@ test("Spotify接口测试夹具填入曲目与远程封面，不伪造风格或E
       headers: { "Access-Control-Allow-Origin": "*" },
     }),
   );
-  await page.goto("/");
+  await page.goto("/?model=v019");
   await page.getByLabel("搜索专辑或音乐人").fill("接口技术测试");
   await page.locator(".album-result").click();
   await expect(page.getByLabel("专辑名称")).toHaveValue(item.title);

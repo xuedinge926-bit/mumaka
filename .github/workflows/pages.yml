@@ -3,13 +3,15 @@ name: Check and publish MUMAKA
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: mumaka-pages
+  group: mumaka-pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -31,14 +33,31 @@ jobs:
       - run: npm run build
         env:
           VITE_SPOTIFY_PROXY_URL: ${{ vars.SPOTIFY_PROXY_URL }}
+      - run: npm run check:public
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-test-evidence
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 14
       - name: Build self-contained Pages application
         env:
           VITE_SPOTIFY_PROXY_URL: ${{ vars.SPOTIFY_PROXY_URL }}
         run: |
           node scripts/build-standalone.mjs public-site/index.html
           touch public-site/.nojekyll
+          git fetch origin gh-pages:refs/remotes/origin/gh-pages
+          mkdir -p public-site/legacy
+          if git cat-file -e origin/gh-pages:legacy/index.html 2>/dev/null; then
+            git show origin/gh-pages:legacy/index.html > public-site/legacy/index.html
+          else
+            git show origin/gh-pages:index.html > public-site/legacy/index.html
+          fi
+          node scripts/check-public.mjs public-site
           python3 - <<'PY'
           from pathlib import Path
           import zipfile
@@ -53,6 +72,7 @@ jobs:
           include-hidden-files: true
           retention-days: 14
   publish:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: check
     runs-on: ubuntu-latest
     permissions:
@@ -78,7 +98,7 @@ jobs:
           git init
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add index.html nmc-local.zip .nojekyll
+          git add index.html nmc-local.zip .nojekyll legacy/index.html
           git commit -m "Build MUMAKA $SOURCE_SHA"
           tree=$(git rev-parse HEAD^{tree})
           git --git-dir="$GITHUB_WORKSPACE/.git" config user.name github-actions[bot]

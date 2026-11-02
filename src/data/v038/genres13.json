@@ -1,0 +1,848 @@
+[
+  {
+    "id": "genre:kwaito",
+    "name": "夸伊托",
+    "nameEn": "Kwaito",
+    "familyId": "african_pop",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          36,
+          40,
+          44,
+          20,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 242
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          42,
+          46,
+          14,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 242
+      }
+    }
+  },
+  {
+    "id": "genre:grime",
+    "name": "Grime",
+    "nameEn": "Grime",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          28,
+          42,
+          26,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 243
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          20,
+          36,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 243
+      }
+    }
+  },
+  {
+    "id": "genre:uk-funky",
+    "name": "英式放克舞曲",
+    "nameEn": "UK Funky",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          40,
+          34,
+          42,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 244
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          48,
+          28,
+          26,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 244
+      }
+    }
+  },
+  {
+    "id": "genre:minimal-wave",
+    "name": "极简新浪潮",
+    "nameEn": "Minimal Wave",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          52,
+          20,
+          44,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：极简／程序组织；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 245
+      },
+      "instrumental": {
+        "weightsTicks": [
+          32,
+          60,
+          14,
+          34,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：极简／程序组织；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 245
+      }
+    }
+  },
+  {
+    "id": "genre:disco-classic",
+    "name": "经典迪斯科",
+    "nameEn": "Disco (Classic)",
+    "familyId": "disco",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          22,
+          34,
+          52,
+          32,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 246
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          42,
+          50,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 246
+      }
+    }
+  },
+  {
+    "id": "genre:eurodisco",
+    "name": "欧洲迪斯科",
+    "nameEn": "Eurodisco",
+    "familyId": "disco",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          22,
+          34,
+          52,
+          32,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 247
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          42,
+          50,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 247
+      }
+    }
+  },
+  {
+    "id": "genre:italo-disco",
+    "name": "意大利迪斯科",
+    "nameEn": "Italo Disco",
+    "familyId": "disco",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          22,
+          34,
+          52,
+          32,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 248
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          42,
+          50,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 248
+      }
+    }
+  },
+  {
+    "id": "genre:space-disco",
+    "name": "太空迪斯科",
+    "nameEn": "Space Disco",
+    "familyId": "disco",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          20,
+          32,
+          38,
+          50,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：空间／氛围／持续；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 249
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          42,
+          36,
+          28,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：空间／氛围／持续；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 249
+      }
+    }
+  },
+  {
+    "id": "genre:hi-nrg",
+    "name": "高能量迪斯科",
+    "nameEn": "Hi-NRG",
+    "familyId": "disco",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          26,
+          36,
+          44,
+          34,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 250
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          40,
+          42,
+          22,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 250
+      }
+    }
+  },
+  {
+    "id": "genre:nu-disco",
+    "name": "新迪斯科",
+    "nameEn": "Nu-Disco",
+    "familyId": "disco",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          22,
+          34,
+          52,
+          32,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 251
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          42,
+          50,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 251
+      }
+    }
+  },
+  {
+    "id": "genre:disco-house",
+    "name": "迪斯科浩室",
+    "nameEn": "Disco House",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          40,
+          34,
+          42,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 252
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          48,
+          28,
+          26,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 252
+      }
+    }
+  },
+  {
+    "id": "genre:industrial",
+    "name": "工业音乐",
+    "nameEn": "Industrial",
+    "familyId": "industrial",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          32,
+          28,
+          56,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 253
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          36,
+          20,
+          50,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 253
+      }
+    }
+  },
+  {
+    "id": "genre:industrial-dance",
+    "name": "工业舞曲",
+    "nameEn": "Industrial Dance",
+    "familyId": "industrial",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          32,
+          28,
+          56,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 254
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          36,
+          20,
+          50,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 254
+      }
+    }
+  },
+  {
+    "id": "genre:electronic-body-music-ebm",
+    "name": "电子身体音乐",
+    "nameEn": "Electronic Body Music (EBM)",
+    "familyId": "industrial",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          30,
+          28,
+          58,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：重声音／录音室构建；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 255
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          38,
+          18,
+          48,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：重声音／录音室构建；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 255
+      }
+    }
+  },
+  {
+    "id": "genre:aggrotech",
+    "name": "侵略性电子",
+    "nameEn": "Aggrotech",
+    "familyId": "industrial",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          30,
+          36,
+          32,
+          42,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 256
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          40,
+          24,
+          40,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 256
+      }
+    }
+  },
+  {
+    "id": "genre:power-electronics",
+    "name": "力量电子",
+    "nameEn": "Power Electronics",
+    "familyId": "industrial",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          30,
+          28,
+          58,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：重声音／录音室构建；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 257
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          38,
+          18,
+          48,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：重声音／录音室构建；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 257
+      }
+    }
+  },
+  {
+    "id": "genre:dark-electro",
+    "name": "暗黑电子",
+    "nameEn": "Dark Electro",
+    "familyId": "industrial",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          30,
+          28,
+          58,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：重声音／录音室构建；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 258
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          38,
+          18,
+          48,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：重声音／录音室构建；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 258
+      }
+    }
+  },
+  {
+    "id": "genre:industrial-techno",
+    "name": "工业科技舞曲",
+    "nameEn": "Industrial Techno",
+    "familyId": "electronic",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          22,
+          38,
+          22,
+          58,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 259
+      },
+      "instrumental": {
+        "weightsTicks": [
+          36,
+          42,
+          16,
+          46,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 259
+      }
+    }
+  },
+  {
+    "id": "genre:martial-industrial",
+    "name": "军事工业音乐",
+    "nameEn": "Martial Industrial",
+    "familyId": "industrial",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          24,
+          32,
+          28,
+          56,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 260
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          36,
+          20,
+          50,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：音色与制作主导；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 260
+      }
+    }
+  },
+  {
+    "id": "genre:post-industrial",
+    "name": "后工业音乐",
+    "nameEn": "Post-Industrial",
+    "familyId": "industrial",
+    "classification": "index_only",
+    "profiles": {
+      "song": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 261
+      },
+      "instrumental": {
+        "weightsTicks": null,
+        "applicability": "索引不可评分",
+        "trialAllowed": false,
+        "source": "索引不评分",
+        "rationale": "保留历史别名，不是可选评分风格",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 261
+      }
+    }
+  }
+]

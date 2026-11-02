@@ -1,0 +1,862 @@
+[
+  {
+    "id": "genre:alternative-folk",
+    "name": "另类民谣",
+    "nameEn": "Alternative Folk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          50,
+          48,
+          28,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "另类民谣：语言与歌曲结构并重，实验处理未必构成声音优先",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 102
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          50,
+          42,
+          10,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "另类民谣：语言与歌曲结构并重，实验处理未必构成声音优先",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 102
+      }
+    }
+  },
+  {
+    "id": "genre:anti-folk",
+    "name": "反民谣",
+    "nameEn": "Anti-Folk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          44,
+          28,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 103
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 103
+      }
+    }
+  },
+  {
+    "id": "genre:psychedelic-folk",
+    "name": "迷幻民谣",
+    "nameEn": "Psychedelic Folk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          44,
+          28,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 104
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 104
+      }
+    }
+  },
+  {
+    "id": "genre:acid-folk",
+    "name": "酸性民谣",
+    "nameEn": "Acid Folk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          44,
+          28,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 105
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 105
+      }
+    }
+  },
+  {
+    "id": "genre:freak-folk",
+    "name": "怪诞民谣",
+    "nameEn": "Freak Folk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          44,
+          28,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 106
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 106
+      }
+    }
+  },
+  {
+    "id": "genre:chamber-folk",
+    "name": "室内民谣",
+    "nameEn": "Chamber Folk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          60,
+          26,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：复杂结构／前卫构作；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 107
+      },
+      "instrumental": {
+        "weightsTicks": [
+          32,
+          60,
+          40,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：复杂结构／前卫构作；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 107
+      }
+    }
+  },
+  {
+    "id": "genre:neofolk",
+    "name": "新民谣",
+    "nameEn": "Neofolk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          44,
+          28,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 108
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 108
+      }
+    }
+  },
+  {
+    "id": "genre:dark-folk",
+    "name": "暗黑民谣",
+    "nameEn": "Dark Folk",
+    "familyId": "folk",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          60,
+          44,
+          28,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 109
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 109
+      }
+    }
+  },
+  {
+    "id": "genre:traditional-country",
+    "name": "传统乡村",
+    "nameEn": "Traditional Country",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          52,
+          42,
+          36,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 110
+      },
+      "instrumental": {
+        "weightsTicks": [
+          42,
+          44,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 110
+      }
+    }
+  },
+  {
+    "id": "genre:honky-tonk",
+    "name": "酒馆乡村",
+    "nameEn": "Honky-Tonk",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          46,
+          34,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 111
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          42,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 111
+      }
+    }
+  },
+  {
+    "id": "genre:outlaw-country",
+    "name": "法外乡村",
+    "nameEn": "Outlaw Country",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          52,
+          42,
+          36,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 112
+      },
+      "instrumental": {
+        "weightsTicks": [
+          42,
+          44,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 112
+      }
+    }
+  },
+  {
+    "id": "genre:alt-country",
+    "name": "另类乡村",
+    "nameEn": "Alt-Country",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          52,
+          42,
+          36,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 113
+      },
+      "instrumental": {
+        "weightsTicks": [
+          42,
+          44,
+          46,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 113
+      }
+    }
+  },
+  {
+    "id": "genre:americana",
+    "name": "美国根源音乐",
+    "nameEn": "Americana",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          46,
+          34,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 114
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          42,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 114
+      }
+    }
+  },
+  {
+    "id": "genre:country-pop",
+    "name": "乡村流行",
+    "nameEn": "Country Pop",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          52,
+          42,
+          36,
+          10,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 115
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          42,
+          12,
+          30,
+          30
+        ],
+        "applicability": "不适用",
+        "trialAllowed": false,
+        "source": "理论组合占位｜原判不适用",
+        "rationale": "保留两模式完整数字供分类复核；此组合在研究版本中不可用于实际评分",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 115
+      }
+    }
+  },
+  {
+    "id": "genre:country-rock",
+    "name": "乡村摇滚",
+    "nameEn": "Country Rock",
+    "familyId": "rock",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          38,
+          42,
+          42,
+          18,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 116
+      },
+      "instrumental": {
+        "weightsTicks": [
+          38,
+          46,
+          44,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：地方传统／歌唱语言；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 116
+      }
+    }
+  },
+  {
+    "id": "genre:bluegrass",
+    "name": "蓝草音乐",
+    "nameEn": "Bluegrass",
+    "familyId": "country",
+    "classification": "definition_review",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          42,
+          46,
+          44,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": false,
+        "source": "专项逐项候选",
+        "rationale": "蓝草：声乐叙事、声部和声与器乐合奏并重",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 117
+      },
+      "instrumental": {
+        "weightsTicks": [
+          34,
+          50,
+          48,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": false,
+        "source": "专项逐项候选",
+        "rationale": "蓝草：声乐叙事、声部和声与器乐合奏并重",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 117
+      }
+    }
+  },
+  {
+    "id": "genre:progressive-bluegrass",
+    "name": "前卫蓝草",
+    "nameEn": "Progressive Bluegrass",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          38,
+          52,
+          42,
+          8,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "前卫蓝草：发展与跨界构作占比提升，但歌词不应过低",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 118
+      },
+      "instrumental": {
+        "weightsTicks": [
+          32,
+          56,
+          44,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "专项逐项候选",
+        "rationale": "前卫蓝草：发展与跨界构作占比提升，但歌词不应过低",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 118
+      }
+    }
+  },
+  {
+    "id": "genre:western-swing",
+    "name": "西部摇摆",
+    "nameEn": "Western Swing",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          42,
+          44,
+          42,
+          12,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 119
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          48,
+          44,
+          8,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "启发式待逐条审定",
+        "rationale": "候选侧重：节奏／舞曲时序；由可辨音乐实践推出偏移，但未经独立整碟听评批准",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 119
+      }
+    }
+  },
+  {
+    "id": "genre:bakersfield-sound",
+    "name": "贝克斯菲尔德之声",
+    "nameEn": "Bakersfield Sound",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          46,
+          34,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 120
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          42,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 120
+      }
+    }
+  },
+  {
+    "id": "genre:nashville-sound",
+    "name": "纳什维尔之声",
+    "nameEn": "Nashville Sound",
+    "familyId": "country",
+    "classification": "independent_candidate",
+    "profiles": {
+      "song": {
+        "weightsTicks": [
+          46,
+          46,
+          34,
+          14,
+          30,
+          30
+        ],
+        "applicability": "主要适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "02歌曲565",
+        "sourceRow": 121
+      },
+      "instrumental": {
+        "weightsTicks": [
+          40,
+          46,
+          42,
+          12,
+          30,
+          30
+        ],
+        "applicability": "条件适用",
+        "trialAllowed": true,
+        "source": "一级继承待专审",
+        "rationale": "暂无可靠的独立审美偏移依据，先继承新一级基准；需后续逐张听评",
+        "reviewStatus": "研究候选·不可自动发布",
+        "sourceSheet": "03乐曲565",
+        "sourceRow": 121
+      }
+    }
+  }
+]

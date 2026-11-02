@@ -15,7 +15,9 @@
     "test:e2e": "playwright test",
     "pretest": "python3 scripts/generate-reference-matrix.py",
     "test:reference": "python3 -m unittest discover -s docs/reference-supplement/tests -v",
-    "build:standalone": "npm run build && node scripts/build-standalone.mjs"
+    "build:standalone": "npm run build && node scripts/build-standalone.mjs",
+    "package:local": "npm run build && node scripts/package-local.mjs",
+    "check:public": "node scripts/check-public.mjs"
   },
   "dependencies": {
     "@noble/hashes": "^2.4.0",
@@ -36,6 +38,6 @@
     "tailwindcss": "^4.1.17",
     "typescript": "~5.9.3",
     "vite": "^6.4.1",
-    "vitest": "^3.2.4"
+    "vitest": "^4.1.12"
   }
 }

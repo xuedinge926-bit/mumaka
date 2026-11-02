@@ -86,8 +86,13 @@ import {
 } from "./lib/preferences";
 import { toScoreCardData } from "./lib/scoreCardData";
 import provenance from "./data/provenance.json";
+import { newDraft as newDualDraft, fromLegacy as dualFromLegacy, type Draft as DualDraft } from './model/v040/types';
+import { initialize as initializeDual, saveDraft as saveDualDraft } from './lib/v040Storage';
 
 const ResearchWorkspace = lazy(() => import('./components/ResearchWorkspace').then(module => ({ default: module.ResearchWorkspace })));
+const DualWorkspace = lazy(() => import('./components/DualWorkspace').then(module => ({ default: module.DualWorkspace })));
+const AnchorReference = lazy(() => import('./components/AnchorReference').then(module => ({ default: module.AnchorReference })));
+const DualGenreLibrary = lazy(() => import('./components/DualGenreLibrary').then(module => ({ default: module.DualGenreLibrary })));
 
 type Screen = "home" | "workbench" | "confirm" | "rating" | "card";
 const SOURCE_LABELS = {
@@ -177,6 +182,8 @@ function Modal({
 }
 
 export default function App() {
+  // The explicit archive entry retains the original tool on its original DB.
+  const legacyMode = new URLSearchParams(window.location.search).get('model') === 'v019';
   const [draft, setDraft] = useState<Album>(makeDraft);
   const [albums, setAlbums] = useState<Album[]>([]);
   const router = useAppRoute();
@@ -188,8 +195,8 @@ export default function App() {
         ? "home"
         : "workbench";
   const workbenchTab: WorkbenchTab =
-    route.view === "workspace" && route.tab !== "home" && route.tab !== "genres" && route.tab !== "research"
-      ? route.tab
+    route.view === "workspace" && ['library', 'ratings', 'cards', 'data', 'settings'].includes(route.tab)
+      ? route.tab as WorkbenchTab
       : "library";
   const [snapshot, storeSnapshot] = useState<Snapshot | null>(null);
   const [navOpen, setNavOpen] = useState(false);
@@ -579,17 +586,20 @@ export default function App() {
     });
   }
   async function manual() {
-    await startNew();
+    if (legacyMode) await startNew(); else await startDual();
+  }
+  async function startDual(seed: DualDraft = newDualDraft()) {
+    await action(async () => {
+      if (dirtyRef.current) await persist();
+      await initializeDual();
+      await saveDualDraft(seed);
+      router.navigate({ view: 'workspace', tab: 'studio', dual: { kind: 'draft', id: seed.id } });
+    });
   }
   async function quickScore() {
-    if (
-      lastEditor?.view === "editor" &&
-      lastEditor.kind === "album" &&
-      lastEditor.stage !== "card" &&
-      albums.some((a) => a.id === lastEditor.id)
-    )
-      router.navigate(lastEditor);
-    else await manual();
+    if (!legacyMode) { navigateWorkspace('studio'); return; }
+    if (lastEditor?.view === 'editor' && lastEditor.kind === 'album' && lastEditor.stage !== 'card' && albums.some(a => a.id === lastEditor.id)) router.navigate(lastEditor);
+    else await startNew();
   }
   async function openAlbum(
     album: Album,
@@ -705,15 +715,13 @@ export default function App() {
         }
       }
       if (latestRoute.current !== originRoute) return;
-      await saveAlbum(next);
-      replaceDraft(next);
-      setAlbums(await listAlbums());
-      setSnapshot(null);
-      setDirty(false);
-      setSaving("已保存");
-      resetView();
-      setCoverError(imageError);
-      setScreen("confirm");
+      if (legacyMode) {
+        await saveAlbum(next); replaceDraft(next); setAlbums(await listAlbums()); setSnapshot(null); setDirty(false); setSaving('已保存'); resetView(); setCoverError(imageError); setScreen('confirm'); return;
+      }
+      const dual = dualFromLegacy(next); delete dual.parent;
+      await initializeDual(); await saveDualDraft(dual);
+      if (imageError) setToast(imageError);
+      router.navigate({ view: 'workspace', tab: 'studio', dual: { kind: 'draft', id: dual.id } });
     });
   }
   async function uploadCover(file?: File) {
@@ -975,15 +983,13 @@ export default function App() {
     try {
       if (dirty) await persist();
       const next = importedAlbum(value, { ...INITIAL_UX, ...preferences });
-      await saveAlbum(next);
-      replaceDraft(next);
-      setAlbums(await listAlbums());
-      setSnapshot(null);
-      setDirty(false);
-      setSaving("已保存");
-      resetView();
+      if (legacyMode) {
+        await saveAlbum(next); replaceDraft(next); setAlbums(await listAlbums()); setSnapshot(null); setDirty(false); setSaving('已保存'); resetView(); setImportOpen(false); setScreen('confirm'); return;
+      }
+      const dual = dualFromLegacy(next); delete dual.parent;
+      await initializeDual(); await saveDualDraft(dual);
       setImportOpen(false);
-      setScreen("confirm");
+      router.navigate({ view: 'workspace', tab: 'studio', dual: { kind: 'draft', id: dual.id } });
     } catch (error) {
       throw new Error(errorText(error));
     } finally {
@@ -1020,6 +1026,7 @@ export default function App() {
       className={`nmc-app app-workspace ${navOpen ? "navigation-open" : ""}`}
     >
       <AppNavigation
+        legacyMode={legacyMode}
         open={navOpen}
         onClose={closeNavigation}
         route={route}
@@ -1113,6 +1120,13 @@ export default function App() {
           <main className="workspace-page" role="status">
             正在读取评分记录…
           </main>
+        ) : route.view === 'workspace' && route.tab === 'studio' ? (
+          <Suspense fallback={<main className="workspace-page" role="status">正在打开双体系评分工作台…</main>}>
+            <DualWorkspace record={route.dual} legacyAlbums={albums} onOpenLegacy={openAlbum}
+              onNavigate={dual => router.navigate({ view: 'workspace', tab: 'studio', ...(dual ? { dual } : {}) })} />
+          </Suspense>
+        ) : route.view === 'workspace' && route.tab === 'reference' ? (
+          <Suspense fallback={<main className="workspace-page">正在打开星级标尺…</main>}><AnchorReference /></Suspense>
         ) : route.view === "workspace" && route.tab === "research" ? (
           <Suspense fallback={<main className="workspace-page" role="status">正在打开V0.35研究工作区…</main>}>
             <ResearchWorkspace record={route.research} legacyAlbums={albums} legacySnapshots={history}
@@ -1120,12 +1134,13 @@ export default function App() {
               onOpenLegacy={openAlbum} />
           </Suspense>
         ) : route.view === "workspace" && route.tab === "genres" ? (
-          <GenreWorkspace
+          <>{!legacyMode && <Suspense fallback={<main className="workspace-page">正在读取565风格…</main>}><DualGenreLibrary onNew={(category, genreId) => { const d = newDualDraft(); d.category = category; d.modes[category].genreId = genreId; return startDual(d); }} /></Suspense>}
+          <details className="legacy-genre-archive" open={legacyMode}><summary>V0.19归档风格库（旧模型）</summary><GenreWorkspace
             album={albums.some((a) => a.id === draft.id) ? draft : null}
             canApply={!snapshot && draft.status !== "published" && !busy}
             onApply={applyLibraryGenre}
             onNew={(id) => startNew(id)}
-          />
+          /></details></>
         ) : screen === "home" ? (
           <main className="home-page">
             <div className="album-search">
@@ -1166,7 +1181,9 @@ export default function App() {
               </button>
             </div>
             <div className="search-helper">
+              {!legacyMode && <><button disabled={busy} onClick={() => { window.location.search = '?model=v019'; }}>V0.19 归档工具</button><span aria-hidden="true">·</span></>}
               <button disabled={busy} onClick={() => navigateWorkspace('research')}>V0.35 研究评分</button>
+              {!legacyMode && <><span aria-hidden="true">·</span><button onClick={() => navigateWorkspace('reference')}>星级标尺参考</button></>}
               <span aria-hidden="true">·</span>
               <button disabled={busy} onClick={() => setImportOpen(true)}>
                 通过链接添加
@@ -1299,6 +1316,7 @@ export default function App() {
             )}
           </main>
         ) : screen === "workbench" ? (
+          <>{!legacyMode && ['library', 'ratings', 'cards', 'data'].includes(workbenchTab) && <Suspense fallback={<p role="status">正在读取双体系记录…</p>}><DualWorkspace view={workbenchTab as 'library' | 'ratings' | 'cards' | 'data'} legacyAlbums={albums} onOpenLegacy={openAlbum} onNavigate={dual => router.navigate({ view: 'workspace', tab: 'studio', ...(dual ? { dual } : {}) })} /></Suspense>}
           <Workbench
             albums={albums}
             snapshots={history}
@@ -1314,7 +1332,7 @@ export default function App() {
             onImport={() => setImportOpen(true)}
             onBackup={backup}
             onRestore={() => backupInput.current?.click()}
-          />
+          /></>
         ) : (
           <main className={`flow-page ${screen === "card" ? "card-page" : ""}`}>
             <div className="flow-top">
