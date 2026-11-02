@@ -7,6 +7,12 @@ import { mkdir, readFile } from "node:fs/promises";
 let service: ChildProcess;
 let origin: string;
 let metadata: Buffer;
+async function navigateMenu(page: Page, name: string) {
+  const menu = page.getByRole("navigation", { name: "应用导航", exact: true });
+  if (!(await menu.isVisible())) await page.getByRole("button", { name: "展开导航菜单", exact: true }).click();
+  await menu.getByRole("button", { name, exact: true }).click();
+}
+
 const appleLink = "https://music.apple.com/us/album/fixture/123456789";
 const bandcampLink = "https://fixture.bandcamp.com/album/fixture";
 const snapshots = "docs/workspace-navigation/screenshots";
@@ -83,7 +89,7 @@ async function rate(page: Page) {
 }
 async function home(page: Page) {
   await page
-    .getByRole("button", { name: "MUMAKA / 木马卡，返回首页", exact: true })
+    .getByRole("button", { name: "木马卡 MUMAKA，返回首页", exact: true })
     .click();
 }
 async function fileImport(page: Page) {
@@ -264,10 +270,7 @@ test("三首多风格 EP、新旧混合来源、工作台管理、备份与偏�
   await rate(page);
   await home(page);
   await page.getByRole("button", { name: "专业工作台", exact: true }).click();
-  await page
-    .getByRole("navigation", { name: "应用导航" })
-    .getByRole("button", { name: "作品库", exact: true })
-    .click();
+  await navigateMenu(page, "作品库");
   await expect(page.locator(".library-row")).toHaveCount(1);
   await page.screenshot({ path: `${snapshots}/workbench.png`, fullPage: true });
   await page.getByLabel("搜索作品库").fill("no-match");
@@ -284,16 +287,10 @@ test("三首多风格 EP、新旧混合来源、工作台管理、备份与偏�
     .getByRole("button", { name: "删除", exact: true })
     .click();
   await expect(page.locator(".library-row")).toHaveCount(1);
-  await page
-    .getByRole("navigation", { name: "应用导航" })
-    .getByRole("button", { name: "评分记录", exact: true })
-    .click();
+  await navigateMenu(page, "评分记录");
   await expect(page.locator(".rating-record")).toHaveCount(1);
   await expect(page.locator(".rating-record")).toContainText("8.00");
-  await page
-    .getByRole("navigation", { name: "应用导航" })
-    .getByRole("button", { name: "数据管理", exact: true })
-    .click();
+  await navigateMenu(page, "数据与工具");
   const backupEvent = page.waitForEvent("download");
   await page.getByRole("button", { name: "导出全部备份", exact: true }).click();
   const data = JSON.parse(
@@ -314,10 +311,7 @@ test("三首多风格 EP、新旧混合来源、工作台管理、备份与偏�
   expect(await readFile((await (await csvEvent).path())!, "utf8")).toContain(
     "导入流程测试专辑（样本）",
   );
-  await page
-    .getByRole("navigation", { name: "应用导航" })
-    .getByRole("button", { name: "设置", exact: true })
-    .click();
+  await navigateMenu(page, "设置");
   await page.getByLabel("默认导出比例").selectOption("3:4");
   await home(page);
   await page.getByRole("button", { name: "快速评分", exact: true }).click();
@@ -351,10 +345,7 @@ test("手机导入确认与工作台在 390px 和 320px 宽度下可操作且不
   await genre(page);
   await home(page);
   await page.getByRole("button", { name: "专业工作台", exact: true }).click();
-  await page
-    .getByRole("navigation", { name: "应用导航" })
-    .getByRole("button", { name: "作品库", exact: true })
-    .click();
+  await navigateMenu(page, "作品库");
   await expect(page.locator(".library-row")).toHaveCount(1);
   await page.screenshot({
     path: `${snapshots}/mobile-workbench.png`,

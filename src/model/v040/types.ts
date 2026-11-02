@@ -73,6 +73,23 @@ export interface Family {
   >;
 }
 export interface Anchor {
+  workId?: string;
+  primaryArtistId?: string;
+  confidence?: string;
+  selectionRationale?: string;
+  coverSource?: string;
+  coverLicense?: string;
+  manualVersion?: string;
+  manualTitle?: string;
+  manualLocked?: boolean;
+  manualResolution?: string;
+  identityNote?: string;
+  referenceEditedAt?: string;
+  mainGenre?: string;
+  displayStandard?: string;
+  coverUrl?: string;
+  reviewedBy?: string;
+  reviewedAt?: string;
   id: string;
   region: "china" | "global";
   category: Category;
@@ -104,6 +121,8 @@ export interface Anchor {
   unassigned?: boolean;
 }
 export interface Catalog {
+  referenceVersion?: string;
+  referenceConflicts?: { id: string; reason: string; previous: Anchor }[];
   schemaVersion: 1;
   sourceVersion: string;
   weightVersion: string;

@@ -1,0 +1,2803 @@
+{
+  "version": "reference-2026-11-02-r1",
+  "run": "https://github.com/xuedinge926-bit/mumaka/actions/runs/41429124157",
+  "purpose": "仅供逐条核对发行身份的公开目录；不自动采用首图，平台错误如实保留",
+  "results": [
+    {
+      "id": "china-instrumental-Context-10",
+      "query": "https://itunes.apple.com/search?term=%E8%B0%AD%E7%9B%BE+Crouching+Tiger%2C+Hidden+Dragon&entity=album&country=hk&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "china-instrumental-Context-4",
+      "expected": {
+        "album": "Beautiful Energy",
+        "artist": "女子十二乐坊",
+        "year": "2003",
+        "edition": "2003年日本发行美丽的能量原专辑；不用演唱会录像或后续精选，文化传播不直接换算本维等级。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%A5%B3%E5%AD%90%E5%8D%81%E4%BA%8C%E4%B9%90%E5%9D%8A+Beautiful+Energy&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1789863395,
+          "collectionName": "女子十二樂坊魅力音樂會1",
+          "artistName": "女子十二樂坊",
+          "releaseDate": "2025-01-08T08:00:00Z",
+          "trackCount": 13,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%A5%B3%E5%AD%90%E5%8D%81%E4%BA%8C%E6%A8%82%E5%9D%8A%E9%AD%85%E5%8A%9B%E9%9F%B3%E6%A8%82%E6%9C%831/1789863395?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/81/03/bc/8103bc80-7d07-f07a-861c-f1f990250384/192508079630.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1789864156,
+          "collectionName": "女子十二樂坊魅力音樂會2",
+          "artistName": "女子十二樂坊",
+          "releaseDate": "2020-07-22T07:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%A5%B3%E5%AD%90%E5%8D%81%E4%BA%8C%E6%A8%82%E5%9D%8A%E9%AD%85%E5%8A%9B%E9%9F%B3%E6%A8%82%E6%9C%832/1789864156?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/0f/37/b80f376e-27fa-0290-2317-437eec506eb7/192508079647.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 715940097,
+          "collectionName": "Shanghai",
+          "artistName": "女子十二樂坊",
+          "releaseDate": "2007-01-01T08:00:00Z",
+          "trackCount": 14,
+          "collectionViewUrl": "https://music.apple.com/hk/album/shanghai/715940097?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/26/f2/2d/26f22da3-4da8-5f09-925a-091e7f2c65fd/00094637895757.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 961879563,
+          "collectionName": "同歡共樂賀新年",
+          "artistName": "羅賓, 女子十二樂坊 & 半打玫瑰",
+          "releaseDate": "2005-11-25T08:00:00Z",
+          "trackCount": 15,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%90%8C%E6%AD%A1%E5%85%B1%E6%A8%82%E8%B3%80%E6%96%B0%E5%B9%B4/961879563?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/8d/5f/02/8d5f02b7-f646-0384-b8e9-60916ddd7835/robin_tong_huan_gong_le.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 414718235,
+          "collectionName": "Studio Series: Intuition 4 - Music for the Dance Studio",
+          "artistName": "Royal Academy of Dance Enterprises Ltd",
+          "releaseDate": "2010-09-16T07:00:00Z",
+          "trackCount": 50,
+          "collectionViewUrl": "https://music.apple.com/hk/album/studio-series-intuition-4-music-for-the-dance-studio/414718235?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4e/25/d6/4e25d6cd-1e72-736b-4a62-11f0a744d89c/mzi.hbgikmot.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1440780926,
+          "collectionName": "Rachmaninov: Complete Works For Piano",
+          "artistName": "Vladimir Ashkenazy",
+          "releaseDate": "2014-01-01T08:00:00Z",
+          "trackCount": 203,
+          "collectionViewUrl": "https://music.apple.com/hk/album/rachmaninov-complete-works-for-piano/1440780926?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/38/7e/5a/387e5a93-fc1f-0199-8e7f-e025c9ce4476/14UMGIM02860.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 350167118,
+          "collectionName": "The Very Best of André Rieu",
+          "artistName": "André Rieu & 約翰 · 史特勞斯管弦樂團",
+          "releaseDate": "2009-09-01T07:00:00Z",
+          "trackCount": 38,
+          "collectionViewUrl": "https://music.apple.com/hk/album/the-very-best-of-andr%C3%A9-rieu/350167118?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/41/4c/f5/414cf5e5-fa18-6619-8b20-bdebb2827192/mzi.ejusgeaq.tif/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1308530655,
+          "collectionName": "Schubert: Piano Sonata in B-Flat Major, D. 960 - Liszt: Mephisto Waltz No. 1, S. 514",
+          "artistName": "艾夫根尼・紀新",
+          "releaseDate": "2004-04-05T07:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/hk/album/schubert-piano-sonata-in-b-flat-major-d-960-liszt-mephisto/1308530655?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/a5/08/30/a50830a6-a435-bc24-5aee-9bc2c84bb3fe/888880784087.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Context-5",
+      "expected": {
+        "album": "千年风雅",
+        "artist": "周子雷",
+        "year": "2008",
+        "edition": "采用演奏者本人确认2008年末发行的首张专辑；部分目录标2009，原盘仍需复核。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%91%A8%E5%AD%90%E9%9B%B7+%E5%8D%83%E5%B9%B4%E9%A3%8E%E9%9B%85&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Context-6",
+      "expected": {
+        "album": "空山寂寂",
+        "artist": "巫娜",
+        "year": "2019",
+        "edition": "采用2019年五大目录的LY-A008/9787883208433十曲CD；此为具体流通版年份，2010前后原版另待原盘考证。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%B7%AB%E5%A8%9C+%E7%A9%BA%E5%B1%B1%E5%AF%82%E5%AF%82&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1849297462,
+          "collectionName": "空山寂寂",
+          "artistName": "巫娜",
+          "releaseDate": "2010-03-20T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E7%A9%BA%E5%B1%B1%E5%AF%82%E5%AF%82/1849297462?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b2/1d/7b/b21d7b37-7e35-899c-61e6-70d611af7527/3617395597465.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Context-7",
+      "expected": {
+        "album": "森林狂想曲",
+        "artist": "吴金黛",
+        "year": "1999",
+        "edition": "1999年风潮原版主体及自然声音图鉴2CD版本；不把2013套装当首版。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%90%B4%E9%87%91%E9%BB%9B+%E6%A3%AE%E6%9E%97%E7%8B%82%E6%83%B3%E6%9B%B2&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 598522113,
+          "collectionName": "森林狂想曲",
+          "artistName": "吳金黛",
+          "releaseDate": "1999-09-27T07:00:00Z",
+          "trackCount": 8,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%A3%AE%E6%9E%97%E7%8B%82%E6%83%B3%E6%9B%B2/598522113?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/2a/3e/f52a3e3c-ec92-4090-3213-b5a9afa1ff73/CB-19.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1590484476,
+          "collectionName": "森林狂想曲2021 (feat. Ń7ä) - Single",
+          "artistName": "吳金黛",
+          "releaseDate": "2021-10-22T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%A3%AE%E6%9E%97%E7%8B%82%E6%83%B3%E6%9B%B22021-feat-%C5%847%C3%A4-single/1590484476?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/92/7c/53/927c5342-d3d9-d10d-05ed-bcc13d6b753a/2021_Cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 628375997,
+          "collectionName": "森林狂想曲:台灣森林自然聲音圖鑑",
+          "artistName": "吳金黛, 徐仁修 & 楊雅棠",
+          "releaseDate": "1999-08-26T07:00:00Z",
+          "trackCount": 33,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%A3%AE%E6%9E%97%E7%8B%82%E6%83%B3%E6%9B%B2-%E5%8F%B0%E7%81%A3%E6%A3%AE%E6%9E%97%E8%87%AA%E7%84%B6%E8%81%B2%E9%9F%B3%E5%9C%96%E9%91%91/628375997?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/87/ce/0d/87ce0deb-06ec-b2d0-3ce1-11f802543065/TCD-5032.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Context-8",
+      "expected": {
+        "album": "Concertos for String Instruments",
+        "artist": "陈怡",
+        "year": "2018",
+        "edition": "2018年BMOP/sound，Boston Modern Orchestra Project、Gil Rose；不误记为Naxos或2016。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%99%88%E6%80%A1+Concertos+for+String+Instruments&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1420056844,
+          "collectionName": "Chen Yi: Concertos for String Instruments",
+          "artistName": "波士頓摩登管弦樂團 & 吉爾・羅斯",
+          "releaseDate": "2018-07-31T07:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/hk/album/chen-yi-concertos-for-string-instruments/1420056844?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/f4/58/7b/f4587b7b-8577-d626-c18a-fb3af9188728/794465968127.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 359497014,
+          "collectionName": "Petri, Michala: 50th Birthday Concert With Kremerata Baltica - Albinoni, T. - Chen, Yi - Mozart, W.A. - Rota, N. - Vassiliev, A. - Vivaldi, A.",
+          "artistName": "Michala Petri, 波羅的海弦樂團 & Daniil Grishin",
+          "releaseDate": "2009-04-28T07:00:00Z",
+          "trackCount": 16,
+          "collectionViewUrl": "https://music.apple.com/hk/album/petri-michala-50th-birthday-concert-with-kremerata/359497014?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/2b/3c/0c/mzi.ljwqhasf.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 561439617,
+          "collectionName": "Monuments & Motifs-Music By Frank Ticheli, Michael Markowski, Chen Yi, Greg Simon, and Adam Gorb",
+          "artistName": "CSUF Wind Symphony, Mitchell J. Fennell & Hakan Rosengren",
+          "releaseDate": "2012-06-21T07:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/monuments-motifs-music-by-frank-ticheli-michael-markowski/561439617?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/c6/27/84/c6278422-7f74-63e0-41eb-014ce2673db8/822567093222.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 394515281,
+          "collectionName": "Chinese Recorder Concertos",
+          "artistName": "Copenhagen Philharmonic Orchestra, Michala Petri & 水藍",
+          "releaseDate": "2010-10-01T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/chinese-recorder-concertos/394515281?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/60/6e/48/mzi.xrqzzjjd.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 552522411,
+          "collectionName": "Dragon Rhyme",
+          "artistName": "Hartt School Wind Ensemble, Glen Adsit, Carrie Koffman & Anton Miller",
+          "releaseDate": "2012-09-01T07:00:00Z",
+          "trackCount": 6,
+          "collectionViewUrl": "https://music.apple.com/hk/album/dragon-rhyme/552522411?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/1d/7f/f9/1d7ff911-9e2b-8d2c-26bc-2081d5ddfe43/747313288977.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 204136905,
+          "collectionName": "The American Cello",
+          "artistName": "喬安 · 法列塔, Paul Tobias & Virginia Symphony Orchestra",
+          "releaseDate": "2004-04-01T08:00:00Z",
+          "trackCount": 7,
+          "collectionViewUrl": "https://music.apple.com/hk/album/the-american-cello/204136905?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/76/a8/5b/76a85b51-c8f6-24bc-bdd1-4e6068949768/34061064824.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1784614762,
+          "collectionName": "咏竹",
+          "artistName": "鄒翔",
+          "releaseDate": "2022-08-12T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%92%8F%E7%AB%B9/1784614762?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d6/c0/f2/d6c0f286-5a76-99a5-5f82-559850002171/3617050010971.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Context-9",
+      "query": "https://itunes.apple.com/search?term=%E8%B5%B5%E5%AD%A3%E5%B9%B3+%E9%9C%B8%E7%8E%8B%E5%88%AB%E5%A7%AC+%E7%94%B5%E5%BD%B1%E5%8E%9F%E5%A3%B0&entity=album&country=hk&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "china-instrumental-Material-10",
+      "expected": {
+        "album": "一意孤行",
+        "artist": "刘星",
+        "year": "1993",
+        "edition": "采用1993年雨果发行目录口径；1991是创作线索，另有1992目录与2001再版，须用原盘最终复核。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%88%98%E6%98%9F+%E4%B8%80%E6%84%8F%E5%AD%A4%E8%A1%8C&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1787874940,
+          "collectionName": "一意孤行 My Way",
+          "artistName": "刘星",
+          "releaseDate": "2024-12-27T08:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E4%B8%80%E6%84%8F%E5%AD%A4%E8%A1%8C-my-way/1787874940?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/dc/72/50/dc7250e4-2eb7-fdc7-79a2-bcbffdf4e0b5/artwork.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1060480453,
+          "collectionName": "我們的世界",
+          "artistName": "麥田守望者",
+          "releaseDate": "2006-06-01T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%88%91%E5%80%91%E7%9A%84%E4%B8%96%E7%95%8C/1060480453?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/23/93/a7/2393a723-6a93-3fd0-7c84-603e5ff1b968/womendeshijie.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1776223340,
+          "collectionName": "一意孤行 - Single",
+          "artistName": "趙嘉遇",
+          "releaseDate": "2021-08-05T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E4%B8%80%E6%84%8F%E5%AD%A4%E8%A1%8C-single/1776223340?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e6/c0/5e/e6c05efd-26a9-a980-b171-3151912d270e/0192508162332.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Material-4",
+      "expected": {
+        "album": "曾经的纯音乐",
+        "artist": "徐梦圆",
+        "year": "2021",
+        "edition": "采用麦爱2021年授权数字14曲版；2015年网络发布记录另列，不把再发行年当创作年。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%BE%90%E6%A2%A6%E5%9C%86+%E6%9B%BE%E7%BB%8F%E7%9A%84%E7%BA%AF%E9%9F%B3%E4%B9%90&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1561995026,
+          "collectionName": "曾经的纯音乐",
+          "artistName": "徐夢圓",
+          "releaseDate": "2021-04-03T07:00:00Z",
+          "trackCount": 14,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%9B%BE%E7%BB%8F%E7%9A%84%E7%BA%AF%E9%9F%B3%E4%B9%90/1561995026?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/01/24/58/012458d5-6650-fe0e-d928-c63e0a8247e1/196006411213.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Material-5",
+      "expected": {
+        "album": "乱红",
+        "artist": "陈悦",
+        "year": "2005",
+        "edition": "2005年普罗之声原版10曲；陈悦为箫、马克为钢琴，不误记为张维良的同名风格。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%99%88%E6%82%A6+%E4%B9%B1%E7%BA%A2&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1232231571,
+          "collectionName": "乱红",
+          "artistName": "陳悅",
+          "releaseDate": "2005-08-03T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E4%B9%B1%E7%BA%A2/1232231571?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/ca/74/92ca74de-aba1-1eca-d624-f8e6e3959b24/191773040642.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Material-6",
+      "expected": {
+        "album": "白屋之恋",
+        "artist": "张中立",
+        "year": "2003",
+        "edition": "2003年金革11首创作器乐专辑；排笛演奏与制作以张中立为主。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%BC%A0%E4%B8%AD%E7%AB%8B+%E7%99%BD%E5%B1%8B%E4%B9%8B%E6%81%8B&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Material-7",
+      "expected": {
+        "album": "琵琶相",
+        "artist": "林海",
+        "year": "2003",
+        "edition": "2003年原录音室专辑；作曲/制作林海，琵琶独奏蒋彦，不把所有演奏署给林海。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%9E%97%E6%B5%B7+%E7%90%B5%E7%90%B6%E7%9B%B8&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 698628164,
+          "collectionName": "琵琶相",
+          "artistName": "林海",
+          "releaseDate": "2003-06-25T07:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E7%90%B5%E7%90%B6%E7%9B%B8/698628164?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c4/8d/a3/c48da321-dec9-8f9d-4ca5-29ff48ffbc65/TCD-5263.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Material-8",
+      "expected": {
+        "album": "Mù Chè Shān Chū",
+        "artist": "Howie Lee",
+        "year": "2015",
+        "edition": "2015年Alpha Pup原版13轨；按艺人正式标题保留声调符号。"
+      },
+      "query": "https://itunes.apple.com/search?term=Howie+Lee+M%C3%B9+Ch%C3%A8+Sh%C4%81n+Ch%C5%AB&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1692819588,
+          "collectionName": "Mù Chè Shān Chū",
+          "artistName": "李化迪",
+          "releaseDate": "2015-12-04T08:00:00Z",
+          "trackCount": 13,
+          "collectionViewUrl": "https://music.apple.com/hk/album/m%C3%B9-ch%C3%A8-sh%C4%81n-ch%C5%AB/1692819588?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/29/e3/74/29e37410-e41d-5f36-56e5-dc89459fa1c6/669158529698_Cover.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Material-9",
+      "expected": {
+        "album": "角 / Angle",
+        "artist": "大象体操",
+        "year": "2014",
+        "edition": "采用2014年首张全长专辑主体；2018年Topshelf再版另记，不误写为2013年EP。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%A4%A7%E8%B1%A1%E4%BD%93%E6%93%8D+%E8%A7%92+%2F+Angle&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Performance-10",
+      "expected": {
+        "album": "古琴艺术 / Chine: L’art du Qin",
+        "artist": "李祥霆",
+        "year": "1990",
+        "edition": "1990年Ocora法国唱片口径；出版身份另由中央音乐学院艺人履历交叉支持。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%9D%8E%E7%A5%A5%E9%9C%86+%E5%8F%A4%E7%90%B4%E8%89%BA%E6%9C%AF+%2F+Chine%3A+L%E2%80%99art+du+Qin&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Performance-4",
+      "expected": {
+        "album": "Piano Book",
+        "artist": "郎朗",
+        "year": "2019",
+        "edition": "2019年DG标准专辑29首主体；不混豪华版加曲、教学谱或现场视频。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%83%8E%E6%9C%97+Piano+Book&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1448483849,
+          "collectionName": "Piano Book (Deluxe Edition)",
+          "artistName": "郎朗",
+          "releaseDate": "2019-03-29T07:00:00Z",
+          "trackCount": 41,
+          "collectionViewUrl": "https://music.apple.com/hk/album/piano-book-deluxe-edition/1448483849?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/20/f3/18/20f318ef-89d6-73a7-7c66-d0cd8b4d003c/18UMGIM83169.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1481992380,
+          "collectionName": "Piano Book (Encore Edition)",
+          "artistName": "郎朗",
+          "releaseDate": "2019-03-29T07:00:00Z",
+          "trackCount": 47,
+          "collectionViewUrl": "https://music.apple.com/hk/album/piano-book-encore-edition/1481992380?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e9/36/e6/e936e6db-2f0d-6a89-e12e-f7b116fdbb70/19UMGIM71917.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1834399557,
+          "collectionName": "Piano Book 2",
+          "artistName": "郎朗",
+          "releaseDate": "2025-10-17T07:00:00Z",
+          "trackCount": 33,
+          "collectionViewUrl": "https://music.apple.com/hk/album/piano-book-2/1834399557?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/0b/05/7f0b0590-3e21-b19c-463f-1d51e327efca/25UM1IM01348.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 6808618720,
+          "collectionName": "Piano Book 2 – Modern Encores - EP",
+          "artistName": "郎朗",
+          "releaseDate": "2026-10-09T07:00:00Z",
+          "trackCount": 5,
+          "collectionViewUrl": "https://music.apple.com/hk/album/piano-book-2-modern-encores-ep/6808618720?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/0b/5d/6c0b5d50-e965-f029-b43d-e7bcfa8483c4/26UMGIM98666.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1884701384,
+          "collectionName": "Piano Book 2: Classical Encores - EP",
+          "artistName": "郎朗",
+          "releaseDate": "2026-04-10T07:00:00Z",
+          "trackCount": 6,
+          "collectionViewUrl": "https://music.apple.com/hk/album/piano-book-2-classical-encores-ep/1884701384?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/70/75/01/7075013d-1a8e-eed6-0231-268ebee23219/26UMGIM25874.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1629015997,
+          "collectionName": "The Disney Book (Deluxe Edition)",
+          "artistName": "郎朗",
+          "releaseDate": "2022-09-16T07:00:00Z",
+          "trackCount": 29,
+          "collectionViewUrl": "https://music.apple.com/hk/album/the-disney-book-deluxe-edition/1629015997?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/da/11/7a/da117a06-a56c-f699-47d8-5663b2fbbd15/22UMGIM42480.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1723782879,
+          "collectionName": "Classical Sessions: Lang Lang",
+          "artistName": "郎朗",
+          "releaseDate": "2024-01-19T08:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/hk/album/classical-sessions-lang-lang/1723782879?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ed/01/76/ed017670-5fe6-f53a-1341-82475e412c66/23UM1IM67574.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 447288052,
+          "collectionName": "Liszt - My Piano Hero (Deluxe Edition)",
+          "artistName": "郎朗",
+          "releaseDate": "2011-07-22T07:00:00Z",
+          "trackCount": 15,
+          "collectionViewUrl": "https://music.apple.com/hk/album/liszt-my-piano-hero-deluxe-edition/447288052?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/b0/00/4f/mzi.qkooolpg.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Performance-5",
+      "expected": {
+        "album": "Emperor / Fantasy",
+        "artist": "李云迪",
+        "year": "2014",
+        "edition": "2014年DG/Mercury Classics 4810710，贝多芬第五协奏曲与舒曼幻想曲；Daniel Harding、柏林爱乐。纠正误记Warner版。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%9D%8E%E4%BA%91%E8%BF%AA+Emperor+%2F+Fantasy&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1452268191,
+          "collectionName": "Beethoven: Emperor Concerto - Schumann: Fantasie in C Major",
+          "artistName": "李雲迪, Berlin Philharmonic & 丹尼爾・哈汀",
+          "releaseDate": "2014-01-01T08:00:00Z",
+          "trackCount": 8,
+          "collectionViewUrl": "https://music.apple.com/hk/album/beethoven-emperor-concerto-schumann-fantasie-in-c-major/1452268191?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cd/78/d8/cd78d8ad-6d8a-07dd-5b61-542005245113/14UMGIM04519.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Performance-6",
+      "expected": {
+        "album": "夜的钢琴曲",
+        "artist": "石进",
+        "year": "2010",
+        "edition": "采用2010年首张实体夜的钢琴曲原版主体；后续合辑、单曲与重录版另列。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E7%9F%B3%E8%BF%9B+%E5%A4%9C%E7%9A%84%E9%92%A2%E7%90%B4%E6%9B%B2&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 339006385,
+          "collectionName": "The 50 Greatest Pieces of Classical Music",
+          "artistName": "London Philharmonic Orchestra & David Parry",
+          "releaseDate": "2009-12-01T08:00:00Z",
+          "trackCount": 50,
+          "collectionViewUrl": "https://music.apple.com/hk/album/the-50-greatest-pieces-of-classical-music/339006385?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8d/7f/fd/8d7ffd6d-1dca-7012-1859-0241a2a86033/7340027075005.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 941007198,
+          "collectionName": "The Greatest Classical Piano Masterpieces (The 22 Most Essential Pieces of Classical Music)",
+          "artistName": "Costantino Catena",
+          "releaseDate": "2014-10-13T07:00:00Z",
+          "trackCount": 23,
+          "collectionViewUrl": "https://music.apple.com/hk/album/the-greatest-classical-piano-masterpieces-the-22/941007198?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/92/83/56/928356a4-d97a-9d3f-af4d-4e5f03710276/dj.shnkbwir.png/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1817475585,
+          "collectionName": "Piano Exam Pieces 2025 & 2026, ABRSM Grade 5",
+          "artistName": "ABRSM",
+          "releaseDate": "2024-06-06T07:00:00Z",
+          "trackCount": 49,
+          "collectionViewUrl": "https://music.apple.com/hk/album/piano-exam-pieces-2025-2026-abrsm-grade-5/1817475585?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/28/80/d1/2880d19c-9935-0aa1-0f09-6b7db02e7c6b/5060296512552.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1440750890,
+          "collectionName": "Beethoven: Complete Piano Sonatas & Concertos",
+          "artistName": "Alfred Brendel",
+          "releaseDate": "2010-11-23T08:00:00Z",
+          "trackCount": 121,
+          "collectionViewUrl": "https://music.apple.com/hk/album/beethoven-complete-piano-sonatas-concertos/1440750890?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/12/9f/04129f83-81ff-d031-2355-1f9134ab2d46/10UMGIM26619.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 555161874,
+          "collectionName": "Chopin: Sonata No. 2, Concerto No. 2",
+          "artistName": "Khatia Buniatishvili",
+          "releaseDate": "2012-09-14T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/chopin-sonata-no-2-concerto-no-2/555161874?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/e4/7d/81/e47d81de-3034-f321-83b9-9dee1da89504/886443392526.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 936874680,
+          "collectionName": "Mozart for Bedtime - Toddler Songs and Bedtime Songs to Help Your Baby Sleep",
+          "artistName": "Mattew Matters",
+          "releaseDate": "2014-04-03T07:00:00Z",
+          "trackCount": 32,
+          "collectionViewUrl": "https://music.apple.com/hk/album/mozart-for-bedtime-toddler-songs-and-bedtime-songs-to/936874680?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/98/ba/b1/98bab15d-fe8c-5294-0268-3f1070b73b71/mozart_for_bedtime_copia.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 494863852,
+          "collectionName": "Mozart",
+          "artistName": "群星",
+          "releaseDate": "2012-01-17T08:00:00Z",
+          "trackCount": 20,
+          "collectionViewUrl": "https://music.apple.com/hk/album/mozart/494863852?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e3/70/9a/e3709a08-345f-f1d3-71d6-24286d24c7cf/7340070442397.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1452371861,
+          "collectionName": "Mozart: The Piano Sonatas",
+          "artistName": "内田光子",
+          "releaseDate": "2001-01-01T08:00:00Z",
+          "trackCount": 55,
+          "collectionViewUrl": "https://music.apple.com/hk/album/mozart-the-piano-sonatas/1452371861?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/3a/30/cb/3a30cb18-446e-a6a4-4356-7e911bd361cb/06UMGIM30768.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Performance-7",
+      "expected": {
+        "album": "Connection",
+        "artist": "Fayzz",
+        "year": "2021",
+        "edition": "2021年首张全长11轨；局部对话采样与和声不当作主体歌词。"
+      },
+      "query": "https://itunes.apple.com/search?term=Fayzz+Connection&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1443088679,
+          "collectionName": "Connection",
+          "artistName": "Térez Montcalm",
+          "releaseDate": "2009-01-01T08:00:00Z",
+          "trackCount": 16,
+          "collectionViewUrl": "https://music.apple.com/hk/album/connection/1443088679?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2d/a7/4b/2da74bd9-c3a7-e9b3-2466-b25df00a899a/00600753215395.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 302568694,
+          "collectionName": "Connection",
+          "artistName": "Térez Montcalm",
+          "releaseDate": "2009-02-10T08:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/connection/302568694?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ac/84/d5/ac84d540-fa3d-3439-4c74-01366b3168b7/mzi.uquuxuzg.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1585993384,
+          "collectionName": "CONNECTION (feat. Alberto Gurrisi, Marco Valeri)",
+          "artistName": "Rosario Giuliani & Fabrizio Bosso",
+          "releaseDate": "2021-10-15T07:00:00Z",
+          "trackCount": 8,
+          "collectionViewUrl": "https://music.apple.com/hk/album/connection-feat-alberto-gurrisi-marco-valeri/1585993384?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c9/16/4d/c9164d67-5efb-2135-5440-295c9b7953b0/190296439995.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1652377084,
+          "collectionName": "Connection",
+          "artistName": "Aaron Aranita & Eastbound",
+          "releaseDate": "2022-01-01T08:00:00Z",
+          "trackCount": 18,
+          "collectionViewUrl": "https://music.apple.com/hk/album/connection/1652377084?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3e/fb/39/3efb391e-527a-8935-3748-e06df16073c9/195269139872.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 960095261,
+          "collectionName": "Connection",
+          "artistName": "Federico Sportelli Sciarrone Quartet",
+          "releaseDate": "2015-01-01T08:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/hk/album/connection/960095261?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/cc/b3/7d/ccb37d61-bda8-6ed6-c5dc-c9eba7e67875/cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1686516117,
+          "collectionName": "Soul Connection",
+          "artistName": "Brian Simpson",
+          "releaseDate": "2023-06-16T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/soul-connection/1686516117?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cb/06/c3/cb06c3d4-376b-a0ce-ceb4-b989b4581bdc/016351550620_Cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 480634209,
+          "collectionName": "Cuban Disco Connection",
+          "artistName": "Cuban Jazz Combo",
+          "releaseDate": "2011-11-23T08:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/cuban-disco-connection/480634209?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/8f/8f/dc/mzi.cjgyeoet.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1524244194,
+          "collectionName": "City Connection",
+          "artistName": "Terumasa Hino",
+          "releaseDate": "1979-07-01T00:00:00Z",
+          "trackCount": 7,
+          "collectionViewUrl": "https://music.apple.com/hk/album/city-connection/1524244194?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/e0/94/05/e09405ae-cd63-081c-e518-6736a7c07078/VICJ-77014.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Performance-8",
+      "expected": {
+        "album": "The Butterfly Lovers",
+        "artist": "吕思清",
+        "year": "1997",
+        "edition": "采用Marco Polo 1997年梁祝及六首小品录音；吕思清多次录制梁祝，须以此曲序复核。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%90%95%E6%80%9D%E6%B8%85+The+Butterfly+Lovers&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1206144904,
+          "collectionName": "Chen & He: The Butterfly Lovers Violin Concerto",
+          "artistName": "Yao-Ling Wang, 中國交響樂團 & 呂思清",
+          "releaseDate": "1996-07-22T07:00:00Z",
+          "trackCount": 7,
+          "collectionViewUrl": "https://music.apple.com/hk/album/chen-he-the-butterfly-lovers-violin-concerto/1206144904?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/14/4f/c9/144fc9ed-9bf4-f48e-07e2-2b0d796ab272/636943588826.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1894383787,
+          "collectionName": "梁祝:化蝶 (The Butterfly Lovers) - Single",
+          "artistName": "小白兔北上",
+          "releaseDate": "2026-04-16T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%A2%81%E7%A5%9D-%E5%8C%96%E8%9D%B6-the-butterfly-lovers-single/1894383787?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/de/c2/4e/dec24ed7-82f5-e6db-4932-8740e508d28f/artwork.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1684637790,
+          "collectionName": "中国经典戏曲-梁祝",
+          "artistName": "張火丁 & 宋小川",
+          "releaseDate": "2022-01-14T08:00:00Z",
+          "trackCount": 17,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E4%B8%AD%E5%9B%BD%E7%BB%8F%E5%85%B8%E6%88%8F%E6%9B%B2-%E6%A2%81%E7%A5%9D/1684637790?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0e/b2/b6/0eb2b6a4-5d8c-5e99-d7c8-c13ae9c5d503/lz.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1889781108,
+          "collectionName": "小提琴协奏曲《梁祝》《红楼梦》",
+          "artistName": "黃濱, 張藝 & 上海愛樂樂團",
+          "releaseDate": "2026-04-03T07:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%B0%8F%E6%8F%90%E7%90%B4%E5%8D%8F%E5%A5%8F%E6%9B%B2-%E6%A2%81%E7%A5%9D-%E7%BA%A2%E6%A5%BC%E6%A2%A6/1889781108?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b3/da/dd/b3daddb4-d90d-f2ba-b0d4-10829f9045a2/4896010308962.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1850407888,
+          "collectionName": "Liu Xiao's Violin Recital Collection: From the Butterfly Lovers to Zigeunerweisen",
+          "artistName": "劉霄 & 宋瀅軒",
+          "releaseDate": "2023-02-07T08:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/liu-xiaos-violin-recital-collection-from-the/1850407888?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7d/af/71/7daf71f7-f58d-d423-0896-02c623b84309/4711508146317.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Performance-9",
+      "expected": {
+        "album": "Fantasia",
+        "artist": "王羽佳",
+        "year": "2012",
+        "edition": "2012年DG独奏小品专辑；固定录音室版本，不采用网络演奏剪辑。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E7%8E%8B%E7%BE%BD%E4%BD%B3+Fantasia&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1452228024,
+          "collectionName": "Fantasia",
+          "artistName": "王羽佳",
+          "releaseDate": "2012-03-02T08:00:00Z",
+          "trackCount": 20,
+          "collectionViewUrl": "https://music.apple.com/hk/album/fantasia/1452228024?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4b/14/ff/4b14ff91-984c-dd08-251e-894058ddc0e9/12UMGIM08841.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1687944739,
+          "collectionName": "Yuja Wang - The Verbier Festival Debut Recital 2008 (Live)",
+          "artistName": "王羽佳",
+          "releaseDate": "2023-06-16T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/yuja-wang-the-verbier-festival-debut-recital-2008-live/1687944739?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/f1/46/05f146d0-a83a-8189-dd9f-efb4f92a4f60/23UMGIM39317.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1452620167,
+          "collectionName": "Sonatas & Etudes",
+          "artistName": "王羽佳",
+          "releaseDate": "2009-01-01T08:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/sonatas-etudes/1452620167?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0a/50/86/0a5086ca-c735-39ff-68e1-8502980140c7/00028947781400.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1452350618,
+          "collectionName": "Sonatas & Etudes",
+          "artistName": "王羽佳",
+          "releaseDate": "2009-01-01T08:00:00Z",
+          "trackCount": 13,
+          "collectionViewUrl": "https://music.apple.com/hk/album/sonatas-etudes/1452350618?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b5/44/e9/b544e99c-9bfe-1544-90d6-34efc5db4bb2/00028947782643.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Production-10",
+      "expected": {
+        "album": "八匹马 / Eight Horses",
+        "artist": "惘闻",
+        "year": "2014",
+        "edition": "2014年完整专辑，按艺人/厂牌正式曲序；不以母带再版或演唱会替代。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%83%98%E9%97%BB+%E5%85%AB%E5%8C%B9%E9%A9%AC+%2F+Eight+Horses&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1597876345,
+          "collectionName": "八匹馬",
+          "artistName": "惘聞",
+          "releaseDate": "2015-02-27T08:00:00Z",
+          "trackCount": 8,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%85%AB%E5%8C%B9%E9%A6%AC/1597876345?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b4/01/e4/b401e400-669b-265e-9bb1-e1173be8c973/193017035780.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Production-4",
+      "expected": {
+        "album": "彩虹山",
+        "artist": "文雀",
+        "year": "2012",
+        "edition": "2012年1724原版；纠正旧表2018年，不将后续数字上架时间混入。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%96%87%E9%9B%80+%E5%BD%A9%E8%99%B9%E5%B1%B1&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Production-5",
+      "expected": {
+        "album": "Post Haze",
+        "artist": "B6",
+        "year": "2009",
+        "edition": "采用2009年Substream欧洲11曲数字版；2008年摩登天空10曲CD为首版，分开记录。"
+      },
+      "query": "https://itunes.apple.com/search?term=B6+Post+Haze&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 330491873,
+          "collectionName": "Post Haze",
+          "artistName": "B6",
+          "releaseDate": "2009-11-01T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/post-haze/330491873?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Features6/v4/2c/23/be/2c23bec1-6347-0e44-2bd3-1b38c3c81d55/dj.wrkchfxs.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 157485058,
+          "collectionName": "Savage Garden",
+          "artistName": "Savage Garden",
+          "releaseDate": "1997-03-04T08:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/savage-garden/157485058?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/1c/c1/5c1cc11b-c477-0fc7-e9f0-740264cb0d01/mzi.gfeicsof.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1669629098,
+          "collectionName": "LOVE ALL COVER ALL",
+          "artistName": "藤井風",
+          "releaseDate": "2022-03-23T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/love-all-cover-all/1669629098?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/91/00/6f/91006fac-f52e-725d-2be8-4294fa42e388/23UMGIM09335.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1746833068,
+          "collectionName": "Purple Rain",
+          "artistName": "Prince & The Revolution",
+          "releaseDate": "1984-06-25T07:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/hk/album/purple-rain/1746833068?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/00/17/f2/0017f24f-e580-b77a-71a8-1bc7b75881bf/603497822065.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1442975851,
+          "collectionName": "Kidz Bop 21",
+          "artistName": "KIDZ BOP Kids",
+          "releaseDate": "2012-01-17T08:00:00Z",
+          "trackCount": 19,
+          "collectionViewUrl": "https://music.apple.com/hk/album/kidz-bop-21/1442975851?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/12/37/ec/1237ec80-b887-704c-5c5e-7e5dfe0dcc6f/00793018927239.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 862709999,
+          "collectionName": "Motivando a la Yal",
+          "artistName": "Zion & Lennox",
+          "releaseDate": "2004-05-04T07:00:00Z",
+          "trackCount": 18,
+          "collectionViewUrl": "https://music.apple.com/hk/album/motivando-a-la-yal/862709999?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/fd/42/82/fd428292-f6f2-d05b-2dc8-314fc6e10c89/zion_y_lennox-motivando_a_la_yal-interior_frontal-1397089432.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1585315163,
+          "collectionName": "Pass the Jar (Live from the Fabulous Fox Theatre in Atlanta)",
+          "artistName": "Zac Brown Band",
+          "releaseDate": "2010-05-04T07:00:00Z",
+          "trackCount": 24,
+          "collectionViewUrl": "https://music.apple.com/hk/album/pass-the-jar-live-from-the-fabulous-fox-theatre-in-atlanta/1585315163?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3b/99/63/3b996349-62f3-6942-b2bd-918ec8d5d485/075679977281.png/100x100bb.jpg"
+        },
+        {
+          "collectionId": 802231063,
+          "collectionName": "Louder Than Bombs",
+          "artistName": "The Smiths",
+          "releaseDate": "1987-03-30T08:00:00Z",
+          "trackCount": 24,
+          "collectionViewUrl": "https://music.apple.com/hk/album/louder-than-bombs/802231063?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/02/3a/62/023a629e-1541-c493-0b45-536cbe9b59dd/825646642847.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Production-6",
+      "expected": {
+        "album": "天幻箫音",
+        "artist": "张维良",
+        "year": "1996",
+        "edition": "1996年雨果原CD；1998是后续听者接触或其他唱片年份，不能替代发行年。器乐与非语义声乐、朗读的占比仍须检查。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%BC%A0%E7%BB%B4%E8%89%AF+%E5%A4%A9%E5%B9%BB%E7%AE%AB%E9%9F%B3&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Production-7",
+      "expected": {
+        "album": "时间浸渍 / Bioerosion",
+        "artist": "林强 & Luca Bonaccorsi",
+        "year": "2024",
+        "edition": "2024年开放文化基金会合作发行的完整电子专辑，按官方开放发行版本。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%9E%97%E5%BC%BA+%26+Luca+Bonaccorsi+%E6%97%B6%E9%97%B4%E6%B5%B8%E6%B8%8D+%2F+Bioerosion&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Production-8",
+      "expected": {
+        "album": "Sound of China",
+        "artist": "赵聪",
+        "year": "2008",
+        "edition": "2008年环球发行专辑主体；赵聪为琵琶主艺人，录音制作团队不混为其个人演奏贡献。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%B5%B5%E8%81%AA+Sound+of+China&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 527657510,
+          "collectionName": "Sound of China",
+          "artistName": "趙聰",
+          "releaseDate": "2012-05-04T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/sound-of-china/527657510?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/64/fe/67/64fe67ca-7b10-1381-81ff-2f52e924fc7c/886788964075.tif/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1486136136,
+          "collectionName": "想見你想見你想見你 (電視劇《想見你》片尾曲) - Single",
+          "artistName": "八三夭",
+          "releaseDate": "2019-11-11T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%83%B3%E8%A6%8B%E4%BD%A0%E6%83%B3%E8%A6%8B%E4%BD%A0%E6%83%B3%E8%A6%8B%E4%BD%A0-%E9%9B%BB%E8%A6%96%E5%8A%87-%E6%83%B3%E8%A6%8B%E4%BD%A0-%E7%89%87%E5%B0%BE%E6%9B%B2-single/1486136136?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c9/95/65/c9956583-a1f8-f743-e890-259f78eef2c6/4710149675538.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1596938776,
+          "collectionName": "孤勇者 (《英雄聯盟:雙城之戰》動畫劇集中文主題曲) - Single",
+          "artistName": "陳奕迅",
+          "releaseDate": "2021-12-08T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%AD%A4%E5%8B%87%E8%80%85-%E8%8B%B1%E9%9B%84%E8%81%AF%E7%9B%9F-%E9%9B%99%E5%9F%8E%E4%B9%8B%E6%88%B0-%E5%8B%95%E7%95%AB%E5%8A%87%E9%9B%86%E4%B8%AD%E6%96%87%E4%B8%BB%E9%A1%8C%E6%9B%B2-single/1596938776?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/fd/80/2ffd80da-797f-2a9f-f7c1-9c7f34c802f0/21UM1IM38495.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 892745229,
+          "collectionName": "我的快樂時代",
+          "artistName": "陳奕迅",
+          "releaseDate": "1998-05-26T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%88%91%E7%9A%84%E5%BF%AB%E6%A8%82%E6%99%82%E4%BB%A3/892745229?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a6/b8/20/a6b820e1-aabb-a4c2-e9d1-47637240ca65/825646268146.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1422674966,
+          "collectionName": "準備中",
+          "artistName": "陳奕迅",
+          "releaseDate": "2015-07-03T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%BA%96%E5%82%99%E4%B8%AD/1422674966?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1e/23/7a/1e237a15-76a6-8320-2253-2f59d4506cc4/00602488886178.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1365353242,
+          "collectionName": "我們 (《後來的我們》電影主題曲) - Single",
+          "artistName": "陳奕迅",
+          "releaseDate": "2018-04-10T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%88%91%E5%80%91-%E5%BE%8C%E4%BE%86%E7%9A%84%E6%88%91%E5%80%91-%E9%9B%BB%E5%BD%B1%E4%B8%BB%E9%A1%8C%E6%9B%B2-single/1365353242?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/80/2f/b5/802fb5ee-9a9c-56bf-a500-366be2641251/00602567573692.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1639204490,
+          "collectionName": "訣愛 (劇集《蒼蘭訣》片頭曲) - Single",
+          "artistName": "Faye 詹雯婷",
+          "releaseDate": "2022-08-15T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%A8%A3%E6%84%9B-%E5%8A%87%E9%9B%86-%E8%92%BC%E8%98%AD%E8%A8%A3-%E7%89%87%E9%A0%AD%E6%9B%B2-single/1639204490?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/97/57/41/97574131-f941-6aad-94dc-729b8e4a7f02/4711099700028.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1438207199,
+          "collectionName": "有一種悲傷 (電影《比悲傷更悲傷的故事》主題曲) - Single",
+          "artistName": "A-Lin",
+          "releaseDate": "2018-10-12T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%9C%89%E4%B8%80%E7%A8%AE%E6%82%B2%E5%82%B7-%E9%9B%BB%E5%BD%B1-%E6%AF%94%E6%82%B2%E5%82%B7%E6%9B%B4%E6%82%B2%E5%82%B7%E7%9A%84%E6%95%85%E4%BA%8B-%E4%B8%BB%E9%A1%8C%E6%9B%B2-single/1438207199?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/5f/73/4d5f7322-e657-0eda-7107-cefec377a985/886447347416.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Production-9",
+      "expected": {
+        "album": "Doppler Shift",
+        "artist": "SHAO",
+        "year": "2018",
+        "edition": "2018年Tresor.306/Crater.001完整9轨LP；2015年Doppler Shift Pt.1是3轨EP，不混用。"
+      },
+      "query": "https://itunes.apple.com/search?term=SHAO+Doppler+Shift&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1621756292,
+          "collectionName": "Doppler Shift, Pt. 1 - Single",
+          "artistName": "SHAO",
+          "releaseDate": "2015-10-01T07:00:00Z",
+          "trackCount": 3,
+          "collectionViewUrl": "https://music.apple.com/hk/album/doppler-shift-pt-1-single/1621756292?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/68/0e/bf/680ebf45-899e-1e8e-3be4-98bcea4cc296/5051142090355_3000.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1628287420,
+          "collectionName": "Doppler Shift",
+          "artistName": "SHAO",
+          "releaseDate": "2018-10-05T07:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/hk/album/doppler-shift/1628287420?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/db/53/5f/db535f70-0f2b-8738-230b-194a68f87008/cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1621762781,
+          "collectionName": "Doppler Shift",
+          "artistName": "SHAO",
+          "releaseDate": "2018-09-28T07:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/hk/album/doppler-shift/1621762781?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c0/da/35/c0da356f-3b7d-b6f7-cb1f-4ab3c8d4d053/3663729067456_3000.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 973452194,
+          "collectionName": "Hush House (From \"The Casual Vacancy\") - Single",
+          "artistName": "The Doppler Shift",
+          "releaseDate": "2015-03-06T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/hush-house-from-the-casual-vacancy-single/973452194?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/f3/2c/32/f32c3236-6c76-334b-9cc0-b5a6aa458ea0/5054227059063_1.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1703155265,
+          "collectionName": "Rise of the Garuda (Doppler Shift Remix) - Single",
+          "artistName": "Relativ",
+          "releaseDate": "2015-12-14T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/rise-of-the-garuda-doppler-shift-remix-single/1703155265?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5f/86/08/5f8608dd-2c02-9e99-5f91-5de26f20ed59/8718723060349_cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1556355527,
+          "collectionName": "Doppler Shift - Single",
+          "artistName": "The Golden Islands",
+          "releaseDate": "2017-11-18T08:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/hk/album/doppler-shift-single/1556355527?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f2/23/df/f223df23-a48a-a3f7-02f7-409f0c66efe2/8719729032163_Cover.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Structure-10",
+      "expected": {
+        "album": "1911（2021 十周年重混版）",
+        "artist": "沼泽",
+        "year": "2021",
+        "edition": "采用2021年艺人正式重混/重制完整专辑，两文件合计约61分钟；2011原四乐章版为前身，不能把2021分轨称为2011原盘。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%B2%BC%E6%B3%BD+1911%EF%BC%882021+%E5%8D%81%E5%91%A8%E5%B9%B4%E9%87%8D%E6%B7%B7%E7%89%88%EF%BC%89&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Structure-4",
+      "expected": {
+        "album": "电影钢琴 七彩映画",
+        "artist": "王崴",
+        "year": "2010",
+        "edition": "2010年风林文化12曲CD目录口径；只取唱片元数据，不采用该页音频下载。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E7%8E%8B%E5%B4%B4+%E7%94%B5%E5%BD%B1%E9%92%A2%E7%90%B4+%E4%B8%83%E5%BD%A9%E6%98%A0%E7%94%BB&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Structure-5",
+      "expected": {
+        "album": "记忆里的美好",
+        "artist": "何真真",
+        "year": "2006",
+        "edition": "2006年风潮钢琴演奏专辑；不用含声乐附加曲的三颗猫饼干替代。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E4%BD%95%E7%9C%9F%E7%9C%9F+%E8%AE%B0%E5%BF%86%E9%87%8C%E7%9A%84%E7%BE%8E%E5%A5%BD&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 886535616,
+          "collectionName": "記憶裡的美好",
+          "artistName": "何真真",
+          "releaseDate": "2006-03-28T08:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%A8%98%E6%86%B6%E8%A3%A1%E7%9A%84%E7%BE%8E%E5%A5%BD/886535616?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/7e/a9/ed/7ea9edb7-cc53-6518-45d4-a96037708012/TCD-5290.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Structure-6",
+      "expected": {
+        "album": "城市冥想",
+        "artist": "董运昌",
+        "year": "1998",
+        "edition": "1998年原吉他演奏专辑；官方合作品牌履历明确1998，不沿用推测的1997。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%91%A3%E8%BF%90%E6%98%8C+%E5%9F%8E%E5%B8%82%E5%86%A5%E6%83%B3&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Structure-7",
+      "expected": {
+        "album": "化学 / Chemistry",
+        "artist": "话梅鹿",
+        "year": "2018",
+        "edition": "2018年艺人原版7曲；不用2020年Specific黑胶再版年作为首次发行年。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%AF%9D%E6%A2%85%E9%B9%BF+%E5%8C%96%E5%AD%A6+%2F+Chemistry&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Structure-8",
+      "expected": {
+        "album": "Flute Moon / China Dreams / Postcards",
+        "artist": "盛宗亮",
+        "year": "2000",
+        "edition": "BIS-1122，2000年发行；Sharon Bezaly、新加坡交响乐团、指挥水蓝。作品1995/1997/1999创作年不替代唱片年。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E7%9B%9B%E5%AE%97%E4%BA%AE+Flute+Moon+%2F+China+Dreams+%2F+Postcards&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Structure-9",
+      "expected": {
+        "album": "Chamber Concerto Cycle",
+        "artist": "黄若",
+        "year": "2007",
+        "edition": "Naxos 8.559322，2007年；International Contemporary Ensemble，黄若指挥。主体为室内协奏曲，局部人声使用单独检查。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%BB%84%E8%8B%A5+Chamber+Concerto+Cycle&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1452914377,
+          "collectionName": "Shostakovich: Concertos, Orchestral Suites, Chamber Symphonies",
+          "artistName": "群星",
+          "releaseDate": "2006-01-01T08:00:00Z",
+          "trackCount": 142,
+          "collectionViewUrl": "https://music.apple.com/hk/album/shostakovich-concertos-orchestral-suites-chamber-symphonies/1452914377?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a9/c0/53/a9c053d7-c647-c58a-c0ca-9a05fbadaece/06UMGIM55695.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1835333548,
+          "collectionName": "Amore - Timeless Italian Flute & Guitar",
+          "artistName": "Jane Rutter & Giuseppe Zangari",
+          "releaseDate": "2025-10-24T07:00:00Z",
+          "trackCount": 16,
+          "collectionViewUrl": "https://music.apple.com/hk/album/amore-timeless-italian-flute-guitar/1835333548?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c8/b1/d8/c8b1d891-7774-66a7-97de-a8326f422a45/TI168445_cover.png/100x100bb.jpg"
+        },
+        {
+          "collectionId": 6785942635,
+          "collectionName": "Sommernachtskonzert 2026 / Summer Night Concert 2026",
+          "artistName": "Vienna Philharmonic & 羅倫佐・維奧帝",
+          "releaseDate": "2026-07-17T07:00:00Z",
+          "trackCount": 14,
+          "collectionViewUrl": "https://music.apple.com/hk/album/sommernachtskonzert-2026-summer-night-concert-2026/6785942635?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/51/a3/7b/51a37ba9-b77f-546b-ad05-08f55d8685f4/196874364437.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1484318062,
+          "collectionName": "Elgar",
+          "artistName": "薛庫・坎內-梅森, London Symphony Orchestra & Sir Simon Rattle",
+          "releaseDate": "2020-01-10T08:00:00Z",
+          "trackCount": 13,
+          "collectionViewUrl": "https://music.apple.com/hk/album/elgar/1484318062?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d6/44/7c/d6447cbe-7bcc-01bf-8298-d32461f73bd2/19UMGIM83353.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1844321294,
+          "collectionName": "Violin Café",
+          "artistName": "妮可拉・班內迪提, 普利尼奧・費南德斯, Samuele Telari & Thomas Carroll",
+          "releaseDate": "2025-11-21T08:00:00Z",
+          "trackCount": 13,
+          "collectionViewUrl": "https://music.apple.com/hk/album/violin-cafe/1844321294?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/a6/9a/78a69acc-b956-8052-d93c-c0f34917d82d/25UM1IM00763.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1103479553,
+          "collectionName": "Légende",
+          "artistName": "艾莉森・鮑爾珊",
+          "releaseDate": "2016-05-13T07:00:00Z",
+          "trackCount": 18,
+          "collectionViewUrl": "https://music.apple.com/hk/album/l%C3%A9gende/1103479553?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/05/42/c2/0542c2ef-d366-c1c6-0442-b0ae02c82819/190295987701.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1801615378,
+          "collectionName": "Consolations - Liszt: Six Consolations & Other Reflective Pieces for Violin & Piano",
+          "artistName": "Maya Magub & 黃新易",
+          "releaseDate": "2022-06-03T07:00:00Z",
+          "trackCount": 19,
+          "collectionViewUrl": "https://music.apple.com/hk/album/consolations-liszt-six-consolations-other-reflective/1801615378?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1d/19/59/1d195907-bd17-1a6d-7732-d7db15bc1652/5051083217330_cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1666213841,
+          "collectionName": "Beethoven Septet & Eroica",
+          "artistName": "克蕾兒 · 黃慈 & CHAARTS Chamber Artists",
+          "releaseDate": "2023-03-03T08:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/beethoven-septet-eroica/1666213841?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/db/44/97/db4497e4-d95d-68c7-a254-d5b9c019f8ae/cover.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Vision-10",
+      "expected": {
+        "album": "MTK",
+        "artist": "王长存 / AYRTBH",
+        "year": "2017",
+        "edition": "2017年Detroit Underground原专辑；AYRTBH与王长存为同一主艺人，不以两个名字重复计数。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E7%8E%8B%E9%95%BF%E5%AD%98+%2F+AYRTBH+MTK&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1271875409,
+          "collectionName": "Mtk",
+          "artistName": "王長存",
+          "releaseDate": "2017-08-11T07:00:00Z",
+          "trackCount": 8,
+          "collectionViewUrl": "https://music.apple.com/hk/album/mtk/1271875409?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/f5/c9/fc/f5c9fc77-b1c0-e322-3893-81ed6a7c3c98/191773593735.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Vision-4",
+      "expected": {
+        "album": "浮生素描",
+        "artist": "屠颖",
+        "year": "2005",
+        "edition": "2005年无非文化钢琴演奏专辑；不使用并不存在的秘密花园专辑作为参考。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%B1%A0%E9%A2%96+%E6%B5%AE%E7%94%9F%E7%B4%A0%E6%8F%8F&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Vision-5",
+      "expected": {
+        "album": "Pianoboy",
+        "artist": "Pianoboy高至豪",
+        "year": "2008",
+        "edition": "采用官方授权目录标2008年的同名完整专辑，不用成名单曲或网络A Best合集充数。"
+      },
+      "query": "https://itunes.apple.com/search?term=Pianoboy%E9%AB%98%E8%87%B3%E8%B1%AA+Pianoboy&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1863892844,
+          "collectionName": "Pianoboy",
+          "artistName": "Pianoboy高至豪",
+          "releaseDate": "2008-03-15T07:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/pianoboy/1863892844?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/fb/09/57fb0959-1320-39f0-f150-f51036c2651c/17405.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1863976155,
+          "collectionName": "Layee - Single",
+          "artistName": "Pianoboy高至豪",
+          "releaseDate": "2017-01-01T00:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/layee-single/1863976155?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/86/f5/4886f5c6-7804-6078-dbb4-fd55141c75a9/17584.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1863964694,
+          "collectionName": "絮雨 - Single",
+          "artistName": "Pianoboy高至豪",
+          "releaseDate": "2021-01-01T00:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E7%B5%AE%E9%9B%A8-single/1863964694?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ca/e8/7c/cae87ce5-3dce-41b7-dda9-3b85c8a6a73c/17543.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1863916527,
+          "collectionName": "梧桐影 - Single",
+          "artistName": "Pianoboy高至豪",
+          "releaseDate": "2019-01-01T00:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%A2%A7%E6%A1%90%E5%BD%B1-single/1863916527?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/10/f2/dd/10f2dd83-e9d5-2c05-9d02-ab9f33a7177c/17450.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1863984260,
+          "collectionName": "ROMANTIC FANTASY - Single",
+          "artistName": "Pianoboy高至豪",
+          "releaseDate": "2019-01-01T00:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/romantic-fantasy-single/1863984260?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/78/e6/20/78e6208d-4ca2-3bfc-532a-676ddc58df8e/17585.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1863995839,
+          "collectionName": "希芙 - Single",
+          "artistName": "Pianoboy高至豪",
+          "releaseDate": "2024-02-07T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%B8%8C%E8%8A%99-single/1863995839?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/84/ca/28/84ca28dd-46a4-24d9-526e-558eecc708d7/17612.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1864005591,
+          "collectionName": "DEEP - Single",
+          "artistName": "Pianoboy高至豪",
+          "releaseDate": "2024-12-13T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/deep-single/1864005591?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/66/79/686679a2-f52d-517e-0ea7-ad446a8144d7/5560.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1863958544,
+          "collectionName": "风的故乡 - Single",
+          "artistName": "Pianoboy高至豪",
+          "releaseDate": "2019-01-01T00:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E9%A3%8E%E7%9A%84%E6%95%85%E4%B9%A1-single/1863958544?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/d8/36/f9d836d5-203e-0187-0cae-5a7cb007e66a/17542.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Vision-6",
+      "expected": {
+        "album": "国家宝藏 第三季原声音乐",
+        "artist": "关大洲",
+        "year": "2021",
+        "edition": "2021年第三季10首配乐专辑，不与2017节目首播年或第二季含声乐版的目录混用。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%85%B3%E5%A4%A7%E6%B4%B2+%E5%9B%BD%E5%AE%B6%E5%AE%9D%E8%97%8F+%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%8E%9F%E5%A3%B0%E9%9F%B3%E4%B9%90&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1559520502,
+          "collectionName": "綜藝《國家寶藏》第三季原聲音樂 (關大洲作品)",
+          "artistName": "關大洲",
+          "releaseDate": "2021-03-28T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E7%B6%9C%E8%97%9D-%E5%9C%8B%E5%AE%B6%E5%AF%B6%E8%97%8F-%E7%AC%AC%E4%B8%89%E5%AD%A3%E5%8E%9F%E8%81%B2%E9%9F%B3%E6%A8%82-%E9%97%9C%E5%A4%A7%E6%B4%B2%E4%BD%9C%E5%93%81/1559520502?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/65/7e/fc/657efc1a-046f-7ecc-280b-badd85c6522e/cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1610669274,
+          "collectionName": "綜藝《國家寶藏》第二季原聲音樂 (關大洲作品)",
+          "artistName": "關大洲",
+          "releaseDate": "2018-01-01T00:00:00Z",
+          "trackCount": 19,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E7%B6%9C%E8%97%9D-%E5%9C%8B%E5%AE%B6%E5%AF%B6%E8%97%8F-%E7%AC%AC%E4%BA%8C%E5%AD%A3%E5%8E%9F%E8%81%B2%E9%9F%B3%E6%A8%82-%E9%97%9C%E5%A4%A7%E6%B4%B2%E4%BD%9C%E5%93%81/1610669274?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/d6/8d/f3/d68df359-2a98-54f0-1ba8-186fcecd34dc/cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1762065536,
+          "collectionName": "綜藝《國家寶藏》第四季原聲音樂 (關大洲作品)",
+          "artistName": "關大洲",
+          "releaseDate": "2024-08-03T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E7%B6%9C%E8%97%9D-%E5%9C%8B%E5%AE%B6%E5%AF%B6%E8%97%8F-%E7%AC%AC%E5%9B%9B%E5%AD%A3%E5%8E%9F%E8%81%B2%E9%9F%B3%E6%A8%82-%E9%97%9C%E5%A4%A7%E6%B4%B2%E4%BD%9C%E5%93%81/1762065536?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/a8/4c/9fa84c42-2712-bf3d-7e87-18888f9d14f2/cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1555806895,
+          "collectionName": "国家宝藏 (第一季原声音乐 关大洲作品)",
+          "artistName": "關大洲",
+          "releaseDate": "2018-01-01T00:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%9B%BD%E5%AE%B6%E5%AE%9D%E8%97%8F-%E7%AC%AC%E4%B8%80%E5%AD%A3%E5%8E%9F%E5%A3%B0%E9%9F%B3%E4%B9%90-%E5%85%B3%E5%A4%A7%E6%B4%B2%E4%BD%9C%E5%93%81/1555806895?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cf/32/8f/cf328f01-37d0-1798-4fa4-63238cdfe20a/cover.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-instrumental-Vision-7",
+      "expected": {
+        "album": "WUHAN WUHAN 武汉武汉",
+        "artist": "花伦",
+        "year": "2021",
+        "edition": "2021年艺人发行的纪录片原声完整专辑，不用同名主打单曲页。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%8A%B1%E4%BC%A6+WUHAN+WUHAN+%E6%AD%A6%E6%B1%89%E6%AD%A6%E6%B1%89&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Vision-8",
+      "expected": {
+        "album": "舌尖上的中国 原声大碟",
+        "artist": "阿鲲",
+        "year": "2012",
+        "edition": "2012年星外星实体19首配乐主体；不用第二季或纪录片视频直接代替录音版本。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%98%BF%E9%B2%B2+%E8%88%8C%E5%B0%96%E4%B8%8A%E7%9A%84%E4%B8%AD%E5%9B%BD+%E5%8E%9F%E5%A3%B0%E5%A4%A7%E7%A2%9F&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-instrumental-Vision-9",
+      "expected": {
+        "album": "月球专用音乐 / Music for Listening on the Moon",
+        "artist": "颜峻",
+        "year": "2010",
+        "edition": "2010年Sub Jam/Kwanyin原发行，非后来演出或随笔书本；确切载体与曲序待原版复核。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%A2%9C%E5%B3%BB+%E6%9C%88%E7%90%83%E4%B8%93%E7%94%A8%E9%9F%B3%E4%B9%90+%2F+Music+for+Listening+on+the+Moon&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-song-Composition-5",
+      "expected": {
+        "album": "被伤过的心还可以爱谁",
+        "artist": "六哲",
+        "year": "2010",
+        "edition": "2010年东嘉首版10曲；不以同名单曲代替整张专辑。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%85%AD%E5%93%B2+%E8%A2%AB%E4%BC%A4%E8%BF%87%E7%9A%84%E5%BF%83%E8%BF%98%E5%8F%AF%E4%BB%A5%E7%88%B1%E8%B0%81&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1774794608,
+          "collectionName": "被伤过的心还可以爱谁 - Single",
+          "artistName": "六哲",
+          "releaseDate": "2010-06-21T07:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%A2%AB%E4%BC%A4%E8%BF%87%E7%9A%84%E5%BF%83%E8%BF%98%E5%8F%AF%E4%BB%A5%E7%88%B1%E8%B0%81-single/1774794608?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a8/c3/15/a8c315ea-0339-4aa9-d948-1bc3c6d4ce80/6942219363184.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1774759014,
+          "collectionName": "被伤过的心还可以爱谁(DJ版) - Single",
+          "artistName": "六哲",
+          "releaseDate": "1997-03-01T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%A2%AB%E4%BC%A4%E8%BF%87%E7%9A%84%E5%BF%83%E8%BF%98%E5%8F%AF%E4%BB%A5%E7%88%B1%E8%B0%81-dj%E7%89%88-single/1774759014?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/6b/f1/906bf19e-4aad-eecd-3a2f-1769fc102dba/6923672203613.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1759435472,
+          "collectionName": "谁给伤心一个期限 - Single",
+          "artistName": "金久哲",
+          "releaseDate": "2020-05-25T07:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%B0%81%E7%BB%99%E4%BC%A4%E5%BF%83%E4%B8%80%E4%B8%AA%E6%9C%9F%E9%99%90-single/1759435472?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/05/19/4c/05194c0b-f09b-2af6-d448-5143b08445b1/4894859119084.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1764168725,
+          "collectionName": "谁给伤心一个期限 - EP",
+          "artistName": "金久哲",
+          "releaseDate": "2020-05-25T07:00:00Z",
+          "trackCount": 4,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%B0%81%E7%BB%99%E4%BC%A4%E5%BF%83%E4%B8%80%E4%B8%AA%E6%9C%9F%E9%99%90-ep/1764168725?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3e/e4/ab/3ee4ab3c-e128-eb11-d4b3-ceadb7340292/4894972320312.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1800331752,
+          "collectionName": "这个世界谁没受过伤 - Single",
+          "artistName": "金久哲",
+          "releaseDate": "2019-05-07T07:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E8%B0%81%E6%B2%A1%E5%8F%97%E8%BF%87%E4%BC%A4-single/1800331752?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/85/93/0d/85930ddc-edf3-3bbe-fe32-9e94267e62ab/4894972875515.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1819433618,
+          "collectionName": "谁又不是受过伤的女人(DJ阿哲版) - Single",
+          "artistName": "談柒柒",
+          "releaseDate": "2023-04-04T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%B0%81%E5%8F%88%E4%B8%8D%E6%98%AF%E5%8F%97%E8%BF%87%E4%BC%A4%E7%9A%84%E5%A5%B3%E4%BA%BA-dj%E9%98%BF%E5%93%B2%E7%89%88-single/1819433618?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/79/08/9b/79089b17-ac07-0739-3516-b3adadab874f/6932646586850.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Context-10",
+      "expected": {
+        "album": "新长征路上的摇滚",
+        "artist": "崔健",
+        "year": "1989",
+        "edition": "1989年大陆版9曲口径；台湾《一无所有》版本曲目差异须分开。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%B4%94%E5%81%A5+%E6%96%B0%E9%95%BF%E5%BE%81%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%91%87%E6%BB%9A&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1585625540,
+          "collectionName": "新长征路上的摇滚",
+          "artistName": "崔健",
+          "releaseDate": "1989-02-01T08:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%96%B0%E9%95%BF%E5%BE%81%E8%B7%AF%E4%B8%8A%E7%9A%84%E6%91%87%E6%BB%9A/1585625540?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/52/8a/e9/528ae9b1-47a7-a082-8663-83dff561a4fd/cover.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Context-4",
+      "expected": {
+        "album": "古·玩",
+        "artist": "后弦",
+        "year": "2005",
+        "edition": "2005年原录音室10曲；宫调R&B是宣传自称，不冒充音乐学定论。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%90%8E%E5%BC%A6+%E5%8F%A4%C2%B7%E7%8E%A9&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1817712876,
+          "collectionName": "古·玩",
+          "artistName": "後弦",
+          "releaseDate": "2005-09-16T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%8F%A4-%E7%8E%A9/1817712876?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/dd/c0/beddc04d-864f-76b8-c3bd-f0f6cdbc480c/4896004044272.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 212551787,
+          "collectionName": "Mozart: Serenate notturne & Eine kleine Nachtmusik",
+          "artistName": "約第・沙瓦爾 & 家古樂合奏團",
+          "releaseDate": "2005-01-01T08:00:00Z",
+          "trackCount": 14,
+          "collectionViewUrl": "https://music.apple.com/hk/album/mozart-serenate-notturne-eine-kleine-nachtmusik/212551787?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/10/29/01/mzi.ojspudhz.tif/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1452260504,
+          "collectionName": "Karajan 1980s, Vol. 1",
+          "artistName": "群星",
+          "releaseDate": "2014-01-01T08:00:00Z",
+          "trackCount": 148,
+          "collectionViewUrl": "https://music.apple.com/hk/album/karajan-1980s-vol-1/1452260504?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/14/0f/22/140f22d9-89f9-17fb-8d24-402200cbfa0b/14UMGIM25513.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 697733544,
+          "collectionName": "The Classic Experience - 135 of the Greatest Classical Tracks",
+          "artistName": "群星",
+          "releaseDate": "2012-05-14T07:00:00Z",
+          "trackCount": 135,
+          "collectionViewUrl": "https://music.apple.com/hk/album/the-classic-experience-135-of-the/697733544?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/55/3e/73/553e73ed-644a-e099-f1b1-8dc181ce2e7b/5099932795059_1417x1417_300dpi.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 182276195,
+          "collectionName": "Mozart: Chamber Music",
+          "artistName": "阿班・貝爾格四重奏, 阿姆斯特丹巴洛克古樂團, Trio Fontenay & Wind Soloists Chamber Orchestra of Europe",
+          "releaseDate": "2006-08-15T07:00:00Z",
+          "trackCount": 196,
+          "collectionViewUrl": "https://music.apple.com/hk/album/mozart-chamber-music/182276195?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/b4/a3/98/mzi.hvertlky.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 489493961,
+          "collectionName": "クラシック160分定番曲ベスト",
+          "artistName": "群星",
+          "releaseDate": "2012-01-11T08:00:00Z",
+          "trackCount": 24,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF160%E5%88%86%E5%AE%9A%E7%95%AA%E6%9B%B2%E3%83%99%E3%82%B9%E3%83%88/489493961?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/3e/37/94/mzi.yhgiotlc.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 969392525,
+          "collectionName": "Breakfast Classics",
+          "artistName": "群星",
+          "releaseDate": "2015-03-20T07:00:00Z",
+          "trackCount": 40,
+          "collectionViewUrl": "https://music.apple.com/hk/album/breakfast-classics/969392525?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f2/d7/1e/f2d71e4c-ad01-c87c-5b01-03d6fe5269ad/cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1683730453,
+          "collectionName": "Abbado A-Z: Vivaldi - Wagner + Galas &  Recitals",
+          "artistName": "克勞迪奧・阿巴多",
+          "releaseDate": "2023-05-05T07:00:00Z",
+          "trackCount": 229,
+          "collectionViewUrl": "https://music.apple.com/hk/album/abbado-a-z-vivaldi-wagner-galas-recitals/1683730453?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ed/4e/bb/ed4ebbeb-d6e4-f340-f46f-2bd30187880d/23UMGIM38438.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Context-5",
+      "expected": {
+        "album": "文武双全",
+        "artist": "胡彦斌",
+        "year": "2002",
+        "edition": "2002年内地原版10曲；不与同年Anson Hu港台改曲版或2003升级版混用。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%83%A1%E5%BD%A6%E6%96%8C+%E6%96%87%E6%AD%A6%E5%8F%8C%E5%85%A8&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 924494955,
+          "collectionName": "文武双全",
+          "artistName": "胡彥斌",
+          "releaseDate": "2002-07-04T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%96%87%E6%AD%A6%E5%8F%8C%E5%85%A8/924494955?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/b6/bd/db/b6bddbf9-30ed-4d7c-2cb7-6a16a8133460/825646233830.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 905186089,
+          "collectionName": "文武雙全 (升級版)",
+          "artistName": "胡彥斌",
+          "releaseDate": "2003-07-01T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%96%87%E6%AD%A6%E9%9B%99%E5%85%A8-%E5%8D%87%E7%B4%9A%E7%89%88/905186089?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/eb/82/46/eb8246bd-fb9b-71d7-edae-2942e80c3c43/825646233847.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Context-6",
+      "expected": {
+        "album": "郝云北京",
+        "artist": "郝云",
+        "year": "2008",
+        "edition": "2008年环球11曲，常简称《北京》；不把2014年报道中提及的后期《活着》等歌曲并入本专辑。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%83%9D%E4%BA%91+%E9%83%9D%E4%BA%91%E5%8C%97%E4%BA%AC&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1443344628,
+          "collectionName": "郝云北京",
+          "artistName": "郝雲",
+          "releaseDate": "2008-01-01T08:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E9%83%9D%E4%BA%91%E5%8C%97%E4%BA%AC/1443344628?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/59/30/27/593027a9-4026-8762-332d-56e3c56a39a0/00602517623606.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Context-7",
+      "expected": {
+        "album": "大懒堂",
+        "artist": "LMF",
+        "year": "2000",
+        "edition": "2000年完整专辑11轨；不是1999年《Lazy Mutha Fucka》EP。"
+      },
+      "query": "https://itunes.apple.com/search?term=LMF+%E5%A4%A7%E6%87%92%E5%A0%82&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 367988349,
+          "collectionName": "Lazy Clan",
+          "artistName": "LMF",
+          "releaseDate": "2000-05-23T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/lazy-clan/367988349?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/15/02/a0/1502a055-6f6a-d218-633e-a9175bc920b2/mzi.ayfebhto.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 977069534,
+          "collectionName": "LMFSHITS",
+          "artistName": "LMF",
+          "releaseDate": "2016-09-26T07:00:00Z",
+          "trackCount": 30,
+          "collectionViewUrl": "https://music.apple.com/hk/album/lmfshits/977069534?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/a3/2b/d5/a32bd532-3f03-f790-7ed8-3a19850b0a5f/085365737822.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 73358227,
+          "collectionName": "Crazy Children",
+          "artistName": "LMF",
+          "releaseDate": "2002-05-31T07:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/crazy-children/73358227?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c8/ca/6f/c8ca6f88-fd31-0749-71ea-e74f6581eae1/s06.uvyaqoqf.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 265606938,
+          "collectionName": "LMFAMiGLiA - EP",
+          "artistName": "LMF",
+          "releaseDate": "2001-01-01T00:00:00Z",
+          "trackCount": 4,
+          "collectionViewUrl": "https://music.apple.com/hk/album/lmfamiglia-ep/265606938?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/ac/d6/0a/mzi.sabgalop.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 367972568,
+          "collectionName": "A Room Represents",
+          "artistName": "LMF",
+          "releaseDate": "2000-05-23T07:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/hk/album/a-room-represents/367972568?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/16/53/20/mzi.phxrpzcn.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1737340432,
+          "collectionName": "一夥 - Single",
+          "artistName": "黃貫中, LMF, 鄭中基, 鄧建明 & 何超儀",
+          "releaseDate": "2024-03-25T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E4%B8%80%E5%A4%A5-single/1737340432?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/36/90/46/36904658-ebb8-5e4a-31aa-9964a6845567/310572974839.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 6793462162,
+          "collectionName": "Sex - Single",
+          "artistName": "Rocco Lazzaro, LMF & SØLØVEN",
+          "releaseDate": "2026-08-21T07:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/hk/album/sex-single/6793462162?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/b2/68/91b2684c-4555-f7b0-f5ca-6bc1121432dc/00_Cover_Art.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Context-8",
+      "expected": {
+        "album": "县城记",
+        "artist": "五条人",
+        "year": "2009",
+        "edition": "2009年刀马旦版，11曲；采用原曲目而非综艺改编版本。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E4%BA%94%E6%9D%A1%E4%BA%BA+%E5%8E%BF%E5%9F%8E%E8%AE%B0&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-song-Context-9",
+      "expected": {
+        "album": "半斤八两",
+        "artist": "许冠杰",
+        "year": "1976",
+        "edition": "1976年宝丽多粤语录音室专辑12曲；并非只有电影配乐曲目的原声带。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%AE%B8%E5%86%A0%E6%9D%B0+%E5%8D%8A%E6%96%A4%E5%85%AB%E4%B8%A4&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1443345866,
+          "collectionName": "半斤八兩",
+          "artistName": "許冠傑",
+          "releaseDate": "1976-12-01T08:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%8D%8A%E6%96%A4%E5%85%AB%E5%85%A9/1443345866?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c4/f1/a2/c4f1a25d-cb6c-d797-fd96-fe98d06d2493/00602488962063.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1443339011,
+          "collectionName": "Mr. Boo! The Private Eyes Ban Jin Ba Liang",
+          "artistName": "許冠傑",
+          "releaseDate": "2013-01-01T08:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/mr-boo-the-private-eyes-ban-jin-ba-liang/1443339011?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b8/a6/aa/b8a6aa04-56a3-2a10-e0a2-92d66544c706/00602488962049.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Lyrics-4",
+      "expected": {
+        "album": "Antares",
+        "artist": "吴亦凡",
+        "year": "2018",
+        "edition": "2018年原版14曲；以主要活动和发行语境列中国歌曲，英语占主体，不假称全碟华语。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%90%B4%E4%BA%A6%E5%87%A1+Antares&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-song-Performance-6",
+      "expected": {
+        "album": "幸福的旁边",
+        "artist": "花儿乐队",
+        "year": "1999",
+        "edition": "1999年大陆版主体15曲，CD附送《歌唱》，另有B面；台湾《放学啦》为不同13曲目录。最终应以选定原版实际收录范围核听。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%8A%B1%E5%84%BF%E4%B9%90%E9%98%9F+%E5%B9%B8%E7%A6%8F%E7%9A%84%E6%97%81%E8%BE%B9&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-song-Production-10",
+      "expected": {
+        "album": "浮躁",
+        "artist": "王菲",
+        "year": "1996",
+        "edition": "1996年新艺宝/福茂原录音室专辑10轨；本维按整张制作评价，不因无词曲扣歌词分。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E7%8E%8B%E8%8F%B2+%E6%B5%AE%E8%BA%81&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1443287350,
+          "collectionName": "浮躁",
+          "artistName": "王菲",
+          "releaseDate": "1996-06-03T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%B5%AE%E8%BA%81/1443287350?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/f6/31/d6/f631d6d6-1fd0-272a-3feb-de30b4e69ace/00602517665095.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1443889073,
+          "collectionName": "國語真經典: 王菲",
+          "artistName": "王菲",
+          "releaseDate": "2010-01-01T08:00:00Z",
+          "trackCount": 16,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%9C%8B%E8%AA%9E%E7%9C%9F%E7%B6%93%E5%85%B8-%E7%8E%8B%E8%8F%B2/1443889073?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/12/fa/a1/12faa126-600b-c9fa-c762-6b65f1d44995/00602488995610.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1443424435,
+          "collectionName": "阿菲正傳",
+          "artistName": "王菲",
+          "releaseDate": "2009-01-01T08:00:00Z",
+          "trackCount": 32,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E9%98%BF%E8%8F%B2%E6%AD%A3%E5%82%B3/1443424435?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/5b/48/7b/5b487be5-9c6d-8d0f-fdd3-2f7604534d61/00602527130606.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1443784088,
+          "collectionName": "菲賣品",
+          "artistName": "王菲",
+          "releaseDate": "1997-01-01T08:00:00Z",
+          "trackCount": 16,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%8F%B2%E8%B3%A3%E5%93%81/1443784088?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/45/4e/5c/454e5c03-26f0-ae98-f666-5bb94bae31df/00731453787926.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1443099355,
+          "collectionName": "情‧FAYE‧得意",
+          "artistName": "王菲",
+          "releaseDate": "2005-01-01T00:00:00Z",
+          "trackCount": 38,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%83%85-faye-%E5%BE%97%E6%84%8F/1443099355?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/2c/66/c4/2c66c4b9-5d0d-4ac5-b1c2-8bc74972c6cc/00602488978279.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1721326833,
+          "collectionName": "菲感情生活",
+          "artistName": "王菲",
+          "releaseDate": "1999-01-01T08:00:00Z",
+          "trackCount": 20,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%8F%B2%E6%84%9F%E6%83%85%E7%94%9F%E6%B4%BB/1721326833?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/43/48/60/434860d9-4e9f-224e-caea-d893c1351966/23UM1IM62222.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1868641709,
+          "collectionName": "MULTIVERSE OF CINEPOLY 40TH ANNIVERSARY - 王菲",
+          "artistName": "王菲",
+          "releaseDate": "2025-10-17T07:00:00Z",
+          "trackCount": 30,
+          "collectionViewUrl": "https://music.apple.com/hk/album/multiverse-of-cinepoly-40th-anniversary-%E7%8E%8B%E8%8F%B2/1868641709?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/79/c5/58/79c5585c-1d06-d5b0-52e6-3f2a7854afe3/25UM1IM71157.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1721329314,
+          "collectionName": "MIX & MATCH",
+          "artistName": "王菲",
+          "releaseDate": "1998-12-01T08:00:00Z",
+          "trackCount": 29,
+          "collectionViewUrl": "https://music.apple.com/hk/album/mix-match/1721329314?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/78/59/d2/7859d2c1-3a55-33c0-a34a-11647d372192/23UM1IM62227.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Production-4",
+      "expected": {
+        "album": "被禁忌的游戏",
+        "artist": "李志",
+        "year": "2004",
+        "edition": "锁定2004年南京自制录音版本，以后续2005口袋发行另列版次，不采用再录或现场版；8/9曲目录差异待实体核对。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%9D%8E%E5%BF%97+%E8%A2%AB%E7%A6%81%E5%BF%8C%E7%9A%84%E6%B8%B8%E6%88%8F&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-song-Production-5",
+      "expected": {
+        "album": "慢慢懂",
+        "artist": "汪苏泷",
+        "year": "2010",
+        "edition": "2010年原专辑，八首旧作重编与四首新作的12作品口径；平台额外收录不并入。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%B1%AA%E8%8B%8F%E6%B3%B7+%E6%85%A2%E6%85%A2%E6%87%82&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 6774683127,
+          "collectionName": "慢慢懂",
+          "artistName": "汪蘇瀧",
+          "releaseDate": "2010-11-19T08:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E6%85%A2%E6%85%A2%E6%87%82/6774683127?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9e/82/a1/9e82a1ad-3ba7-f932-e1c3-c7bb5fc508b7/8433391720004.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Production-6",
+      "expected": {
+        "album": "2002年的第一场雪",
+        "artist": "刀郎",
+        "year": "2004",
+        "edition": "2004年原录音室专辑；标题2002不是发行年份。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%88%80%E9%83%8E+2002%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1783038001,
+          "collectionName": "2002年的第一场雪",
+          "artistName": "刀郎",
+          "releaseDate": "2004-01-01T08:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/hk/album/2002%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E5%9C%BA%E9%9B%AA/1783038001?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/2c/87/832c8766-241b-22ed-8c32-9399845e3145/3617382672311.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Production-7",
+      "expected": {
+        "album": "收敛水",
+        "artist": "蛋堡",
+        "year": "2009",
+        "edition": "2009年颜社原版主体及短曲；14、15、17轨目录口径存在差异，需锁定原盘。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%9B%8B%E5%A0%A1+%E6%94%B6%E6%95%9B%E6%B0%B4&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "china-song-Production-8",
+      "expected": {
+        "album": "飞行器的执行周期",
+        "artist": "郭顶",
+        "year": "2016",
+        "edition": "2016年10曲CD／数字主体，约40分55秒；2018黑胶附加《不明下落》，不混为原版第11曲。11月25日／29日有地区与平台口径差异，年份确定。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%83%AD%E9%A1%B6+%E9%A3%9E%E8%A1%8C%E5%99%A8%E7%9A%84%E6%89%A7%E8%A1%8C%E5%91%A8%E6%9C%9F&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1443637757,
+          "collectionName": "飛行器的執行週期",
+          "artistName": "郭頂",
+          "releaseDate": "2016-11-25T08:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E9%A3%9B%E8%A1%8C%E5%99%A8%E7%9A%84%E5%9F%B7%E8%A1%8C%E9%80%B1%E6%9C%9F/1443637757?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4b/55/95/4b5595a2-5d2c-38c7-8179-0a27e5ba58a1/00602488600859.rgb.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1774747064,
+          "collectionName": "飞行器的执行周期 - Single",
+          "artistName": "暖陽nya",
+          "releaseDate": "2020-10-22T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E9%A3%9E%E8%A1%8C%E5%99%A8%E7%9A%84%E6%89%A7%E8%A1%8C%E5%91%A8%E6%9C%9F-single/1774747064?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bc/24/c2/bc24c249-d48a-151d-030a-2c393ce3c56f/6923672252666.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Production-9",
+      "expected": {
+        "album": "黑色柳丁",
+        "artist": "陶喆",
+        "year": "2002",
+        "edition": "2002年原录音室专辑12轨口径，保留短段；不并后期现场与再版。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%99%B6%E5%96%86+%E9%BB%91%E8%89%B2%E6%9F%B3%E4%B8%81&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 914664926,
+          "collectionName": "黑色柳丁",
+          "artistName": "陶喆",
+          "releaseDate": "2002-08-09T07:00:00Z",
+          "trackCount": 13,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E9%BB%91%E8%89%B2%E6%9F%B3%E4%B8%81/914664926?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/05/7a/97/057a9723-2dbd-873b-81e0-5090879b2942/825646245352.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1755670133,
+          "collectionName": "黑色星期二 - Single",
+          "artistName": "陶喆",
+          "releaseDate": "2017-08-08T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E9%BB%91%E8%89%B2%E6%98%9F%E6%9C%9F%E4%BA%8C-single/1755670133?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/95/8e/62/958e62af-2679-2dca-0e20-f87f76d2c38c/4711126592268.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Vision-10",
+      "expected": {
+        "album": "冀西南林路行",
+        "artist": "万能青年旅店",
+        "year": "2020",
+        "edition": "2020年数字版8个分曲及整轨；整轨是同一内容，不能计为第9首新作。2022年CD为整轨。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E4%B8%87%E8%83%BD%E9%9D%92%E5%B9%B4%E6%97%85%E5%BA%97+%E5%86%80%E8%A5%BF%E5%8D%97%E6%9E%97%E8%B7%AF%E8%A1%8C&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1545534900,
+          "collectionName": "冀西南林路行",
+          "artistName": "萬能青年旅店",
+          "releaseDate": "2020-12-22T08:00:00Z",
+          "trackCount": 8,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%86%80%E8%A5%BF%E5%8D%97%E6%9E%97%E8%B7%AF%E8%A1%8C/1545534900?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/c5/bd/a6/c5bda6ad-0ed6-849d-dc07-c6b527c0b5aa/cover.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Vision-4",
+      "expected": {
+        "album": "Reloaded",
+        "artist": "鹿晗",
+        "year": "2015",
+        "edition": "2015年实体完整专辑8曲，不采用Reloaded I/II分拆EP，不并2016 Reloaded+。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E9%B9%BF%E6%99%97+Reloaded&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1350216479,
+          "collectionName": "Reloaded 重启",
+          "artistName": "鹿晗",
+          "releaseDate": "2015-12-22T08:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/reloaded-%E9%87%8D%E5%90%AF/1350216479?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/e2/0a/ea/e20aeae9-2e65-1d17-d30f-81289810cd49/reloaded.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1350224674,
+          "collectionName": "Reloaded+ 重启+ - Single",
+          "artistName": "鹿晗",
+          "releaseDate": "2016-02-16T08:00:00Z",
+          "trackCount": 3,
+          "collectionViewUrl": "https://music.apple.com/hk/album/reloaded-%E9%87%8D%E5%90%AF-single/1350224674?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/03/09/85/03098547-437f-1d03-dbd8-bc406450585c/Reloaded.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1346416180,
+          "collectionName": "重启 I (Reloaded I) - EP",
+          "artistName": "鹿晗",
+          "releaseDate": "2015-09-14T07:00:00Z",
+          "trackCount": 5,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E9%87%8D%E5%90%AF-i-reloaded-i-ep/1346416180?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/6f/a9/9c/6fa99cff-1481-ca50-5065-a53df872a0c7/Reloaded1.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1877116408,
+          "collectionName": "R3 L0AD 3D (Reloaded)",
+          "artistName": "Rocket'hil",
+          "releaseDate": "2026-02-23T08:00:00Z",
+          "trackCount": 24,
+          "collectionViewUrl": "https://music.apple.com/hk/album/r3-l0ad-3d-reloaded/1877116408?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/08/a5/71/08a571ab-8880-32dc-dada-0b6c22d665f9/cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1888660128,
+          "collectionName": "I'M RELOADED/Jag Är Reloaded - Single",
+          "artistName": "R3L04D3D",
+          "releaseDate": "2026-04-10T07:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/hk/album/im-reloaded-jag-%C3%A4r-reloaded-single/1888660128?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/c3/69/ebc3697d-c31d-acdb-ed1d-3bca82e78824/artwork.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1759937500,
+          "collectionName": "Persona 3 Reload: Episode Aigis (Original Soundtrack)",
+          "artistName": "ATLUS Sound Team",
+          "releaseDate": "2024-09-10T07:00:00Z",
+          "trackCount": 21,
+          "collectionViewUrl": "https://music.apple.com/hk/album/persona-3-reload-episode-aigis-original-soundtrack/1759937500?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/73/1a/42/731a424b-0b0f-fc7b-2cf5-3be1000c4ac8/PA00159110_2_198537_jacket.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 6772000897,
+          "collectionName": "ZAZOO Reloaded - Single",
+          "artistName": "DEADL1N3",
+          "releaseDate": "2026-05-21T07:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/zazoo-reloaded-single/6772000897?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/41/ea/3f/41ea3f1c-e08e-6c75-bf2f-2a5a34f6eee9/artwork.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Vision-5",
+      "expected": {
+        "album": "梦不落雨林 / NAMANANA",
+        "artist": "张艺兴",
+        "year": "2018",
+        "edition": "2018年中英双版22轨，11首作品对应两种语言；不按22首独立作曲重复计算。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E5%BC%A0%E8%89%BA%E5%85%B4+%E6%A2%A6%E4%B8%8D%E8%90%BD%E9%9B%A8%E6%9E%97+%2F+NAMANANA&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1440726097,
+          "collectionName": "夢不落雨林/NAMANANA",
+          "artistName": "張藝興",
+          "releaseDate": "2018-10-19T07:00:00Z",
+          "trackCount": 22,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%A4%A2%E4%B8%8D%E8%90%BD%E9%9B%A8%E6%9E%97-namanana/1440726097?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/f2/c5/19f2c593-4521-800a-b76c-40c5f3f5caf4/nama.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Vision-6",
+      "expected": {
+        "album": "壁虎漫步",
+        "artist": "潘玮柏",
+        "year": "2002",
+        "edition": "2002年环球原录音室10曲；不用2003影音版或精选。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E6%BD%98%E7%8E%AE%E6%9F%8F+%E5%A3%81%E8%99%8E%E6%BC%AB%E6%AD%A5&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1443367431,
+          "collectionName": "壁虎漫步",
+          "artistName": "潘瑋柏",
+          "releaseDate": "2002-01-01T08:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%A3%81%E8%99%8E%E6%BC%AB%E6%AD%A5/1443367431?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/80/a2/e6/80a2e628-b8ca-32e4-3b95-1c075e233342/06UMGIM33567.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Vision-7",
+      "expected": {
+        "album": "苏格拉没有底",
+        "artist": "许嵩",
+        "year": "2011",
+        "edition": "2011年海蝶原版10曲，不用《自定义》或后期作品替代。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%AE%B8%E5%B5%A9+%E8%8B%8F%E6%A0%BC%E6%8B%89%E6%B2%A1%E6%9C%89%E5%BA%95&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 964698411,
+          "collectionName": "蘇格拉沒有底",
+          "artistName": "許嵩",
+          "releaseDate": "2011-04-01T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E8%98%87%E6%A0%BC%E6%8B%89%E6%B2%92%E6%9C%89%E5%BA%95/964698411?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/95/22/0e/95220ee4-412c-fdbf-cde2-16ba7e26af19/sugelameiyoudi.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Vision-8",
+      "expected": {
+        "album": "冬 未了",
+        "artist": "苏打绿",
+        "year": "2015",
+        "edition": "2015年原版双CD主体与前奏，不采用鱼丁糸后续复刻版。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%8B%8F%E6%89%93%E7%BB%BF+%E5%86%AC+%E6%9C%AA%E4%BA%86&entity=album&country=hk&limit=8",
+      "results": [
+        {
+          "collectionId": 1593446659,
+          "collectionName": "冬 未了",
+          "artistName": "蘇打綠",
+          "releaseDate": "2015-01-01T00:00:00Z",
+          "trackCount": 19,
+          "collectionViewUrl": "https://music.apple.com/hk/album/%E5%86%AC-%E6%9C%AA%E4%BA%86/1593446659?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6e/b1/6e/6eb16e18-c22e-e2ee-7587-de25ba4892a2/cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1795424991,
+          "collectionName": "Winter Endless (sodagreen Version)",
+          "artistName": "蘇打綠",
+          "releaseDate": "2025-02-18T08:00:00Z",
+          "trackCount": 32,
+          "collectionViewUrl": "https://music.apple.com/hk/album/winter-endless-sodagreen-version/1795424991?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3c/41/73/3c417389-499e-b5ff-e816-1ff56451c501/196872866964.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1786051378,
+          "collectionName": "Endless (sodagreen Version) - Single",
+          "artistName": "蘇打綠",
+          "releaseDate": "2025-01-10T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/hk/album/endless-sodagreen-version-single/1786051378?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4a/be/5f/4abe5f00-9da1-147f-ba17-5412b27e29cb/196872765083.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "china-song-Vision-9",
+      "expected": {
+        "album": "丑奴儿",
+        "artist": "草东没有派对",
+        "year": "2016",
+        "edition": "2016年12轨首专，含Intro；数字版2月19日、实体版3月11日。不得并入2015手工EP或2023《瓦合》。"
+      },
+      "query": "https://itunes.apple.com/search?term=%E8%8D%89%E4%B8%9C%E6%B2%A1%E6%9C%89%E6%B4%BE%E5%AF%B9+%E4%B8%91%E5%A5%B4%E5%84%BF&entity=album&country=hk&limit=8",
+      "results": []
+    },
+    {
+      "id": "global-instrumental-Context-10",
+      "query": "https://itunes.apple.com/search?term=The+Dave+Brubeck+Quartet+Time+Out&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Context-4",
+      "query": "https://itunes.apple.com/search?term=The+Piano+Guys+Wonders&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Context-5",
+      "query": "https://itunes.apple.com/search?term=David+Garrett+Rock+Symphonies&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Context-6",
+      "query": "https://itunes.apple.com/search?term=Rodrigo+y+Gabriela+Rodrigo+y+Gabriela&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Context-7",
+      "query": "https://itunes.apple.com/search?term=DJ+Shadow+Endtroducing.....&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Context-8",
+      "query": "https://itunes.apple.com/search?term=Alice+Coltrane+Journey+in+Satchidananda&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Context-9",
+      "query": "https://itunes.apple.com/search?term=Herbie+Hancock+Head+Hunters&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Material-10",
+      "query": "https://itunes.apple.com/search?term=Miles+Davis+Kind+of+Blue&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Material-4",
+      "query": "https://itunes.apple.com/search?term=Weather+Report+Mr.+Gone&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Material-5",
+      "query": "https://itunes.apple.com/search?term=Yanni+Sensuous+Chill&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Material-6",
+      "query": "https://itunes.apple.com/search?term=Yiruma+First+Love&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Material-7",
+      "query": "https://itunes.apple.com/search?term=Joe+Satriani+Surfing+with+the+Alien&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Material-8",
+      "query": "https://itunes.apple.com/search?term=Aphex+Twin+Selected+Ambient+Works+85%E2%80%9392&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Material-9",
+      "query": "https://itunes.apple.com/search?term=John+Coltrane+Giant+Steps&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Performance-10",
+      "query": "https://itunes.apple.com/search?term=Keith+Jarrett+The+K%C3%B6ln+Concert&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Performance-4",
+      "query": "https://itunes.apple.com/search?term=Richard+Clayderman+A+comme+amour&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Performance-5",
+      "query": "https://itunes.apple.com/search?term=Maksim+The+Piano+Player&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Performance-6",
+      "query": "https://itunes.apple.com/search?term=Bond+Born&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Performance-7",
+      "query": "https://itunes.apple.com/search?term=Animals+as+Leaders+The+Joy+of+Motion&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Performance-8",
+      "query": "https://itunes.apple.com/search?term=Glenn+Gould+Bach%3A+Goldberg+Variations%EF%BC%881955%E5%BD%95%E9%9F%B3%EF%BC%89&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Performance-9",
+      "query": "https://itunes.apple.com/search?term=Martha+Argerich+Prokofiev%3A+Piano+Concerto+No.+3+%2F+Ravel%3A+Piano+Concerto+in+G&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Production-10",
+      "query": "https://itunes.apple.com/search?term=Tim+Hecker+Harmony+in+Ultraviolet&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Production-4",
+      "query": "https://itunes.apple.com/search?term=Moby+Ambient&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "global-instrumental-Production-5",
+      "query": "https://itunes.apple.com/search?term=Jean-Michel+Jarre+Equinoxe+Infinity&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Production-6",
+      "query": "https://itunes.apple.com/search?term=Plini+Handmade+Cities&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Production-7",
+      "query": "https://itunes.apple.com/search?term=Tycho+Dive&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Production-8",
+      "query": "https://itunes.apple.com/search?term=Suzanne+Ciani+Seven+Waves&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Production-9",
+      "query": "https://itunes.apple.com/search?term=Brian+Eno+Ambient+1%3A+Music+for+Airports&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Structure-10",
+      "query": "https://itunes.apple.com/search?term=Steve+Reich+Ensemble+Music+for+18+Musicians&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Structure-4",
+      "query": "https://itunes.apple.com/search?term=Ludovico+Einaudi+Seven+Days+Walking&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Structure-5",
+      "query": "https://itunes.apple.com/search?term=Mogwai+Rave+Tapes&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Structure-6",
+      "query": "https://itunes.apple.com/search?term=Rachel+Grimes+Book+of+Leaves&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Structure-7",
+      "query": "https://itunes.apple.com/search?term=Tortoise+TNT&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "global-instrumental-Structure-8",
+      "query": "https://itunes.apple.com/search?term=Autechre+Tri+Repetae&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Structure-9",
+      "query": "https://itunes.apple.com/search?term=Charles+Mingus+The+Black+Saint+and+the+Sinner+Lady&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Vision-10",
+      "query": "https://itunes.apple.com/search?term=%C3%89liane+Radigue+Trilogie+de+la+Mort&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Vision-4",
+      "query": "https://itunes.apple.com/search?term=2CELLOS+Celloverse&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Vision-5",
+      "query": "https://itunes.apple.com/search?term=Vanessa-Mae+The+Violin+Player&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Vision-6",
+      "query": "https://itunes.apple.com/search?term=Mike+Oldfield+Guitars&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Vision-7",
+      "query": "https://itunes.apple.com/search?term=%C3%93lafur+Arnalds+re%3Amember&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Vision-8",
+      "query": "https://itunes.apple.com/search?term=Max+Richter+Sleep&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-instrumental-Vision-9",
+      "query": "https://itunes.apple.com/search?term=Godspeed+You%21+Black+Emperor+Lift+Your+Skinny+Fists+Like+Antennas+to+Heaven&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Composition-10",
+      "query": "https://itunes.apple.com/search?term=The+Beach+Boys+Pet+Sounds&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Composition-4",
+      "query": "https://itunes.apple.com/search?term=Kid+Cudi+Speedin%27+Bullet+2+Heaven&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Composition-5",
+      "expected": {
+        "album": "Van Halen III",
+        "artist": "Van Halen",
+        "year": "1998",
+        "edition": "1998年 Warner Bros. 原版12轨；短器乐过场按原曲序纳入。"
+      },
+      "query": "https://itunes.apple.com/search?term=Van+Halen+Van+Halen+III&entity=album&country=us&limit=8",
+      "results": [
+        {
+          "collectionId": 215638174,
+          "collectionName": "Van Halen III",
+          "artistName": "Van Halen",
+          "releaseDate": "1998-03-17T08:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/us/album/van-halen-iii/215638174?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/11/24/1c/mzi.eitbbrvo.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 976831013,
+          "collectionName": "1984",
+          "artistName": "Van Halen",
+          "releaseDate": "1984-01-09T08:00:00Z",
+          "trackCount": 9,
+          "collectionViewUrl": "https://music.apple.com/us/album/1984/976831013?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/79/98/f7/7998f761-20e0-aa8e-4fb2-190062af1638/603497894161.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 976818440,
+          "collectionName": "Diver Down",
+          "artistName": "Van Halen",
+          "releaseDate": "1982-04-14T08:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/us/album/diver-down/976818440?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c0/1e/44/c01e44cd-9982-e92d-52e6-b5e8ed9178b4/603497894178.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1550457457,
+          "collectionName": "You Ain't Van Halen (Acoustic) - Single",
+          "artistName": "Charlie Bonnet III",
+          "releaseDate": "2021-02-26T08:00:00Z",
+          "trackCount": 1,
+          "collectionViewUrl": "https://music.apple.com/us/album/you-aint-van-halen-acoustic-single/1550457457?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/02/6e/af/026eaf28-6ca3-061a-bbaf-d42282b695a0/195999395289.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1482343708,
+          "collectionName": "3 - Single",
+          "artistName": "Milhouse Van Halen",
+          "releaseDate": "2019-09-27T07:00:00Z",
+          "trackCount": 2,
+          "collectionViewUrl": "https://music.apple.com/us/album/3-single/1482343708?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/9f/31/5e/9f315e53-3e4a-892b-2af8-d5f27359482e/192641378430_Cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 660175725,
+          "collectionName": "Chaos im Märchenwald III (Expanded Edition)",
+          "artistName": "Thomas Bleicher & Fred van Halen",
+          "releaseDate": "2013-06-07T07:00:00Z",
+          "trackCount": 21,
+          "collectionViewUrl": "https://music.apple.com/us/album/chaos-im-m%C3%A4rchenwald-iii-expanded-edition/660175725?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/ae/4f/a6/ae4fa64a-07b5-d1aa-fe9d-12fb91e5407c/9008798122141_cover.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 6776853034,
+          "collectionName": "Steel Vengeance (Van Halen Tribute III)",
+          "artistName": "Lem Nirob",
+          "releaseDate": "2026-06-03T07:00:00Z",
+          "trackCount": 10,
+          "collectionViewUrl": "https://music.apple.com/us/album/steel-vengeance-van-halen-tribute-iii/6776853034?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/4d/84/cd4d8442-e592-b8b6-ebbc-f785c9a09e5b/artwork.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 148493946,
+          "collectionName": "Salut D'Amour",
+          "artistName": "David Halen & Peter Henderson",
+          "releaseDate": "2006-01-01T08:00:00Z",
+          "trackCount": 15,
+          "collectionViewUrl": "https://music.apple.com/us/album/salut-damour/148493946?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music/eb/69/cc/mzi.zlnkhdnt.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "global-song-Composition-6",
+      "expected": {
+        "album": "Make Believe",
+        "artist": "Weezer",
+        "year": "2005",
+        "edition": "2005年 Geffen 原版12曲。"
+      },
+      "query": "https://itunes.apple.com/search?term=Weezer+Make+Believe&entity=album&country=us&limit=8",
+      "results": [
+        {
+          "collectionId": 1440865423,
+          "collectionName": "Make Believe",
+          "artistName": "Weezer",
+          "releaseDate": "2005-05-10T07:00:00Z",
+          "trackCount": 12,
+          "collectionViewUrl": "https://music.apple.com/us/album/make-believe/1440865423?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/47/40/48/474048e5-27ed-319e-1b60-73dae6a716d8/06UMGIM12419.rgb.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "global-song-Composition-7",
+      "query": "https://itunes.apple.com/search?term=The+Killers+Hot+Fuss&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Composition-8",
+      "expected": {
+        "album": "Rumours",
+        "artist": "Fleetwood Mac",
+        "year": "1977",
+        "edition": "1977年 Warner 原版11曲；Silver Springs不是原曲序一部分。"
+      },
+      "query": "https://itunes.apple.com/search?term=Fleetwood+Mac+Rumours&entity=album&country=us&limit=8",
+      "results": [
+        {
+          "collectionId": 594061854,
+          "collectionName": "Rumours",
+          "artistName": "Fleetwood Mac",
+          "releaseDate": "1977-02-04T08:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/us/album/rumours/594061854?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4d/13/ba/4d13bac3-d3d5-7581-2c74-034219eadf2b/081227970949.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 202271826,
+          "collectionName": "Greatest Hits",
+          "artistName": "Fleetwood Mac",
+          "releaseDate": "1988-11-21T08:00:00Z",
+          "trackCount": 16,
+          "collectionViewUrl": "https://music.apple.com/us/album/greatest-hits/202271826?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d2/48/f4/d248f4ae-a7e4-a48e-1588-6617de3e8d76/mzi.izeorbmm.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1696829962,
+          "collectionName": "Rumours (Live)",
+          "artistName": "Fleetwood Mac",
+          "releaseDate": "2023-09-08T07:00:00Z",
+          "trackCount": 18,
+          "collectionViewUrl": "https://music.apple.com/us/album/rumours-live/1696829962?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e6/1b/fd/e61bfdc9-955d-58b5-21a7-5aab89c5726a/603497833979.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 651879763,
+          "collectionName": "Rumours (Super Deluxe Edition)",
+          "artistName": "Fleetwood Mac",
+          "releaseDate": "1977-02-04T08:00:00Z",
+          "trackCount": 59,
+          "collectionViewUrl": "https://music.apple.com/us/album/rumours-super-deluxe-edition/651879763?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2a/eb/dc/2aebdc18-c2c0-0fdd-fb85-07538a925700/603497925766.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 593327799,
+          "collectionName": "The Very Best of Fleetwood Mac (Remastered)",
+          "artistName": "Fleetwood Mac",
+          "releaseDate": "2002-10-15T07:00:00Z",
+          "trackCount": 36,
+          "collectionViewUrl": "https://music.apple.com/us/album/the-very-best-of-fleetwood-mac-remastered/593327799?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7d/5b/04/7d5b0401-b944-b628-8eb2-d0cb49fb6ca5/603497925599.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 651871544,
+          "collectionName": "Rumours (Deluxe Edition)",
+          "artistName": "Fleetwood Mac",
+          "releaseDate": "1977-02-04T08:00:00Z",
+          "trackCount": 40,
+          "collectionViewUrl": "https://music.apple.com/us/album/rumours-deluxe-edition/651871544?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/dd/77/35/dd773533-06a7-4566-bef4-2c43c24d08f6/603497925759.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 1483708628,
+          "collectionName": "Rumours (2001 Remaster)",
+          "artistName": "Fleetwood Mac",
+          "releaseDate": "1977-02-04T08:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/us/album/rumours-2001-remaster/1483708628?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d3/94/13/d39413b7-f646-e6a6-17b6-de58e899ddc2/603497848416.jpg/100x100bb.jpg"
+        },
+        {
+          "collectionId": 990759695,
+          "collectionName": "VSQ Performs Fleetwood Mac: Rumours",
+          "artistName": "Vitamin String Quartet",
+          "releaseDate": "2000-03-07T08:00:00Z",
+          "trackCount": 11,
+          "collectionViewUrl": "https://music.apple.com/us/album/vsq-performs-fleetwood-mac-rumours/990759695?uo=4",
+          "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/cf/92/59/cf9259e9-5f3c-dd04-9a21-08cdfa3e6e10/dj.rkzsefyw.jpg/100x100bb.jpg"
+        }
+      ]
+    },
+    {
+      "id": "global-song-Composition-9",
+      "query": "https://itunes.apple.com/search?term=Kate+Bush+Hounds+of+Love&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Context-10",
+      "query": "https://itunes.apple.com/search?term=Marvin+Gaye+What%27s+Going+On&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Context-4",
+      "query": "https://itunes.apple.com/search?term=Iggy+Azalea+In+My+Defense&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Context-5",
+      "query": "https://itunes.apple.com/search?term=Greta+Van+Fleet+Anthem+of+the+Peaceful+Army&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "global-song-Context-6",
+      "query": "https://itunes.apple.com/search?term=BABYMETAL+Metal+Resistance&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Context-7",
+      "query": "https://itunes.apple.com/search?term=Manu+Chao+Clandestino&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Context-8",
+      "query": "https://itunes.apple.com/search?term=Youssou+N%27Dour+Egypt&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Context-9",
+      "query": "https://itunes.apple.com/search?term=Kendrick+Lamar+To+Pimp+a+Butterfly&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Lyrics-10",
+      "query": "https://itunes.apple.com/search?term=Bob+Dylan+Blood+on+the+Tracks&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "global-song-Lyrics-4",
+      "query": "https://itunes.apple.com/search?term=Lil+Pump+Harverd+Dropout&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Lyrics-5",
+      "expected": {
+        "album": "Total Xanarchy",
+        "artist": "Lil Xan",
+        "year": "2018",
+        "edition": "2018年 Columbia 原版16曲。"
+      },
+      "query": "https://itunes.apple.com/search?term=Lil+Xan+Total+Xanarchy&entity=album&country=us&limit=8",
+      "results": []
+    },
+    {
+      "id": "global-song-Lyrics-6",
+      "query": "https://itunes.apple.com/search?term=Jack+Harlow+Come+Home+the+Kids+Miss+You&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Lyrics-7",
+      "query": "https://itunes.apple.com/search?term=Lorde+Pure+Heroine&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Lyrics-8",
+      "query": "https://itunes.apple.com/search?term=Taylor+Swift+folklore&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Lyrics-9",
+      "query": "https://itunes.apple.com/search?term=The+Smiths+The+Queen+Is+Dead&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Performance-10",
+      "query": "https://itunes.apple.com/search?term=Nina+Simone+Pastel+Blues&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Performance-4",
+      "query": "https://itunes.apple.com/search?term=Heidi+Montag+Superficial&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "global-song-Performance-5",
+      "query": "https://itunes.apple.com/search?term=Selena+Gomez+Stars+Dance&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Performance-6",
+      "query": "https://itunes.apple.com/search?term=Paris+Hilton+Paris&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "global-song-Performance-7",
+      "query": "https://itunes.apple.com/search?term=Madonna+Like+a+Virgin&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Performance-8",
+      "query": "https://itunes.apple.com/search?term=James+Brown+and+the+Famous+Flames+Live+at+the+Apollo&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Performance-9",
+      "query": "https://itunes.apple.com/search?term=Aretha+Franklin+I+Never+Loved+a+Man+the+Way+I+Love+You&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Production-10",
+      "query": "https://itunes.apple.com/search?term=Bj%C3%B6rk+Homogenic&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Production-4",
+      "query": "https://itunes.apple.com/search?term=Metallica+St.+Anger&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Production-5",
+      "query": "https://itunes.apple.com/search?term=Chris+Cornell+Scream&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Production-6",
+      "query": "https://itunes.apple.com/search?term=Oasis+Be+Here+Now&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Production-7",
+      "query": "https://itunes.apple.com/search?term=Lady+Gaga+The+Fame&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Production-8",
+      "query": "https://itunes.apple.com/search?term=Nirvana+Nevermind&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Production-9",
+      "query": "https://itunes.apple.com/search?term=Steely+Dan+Aja&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "global-song-Vision-10",
+      "query": "https://itunes.apple.com/search?term=Pink+Floyd+The+Dark+Side+of+the+Moon&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Vision-4",
+      "query": "https://itunes.apple.com/search?term=Liz+Phair+Funstyle&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Vision-5",
+      "query": "https://itunes.apple.com/search?term=Justin+Timberlake+Man+of+the+Woods&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 403"
+    },
+    {
+      "id": "global-song-Vision-6",
+      "query": "https://itunes.apple.com/search?term=Gorillaz+Humanz&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Vision-7",
+      "query": "https://itunes.apple.com/search?term=Janelle+Mon%C3%A1e+The+Electric+Lady&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Vision-8",
+      "query": "https://itunes.apple.com/search?term=David+Bowie+The+Rise+and+Fall+of+Ziggy+Stardust+and+the+Spiders+from+Mars&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    },
+    {
+      "id": "global-song-Vision-9",
+      "query": "https://itunes.apple.com/search?term=Radiohead+OK+Computer&entity=album&country=us&limit=8",
+      "error": "Error: HTTP 429"
+    }
+  ]
+}

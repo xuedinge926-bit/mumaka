@@ -2,6 +2,8 @@ import { openDB, type DBSchema } from "idb";
 import { createId, sha256Hex } from "./browserCrypto";
 import { exportBackup as exportLegacyBackup } from "./storage";
 import { bundledCatalog, validateCatalog } from "../model/v040/catalog";
+import { auditReferences } from "./referenceAudit";
+import { upgradeReferenceCatalog, manualSnapshot, REFERENCE_VERSION } from "./referenceReview";
 import { calculate, canSnapshot, validateDraft } from "../model/v040/engine";
 import {
   CATEGORIES,
@@ -88,7 +90,7 @@ export async function state() {
       snapshots: snapshots.sort((a, b) =>
         b.createdAt.localeCompare(a.createdAt),
       ),
-      catalog: imported ? validateCatalog(imported.value) : bundledCatalog,
+      catalog: imported ? upgradeReferenceCatalog(validateCatalog(imported.value)) : bundledCatalog,
     };
   } finally {
     database.close();
@@ -125,7 +127,7 @@ export function deleteDraft(id: string) {
   });
 }
 export async function installCatalog(input: unknown) {
-  const catalog = validateCatalog(input);
+  const catalog = upgradeReferenceCatalog(validateCatalog(input));
   const bundledIds = bundledCatalog.genres
     .map((g) => g.id)
     .sort()
@@ -262,6 +264,7 @@ export async function exportBackup(): Promise<string> {
         drafts: current.drafts,
         snapshots: current.snapshots,
         catalog: current.catalog,
+        manualReferences: [manualSnapshot, ...(((await database.get("meta", "manual-reference-archives"))?.value as unknown[]) || [])],
         legacyCheckpoint:
           (await database.get("meta", "legacy-checkpoint"))?.value ?? null,
       },
@@ -322,7 +325,7 @@ export async function importBackup(json: string) {
     !Array.isArray(p.snapshots)
   )
     throw new Error("需要V0.40完整JSON备份；旧版备份请使用旧版恢复入口");
-  const catalog = validateCatalog(p.catalog);
+  const catalog = upgradeReferenceCatalog(validateCatalog(p.catalog));
   if (
     catalog.genres
       .map((g) => g.id)
@@ -335,6 +338,15 @@ export async function importBackup(json: string) {
   )
     throw new Error("稳定风格ID不一致");
   p.drafts.forEach(validateDraft);
+  if (p.manualReferences !== undefined) {
+    if (!Array.isArray(p.manualReferences)) throw new Error("人工底稿归档格式无效");
+    const versions = new Set<string>();
+    for (const raw of p.manualReferences) {
+      if (!raw || typeof raw.version !== "string" || !/^[a-f0-9]{64}$/.test(raw.sourceImageSha256 || "") || versions.has(raw.version)) throw new Error("人工底稿归档身份无效");
+      versions.add(raw.version);
+      if (raw.version === manualSnapshot.version && canonical(raw) !== canonical(manualSnapshot)) throw new Error("原始人工底稿受保护，备份不能覆盖已归档版本。");
+    }
+  }
   await Promise.all(p.snapshots.map(verifySnapshot));
   for (const store of ["drafts", "snapshots"] as const)
     if (
@@ -367,6 +379,16 @@ export async function importBackup(json: string) {
             }
           }
         await tx.objectStore("meta").put({ id: "catalog", value: catalog });
+        if (p.manualReferences?.length) {
+          const existing = ((await tx.objectStore("meta").get("manual-reference-archives"))?.value as {version:string}[]) || [];
+          const merged = [...existing];
+          for (const raw of p.manualReferences.filter((r:{version:string})=>r.version !== manualSnapshot.version)) {
+            const previous = merged.find(r=>r.version === raw.version);
+            if (previous && canonical(previous) !== canonical(raw)) throw new Error("人工底稿同版本冲突，未覆盖任何数据。");
+            if (!previous) merged.push(raw);
+          }
+          await tx.objectStore("meta").put({ id:"manual-reference-archives", value:merged });
+        }
         // A foreign backup never replaces this browser's pre-upgrade checkpoint.
         if (
           !(await tx.objectStore("meta").get("legacy-checkpoint")) &&
@@ -405,4 +427,110 @@ export async function legacyCheckpoint(): Promise<string | null> {
   } finally {
     database.close();
   }
+}
+
+/** Updates one reference cell only, with an optimistic check and no access to model weights. */
+export async function saveReferenceCandidate(
+  candidate: import("../model/v040/types").Anchor,
+  expected: import("../model/v040/types").Anchor,
+  unlockReviewed = false,
+  listened = false,
+) {
+  return enqueue(async () => {
+    const database = await db();
+    try {
+      const tx = database.transaction("meta", "readwrite");
+      const installed = await tx.store.get("catalog");
+      const catalog = installed
+        ? upgradeReferenceCatalog(validateCatalog(installed.value))
+        : structuredClone(bundledCatalog);
+      const previous = catalog.anchors.find((a) => a.id === expected.id);
+      const previousErrors = auditReferences(catalog.anchors).filter(i=>i.severity === "error");
+      if (!previous || canonical(previous) !== canonical(expected))
+        throw new Error("此格已在另一处修改，请重新打开后编辑。");
+      if ((previous.approved || previous.manualLocked) && !unlockReviewed)
+        throw new Error("已审定或人工选择格受保护，请先解除保护。");
+      if (
+        candidate.id !== previous.id ||
+        candidate.region !== previous.region ||
+        candidate.category !== previous.category ||
+        candidate.dimension !== previous.dimension ||
+        candidate.stars !== previous.stars
+      )
+        throw new Error("不能修改参考格位的身份。");
+      if (
+        !candidate.album.trim() ||
+        !candidate.artist.trim() ||
+        !/^\d{4}$/.test(candidate.year) ||
+        !candidate.mainGenre?.trim() ||
+        !candidate.feature.trim() ||
+        !candidate.displayStandard?.trim()
+      )
+        throw new Error(
+          "请填写真实专辑、艺术家、四位年份、主风格、标准与理由。",
+        );
+      if (
+        [
+          candidate.album,
+          candidate.artist,
+          candidate.mainGenre,
+          candidate.displayStandard,
+          candidate.feature,
+        ].some((v) => v.length > 2000)
+      )
+        throw new Error("单个字段不得超过2000字。");
+      const urls = [
+        ...candidate.sources,
+        ...(candidate.coverUrl ? [candidate.coverUrl] : []),
+      ];
+      if (
+        urls.some((value) => {
+          try {
+            const u = new URL(value);
+            return u.protocol !== "https:" || !!u.username || !!u.password;
+          } catch {
+            return true;
+          }
+        })
+      )
+        throw new Error("图片与来源请使用不含账号密码的HTTPS地址。");
+      if (
+        candidate.approved &&
+        (!listened ||
+          !candidate.reviewedBy?.trim() ||
+          !candidate.sources.length)
+      )
+        throw new Error("审定需要完整专辑核验、审定人和资料来源。");
+      const next = {
+        ...structuredClone(candidate),
+        // The source transcription is immutable even after an explicit working edit.
+        manualVersion: previous.manualVersion,
+        manualTitle: previous.manualTitle,
+        manualLocked: previous.manualLocked,
+        manualResolution: previous.manualResolution,
+        unassigned: false,
+        version: REFERENCE_VERSION,
+        status: candidate.approved ? "approved" : "draft",
+        referenceEditedAt: new Date().toISOString(),
+        reviewedAt: candidate.approved ? new Date().toISOString() : undefined,
+      };
+      if (previous.manualLocked)
+        catalog.referenceConflicts = [...(catalog.referenceConflicts || []), { id: previous.id, reason: "用户显式解除保护后的本机修订；原始人工转录仍独立保存。", previous: structuredClone(previous) }];
+      catalog.anchors = catalog.anchors.map((a) =>
+        a.id === next.id ? next : a,
+      );
+      const errors = auditReferences(catalog.anchors).filter(i => i.severity === "error");
+      // Old local edits may predate the new constraints. Permit a strictly improving
+      // repair, while never introducing a new issue into a valid table.
+      const oldKeys = new Set(previousErrors.map(i=>`${i.id}:${i.code}:${i.message}`));
+      if (errors.length && (errors.length >= previousErrors.length || errors.some(i=>!oldKeys.has(`${i.id}:${i.code}:${i.message}`))))
+        throw new Error(errors.map(i => `${i.id}：${i.message}`).join("\n"));
+      validateCatalog(catalog);
+      await tx.store.put({ id: "catalog", value: catalog });
+      await tx.done;
+      return catalog;
+    } finally {
+      database.close();
+    }
+  });
 }

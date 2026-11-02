@@ -1,0 +1,1625 @@
+{
+  "version": "reference-2026-11-02-r1",
+  "initialVerifiedCovers": 18,
+  "newVerifiedCovers": 90,
+  "totalVerifiedCovers": 108,
+  "decisions": [
+    {
+      "id": "china-instrumental-Context-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Context-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "结果未含所选Beautiful Energy原版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Context-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Context-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "所选2019流通CD与目录2010年不同，封面未确认同版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Context-7",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 598522113,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Context-8",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1420056844,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Context-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Material-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "目录2024数字发行，原版年份与封面尚未交叉核对。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Material-4",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1561995026,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Material-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1232231571,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Material-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Material-7",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 698628164,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Material-8",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1692819588,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Material-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Performance-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Performance-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "只有豪华版、Encore版及续作，保留标准版评分对象。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Performance-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1452268191,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Performance-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未返回石进所选专辑。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Performance-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "同名其他艺人的Connection。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Performance-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "1996数字版权与1997所选实体发行有差异，封面暂不映射。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Performance-9",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1452228024,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Production-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "目录2015与2014原版不同。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Production-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Production-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 330491873,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Production-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Production-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Production-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "目录2012与所选2008原版不同。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Production-9",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1621762781,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Structure-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Structure-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Structure-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 886535616,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Structure-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Structure-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Structure-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Structure-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "结果未含黄若所选专辑。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Vision-10",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1271875409,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Vision-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Vision-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1863892844,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Vision-6",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1559520502,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Vision-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Vision-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-instrumental-Vision-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Composition-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "只取得单曲/混音，不能作为完整专辑封面匹配。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Context-10",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1585625540,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Context-4",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1817712876,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Context-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 924494955,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Context-6",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1443344628,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Context-7",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 367988349,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Context-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Context-9",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1443345866,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Lyrics-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Performance-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Production-10",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1443287350,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Production-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Production-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 6774683127,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Production-6",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1783038001,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Production-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Production-8",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1443637757,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Production-9",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 914664926,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Vision-10",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1545534900,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Vision-4",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1350216479,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Vision-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1440726097,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Vision-6",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1443367431,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Vision-7",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 964698411,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Vision-8",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1593446659,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "china-song-Vision-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-5",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 215638174,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-6",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 1440865423,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-8",
+      "run": 41429124157,
+      "decision": "accept-cover-only",
+      "collectionId": 594061854,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "未匹配到指定唱片身份。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-10",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-4",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-5",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 403",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-6",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-7",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-8",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-9",
+      "run": 41429124157,
+      "decision": "not-used",
+      "reason": "Error: HTTP 429",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 193085545,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 911904522,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-5",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "结果没有Rock Symphonies。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-6",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 432825225,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-7",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "结果没有Endtroducing.....。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-8",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1440719294,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Context-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 158571524,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 268443092,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-4",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "10轨目录未确认等同所选8曲原版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-5",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1067977710,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-6",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1436677753,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-7",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 405602019,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-8",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1668862636,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Material-9",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "仅2020 Remaster及扩展版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1440840566,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1616215993,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-5",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 695999850,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-6",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "2001 UK Bonus Track版，非所选2000原13曲版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-7",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1820375074,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-8",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "未返回1955录音/1956发行指定版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Performance-9",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "目录增加Gaspard，未作为原LP封面匹配。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 189047071,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1500632090,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-5",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1441178079,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-6",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1562296268,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-7",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 679251532,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-8",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 47638147,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Production-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 724435863,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1452312720,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1482345109,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-5",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1743115346,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-6",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 6801300466,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-7",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 314874253,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-8",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 281109010,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Structure-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1443280597,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 73244805,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 941192489,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-5",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1465123736,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-6",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "数字目录1998与官方原版1999冲突，暂不映射。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-7",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1390704147,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-8",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1440791983,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-instrumental-Vision-9",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "未返回所选完整专辑。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1440841241,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-4",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "未取得所选完整专辑。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-7",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "12轨目录未确认等同所选美国11曲版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Composition-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1675375084,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1538081586,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1470566420,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-5",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "11轨目录未确认等同所选原10曲版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-6",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1830273195,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-7",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 745099303,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-8",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 20002817,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Context-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1440871877,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 158320766,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1456329001,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-5",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "未取得所选完整专辑。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-6",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1622624421,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-7",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "只取得翻奏、致敬或同名他人作品。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-8",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1524793738,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Lyrics-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 800092985,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-10",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1445668394,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 348940532,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-5",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "只有Bonus Track Version，标准11曲版未确认。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-6",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 179421430,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-7",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "11轨目录未确认等同所选1984年9曲版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-8",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1445669062,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Performance-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 937107826,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-10",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "只取得Homogenic Live，不能代替录音室版。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-4",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "未取得Metallica原专辑，结果为同名、卡拉OK或致敬。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-5",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "13轨目录标2008，2009目录有16轨；先不将版次混用。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-6",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1517475368,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-7",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "结果没有所选The Fame。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-8",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "原作未返回，仅翻奏及其他作品。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Production-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1706428459,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-10",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "结果没有所选原专辑。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-4",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 835107111,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-5",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "结果为其他唱片、致敬或单曲。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-6",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "仅Humanz单曲混音，不能匹配完整专辑。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-7",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 665514095,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-8",
+      "run": 41430462787,
+      "decision": "not-used",
+      "reason": "明确2012 Remaster版，所选1972原版封面暂不映射。",
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    },
+    {
+      "id": "global-song-Vision-9",
+      "run": 41430462787,
+      "decision": "accept-cover-only",
+      "collectionId": 1097861387,
+      "note": "封面核对不构成完整试听或星级审定；评分版次以工作记录edition为准。"
+    }
+  ]
+}

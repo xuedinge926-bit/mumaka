@@ -202,27 +202,30 @@ describe("mixed albums use artistic contribution, with vision/context exactly on
   });
 });
 describe("168 reference positions retain research limits", () => {
-  it("uses the actual R3 thirty-nine artists and three unfilled positions", () => {
+  it("uses the manually revised full China table with the single permitted OYS repeat", () => {
     expect(bundledCatalog.anchors).toHaveLength(168);
     const cn = bundledCatalog.anchors.filter(
       (a) => a.region === "china" && a.category === "song",
     );
     expect(cn).toHaveLength(42);
-    expect(cn.filter((a) => a.unassigned)).toHaveLength(3);
+    expect(cn.filter((a) => a.unassigned)).toHaveLength(0);
     expect(
       new Set(cn.filter((a) => !a.unassigned).map((a) => a.artist)).size,
-    ).toBe(39);
+    ).toBe(41);
     expect(
       cn.find((a) => a.dimension === "歌词" && a.stars === 4.5)!.album,
-    ).toBe("生命中的精灵");
+    ).toBe("万能青年旅店");
     expect(bundledCatalog.anchors.every((a) => !a.approved)).toBe(true);
     expect(bundledCatalog.anchors.some((a) => a.stars < 2)).toBe(false);
   });
-  it("flags original-grid artist repetition instead of claiming a completed standard", () => {
+  it("keeps all positions unreviewed while the revised tables meet the new repetition rules", () => {
     const issues = bundledCatalog.anchors.flatMap((a) =>
       anchorIssues(a, bundledCatalog.anchors),
     );
-    expect(issues.some((i) => i.includes("同维七档艺人重复"))).toBe(true);
-    expect(issues.some((i) => i.includes("超过3次"))).toBe(true);
+    expect(issues.every(i => i.includes("未审定"))).toBe(true);
+    const invalid = structuredClone(bundledCatalog.anchors);
+    invalid[1].artist = invalid[0].artist;
+    invalid[1].primaryArtistId = invalid[0].primaryArtistId;
+    expect(anchorIssues(invalid[0], invalid).some(i=>i.includes("同维七档"))).toBe(true);
   });
 });

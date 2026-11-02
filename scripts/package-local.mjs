@@ -2,7 +2,6 @@ import { execFileSync } from "node:child_process";
 import { mkdir, cp, writeFile, chmod } from "node:fs/promises";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const destination = resolve(process.argv[2] || "local-release");
 await mkdir(destination, { recursive: true });
@@ -15,20 +14,10 @@ execFileSync(
   { cwd: root, stdio: "inherit" },
 );
 await cp(
-  resolve(root, "tools/album_import"),
-  resolve(destination, "tools/album_import"),
-  {
-    recursive: true,
-    filter: (path) => !path.includes("__pycache__") && !path.endsWith(".pyc"),
-  },
+  resolve(root, "scripts/serve-local.py"),
+  resolve(destination, "serve-local.py"),
 );
-await cp(
-  resolve(root, "tools/__init__.py"),
-  resolve(destination, "tools/__init__.py"),
-);
-const direct =
-  '#!/bin/zsh\ncd -- "${0:A:h}"\nopen -a "Google Chrome" "$PWD/index.html" || open "$PWD/index.html"\n';
-const serve = `#!/bin/zsh
+const launcher = `#!/bin/zsh
 cd -- "\${0:A:h}"
 if [[ -x "$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3" ]]; then
   mumaka_python="$HOME/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3"
@@ -36,37 +25,40 @@ else
   mumaka_python="$(command -v python3)"
 fi
 if [[ -z "$mumaka_python" ]]; then
-  open "$PWD/index.html"
+  open -a "Google Chrome" "$PWD/index.html" || open "$PWD/index.html"
   exit
 fi
-exec "$mumaka_python" -m tools.album_import serve --root . --port 8765 --open
+exec "$mumaka_python" serve-local.py --root . --port 8765 --open
 `;
+const direct =
+  '#!/bin/zsh\ncd -- "${0:A:h}"\nopen -a "Google Chrome" "$PWD/index.html" || open "$PWD/index.html"\n';
 for (const [name, content] of [
-  ["打开MUMAKA.command", direct],
-  ["启动链接导入服务.command", serve],
+  ["启动MUMAKA.command", launcher],
+  ["直接打开单文件.command", direct],
 ]) {
   await writeFile(resolve(destination, name), content, "utf8");
   await chmod(resolve(destination, name), 0o755);
 }
 await writeFile(
   resolve(destination, "使用说明.md"),
-  `# MUMAKA V0.40
+  `# 木马卡 MUMAKA V0.41
 
-双击 **打开MUMAKA.command** 或 **index.html** 即可评分，无需安装。
-需要通过音乐网站链接添加资料时，双击 **启动链接导入服务.command**，它会在固定本机地址 http://127.0.0.1:8765 打开工具。终端窗口保持开启；关闭后停止本机服务。
+推荐双击「启动MUMAKA.command」。它在固定本机地址 http://127.0.0.1:8765 打开，不发布到互联网。保持启动窗口开启，关闭窗口即停止服务。再次打开使用相同地址和浏览器，作品会继续保留。
 
-歌曲／乐曲切换在最上方；信息、风格、六维评分和评分卡都在一页，修改即时更新。两类星级、证据与风格分别保存。混合专辑须填写人工艺术比重，愿景和语境只计一次。
+也可以双击 index.html，或「直接打开单文件.command」，无需安装或联网即可评分。不同浏览器和不同网站地址的数据各自保存，不自动互通。
 
-实际接入V0.38.1：34一级、565稳定ID、522组双模式候选、43不可评分索引、5定义待审。候选可以研究试算、保存快照和导出PNG／SVG／CSV／JSON；正式发布按钮只在权重审定、整碟试听及人工证据齐备后开放。
+升级前先在旧版「数据管理」导出 V0.40 完整备份；在新版左上菜单「数据与工具」恢复。旧目录和旧备份请保留。V0.19、V0.35 各有自己的备份入口，不与新版混用。仅复制HTML文件不会迁移浏览器数据。
 
-星级参考页有四类各42格。华语歌曲优先使用R3的39位艺人、3个待选格。全部候选均保留未审定状态，不冒充正式标尺。
+首页「快速评分」手动填写专辑，可上传封面。歌曲／乐曲分别保留风格和六维星级；点半颗星或整颗星评分，悬停预览等级，点击维度名称看说明。评分草稿标签可同时保存多张作品。右侧实时显示总分、六维图和卡片，支持PNG／SVG／CSV／JSON。保存评分版本会冻结当时的权重和分数。
 
-作品库、评分记录和数据管理可从左上角菜单打开。数据管理中，V0.40备份和旧版备份各有入口；换浏览器或地址前先导出相应备份。直接打开HTML、本机8765地址和GitHub Pages拥有各自浏览器数据，互不自动同步。
+右上「…」切换亮色、暗色、跟随系统和主题色。「设置」可选择新卡片默认比例、配色、地区，默认展开参考说明及减少动画。
 
-旧模型记录、冻结总分和N/A不重算。首页“V0.19归档工具”可继续使用原评分流程；V0.35研究工作区也保留。新版首次评分会在本机保留旧库保护副本，可在新版数据管理下载。
+首页星级速览和完整参考页使用同一份四类168格候选。中国歌曲沿用R3，原先3个空位补充独立初选，均未自动审定。其他三类沿用现有V0.38.1候选，仍待试听及去重审定。封面缺失时显示占位。各格可在「数据与工具 → 管理标尺候选」替换、保存与人工审定，已审定格有保护。
 
-此目录只含可运行页面、两个启动入口和链接导入所需的小型服务。源码、测试、原始工作簿、私人评分备份和研究工作流材料均未复制进来。
+评分数学、双体系权重、六维定义及旧历史记录保持原样。本版只精简界面与操作。研究工具和早期版本收在「数据与工具」，首页不提供链接抓取或Spotify搜索。
+
+此目录只包含可运行页面、启动器、仅绑定本机的静态服务和本说明，不含私人备份、原始工作簿或内部资料。
 `,
   "utf8",
 );
-console.log(`Ready-to-use local folder: ${destination}`);
+console.log(`Local package ready: ${destination}`);
