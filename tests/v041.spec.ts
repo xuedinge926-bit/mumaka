@@ -191,6 +191,7 @@ test("half-star hover previews every level without mutating draft, totals or the
   await fourth.click({ position: { x: b.width * 0.25, y: b.height / 2 } });
   await expect(slider).toHaveAttribute("aria-valuenow", "3.5");
   await expect(page.getByTestId("dual-total")).toHaveText("7.81");
+  await expect(page.locator(".dual-save")).toHaveAttribute("title", "已自动保存");
   await page.reload();
   await expect(page.getByTestId("dual-total")).toHaveText("7.81");
   await expect(page.locator("#dual-ratings input[type=number]")).toHaveCount(0);

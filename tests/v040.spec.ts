@@ -112,6 +112,7 @@ test("switching modes keeps separate ratings, evidence, genre weights and saved 
   await category(page, "歌曲");
   await expect(page.getByLabel("歌词文字证据")).toHaveValue("歌曲专属证据");
   await expect(page.getByTestId("dual-total")).toHaveText("8.00");
+  await expect(page.locator(".dual-save")).toHaveAttribute("title", "已自动保存");
   await page.reload();
   await expect(page.getByTestId("dual-total")).toHaveText("8.00");
   await category(page, "乐曲");

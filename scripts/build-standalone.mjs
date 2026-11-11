@@ -8,6 +8,7 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadEnv } from 'vite';
+import { embedResearchR6 } from './r6-public.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const output = resolve(process.argv[2] || resolve(root, 'standalone/新乐评主义.html'));
@@ -52,5 +53,5 @@ const html = `<!doctype html>
 <script>${javascript.replace(/<\/script/gi, '<\\/script')}</script>
 </body></html>\n`;
 await mkdir(dirname(output), { recursive: true });
-await writeFile(output, html, 'utf8');
+await writeFile(output, await embedResearchR6(html), 'utf8');
 console.log(`Self-contained HTML: ${output} (${Buffer.byteLength(html)} bytes)`);
