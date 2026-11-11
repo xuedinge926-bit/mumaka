@@ -8,6 +8,7 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadEnv } from 'vite';
+import { embedResearchR6 } from './r6-public.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const output = resolve(process.argv[2] || resolve(root, 'standalone/新乐评主义.html'));
@@ -46,11 +47,11 @@ const html = `<!doctype html>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#244c40">
 <meta name="description" content="新乐评主义：本地优先、人工主导的六维专辑评价工作台">
-<title>MUMAKA / 木马卡 · 新乐评主义</title>
+<title>木马卡 MUMAKA · 新乐评主义</title>
 <style>${css.replace(/<\/style/gi, '<\\/style')}</style>
 </head><body><div id="root"></div>
 <script>${javascript.replace(/<\/script/gi, '<\\/script')}</script>
 </body></html>\n`;
 await mkdir(dirname(output), { recursive: true });
-await writeFile(output, html, 'utf8');
+await writeFile(output, await embedResearchR6(html), 'utf8');
 console.log(`Self-contained HTML: ${output} (${Buffer.byteLength(html)} bytes)`);

@@ -50,14 +50,17 @@ jobs:
         run: |
           node scripts/build-standalone.mjs public-site/index.html
           touch public-site/.nojekyll
+          node scripts/r6-public.mjs --manifest public-site/release.json
           git fetch origin gh-pages:refs/remotes/origin/gh-pages
-          mkdir -p public-site/legacy
+          mkdir -p public-site/legacy/pre-r6-20261111
+          git show origin/gh-pages:index.html > public-site/legacy/pre-r6-20261111/index.html
           if git cat-file -e origin/gh-pages:legacy/index.html 2>/dev/null; then
             git show origin/gh-pages:legacy/index.html > public-site/legacy/index.html
           else
             git show origin/gh-pages:index.html > public-site/legacy/index.html
           fi
           node scripts/check-public.mjs public-site
+          node scripts/test-public-r6.mjs public-site
           python3 - <<'PY'
           from pathlib import Path
           import zipfile
@@ -98,7 +101,7 @@ jobs:
           git init
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add index.html nmc-local.zip .nojekyll legacy/index.html
+          git add index.html nmc-local.zip release.json .nojekyll legacy/
           git commit -m "Build MUMAKA $SOURCE_SHA"
           tree=$(git rev-parse HEAD^{tree})
           git --git-dir="$GITHUB_WORKSPACE/.git" config user.name github-actions[bot]

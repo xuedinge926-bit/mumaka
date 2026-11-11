@@ -1,0 +1,98 @@
+<div id="mumaka-r6-launcher">
+  <button id="mumaka-r6-open" type="button" aria-haspopup="dialog" aria-controls="mumaka-r6-dialog">R6 研究试算</button>
+</div>
+<dialog id="mumaka-r6-dialog" aria-labelledby="mumaka-r6-title" aria-describedby="mumaka-r6-intro">
+  <header class="r6-header">
+    <div>
+      <p class="r6-eyebrow">MUMAKA · 研究候选</p>
+      <h2 id="mumaka-r6-title">R6 研究试算</h2>
+    </div>
+    <button id="mumaka-r6-close" type="button">关闭</button>
+  </header>
+  <div id="mumaka-r6-content">
+    <p id="mumaka-r6-intro">v4-research-r6 · 2026-11-10 · 研究候选 · 未批准<br>试算内容仅保留在当前页面。</p>
+    <fieldset class="r6-modes">
+      <legend>评价模式</legend>
+      <label><input type="radio" name="mumaka-r6-mode" value="song" checked><span>歌曲</span></label>
+      <label><input type="radio" name="mumaka-r6-mode" value="instrumental"><span>乐曲</span></label>
+    </fieldset>
+    <label class="r6-mode-review"><input id="mumaka-r6-mode-review" type="checkbox">作品的歌曲／乐曲模式有实质争议</label>
+    <p id="mumaka-r6-mode-status" class="r6-review-note" role="status" hidden>needs_mode_review · 暂停出分，等人工确认作品的主导表达与组织机制。</p>
+    <details class="r6-details">
+      <summary>六维方法、星级和声音取证</summary>
+      <div id="mumaka-r6-method"></div>
+    </details>
+    <div class="r6-style">
+      <label for="mumaka-r6-style"><strong>R6 风格</strong></label>
+      <select id="mumaka-r6-style"></select>
+    </div>
+    <p id="mumaka-r6-message" role="status"></p>
+    <section id="mumaka-r6-trial" aria-label="六维试算" hidden>
+      <table class="r6-dimensions">
+        <thead>
+          <tr>
+            <th scope="col">维度</th>
+            <th scope="col">评级</th>
+            <th scope="col">权重</th>
+            <th scope="col">星级</th>
+          </tr>
+        </thead>
+        <tbody id="mumaka-r6-dimensions"></tbody>
+      </table>
+      <div id="mumaka-r6-configured" hidden>
+        <div class="r6-result">
+          <div>
+            <p class="r6-eyebrow">试算总分</p>
+            <output id="mumaka-r6-score">—</output><span> / 10</span>
+          </div>
+          <p id="mumaka-r6-progress"></p>
+        </div>
+        <details class="r6-details">
+          <summary>评级系数、计算公式与精确权重</summary>
+          <p id="mumaka-r6-coefficients"></p>
+          <p>前四维的各维权重 = 70% × 该维评级系数 ÷ 前四维系数之和。愿景和语境各固定 15%。</p>
+          <p id="mumaka-r6-basis"></p>
+          <p id="mumaka-r6-key"></p>
+          <p>总分使用源表的精确分数，最后四舍五入到两位小数。权重列以两位小数显示。</p>
+        </details>
+        <details class="r6-details">
+          <summary>风格证据和待审提案</summary>
+          <div id="mumaka-r6-ledger"></div>
+        </details>
+        <details class="r6-details">
+          <summary>记录本次取证 · 选填</summary>
+          <p>逐条记录位置与可听命题。正式声音评星至少需要两类声音证据，R6 只供试算。</p>
+          <div id="mumaka-r6-evidence"></div>
+          <p id="mumaka-r6-evidence-status" role="status"></p>
+        </details>
+      </div>
+    </section>
+  </div>
+</dialog>
+<template id="mumaka-r6-studio-template">
+  <section id="mumaka-r6-studio" class="dual-panel mumaka-r6-studio" aria-labelledby="mumaka-r6-studio-title" tabindex="-1">
+    <div class="dual-section-title">
+      <span>03</span>
+      <h2 id="mumaka-r6-studio-title">六维评分</h2>
+      <small class="r6-studio-category"></small>
+    </div>
+    <div class="dual-segment r6-studio-views" role="group" aria-label="评分版本">
+      <button type="button" data-r6-view="sound" aria-pressed="true">新版声音</button>
+      <button type="button" data-r6-view="legacy" aria-pressed="false">旧版评分</button>
+    </div>
+    <div class="r6-studio-content"></div>
+    <p class="r6-studio-legacy" hidden>旧版按「制作」口径计算，原有星级、权重与评分卡在下方。</p>
+  </section>
+</template>
+<template id="mumaka-r6-reference-template">
+  <section class="mumaka-r6-reference" aria-label="R6 研究评级与权重">
+    <div class="r6-reference-heading">
+      <div>
+        <strong>R6 研究评级与权重</strong>
+        <p class="r6-reference-status"></p>
+      </div>
+      <button class="r6-reference-open" type="button" aria-haspopup="dialog" aria-controls="mumaka-r6-dialog"></button>
+    </div>
+    <ul class="r6-reference-weights" aria-label="R6 各维评级与权重" hidden></ul>
+  </section>
+</template>

@@ -202,7 +202,7 @@ for (const release of releases)
     await page.reload();
     await expect(page.locator("#score-card-svg")).toContainText("8.00");
     await page
-      .getByRole("button", { name: "MUMAKA / 木马卡，返回首页", exact: true })
+      .getByRole("button", { name: "木马卡 MUMAKA，返回首页", exact: true })
       .click();
     await expect(page.locator(".recent-album")).toHaveCount(1);
     expect(errors).toEqual([]);

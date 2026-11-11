@@ -152,7 +152,7 @@ test("极简首页 → 手动评分零理由 → 三种比例真实PNG → 保�
   await page.reload();
   await expect(page.locator("#score-card-svg")).toContainText("8.00");
   await page
-    .getByRole("button", { name: "MUMAKA / 木马卡，返回首页", exact: true })
+    .getByRole("button", { name: "木马卡 MUMAKA，返回首页", exact: true })
     .click();
   await page.locator(".recent-album").click();
   await expect(page.getByLabel("专辑名称")).toHaveValue(
@@ -417,7 +417,7 @@ test("旧版已发表记录读取冻结分数，复制修改不覆盖历史，�
     .click();
   await page.getByLabel("专辑名称").fill("新副本");
   await page
-    .getByRole("button", { name: "MUMAKA / 木马卡，返回首页", exact: true })
+    .getByRole("button", { name: "木马卡 MUMAKA，返回首页", exact: true })
     .click();
   await expect(page.locator(".recent-album")).toHaveCount(2);
   await page.evaluate(async () => {

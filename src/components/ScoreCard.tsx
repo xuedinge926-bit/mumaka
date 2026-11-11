@@ -68,7 +68,7 @@ export function ScoreCard(props: ScoreCardProps) {
   const roseX = 790 - roseSize / 2;
   const roseY = mainTop + (mainHeight - roseSize) / 2;
   const summaryY = mainTop + mainHeight + 40;
-  return <svg id={props.svgId ?? 'score-card-svg'} viewBox={`0 0 1080 ${height}`} width="1080" height={height} role="img" aria-label={`${rawTitle}的${data.research ? '研究' : '私人'}评分卡`} xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', width: '100%', height: 'auto' }}>
+  return <svg id={props.svgId ?? 'score-card-svg'} viewBox={`0 0 1080 ${height}`} width="1080" height={height} role="img" aria-label={`${rawTitle}的评分卡`} xmlns="http://www.w3.org/2000/svg" style={{ display: 'block', width: '100%', height: 'auto' }}>
     {data.research && <metadata>{JSON.stringify(data.research.metadata)}</metadata>}
     <rect width="1080" height={height} fill={paper} />
     <g fontFamily="'PingFang SC', 'Microsoft YaHei', sans-serif">
@@ -92,7 +92,7 @@ export function ScoreCard(props: ScoreCardProps) {
         <line x1="64" x2="1016" y1={summaryY - 23} y2={summaryY - 23} stroke={line} />
         {summaryLines.map((value, i) => <text key={i} x="64" y={summaryY + 14 + i * 39} fill={ink} fontSize="26">{value}</text>)}
       </g>}
-      {data.research && <g aria-label="研究版本与审核状态">
+      {data.research && <g aria-label="评分版本信息">
         <line x1="64" x2="1016" y1={height - 155} y2={height - 155} stroke={line} />
         {data.research.lines.slice(0, 3).map((value, i)=><text key={i} x="64" y={height - 126 + i * 26} fill={muted} fontSize="17">{value}</text>)}
       </g>}

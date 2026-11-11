@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 
-test("V0.40 actual file:// single HTML supports local storage, six dimensions and PNG without a server", async ({
+test("published file keeps V0.40 legacy storage, six dimensions and PNG through the legacy view", async ({
   page,
 }) => {
   const output = join(tmpdir(), "mumaka-v040-file-test.html");
@@ -21,6 +21,7 @@ test("V0.40 actual file:// single HTML supports local storage, six dimensions an
   await page
     .getByLabel("二级风格", { exact: true })
     .selectOption("genre:dance-pop");
+  await page.getByRole("button", { name: "旧版评分", exact: true }).click();
   for (const label of ["歌词", "作曲", "表演", "制作", "愿景", "语境"]) {
     const slider = page.getByRole("slider", {
       name: `${label}评分`,
@@ -30,7 +31,9 @@ test("V0.40 actual file:// single HTML supports local storage, six dimensions an
     await slider.press("End");
   }
   await expect(page.getByTestId("dual-total")).toHaveText("10.00");
+  await expect(page.locator(".dual-save")).toHaveAttribute("title", "已自动保存");
   await page.reload();
+  await page.getByRole("button", { name: "旧版评分", exact: true }).click();
   await expect(page.getByTestId("dual-total")).toHaveText("10.00");
   const event = page.waitForEvent("download");
   await page.getByRole("button", { name: "PNG", exact: true }).click();

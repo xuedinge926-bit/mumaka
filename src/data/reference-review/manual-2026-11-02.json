@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "version": "manual-2026-11-02",
+  "group": "china-song",
+  "sourceConversationId": "6ae5832a-0b88-83e8-ab38-29cef5906920",
+  "sourceImage": "8189e4c6ef698d701c99b19f2424d858.png",
+  "sourceImageSha256": "6ab08a6cb482a45afdb09b37d4e144f90bdefa3d1834eca860643bbc3f285293",
+  "transcriptionBasis": "截图和本次用户逐格确认；安和桥北采用本次用户明确的正确拼写。原图未经编辑保存。",
+  "columns": [
+    "歌词",
+    "作曲",
+    "表演",
+    "制作",
+    "愿景",
+    "语境"
+  ],
+  "rows": [
+    {
+      "stars": 5,
+      "cells": [
+        "之乎者也",
+        "范特西",
+        "树枝孤鸟",
+        "浮躁",
+        "冀西南林路行",
+        "新长征路上的摇滚"
+      ]
+    },
+    {
+      "stars": 4.5,
+      "cells": [
+        "万能青年旅店",
+        "生如夏花",
+        "骆驼飞鸟鱼",
+        "黑色柳丁",
+        "丑奴儿",
+        "半斤八两"
+      ]
+    },
+    {
+      "stars": 4,
+      "cells": [
+        "生命中的精灵",
+        "似水流年",
+        "野花",
+        "飞行器的执行周期",
+        "冬未了",
+        "县城记"
+      ]
+    },
+    {
+      "stars": 3.5,
+      "cells": [
+        "安和桥北",
+        null,
+        null,
+        null,
+        "苏格拉没有底",
+        null
+      ]
+    },
+    {
+      "stars": 3,
+      "cells": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "stars": 2.5,
+      "cells": [
+        null,
+        null,
+        "Forever Road",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "stars": 2,
+      "cells": [
+        null,
+        null,
+        "亲密关系 Close to Me",
+        "被禁忌的游戏",
+        null,
+        null
+      ]
+    }
+  ],
+  "locked": true,
+  "emptyCellsRemainNull": true
+}

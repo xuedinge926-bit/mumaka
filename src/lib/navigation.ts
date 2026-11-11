@@ -2,14 +2,14 @@ import { useCallback, useEffect, useState } from "react";
 
 export const WORKSPACE_LABELS = {
   home: "首页",
-  studio: "双体系评分工作台",
+  studio: "评分",
   library: "作品库",
   ratings: "评分记录",
   genres: "风格管理",
   research: "V0.35 研究评分",
   reference: "星级标尺参考",
   cards: "评分卡",
-  data: "数据管理",
+  data: "数据与工具",
   settings: "设置",
 } as const;
 export type Workspace = keyof typeof WORKSPACE_LABELS;
