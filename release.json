@@ -1,0 +1,11 @@
+{
+  "release": "v0.41-r6-2026-11-11",
+  "sourceCommit": "b8deff9bb51ac44e90a18cf22a5d578353c62657",
+  "researchDataset": "v4-research-r6",
+  "researchDataSha256": "b226d1ffe514f547dcc12a65232a43d8fa24d5a71dcff7e705360af039fc380d",
+  "records": 39,
+  "trialConfigurations": 38,
+  "productionApprovals": 0,
+  "legacyWeightSource": "v0.38.1",
+  "previousRelease": "./legacy/pre-r6-20261111/"
+}
