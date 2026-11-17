@@ -1,0 +1,2134 @@
+{
+  "schema_version": "1.0.0",
+  "release_id": "MUMAKA-R7-WEIGHTS-OFFICIAL-2026-11-17",
+  "release_date": "2026-11-17",
+  "publication_scope": "Official reference for NEW R7 scoring of the 44 explicitly present genre/mode configurations; not the full 565-ID legacy taxonomy",
+  "authorized_by": "User explicit instruction 2026-11-17 to inherit R6 and publish latest R7 weights",
+  "policy": {
+    "scoring_method": "R7 six-dimensional semantics",
+    "inheritance": "R6 existing grade profiles unless superseded by 2026-11-15 human-confirmed genre20 or 2026-11-17 Political Hip Hop confirmation",
+    "future_scoring_must_use_this_release": true,
+    "existing_frozen_scores_unchanged": true,
+    "primary_style": "one eligible second-level genre; no duration weighted blending; no generic category fallback",
+    "lyrics_vs_composition_for_rap": "R7 includes authored rhythmic vocal phrases, beat placements, pauses and phrase development in composition; text/prosody in lyrics, realized flow in performance, beat/sample textures in sound; prevent double counting",
+    "weights_format": "Exact rational percentage formula; decimal_12 and display_2 for presentation only"
+  },
+  "coefficients": {
+    "S": "1.90578024",
+    "A": "1.642914",
+    "B": "1.4042",
+    "C": "1.19",
+    "D": "1"
+  },
+  "dimensions": {
+    "song": [
+      "lyrics",
+      "composition",
+      "performance",
+      "sound",
+      "vision",
+      "context"
+    ],
+    "instrumental": [
+      "material",
+      "structure",
+      "performance",
+      "sound",
+      "vision",
+      "context"
+    ]
+  },
+  "weights_formula": "first_four_pct[i] = 70 * coefficient[grade[i]] / sum(coefficient[grade[0..3]]); vision=15; context=15; score_10pt=2*sum(stars[i]*weights_pct[i]/100)",
+  "records": [
+    {
+      "style_key": "alternative-folk",
+      "canonical_r7_key": "r7:alternative-folk|song",
+      "name_zh": "另类民谣",
+      "name_en": "Alternative Folk",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "875/52",
+          "875/52",
+          "1015/52",
+          "875/52"
+        ],
+        "decimal_12_first_four": [
+          "16.826923076923",
+          "16.826923076923",
+          "19.519230769231",
+          "16.826923076923"
+        ],
+        "display_2_first_four": [
+          "16.83",
+          "16.83",
+          "19.52",
+          "16.83"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:alternative-folk",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "alternative-pop",
+      "canonical_r7_key": "r7:alternative-pop|song",
+      "name_zh": "另类流行",
+      "name_en": "Alternative Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "B",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "102375/5659",
+          "87500/5659",
+          "118755/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "18.090652058668",
+          "15.462095776639",
+          "20.985156388054"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "18.09",
+          "15.46",
+          "20.99"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:alternative-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "alternative-r-b",
+      "canonical_r7_key": "r7:alternative-r-b|song",
+      "name_zh": "另类R&B",
+      "name_en": "Alternative R&B",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:alternative-r-b",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "alternative-rock",
+      "canonical_r7_key": "r7:alternative-rock|song",
+      "name_zh": "另类摇滚",
+      "name_en": "Alternative Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "A",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "204750/11743",
+          "237510/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "17.435919271055",
+          "20.225666354424"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "17.44",
+          "20.23"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:alternative-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "art-pop",
+      "canonical_r7_key": "r7:art-pop|song",
+      "name_zh": "艺术流行",
+      "name_en": "Art Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "A",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "204750/11743",
+          "237510/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "17.435919271055",
+          "20.225666354424"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "17.44",
+          "20.23"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:art-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "art-rock",
+      "canonical_r7_key": "r7:art-rock|instrumental",
+      "name_zh": "艺术摇滚(器乐)",
+      "name_en": "Art Rock",
+      "mode": "instrumental",
+      "grades_first_four": [
+        "B",
+        "A",
+        "A",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "204750/11743",
+          "237510/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "17.435919271055",
+          "20.225666354424"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "17.44",
+          "20.23"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:art-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "art-rock",
+      "canonical_r7_key": "r7:art-rock|song",
+      "name_zh": "艺术摇滚",
+      "name_en": "Art Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "B",
+        "A",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "87500/5659",
+          "102375/5659",
+          "118755/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "15.462095776639",
+          "18.090652058668",
+          "20.985156388054"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "15.46",
+          "18.09",
+          "20.99"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:art-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "baroque-pop",
+      "canonical_r7_key": "r7:baroque-pop|song",
+      "name_zh": "巴洛克流行",
+      "name_en": "Baroque Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "B",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "102375/5659",
+          "87500/5659",
+          "118755/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "18.090652058668",
+          "15.462095776639",
+          "20.985156388054"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "18.09",
+          "15.46",
+          "20.99"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:baroque-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "bedroom-pop",
+      "canonical_r7_key": "r7:bedroom-pop|song",
+      "name_zh": "卧室流行",
+      "name_en": "Bedroom Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:bedroom-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "blues-rock",
+      "canonical_r7_key": "r7:blues-rock|song",
+      "name_zh": "布鲁斯摇滚",
+      "name_en": "Blues Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "B",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "87500/5659",
+          "118755/5659",
+          "102375/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "15.462095776639",
+          "20.985156388054",
+          "18.090652058668"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "15.46",
+          "20.99",
+          "18.09"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:blues-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "chamber-pop",
+      "canonical_r7_key": "r7:chamber-pop|song",
+      "name_zh": "室内流行",
+      "name_en": "Chamber Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "B",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "102375/5659",
+          "87500/5659",
+          "118755/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "18.090652058668",
+          "15.462095776639",
+          "20.985156388054"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "18.09",
+          "15.46",
+          "20.99"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:chamber-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "chinese-style-pop",
+      "canonical_r7_key": "r7:chinese-style-pop|song",
+      "name_zh": "国风流行",
+      "name_en": "Chinese-Style Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "S",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "875/52",
+          "1015/52",
+          "875/52",
+          "875/52"
+        ],
+        "decimal_12_first_four": [
+          "16.826923076923",
+          "19.519230769231",
+          "16.826923076923",
+          "16.826923076923"
+        ],
+        "display_2_first_four": [
+          "16.83",
+          "19.52",
+          "16.83",
+          "16.83"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:chinese-style-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "classic-soul",
+      "canonical_r7_key": "r7:classic-soul|song",
+      "name_zh": "经典灵魂乐",
+      "name_en": "Classic Soul",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:soul-classic",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "contemporary-r-b",
+      "canonical_r7_key": "r7:contemporary-r-b|song",
+      "name_zh": "当代R&B",
+      "name_en": "Contemporary R&B",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:contemporary-r-b",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "dance-pop",
+      "canonical_r7_key": "r7:dance-pop|song",
+      "name_zh": "舞曲流行",
+      "name_en": "Dance-Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "B",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "102375/5659",
+          "87500/5659",
+          "118755/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "18.090652058668",
+          "15.462095776639",
+          "20.985156388054"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "18.09",
+          "15.46",
+          "20.99"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:dance-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "folk-pop",
+      "canonical_r7_key": "r7:folk-pop|song",
+      "name_zh": "民谣流行",
+      "name_en": "Folk Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "S",
+        "A",
+        "B"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "204750/11743",
+          "237510/11743",
+          "204750/11743",
+          "175000/11743"
+        ],
+        "decimal_12_first_four": [
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055",
+          "14.902495103466"
+        ],
+        "display_2_first_four": [
+          "17.44",
+          "20.23",
+          "17.44",
+          "14.90"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:folk-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "folk-rock",
+      "canonical_r7_key": "r7:folk-rock|song",
+      "name_zh": "民谣摇滚",
+      "name_en": "Folk Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "S",
+        "A",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "1015/52",
+          "875/52",
+          "875/52",
+          "875/52"
+        ],
+        "decimal_12_first_four": [
+          "19.519230769231",
+          "16.826923076923",
+          "16.826923076923",
+          "16.826923076923"
+        ],
+        "display_2_first_four": [
+          "19.52",
+          "16.83",
+          "16.83",
+          "16.83"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:folk-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "glam-rock",
+      "canonical_r7_key": "r7:glam-rock|song",
+      "name_zh": "华丽摇滚",
+      "name_en": "Glam Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:glam-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "grunge",
+      "canonical_r7_key": "r7:grunge|song",
+      "name_zh": "垃圾摇滚",
+      "name_en": "Grunge",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:grunge",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "hard-rock",
+      "canonical_r7_key": "r7:hard-rock|song",
+      "name_zh": "硬摇滚",
+      "name_en": "Hard Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "B",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "87500/5659",
+          "118755/5659",
+          "102375/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "15.462095776639",
+          "20.985156388054",
+          "18.090652058668"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "15.46",
+          "20.99",
+          "18.09"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:hard-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "hardcore-hip-hop",
+      "canonical_r7_key": "r7:hardcore-hip-hop|song",
+      "name_zh": "硬核嘻哈",
+      "name_en": "Hardcore Hip Hop",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "B",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "204750/11743",
+          "175000/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "17.435919271055",
+          "14.902495103466",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "17.44",
+          "14.90",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": null,
+      "id_resolution_status": "requires_catalog_resolution",
+      "provenance": "2026-11-15 20-genre human-confirmed baseline",
+      "archived_r6_status": null,
+      "archived_evidence_strength": null,
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "heartland-rock",
+      "canonical_r7_key": "r7:heartland-rock|song",
+      "name_zh": "心脏地带摇滚",
+      "name_en": "Heartland Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "S",
+        "A",
+        "A",
+        "B"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "237510/11743",
+          "204750/11743",
+          "204750/11743",
+          "175000/11743"
+        ],
+        "decimal_12_first_four": [
+          "20.225666354424",
+          "17.435919271055",
+          "17.435919271055",
+          "14.902495103466"
+        ],
+        "display_2_first_four": [
+          "20.23",
+          "17.44",
+          "17.44",
+          "14.90"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:heartland-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "indie-folk",
+      "canonical_r7_key": "r7:indie-folk|song",
+      "name_zh": "独立民谣",
+      "name_en": "Indie Folk",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "A",
+        "A",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "875/52",
+          "875/52",
+          "875/52",
+          "1015/52"
+        ],
+        "decimal_12_first_four": [
+          "16.826923076923",
+          "16.826923076923",
+          "16.826923076923",
+          "19.519230769231"
+        ],
+        "display_2_first_four": [
+          "16.83",
+          "16.83",
+          "16.83",
+          "19.52"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:indie-folk",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "indie-pop",
+      "canonical_r7_key": "r7:indie-pop|song",
+      "name_zh": "独立流行",
+      "name_en": "Indie Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "S",
+        "B",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "118755/5659",
+          "87500/5659",
+          "102375/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "20.985156388054",
+          "15.462095776639",
+          "18.090652058668"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "20.99",
+          "15.46",
+          "18.09"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:indie-pop",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "jazz-fusion",
+      "canonical_r7_key": "r7:jazz-fusion|instrumental",
+      "name_zh": "融合爵士",
+      "name_en": "Jazz Fusion",
+      "mode": "instrumental",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:jazz-fusion",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "mandopop",
+      "canonical_r7_key": "r7:mandopop|song",
+      "name_zh": "华语流行(国语主流歌曲型)",
+      "name_en": "Mandopop",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "S",
+        "A",
+        "B"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "204750/11743",
+          "237510/11743",
+          "204750/11743",
+          "175000/11743"
+        ],
+        "decimal_12_first_four": [
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055",
+          "14.902495103466"
+        ],
+        "display_2_first_four": [
+          "17.44",
+          "20.23",
+          "17.44",
+          "14.90"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": null,
+      "id_resolution_status": "ambiguous",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "modal-jazz",
+      "canonical_r7_key": "r7:modal-jazz|instrumental",
+      "name_zh": "调式爵士",
+      "name_en": "Modal Jazz",
+      "mode": "instrumental",
+      "grades_first_four": [
+        "A",
+        "A",
+        "S",
+        "B"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "204750/11743",
+          "204750/11743",
+          "237510/11743",
+          "175000/11743"
+        ],
+        "decimal_12_first_four": [
+          "17.435919271055",
+          "17.435919271055",
+          "20.225666354424",
+          "14.902495103466"
+        ],
+        "display_2_first_four": [
+          "17.44",
+          "17.44",
+          "20.23",
+          "14.90"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:modal-jazz",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "new-wave",
+      "canonical_r7_key": "r7:new-wave|song",
+      "name_zh": "新浪潮",
+      "name_en": "New Wave",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "S",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "237510/11743",
+          "204750/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "20.225666354424",
+          "17.435919271055",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "20.23",
+          "17.44",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": null,
+      "id_resolution_status": "requires_catalog_resolution",
+      "provenance": "2026-11-15 20-genre human-confirmed baseline",
+      "archived_r6_status": null,
+      "archived_evidence_strength": null,
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "political-hip-hop",
+      "canonical_r7_key": "r7:political-hip-hop|song",
+      "name_zh": "政治嘻哈",
+      "name_en": "Political Hip Hop",
+      "mode": "song",
+      "grades_first_four": [
+        "S",
+        "B",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "237510/11743",
+          "175000/11743",
+          "204750/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "20.225666354424",
+          "14.902495103466",
+          "17.435919271055",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "20.23",
+          "14.90",
+          "17.44",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": null,
+      "id_resolution_status": "requires_catalog_resolution",
+      "provenance": "2026-11-15 discussion + explicit 2026-11-17 user authorization",
+      "archived_r6_status": null,
+      "archived_evidence_strength": null,
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "pop-rap",
+      "canonical_r7_key": "r7:pop-rap|song",
+      "name_zh": "流行说唱",
+      "name_en": "Pop Rap",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "875/52",
+          "875/52",
+          "1015/52",
+          "875/52"
+        ],
+        "decimal_12_first_four": [
+          "16.826923076923",
+          "16.826923076923",
+          "19.519230769231",
+          "16.826923076923"
+        ],
+        "display_2_first_four": [
+          "16.83",
+          "16.83",
+          "19.52",
+          "16.83"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": null,
+      "id_resolution_status": "unmatched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "pop-rock",
+      "canonical_r7_key": "r7:pop-rock|song",
+      "name_zh": "流行摇滚",
+      "name_en": "Pop Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "S",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "237510/11743",
+          "204750/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "20.225666354424",
+          "17.435919271055",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "20.23",
+          "17.44",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:pop-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "progressive-rock",
+      "canonical_r7_key": "r7:progressive-rock|instrumental",
+      "name_zh": "前卫摇滚(器乐)",
+      "name_en": "Progressive Rock",
+      "mode": "instrumental",
+      "grades_first_four": [
+        "A",
+        "S",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "875/52",
+          "1015/52",
+          "875/52",
+          "875/52"
+        ],
+        "decimal_12_first_four": [
+          "16.826923076923",
+          "19.519230769231",
+          "16.826923076923",
+          "16.826923076923"
+        ],
+        "display_2_first_four": [
+          "16.83",
+          "19.52",
+          "16.83",
+          "16.83"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:progressive-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "progressive-rock",
+      "canonical_r7_key": "r7:progressive-rock|song",
+      "name_zh": "前卫摇滚(歌曲)",
+      "name_en": "Progressive Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "B",
+        "A",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "87500/5659",
+          "102375/5659",
+          "118755/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "15.462095776639",
+          "18.090652058668",
+          "20.985156388054"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "15.46",
+          "18.09",
+          "20.99"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:progressive-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "progressive-soul",
+      "canonical_r7_key": "r7:progressive-soul|song",
+      "name_zh": "前卫灵魂乐",
+      "name_en": "Progressive Soul",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "S",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "875/52",
+          "1015/52",
+          "875/52",
+          "875/52"
+        ],
+        "decimal_12_first_four": [
+          "16.826923076923",
+          "19.519230769231",
+          "16.826923076923",
+          "16.826923076923"
+        ],
+        "display_2_first_four": [
+          "16.83",
+          "19.52",
+          "16.83",
+          "16.83"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": null,
+      "id_resolution_status": "requires_catalog_resolution",
+      "provenance": "2026-11-15 20-genre human-confirmed baseline",
+      "archived_r6_status": null,
+      "archived_evidence_strength": null,
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "proto-punk",
+      "canonical_r7_key": "r7:proto-punk|song",
+      "name_zh": "原型朋克",
+      "name_en": "Proto-Punk",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "B",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "204750/11743",
+          "175000/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "17.435919271055",
+          "14.902495103466",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "17.44",
+          "14.90",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:proto-punk",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "psychedelic-pop",
+      "canonical_r7_key": "r7:psychedelic-pop|song",
+      "name_zh": "迷幻流行",
+      "name_en": "Psychedelic Pop",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "S",
+        "B",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "118755/5659",
+          "87500/5659",
+          "102375/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "20.985156388054",
+          "15.462095776639",
+          "18.090652058668"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "20.99",
+          "15.46",
+          "18.09"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": null,
+      "id_resolution_status": "requires_catalog_resolution",
+      "provenance": "2026-11-15 20-genre human-confirmed baseline",
+      "archived_r6_status": null,
+      "archived_evidence_strength": null,
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "psychedelic-rock",
+      "canonical_r7_key": "r7:psychedelic-rock|song",
+      "name_zh": "迷幻摇滚",
+      "name_en": "Psychedelic Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "B",
+        "A",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "87500/5659",
+          "102375/5659",
+          "118755/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "15.462095776639",
+          "18.090652058668",
+          "20.985156388054"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "15.46",
+          "18.09",
+          "20.99"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:psychedelic-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "psychedelic-soul",
+      "canonical_r7_key": "r7:psychedelic-soul|song",
+      "name_zh": "迷幻灵魂乐",
+      "name_en": "Psychedelic Soul",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "B",
+        "A",
+        "S"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "87500/5659",
+          "87500/5659",
+          "102375/5659",
+          "118755/5659"
+        ],
+        "decimal_12_first_four": [
+          "15.462095776639",
+          "15.462095776639",
+          "18.090652058668",
+          "20.985156388054"
+        ],
+        "display_2_first_four": [
+          "15.46",
+          "15.46",
+          "18.09",
+          "20.99"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:psychedelic-soul",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "punk-rock",
+      "canonical_r7_key": "r7:punk-rock|song",
+      "name_zh": "朋克摇滚",
+      "name_en": "Punk Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "A",
+        "B",
+        "S",
+        "B"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "102375/5659",
+          "87500/5659",
+          "118755/5659",
+          "87500/5659"
+        ],
+        "decimal_12_first_four": [
+          "18.090652058668",
+          "15.462095776639",
+          "20.985156388054",
+          "15.462095776639"
+        ],
+        "display_2_first_four": [
+          "18.09",
+          "15.46",
+          "20.99",
+          "15.46"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:punk-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "roots-reggae",
+      "canonical_r7_key": "r7:roots-reggae|song",
+      "name_zh": "根源雷鬼",
+      "name_en": "Roots Reggae",
+      "mode": "song",
+      "grades_first_four": [
+        "S",
+        "B",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "237510/11743",
+          "175000/11743",
+          "204750/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "20.225666354424",
+          "14.902495103466",
+          "17.435919271055",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "20.23",
+          "14.90",
+          "17.44",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:roots-reggae",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "高",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "roots-rock",
+      "canonical_r7_key": "r7:roots-rock|song",
+      "name_zh": "根源摇滚",
+      "name_en": "Roots Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:roots-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中低",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "singer-songwriter",
+      "canonical_r7_key": "r7:singer-songwriter|song",
+      "name_zh": "唱作人音乐",
+      "name_en": "Singer-Songwriter",
+      "mode": "song",
+      "grades_first_four": [
+        "S",
+        "A",
+        "A",
+        "B"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "237510/11743",
+          "204750/11743",
+          "204750/11743",
+          "175000/11743"
+        ],
+        "decimal_12_first_four": [
+          "20.225666354424",
+          "17.435919271055",
+          "17.435919271055",
+          "14.902495103466"
+        ],
+        "display_2_first_four": [
+          "20.23",
+          "17.44",
+          "17.44",
+          "14.90"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:singer-songwriter",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "soft-rock",
+      "canonical_r7_key": "r7:soft-rock|song",
+      "name_zh": "软摇滚",
+      "name_en": "Soft Rock",
+      "mode": "song",
+      "grades_first_four": [
+        "B",
+        "S",
+        "A",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "237510/11743",
+          "204750/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "20.225666354424",
+          "17.435919271055",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "20.23",
+          "17.44",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:soft-rock",
+      "id_resolution_status": "matched",
+      "provenance": "R6 inherited; 2026-11-15 20-genre human baseline confirmed",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "中",
+      "official_r7_scoring_weight": true
+    },
+    {
+      "style_key": "spiritual-jazz",
+      "canonical_r7_key": "r7:spiritual-jazz|instrumental",
+      "name_zh": "灵性爵士",
+      "name_en": "Spiritual Jazz",
+      "mode": "instrumental",
+      "grades_first_four": [
+        "B",
+        "A",
+        "S",
+        "A"
+      ],
+      "weights_pct": {
+        "fraction_first_four": [
+          "175000/11743",
+          "204750/11743",
+          "237510/11743",
+          "204750/11743"
+        ],
+        "decimal_12_first_four": [
+          "14.902495103466",
+          "17.435919271055",
+          "20.225666354424",
+          "17.435919271055"
+        ],
+        "display_2_first_four": [
+          "14.90",
+          "17.44",
+          "20.23",
+          "17.44"
+        ],
+        "vision": "15",
+        "context": "15"
+      },
+      "stable_genre_id": "genre:spiritual-jazz",
+      "id_resolution_status": "matched",
+      "provenance": "R6-public-2026-11-11",
+      "archived_r6_status": "unapproved",
+      "archived_evidence_strength": "低",
+      "official_r7_scoring_weight": true
+    }
+  ],
+  "albums_28": [
+    {
+      "album_key": "the-beach-boys-pet-sounds",
+      "artist": "The Beach Boys",
+      "title": "Pet Sounds",
+      "mode": "song",
+      "primary_genre_key": "baroque-pop",
+      "canonical_r7_key": "r7:baroque-pop|song"
+    },
+    {
+      "album_key": "marvin-gaye-whats-going-on",
+      "artist": "Marvin Gaye",
+      "title": "What's Going On",
+      "mode": "song",
+      "primary_genre_key": "progressive-soul",
+      "canonical_r7_key": "r7:progressive-soul|song"
+    },
+    {
+      "album_key": "the-beatles-revolver",
+      "artist": "The Beatles",
+      "title": "Revolver",
+      "mode": "song",
+      "primary_genre_key": "pop-rock",
+      "canonical_r7_key": "r7:pop-rock|song"
+    },
+    {
+      "album_key": "the-beatles-abbey-road",
+      "artist": "The Beatles",
+      "title": "Abbey Road",
+      "mode": "song",
+      "primary_genre_key": "pop-rock",
+      "canonical_r7_key": "r7:pop-rock|song"
+    },
+    {
+      "album_key": "the-rolling-stones-exile-on-main-street",
+      "artist": "The Rolling Stones",
+      "title": "Exile on Main St.",
+      "mode": "song",
+      "primary_genre_key": "blues-rock",
+      "canonical_r7_key": "r7:blues-rock|song"
+    },
+    {
+      "album_key": "bob-dylan-highway-61-revisited",
+      "artist": "Bob Dylan",
+      "title": "Highway 61 Revisited",
+      "mode": "song",
+      "primary_genre_key": "folk-rock",
+      "canonical_r7_key": "r7:folk-rock|song"
+    },
+    {
+      "album_key": "nirvana-nevermind",
+      "artist": "Nirvana",
+      "title": "Nevermind",
+      "mode": "song",
+      "primary_genre_key": "grunge",
+      "canonical_r7_key": "r7:grunge|song"
+    },
+    {
+      "album_key": "the-clash-london-calling",
+      "artist": "The Clash",
+      "title": "London Calling",
+      "mode": "song",
+      "primary_genre_key": "new-wave",
+      "canonical_r7_key": "r7:new-wave|song"
+    },
+    {
+      "album_key": "the-beatles-sgt-peppers",
+      "artist": "The Beatles",
+      "title": "Sgt. Pepper's Lonely Hearts Club Band",
+      "mode": "song",
+      "primary_genre_key": "psychedelic-pop",
+      "canonical_r7_key": "r7:psychedelic-pop|song"
+    },
+    {
+      "album_key": "bob-dylan-blood-on-the-tracks",
+      "artist": "Bob Dylan",
+      "title": "Blood on the Tracks",
+      "mode": "song",
+      "primary_genre_key": "singer-songwriter",
+      "canonical_r7_key": "r7:singer-songwriter|song"
+    },
+    {
+      "album_key": "michael-jackson-thriller",
+      "artist": "Michael Jackson",
+      "title": "Thriller",
+      "mode": "song",
+      "primary_genre_key": "contemporary-r-b",
+      "canonical_r7_key": "r7:contemporary-r-b|song"
+    },
+    {
+      "album_key": "fleetwood-mac-rumours",
+      "artist": "Fleetwood Mac",
+      "title": "Rumours",
+      "mode": "song",
+      "primary_genre_key": "soft-rock",
+      "canonical_r7_key": "r7:soft-rock|song"
+    },
+    {
+      "album_key": "joni-mitchell-blue",
+      "artist": "Joni Mitchell",
+      "title": "Blue",
+      "mode": "song",
+      "primary_genre_key": "singer-songwriter",
+      "canonical_r7_key": "r7:singer-songwriter|song"
+    },
+    {
+      "album_key": "velvet-underground-and-nico",
+      "artist": "The Velvet Underground & Nico",
+      "title": "The Velvet Underground & Nico",
+      "mode": "song",
+      "primary_genre_key": "art-rock",
+      "canonical_r7_key": "r7:art-rock|song"
+    },
+    {
+      "album_key": "the-beatles-white-album",
+      "artist": "The Beatles",
+      "title": "The Beatles (White Album)",
+      "mode": "song",
+      "primary_genre_key": "pop-rock",
+      "canonical_r7_key": "r7:pop-rock|song"
+    },
+    {
+      "album_key": "bruce-springsteen-born-to-run",
+      "artist": "Bruce Springsteen",
+      "title": "Born to Run",
+      "mode": "song",
+      "primary_genre_key": "heartland-rock",
+      "canonical_r7_key": "r7:heartland-rock|song"
+    },
+    {
+      "album_key": "the-beatles-rubber-soul",
+      "artist": "The Beatles",
+      "title": "Rubber Soul",
+      "mode": "song",
+      "primary_genre_key": "pop-rock",
+      "canonical_r7_key": "r7:pop-rock|song"
+    },
+    {
+      "album_key": "miles-davis-kind-of-blue",
+      "artist": "Miles Davis",
+      "title": "Kind of Blue",
+      "mode": "instrumental",
+      "primary_genre_key": "modal-jazz",
+      "canonical_r7_key": "r7:modal-jazz|instrumental"
+    },
+    {
+      "album_key": "jimi-hendrix-are-you-experienced",
+      "artist": "The Jimi Hendrix Experience",
+      "title": "Are You Experienced",
+      "mode": "song",
+      "primary_genre_key": "psychedelic-rock",
+      "canonical_r7_key": "r7:psychedelic-rock|song"
+    },
+    {
+      "album_key": "bob-dylan-blonde-on-blonde",
+      "artist": "Bob Dylan",
+      "title": "Blonde on Blonde",
+      "mode": "song",
+      "primary_genre_key": "folk-rock",
+      "canonical_r7_key": "r7:folk-rock|song"
+    },
+    {
+      "album_key": "stevie-wonder-innervisions",
+      "artist": "Stevie Wonder",
+      "title": "Innervisions",
+      "mode": "song",
+      "primary_genre_key": "progressive-soul",
+      "canonical_r7_key": "r7:progressive-soul|song"
+    },
+    {
+      "album_key": "carole-king-tapestry",
+      "artist": "Carole King",
+      "title": "Tapestry",
+      "mode": "song",
+      "primary_genre_key": "singer-songwriter",
+      "canonical_r7_key": "r7:singer-songwriter|song"
+    },
+    {
+      "album_key": "public-enemy-nation-of-millions",
+      "artist": "Public Enemy",
+      "title": "It Takes a Nation of Millions to Hold Us Back",
+      "mode": "song",
+      "primary_genre_key": "political-hip-hop",
+      "canonical_r7_key": "r7:political-hip-hop|song",
+      "previous_2026_11_15_genre": "hardcore-hip-hop"
+    },
+    {
+      "album_key": "patti-smith-horses",
+      "artist": "Patti Smith",
+      "title": "Horses",
+      "mode": "song",
+      "primary_genre_key": "proto-punk",
+      "canonical_r7_key": "r7:proto-punk|song"
+    },
+    {
+      "album_key": "the-rolling-stones-let-it-bleed",
+      "artist": "The Rolling Stones",
+      "title": "Let It Bleed",
+      "mode": "song",
+      "primary_genre_key": "blues-rock",
+      "canonical_r7_key": "r7:blues-rock|song"
+    },
+    {
+      "album_key": "david-bowie-ziggy-stardust",
+      "artist": "David Bowie",
+      "title": "The Rise and Fall of Ziggy Stardust and the Spiders from Mars",
+      "mode": "song",
+      "primary_genre_key": "glam-rock",
+      "canonical_r7_key": "r7:glam-rock|song"
+    },
+    {
+      "album_key": "ramones-ramones",
+      "artist": "Ramones",
+      "title": "Ramones",
+      "mode": "song",
+      "primary_genre_key": "punk-rock",
+      "canonical_r7_key": "r7:punk-rock|song"
+    },
+    {
+      "album_key": "bob-marley-legend",
+      "artist": "Bob Marley & The Wailers",
+      "title": "Legend",
+      "mode": "song",
+      "primary_genre_key": "roots-reggae",
+      "canonical_r7_key": "r7:roots-reggae|song"
+    }
+  ],
+  "changes_from_r6": [
+    {
+      "style_key": "blues-rock",
+      "from": "B/C/S/A",
+      "to": "B/B/S/A",
+      "reason": "2026-11-15 20-genre user-confirmed baseline supersedes earlier R6"
+    },
+    {
+      "style_key": "progressive-soul",
+      "from": "absent",
+      "to": "A/S/A/A",
+      "reason": "2026-11-15 human baseline addition"
+    },
+    {
+      "style_key": "new-wave",
+      "from": "absent",
+      "to": "B/S/A/A",
+      "reason": "2026-11-15 human baseline addition"
+    },
+    {
+      "style_key": "psychedelic-pop",
+      "from": "absent",
+      "to": "B/S/B/A",
+      "reason": "2026-11-15 human baseline addition"
+    },
+    {
+      "style_key": "hardcore-hip-hop",
+      "from": "absent",
+      "to": "A/B/S/A",
+      "reason": "2026-11-15 human baseline addition"
+    },
+    {
+      "style_key": "proto-punk",
+      "from": "inactive",
+      "to": "A/B/S/A",
+      "reason": "2026-11-15 20-genre user-confirmed baseline supersedes earlier R6"
+    },
+    {
+      "style_key": "political-hip-hop",
+      "from": "absent",
+      "to": "S/B/A/A",
+      "reason": "2026-11-15 political rap follow-up; 2026-11-17 explicit confirmation for formal scoring"
+    }
+  ],
+  "validation": {
+    "r6_historical_records": 39,
+    "r6_historical_scoring_profiles": 38,
+    "final_r7_active_profiles": 44,
+    "final_album_mappings": 28,
+    "distinct_genres_in_28": 20,
+    "political_hip_hop_present": true,
+    "public_enemy_maps_to": "political-hip-hop",
+    "other_27_album_mappings_preserved": true,
+    "grade_s_per_record": 1,
+    "fixed_vision_pct": 15,
+    "fixed_context_pct": 15,
+    "rounding": "ROUND_HALF_UP at presentation only; never force displayed percentages to sum to 100",
+    "id_limitations": "some R6 styles remain unresolved against historical stable genre ID catalog; canonical_r7_key is valid for this R7 scoring dataset and is not a claimed legacy ID"
+  }
+}
